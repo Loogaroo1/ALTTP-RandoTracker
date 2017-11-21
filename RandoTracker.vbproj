@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82023BDD-7257-4517-BA10-73B9A2FC197E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RandoTracker.My.MyApplication</StartupObject>
+    <RootNamespace>RandoTracker</RootNamespace>
+    <AssemblyName>RandoTracker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RandoTracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RandoTracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="RetGanon.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aganhim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueboom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluemail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bombos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bombosMMTR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bombs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bossdead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bugnet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\byrna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chestmaybe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crystal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ether.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etherMMTR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fairycrystal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firerod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flippers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenchest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenpendant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hammer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hookshot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icerod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mitt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noaganhim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobombos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobombs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noboom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noboomerang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noboots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobottle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobugnet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobyrna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nocape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noether.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nofirerod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noflippers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noflute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noglove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nohammer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nohook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noicerod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nolamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomirror.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomushroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nopearl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nopowder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noquake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noshield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noshovel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nosomaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nosword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otherpendant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quakeMMTR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redboom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redchest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rupee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shovel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silvers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\somaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whatmedallion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nobigkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomap.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

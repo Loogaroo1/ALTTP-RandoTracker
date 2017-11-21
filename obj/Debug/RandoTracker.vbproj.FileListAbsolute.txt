@@ -1,0 +1,13 @@
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.vbprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.Form1.resources
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.Resources.resources
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.vbproj.GenerateResource.Cache
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.vbproj.CoreCompileInputs.cache
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\bin\Debug\RandoTracker.exe.config
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\bin\Debug\RandoTracker.exe
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\bin\Debug\RandoTracker.pdb
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\bin\Debug\RandoTracker.xml
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.Form2.resources
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.exe
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.xml
+C:\Users\Tim\Documents\GitHub\Keysanity\RandoTracker\obj\Debug\RandoTracker.pdb
