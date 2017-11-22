@@ -77,6 +77,11 @@ RandoTracker
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:RandoTracker.My.Resources.Resources.bothboom">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:RandoTracker.My.Resources.Resources.bottle">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

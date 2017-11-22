@@ -149,16 +149,16 @@
             IPPrizes.Visible = True
             MMPrizes.Visible = True
             TRPrizes.Visible = True
-            EPBoss.Left = 137
-            DPBoss.Left = 137
-            HeraBoss.Left = 137
-            PODBoss.Left = 137
-            SPBoss.Left = 137
-            SWBoss.Left = 362
-            TTBoss.Left = 362
-            IPBoss.Left = 362
-            MMBoss.Left = 362
-            TRBoss.Left = 362
+            EPBoss.Left = 132
+            DPBoss.Left = 132
+            HeraBoss.Left = 132
+            PODBoss.Left = 132
+            SPBoss.Left = 132
+            SWBoss.Left = 347
+            TTBoss.Left = 347
+            IPBoss.Left = 347
+            MMBoss.Left = 347
+            TRBoss.Left = 347
             EPReward = 0
             DPReward = 0
             TOHReward = 0
@@ -270,16 +270,16 @@
             IPPrizes.Visible = False
             MMPrizes.Visible = False
             TRPrizes.Visible = False
-            EPBoss.Left = 195
-            DPBoss.Left = 195
-            HeraBoss.Left = 195
-            PODBoss.Left = 195
-            SPBoss.Left = 195
-            SWBoss.Left = 420
-            TTBoss.Left = 420
-            IPBoss.Left = 420
-            MMBoss.Left = 420
-            TRBoss.Left = 420
+            EPBoss.Left = 190
+            DPBoss.Left = 190
+            HeraBoss.Left = 190
+            PODBoss.Left = 190
+            SPBoss.Left = 190
+            SWBoss.Left = 405
+            TTBoss.Left = 405
+            IPBoss.Left = 405
+            MMBoss.Left = 405
+            TRBoss.Left = 405
             EPReward = -1
             DPReward = -1
             TOHReward = -1
@@ -1425,7 +1425,7 @@
                 AgaButton.Visible = True
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
-            ElseIf (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
+            ElseIf (Sword >= 2 Or (Cape = True And Sword > 0)) Then
                 AgaButton.Visible = False
                 AGLabel.BackColor = Color.Yellow
                 AGLabel.ForeColor = Color.Black
@@ -1729,142 +1729,6 @@
         End If
     End Sub
 
-    Private Sub TRPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TRPrizes.MouseDown
-
-    End Sub
-
-    Private Sub MMPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles MMPrizes.MouseDown
-
-    End Sub
-
-    Private Sub IPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles IPPrizes.MouseDown
-
-    End Sub
-
-    Private Sub TTPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TTPrizes.MouseDown
-
-    End Sub
-
-    Private Sub SWPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles SWPrizes.MouseDown
-
-    End Sub
-
-    Private Sub SPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles SPPrizes.MouseDown
-
-    End Sub
-
-    Private Sub PODPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles PODPrizes.MouseDown
-
-    End Sub
-
-    Private Sub DPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles DPPrizes.MouseDown
-
-    End Sub
-
-    Private Sub EPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles EPPrizes.MouseDown
-
-    End Sub
-
-    Private Sub TOHPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHPrizes.MouseDown
-
-    End Sub
-
-    Private Sub HCKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles HCKeys.MouseDown
-
-    End Sub
-
-    Private Sub GTKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles GTKeys.MouseDown
-
-    End Sub
-
-    Private Sub TRKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TRKeys.MouseDown
-
-    End Sub
-
-    Private Sub MMKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles MMKeys.MouseDown
-
-    End Sub
-
-    Private Sub IPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles IPKeys.MouseDown
-
-    End Sub
-
-    Private Sub TTKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TTKeys.MouseDown
-
-    End Sub
-
-    Private Sub SWKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles SWKeys.MouseDown
-
-    End Sub
-
-    Private Sub SPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles SPKeys.MouseDown
-
-    End Sub
-
-    Private Sub PODKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles PODKeys.MouseDown
-
-    End Sub
-
-    Private Sub DPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles DPKeys.MouseDown
-
-    End Sub
-
-    Private Sub AGKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles AGKeys.MouseDown
-
-    End Sub
-
-    Private Sub GTChests_MouseDown(sender As Object, e As MouseEventArgs) Handles GTChests.MouseDown
-
-    End Sub
-
-    Private Sub HCChests_MouseDown(sender As Object, e As MouseEventArgs) Handles HCChests.MouseDown
-
-    End Sub
-
-    Private Sub IPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles IPChests.MouseDown
-
-    End Sub
-
-    Private Sub TRChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TRChests.MouseDown
-
-    End Sub
-
-    Private Sub MMChests_MouseDown(sender As Object, e As MouseEventArgs) Handles MMChests.MouseDown
-
-    End Sub
-
-    Private Sub TTChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TTChests.MouseDown
-
-    End Sub
-
-    Private Sub SWChests_MouseDown(sender As Object, e As MouseEventArgs) Handles SWChests.MouseDown
-
-    End Sub
-
-    Private Sub TOHChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHChests.MouseDown
-
-    End Sub
-
-    Private Sub SPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles SPChests.MouseDown
-
-    End Sub
-
-    Private Sub PODChests_MouseDown(sender As Object, e As MouseEventArgs) Handles PODChests.MouseDown
-
-    End Sub
-
-    Private Sub DPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles DPChests.MouseDown
-
-    End Sub
-
-    Private Sub EPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles EPChests.MouseDown
-
-    End Sub
-
-    Private Sub HeraKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHKeys.MouseDown
-
-    End Sub
-
     Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "TTMap"
@@ -1888,10 +1752,6 @@
         End Select
         TTCheck()
         CrystalCheck()
-    End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 
     Private Sub TTPrizes_MouseDown(sender As Object, e As EventArgs) Handles TTPrizes.MouseDown
@@ -2155,11 +2015,11 @@
             Case 0
                 MireBEQ.Image = My.Resources.whatmedallion
             Case 1
-                MireBEQ.Image = My.Resources.bombosMMTR
+                MireBEQ.Image = My.Resources.bombos
             Case 2
-                MireBEQ.Image = My.Resources.etherMMTR
+                MireBEQ.Image = My.Resources.ether
             Case 3
-                MireBEQ.Image = My.Resources.quakeMMTR
+                MireBEQ.Image = My.Resources.quake
         End Select
         MMCheck()
     End Sub
@@ -2221,7 +2081,7 @@
     End Sub
     Public Sub TRCheck()
         If RadioButton1.Checked = True Then
-            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True Then
+            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
                 TRChests.Text = 12
                 If Lamp = True And Sword > 1 Then
@@ -2281,11 +2141,11 @@
             Case 0
                 TurtleBEQ.Image = My.Resources.whatmedallion
             Case 1
-                TurtleBEQ.Image = My.Resources.bombosMMTR
+                TurtleBEQ.Image = My.Resources.bombos
             Case 2
-                TurtleBEQ.Image = My.Resources.etherMMTR
+                TurtleBEQ.Image = My.Resources.ether
             Case 3
-                TurtleBEQ.Image = My.Resources.quakeMMTR
+                TurtleBEQ.Image = My.Resources.quake
         End Select
         TRCheck()
     End Sub
@@ -2318,7 +2178,7 @@
 
     Private Sub GTKeys_MouseDown(sender As Object, e As EventArgs) Handles GTKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then
-            If GTKeys.Text < 3 Then GTKeys.Text = GTKeys.Text + 1
+            If GTKeys.Text < 4 Then GTKeys.Text = GTKeys.Text + 1
         End If
         If MouseButtons = MouseButtons.Right = True Then
             If GTKeys.Text > 0 Then GTKeys.Text = GTKeys.Text - 1
@@ -2340,7 +2200,7 @@
         End If
     End Sub
 
-    Private Sub CrystalClick(sender As Object, e As EventArgs) Handles EPButton.Click, DPButton.Click, TOHButton.Click, PODButton.Click, SPButton.Click, SWButton.Click, TTButton.Click, IPButton.Click, MMButton.Click, TRButton.Click
+    Private Sub CrystalClick(sender As Object, e As EventArgs) Handles EPButton.MouseDown, DPButton.MouseDown, TOHButton.MouseDown, PODButton.MouseDown, SPButton.MouseDown, SWButton.MouseDown, TTButton.MouseDown, IPButton.MouseDown, MMButton.MouseDown, TRButton.MouseDown
         Select Case DirectCast(sender, PictureBox).Name
             Case "EPButton"
                 EPReward = (EPReward + 1) Mod 4
@@ -2464,7 +2324,7 @@
                 End Select
         End Select
         LWCheck()
-        DWCheck()
+            DWCheck()
         CrystalCheck()
     End Sub
     Public Sub CrystalCheck()
@@ -2617,35 +2477,48 @@
         GTCheck()
     End Sub
 
-    Private Sub BowButton_Click(sender As Object, e As EventArgs) Handles BowButton.Click
-        Bow = (Bow + 1) Mod 3
+    Private Sub BowButton_MouseDown(sender As Object, e As EventArgs) Handles BowButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Bow = (Bow + 1) Mod 3 Else Bow = ((Bow - 1) + 3) Mod 3
         Select Case Bow
             Case 0
                 BowButton.Image = My.Resources.nobow
+                BowButton.BackColor = Color.FromArgb(32, 32, 32)
             Case 1
                 BowButton.Image = My.Resources.bow
+                BowButton.BackColor = Color.WhiteSmoke
             Case 2
                 BowButton.Image = My.Resources.silvers
+                BowButton.BackColor = Color.WhiteSmoke
         End Select
         EPCheck()
         PODCheck()
     End Sub
 
-    Private Sub BoomButton_Click(sender As Object, e As EventArgs) Handles BoomButton.Click
-        Boomerang = (Boomerang + 1) Mod 3
+    Private Sub BoomButton_Click(sender As Object, e As EventArgs) Handles BoomButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Boomerang = (Boomerang + 1) Mod 4 Else Boomerang = ((Boomerang - 1) + 4) Mod 4
         Select Case Boomerang
             Case 0
                 BoomButton.Image = My.Resources.noboomerang
+                BoomButton.BackColor = Color.FromArgb(32, 32, 32)
             Case 1
                 BoomButton.Image = My.Resources.blueboom
+                BoomButton.BackColor = Color.WhiteSmoke
             Case 2
                 BoomButton.Image = My.Resources.redboom
+            Case 3
+                BoomButton.Image = My.Resources.bothboom
         End Select
     End Sub
 
-    Private Sub HookButton_Click(sender As Object, e As EventArgs) Handles HookButton.Click
+    Private Sub HookButton_Click(sender As Object, e As EventArgs) Handles HookButton.MouseDown
         If Hookshot = False Then Hookshot = True Else Hookshot = False
-        If Hookshot = True Then HookButton.Image = My.Resources.hookshot Else HookButton.Image = My.Resources.nohook
+        If Hookshot = True Then
+            HookButton.Image = My.Resources.hookshot
+            HookButton.BackColor = Color.WhiteSmoke
+        Else
+            HookButton.Image = My.Resources.nohook
+            HookButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         TOHCheck()
         SPCheck()
         SWCheck()
@@ -2657,23 +2530,41 @@
         DWCheck()
     End Sub
 
-    Private Sub BombButton_Click(sender As Object, e As EventArgs) Handles BombButton.Click
+    Private Sub BombButton_Click(sender As Object, e As EventArgs) Handles BombButton.MouseDown
         If Bombs = False Then Bombs = True Else Bombs = False
-        If Bombs = True Then BombButton.Image = My.Resources.bombs Else BombButton.Image = My.Resources.nobombs
+        If Bombs = True Then
+            BombButton.Image = My.Resources.bombs
+            BombButton.BackColor = Color.WhiteSmoke
+        Else
+            BombButton.Image = My.Resources.nobombs
+            BombButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         SPCheck()
         LWCheck()
         DWCheck()
     End Sub
 
-    Private Sub PowderButton_Click(sender As Object, e As EventArgs) Handles PowderButton.Click
+    Private Sub PowderButton_Click(sender As Object, e As EventArgs) Handles PowderButton.MouseDown
         If Powder = False Then Powder = True Else Powder = False
-        If Powder = True Then PowderButton.Image = My.Resources.powder Else PowderButton.Image = My.Resources.nopowder
+        If Powder = True Then
+            PowderButton.Image = My.Resources.powder
+            PowderButton.BackColor = Color.WhiteSmoke
+        Else
+            PowderButton.Image = My.Resources.nopowder
+            PowderButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         LWCheck()
     End Sub
 
-    Private Sub FireButton_Click(sender As Object, e As EventArgs) Handles FireButton.Click
+    Private Sub FireButton_Click(sender As Object, e As EventArgs) Handles FireButton.MouseDown
         If FireRod = False Then FireRod = True Else FireRod = False
-        If FireRod = True Then FireButton.Image = My.Resources.firerod Else FireButton.Image = My.Resources.nofirerod
+        If FireRod = True Then
+            FireButton.Image = My.Resources.firerod
+            FireButton.BackColor = Color.WhiteSmoke
+        Else
+            FireButton.Image = My.Resources.nofirerod
+            FireButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         DPCheck()
         TOHCheck()
         SWCheck()
@@ -2684,19 +2575,27 @@
         DWCheck()
     End Sub
 
-    Private Sub IceButton_Click(sender As Object, e As EventArgs) Handles IceButton.Click
+    Private Sub IceButton_Click(sender As Object, e As EventArgs) Handles IceButton.MouseDown
         If IceRod = False Then IceRod = True Else IceRod = False
-        If IceRod = True Then IceButton.Image = My.Resources.icerod Else IceButton.Image = My.Resources.noicerod
+        If IceRod = True Then
+            IceButton.Image = My.Resources.icerod
+            IceButton.BackColor = Color.WhiteSmoke
+        Else
+            IceButton.Image = My.Resources.noicerod
+            IceButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         TRCheck()
     End Sub
 
-    Private Sub BombosButton_Click(sender As Object, e As EventArgs) Handles BombosButton.Click
+    Private Sub BombosButton_Click(sender As Object, e As EventArgs) Handles BombosButton.MouseDown
         If Bombos = False Then Bombos = True Else Bombos = False
         If Bombos = True Then
             BombosButton.Image = My.Resources.bombos
+            BombosButton.BackColor = Color.WhiteSmoke
             MedallionCount = MedallionCount + 1
         Else
             BombosButton.Image = My.Resources.nobombos
+            BombosButton.BackColor = Color.FromArgb(32, 32, 32)
             MedallionCount = MedallionCount - 1
         End If
         IPCheck()
@@ -2704,35 +2603,45 @@
         TRCheck()
     End Sub
 
-    Private Sub EtherButton_Click(sender As Object, e As EventArgs) Handles EtherButton.Click
+    Private Sub EtherButton_Click(sender As Object, e As EventArgs) Handles EtherButton.MouseDown
         If Ether = False Then Ether = True Else Ether = False
         If Ether = True Then
             EtherButton.Image = My.Resources.ether
+            EtherButton.BackColor = Color.WhiteSmoke
             MedallionCount = MedallionCount + 1
         Else
             EtherButton.Image = My.Resources.noether
+            EtherButton.BackColor = Color.FromArgb(32, 32, 32)
             MedallionCount = MedallionCount - 1
         End If
         MMCheck()
         TRCheck()
     End Sub
 
-    Private Sub QuakeButton_Click(sender As Object, e As EventArgs) Handles QuakeButton.Click
+    Private Sub QuakeButton_Click(sender As Object, e As EventArgs) Handles QuakeButton.MouseDown
         If Quake = False Then Quake = True Else Quake = False
         If Quake = True Then
             QuakeButton.Image = My.Resources.quake
+            QuakeButton.BackColor = Color.WhiteSmoke
             MedallionCount = MedallionCount + 1
         Else
             QuakeButton.Image = My.Resources.noquake
+            QuakeButton.BackColor = Color.FromArgb(32, 32, 32)
             MedallionCount = MedallionCount - 1
         End If
         MMCheck()
         TRCheck()
     End Sub
 
-    Private Sub LampButton_Click(sender As Object, e As EventArgs) Handles LampButton.Click
+    Private Sub LampButton_Click(sender As Object, e As EventArgs) Handles LampButton.MouseDown
         If Lamp = False Then Lamp = True Else Lamp = False
-        If Lamp = True Then LampButton.Image = My.Resources.lamp Else LampButton.Image = My.Resources.nolamp
+        If Lamp = True Then
+            LampButton.Image = My.Resources.lamp
+            LampButton.BackColor = Color.WhiteSmoke
+        Else
+            LampButton.Image = My.Resources.nolamp
+            LampButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         EPCheck()
         DPCheck()
         TOHCheck()
@@ -2744,9 +2653,15 @@
         DWCheck()
     End Sub
 
-    Private Sub HammerButton_Click(sender As Object, e As EventArgs) Handles HammerButton.Click
+    Private Sub HammerButton_Click(sender As Object, e As EventArgs) Handles HammerButton.MouseDown
         If Hammer = False Then Hammer = True Else Hammer = False
-        If Hammer = True Then HammerButton.Image = My.Resources.hammer Else HammerButton.Image = My.Resources.nohammer
+        If Hammer = True Then
+            HammerButton.Image = My.Resources.hammer
+            HammerButton.BackColor = Color.WhiteSmoke
+        Else
+            HammerButton.Image = My.Resources.nohammer
+            HammerButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         TOHCheck()
         PODCheck()
         SPCheck()
@@ -2758,9 +2673,15 @@
         DWCheck()
     End Sub
 
-    Private Sub FluteButton_Click(sender As Object, e As EventArgs) Handles FluteButton.Click
+    Private Sub FluteButton_Click(sender As Object, e As EventArgs) Handles FluteButton.MouseDown
         If Flute = False Then Flute = True Else Flute = False
-        If Flute = True Then FluteButton.Image = My.Resources.flute Else FluteButton.Image = My.Resources.noflute
+        If Flute = True Then
+            FluteButton.Image = My.Resources.flute
+            FluteButton.BackColor = Color.WhiteSmoke
+        Else
+            FluteButton.Image = My.Resources.noflute
+            FluteButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         DPCheck()
         TOHCheck()
         MMCheck()
@@ -2768,54 +2689,96 @@
         DWCheck()
     End Sub
 
-    Private Sub NetButton_Click(sender As Object, e As EventArgs) Handles NetButton.Click
+    Private Sub NetButton_Click(sender As Object, e As EventArgs) Handles NetButton.MouseDown
         If Net = False Then Net = True Else Net = False
-        If Net = True Then NetButton.Image = My.Resources.bugnet Else NetButton.Image = My.Resources.nobugnet
+        If Net = True Then
+            NetButton.Image = My.Resources.bugnet
+            NetButton.BackColor = Color.WhiteSmoke
+        Else
+            NetButton.Image = My.Resources.nobugnet
+            NetButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         AgaCheck()
     End Sub
 
-    Private Sub BookButton_Click(sender As Object, e As EventArgs) Handles BookButton.Click
+    Private Sub BookButton_Click(sender As Object, e As EventArgs) Handles BookButton.MouseDown
         If Book = False Then Book = True Else Book = False
-        If Book = True Then BookButton.Image = My.Resources.book Else BookButton.Image = My.Resources.nobook
+        If Book = True Then
+            BookButton.Image = My.Resources.book
+            BookButton.BackColor = Color.WhiteSmoke
+        Else
+            BookButton.Image = My.Resources.nobook
+            BookButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         DPCheck()
         LWCheck()
     End Sub
 
-    Private Sub BottleButton_Click(sender As Object, e As EventArgs) Handles BottleButton.Click
+    Private Sub BottleButton_Click(sender As Object, e As EventArgs) Handles BottleButton.MouseDown
         If Bottle = False Then Bottle = True Else Bottle = False
-        If Bottle = True Then BottleButton.Image = My.Resources.bottle Else BottleButton.Image = My.Resources.nobottle
+        If Bottle = True Then
+            BottleButton.Image = My.Resources.bottle
+            BottleButton.BackColor = Color.WhiteSmoke
+        Else
+            BottleButton.Image = My.Resources.nobottle
+            BottleButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         LWCheck()
     End Sub
 
-    Private Sub SomariaButton_Click(sender As Object, e As EventArgs) Handles SomariaButton.Click
+    Private Sub SomariaButton_Click(sender As Object, e As EventArgs) Handles SomariaButton.MouseDown
         If Somaria = False Then Somaria = True Else Somaria = False
-        If Somaria = True Then SomariaButton.Image = My.Resources.somaria Else SomariaButton.Image = My.Resources.nosomaria
+        If Somaria = True Then
+            SomariaButton.Image = My.Resources.somaria
+            SomariaButton.BackColor = Color.WhiteSmoke
+        Else
+            SomariaButton.Image = My.Resources.nosomaria
+            SomariaButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         MMCheck()
         TRCheck()
         LWCheck()
         DWCheck()
     End Sub
 
-    Private Sub ByrnaButton_Click(sender As Object, e As EventArgs) Handles ByrnaButton.Click
+    Private Sub ByrnaButton_Click(sender As Object, e As EventArgs) Handles ByrnaButton.MouseDown
         If Byrna = False Then Byrna = True Else Byrna = False
-        If Byrna = True Then ByrnaButton.Image = My.Resources.byrna Else ByrnaButton.Image = My.Resources.nobyrna
+        If Byrna = True Then
+            ByrnaButton.Image = My.Resources.byrna
+            ByrnaButton.BackColor = Color.WhiteSmoke
+        Else
+            ByrnaButton.Image = My.Resources.nobyrna
+            ByrnaButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         MMCheck()
         TRCheck()
         DWCheck()
     End Sub
 
-    Private Sub CapeButton_Click(sender As Object, e As EventArgs) Handles CapeButton.Click
+    Private Sub CapeButton_Click(sender As Object, e As EventArgs) Handles CapeButton.MouseDown
         If Cape = False Then Cape = True Else Cape = False
-        If Cape = True Then CapeButton.Image = My.Resources.cape Else CapeButton.Image = My.Resources.nocape
+        If Cape = True Then
+            CapeButton.Image = My.Resources.cape
+            CapeButton.BackColor = Color.WhiteSmoke
+        Else
+            CapeButton.Image = My.Resources.nocape
+            CapeButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         AgaCheck()
         MMCheck()
         TRCheck()
         DWCheck()
     End Sub
 
-    Private Sub MirrorButton_Click(sender As Object, e As EventArgs) Handles MirrorButton.Click
+    Private Sub MirrorButton_Click(sender As Object, e As EventArgs) Handles MirrorButton.MouseDown
         If Mirror = False Then Mirror = True Else Mirror = False
-        If Mirror = True Then MirrorButton.Image = My.Resources.mirror Else MirrorButton.Image = My.Resources.nomirror
+        If Mirror = True Then
+            MirrorButton.Image = My.Resources.mirror
+            MirrorButton.BackColor = Color.WhiteSmoke
+        Else
+            MirrorButton.Image = My.Resources.nomirror
+            MirrorButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         DPCheck()
         TOHCheck()
         SPCheck()
@@ -2824,21 +2787,29 @@
         DWCheck()
     End Sub
 
-    Private Sub BootButton_Click(sender As Object, e As EventArgs) Handles BootButton.Click
+    Private Sub BootButton_Click(sender As Object, e As EventArgs) Handles BootButton.MouseDown
         If Boots = False Then Boots = True Else Boots = False
-        If Boots = True Then BootButton.Image = My.Resources.boots Else BootButton.Image = My.Resources.noboots
+        If Boots = True Then
+            BootButton.Image = My.Resources.boots
+            BootButton.BackColor = Color.WhiteSmoke
+        Else
+            BootButton.Image = My.Resources.noboots
+            BootButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         DPCheck()
         MMCheck()
         LWCheck()
     End Sub
 
-    Private Sub GloveButton_Click(sender As Object, e As EventArgs) Handles GloveButton.Click
-        Glove = (Glove + 1) Mod 3
+    Private Sub GloveButton_Click(sender As Object, e As EventArgs) Handles GloveButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Glove = (Glove + 1) Mod 3 Else Glove = ((Glove - 1) + 3) Mod 3
         Select Case Glove
             Case 0
                 GloveButton.Image = My.Resources.noglove
+                GloveButton.BackColor = Color.FromArgb(32, 32, 32)
             Case 1
                 GloveButton.Image = My.Resources.glove
+                GloveButton.BackColor = Color.WhiteSmoke
             Case 2
                 GloveButton.Image = My.Resources.mitt
         End Select
@@ -2855,9 +2826,15 @@
         DWCheck()
     End Sub
 
-    Private Sub FlipperButton_Click(sender As Object, e As EventArgs) Handles FlipperButton.Click
+    Private Sub FlipperButton_Click(sender As Object, e As EventArgs) Handles FlipperButton.MouseDown
         If Flippers = False Then Flippers = True Else Flippers = False
-        If Flippers = True Then FlipperButton.Image = My.Resources.flippers Else FlipperButton.Image = My.Resources.noflippers
+        If Flippers = True Then
+            FlipperButton.Image = My.Resources.flippers
+            FlipperButton.BackColor = Color.WhiteSmoke
+        Else
+            FlipperButton.Image = My.Resources.noflippers
+            FlipperButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         PODCheck()
         SPCheck()
         SWCheck()
@@ -2867,9 +2844,15 @@
         DWCheck()
     End Sub
 
-    Private Sub PearlButton_Click(sender As Object, e As EventArgs) Handles PearlButton.Click
+    Private Sub PearlButton_Click(sender As Object, e As EventArgs) Handles PearlButton.MouseDown
         If Pearl = False Then Pearl = True Else Pearl = False
-        If Pearl = True Then PearlButton.Image = My.Resources.pearl Else PearlButton.Image = My.Resources.nopearl
+        If Pearl = True Then
+            PearlButton.Image = My.Resources.pearl
+            PearlButton.BackColor = Color.WhiteSmoke
+        Else
+            PearlButton.Image = My.Resources.nopearl
+            PearlButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         PODCheck()
         SPCheck()
         SWCheck()
@@ -2881,21 +2864,39 @@
         DWCheck()
     End Sub
 
-    Private Sub MushButton_Click(sender As Object, e As EventArgs) Handles MushButton.Click
+    Private Sub MushButton_Click(sender As Object, e As EventArgs) Handles MushButton.MouseDown
         If Mushroom = False Then Mushroom = True Else Mushroom = False
-        If Mushroom = True Then MushButton.Image = My.Resources.mushroom Else MushButton.Image = My.Resources.nomushroom
+        If Mushroom = True Then
+            MushButton.Image = My.Resources.mushroom
+            MushButton.BackColor = Color.WhiteSmoke
+        Else
+            MushButton.Image = My.Resources.nomushroom
+            MushButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         LWCheck()
     End Sub
 
-    Private Sub ShovelButton_Click(sender As Object, e As EventArgs) Handles ShovelButton.Click
+    Private Sub ShovelButton_Click(sender As Object, e As EventArgs) Handles ShovelButton.MouseDown
         If Shovel = False Then Shovel = True Else Shovel = False
-        If Shovel = True Then ShovelButton.Image = My.Resources.shovel Else ShovelButton.Image = My.Resources.noshovel
+        If Shovel = True Then
+            ShovelButton.Image = My.Resources.shovel
+            ShovelButton.BackColor = Color.WhiteSmoke
+        Else
+            ShovelButton.Image = My.Resources.noshovel
+            ShovelButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         LWCheck()
     End Sub
 
-    Private Sub AgaButton_Click(sender As Object, e As EventArgs) Handles AgaButton.Click
+    Private Sub AgaButton_Click(sender As Object, e As EventArgs) Handles AgaButton.MouseDown
         If Aganhim = False Then Aganhim = True Else Aganhim = False
-        If Aganhim = True Then AgaButton.Image = My.Resources.aganhim Else AgaButton.Image = My.Resources.noaganhim
+        If Aganhim = True Then
+            AgaButton.Image = My.Resources.aganhim
+            AgaButton.BackColor = Color.WhiteSmoke
+        Else
+            AgaButton.Image = My.Resources.noaganhim
+            AgaButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
         PODCheck()
         SWCheck()
         TTCheck()
@@ -2903,13 +2904,15 @@
         DWCheck()
     End Sub
 
-    Private Sub SwordButton_Click(sender As Object, e As EventArgs) Handles SwordButton.Click
-        Sword = (Sword + 1) Mod 5
+    Private Sub SwordButton_Click(sender As Object, e As EventArgs) Handles SwordButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Sword = (Sword + 1) Mod 5 Else Sword = ((Sword - 1) + 5) Mod 5
         Select Case Sword
             Case 0
                 SwordButton.Image = My.Resources.nosword
+                SwordButton.BackColor = Color.FromArgb(32, 32, 32)
             Case 1
                 SwordButton.Image = My.Resources.sword1
+                SwordButton.BackColor = Color.WhiteSmoke
             Case 2
                 SwordButton.Image = My.Resources.sword2
             Case 3
@@ -2922,8 +2925,8 @@
         SWCheck()
     End Sub
 
-    Private Sub ArmorButton_Click(sender As Object, e As EventArgs) Handles ArmorButton.Click
-        Armor = (Armor + 1) Mod 3
+    Private Sub ArmorButton_Click(sender As Object, e As EventArgs) Handles ArmorButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Armor = (Armor + 1) Mod 3 Else Armor = ((Armor - 1) + 3) Mod 3
         Select Case Armor
             Case 0
                 ArmorButton.Image = My.Resources.greenmail
@@ -2935,13 +2938,15 @@
 
     End Sub
 
-    Private Sub ShieldButton_Click(sender As Object, e As EventArgs) Handles ShieldButton.Click
-        Shield = (Shield + 1) Mod 4
+    Private Sub ShieldButton_Click(sender As Object, e As EventArgs) Handles ShieldButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Shield = (Shield + 1) Mod 4 Else Shield = ((Shield - 1) + 4) Mod 4
         Select Case Shield
             Case 0
                 ShieldButton.Image = My.Resources.noshield
+                ShieldButton.BackColor = Color.FromArgb(32, 32, 32)
             Case 1
                 ShieldButton.Image = My.Resources.shield1
+                ShieldButton.BackColor = Color.WhiteSmoke
             Case 2
                 ShieldButton.Image = My.Resources.shield2
             Case 3
@@ -2950,7 +2955,7 @@
         TRCheck()
     End Sub
 
-    Private Sub HlpButton_Click(sender As Object, e As EventArgs) Handles HlpButton.Click
+    Private Sub HlpButton_Click(sender As Object, e As EventArgs) Handles HlpButton.MouseDown
         Form2.ShowDialog()
     End Sub
 
