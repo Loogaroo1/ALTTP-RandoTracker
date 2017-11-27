@@ -333,7 +333,7 @@ Partial Class Form1
         Me.AGLabel.BackColor = System.Drawing.Color.Red
         Me.AGLabel.Font = New System.Drawing.Font("Return of Ganon", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGLabel.ForeColor = System.Drawing.Color.Black
-        Me.AGLabel.Location = New System.Drawing.Point(235, 188)
+        Me.AGLabel.Location = New System.Drawing.Point(224, 188)
         Me.AGLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.AGLabel.MinimumSize = New System.Drawing.Size(35, 32)
         Me.AGLabel.Name = "AGLabel"
@@ -1663,7 +1663,7 @@ Partial Class Form1
         Me.TRLabel.BackColor = System.Drawing.Color.Red
         Me.TRLabel.Font = New System.Drawing.Font("Return of Ganon", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRLabel.ForeColor = System.Drawing.Color.Black
-        Me.TRLabel.Location = New System.Drawing.Point(235, 368)
+        Me.TRLabel.Location = New System.Drawing.Point(224, 368)
         Me.TRLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.TRLabel.MinimumSize = New System.Drawing.Size(35, 32)
         Me.TRLabel.Name = "TRLabel"
@@ -1679,7 +1679,7 @@ Partial Class Form1
         Me.MMLabel.BackColor = System.Drawing.Color.Red
         Me.MMLabel.Font = New System.Drawing.Font("Return of Ganon", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMLabel.ForeColor = System.Drawing.Color.Black
-        Me.MMLabel.Location = New System.Drawing.Point(235, 332)
+        Me.MMLabel.Location = New System.Drawing.Point(224, 332)
         Me.MMLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.MMLabel.MinimumSize = New System.Drawing.Size(35, 32)
         Me.MMLabel.Name = "MMLabel"
@@ -1695,7 +1695,7 @@ Partial Class Form1
         Me.IPLabel.BackColor = System.Drawing.Color.Red
         Me.IPLabel.Font = New System.Drawing.Font("Return of Ganon", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPLabel.ForeColor = System.Drawing.Color.Black
-        Me.IPLabel.Location = New System.Drawing.Point(235, 296)
+        Me.IPLabel.Location = New System.Drawing.Point(224, 296)
         Me.IPLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.IPLabel.MinimumSize = New System.Drawing.Size(35, 32)
         Me.IPLabel.Name = "IPLabel"
@@ -1711,7 +1711,7 @@ Partial Class Form1
         Me.TTLabel.BackColor = System.Drawing.Color.Red
         Me.TTLabel.Font = New System.Drawing.Font("Return of Ganon", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTLabel.ForeColor = System.Drawing.Color.Black
-        Me.TTLabel.Location = New System.Drawing.Point(235, 260)
+        Me.TTLabel.Location = New System.Drawing.Point(224, 260)
         Me.TTLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.TTLabel.MinimumSize = New System.Drawing.Size(35, 32)
         Me.TTLabel.Name = "TTLabel"
@@ -1727,7 +1727,7 @@ Partial Class Form1
         Me.SWLabel.BackColor = System.Drawing.Color.Red
         Me.SWLabel.Font = New System.Drawing.Font("Return of Ganon", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWLabel.ForeColor = System.Drawing.Color.Black
-        Me.SWLabel.Location = New System.Drawing.Point(235, 224)
+        Me.SWLabel.Location = New System.Drawing.Point(224, 224)
         Me.SWLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.SWLabel.MinimumSize = New System.Drawing.Size(35, 32)
         Me.SWLabel.Name = "SWLabel"
@@ -1851,7 +1851,11 @@ Partial Class Form1
         Me.TRBoss.AutoSize = True
         Me.TRBoss.Enabled = False
         Me.TRBoss.Image = CType(resources.GetObject("TRBoss.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.TRBoss.Location = New System.Drawing.Point(358, 369)
+=======
+        Me.TRBoss.Location = New System.Drawing.Point(347, 369)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.TRBoss.Name = "TRBoss"
         Me.TRBoss.Size = New System.Drawing.Size(30, 30)
         Me.TRBoss.TabIndex = 713
@@ -1863,7 +1867,11 @@ Partial Class Form1
         Me.MMBoss.AutoSize = True
         Me.MMBoss.Enabled = False
         Me.MMBoss.Image = CType(resources.GetObject("MMBoss.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.MMBoss.Location = New System.Drawing.Point(358, 333)
+=======
+        Me.MMBoss.Location = New System.Drawing.Point(347, 333)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.MMBoss.Name = "MMBoss"
         Me.MMBoss.Size = New System.Drawing.Size(30, 30)
         Me.MMBoss.TabIndex = 712
@@ -1875,7 +1883,11 @@ Partial Class Form1
         Me.IPBoss.AutoSize = True
         Me.IPBoss.Enabled = False
         Me.IPBoss.Image = CType(resources.GetObject("IPBoss.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.IPBoss.Location = New System.Drawing.Point(358, 297)
+=======
+        Me.IPBoss.Location = New System.Drawing.Point(347, 297)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.IPBoss.Name = "IPBoss"
         Me.IPBoss.Size = New System.Drawing.Size(30, 30)
         Me.IPBoss.TabIndex = 711
@@ -1887,7 +1899,11 @@ Partial Class Form1
         Me.TTBoss.AutoSize = True
         Me.TTBoss.Enabled = False
         Me.TTBoss.Image = CType(resources.GetObject("TTBoss.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.TTBoss.Location = New System.Drawing.Point(358, 261)
+=======
+        Me.TTBoss.Location = New System.Drawing.Point(347, 261)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.TTBoss.Name = "TTBoss"
         Me.TTBoss.Size = New System.Drawing.Size(30, 30)
         Me.TTBoss.TabIndex = 710
@@ -1899,7 +1915,11 @@ Partial Class Form1
         Me.SWBoss.AutoSize = True
         Me.SWBoss.Enabled = False
         Me.SWBoss.Image = CType(resources.GetObject("SWBoss.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.SWBoss.Location = New System.Drawing.Point(358, 225)
+=======
+        Me.SWBoss.Location = New System.Drawing.Point(347, 225)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.SWBoss.Name = "SWBoss"
         Me.SWBoss.Size = New System.Drawing.Size(30, 30)
         Me.SWBoss.TabIndex = 709
@@ -1971,7 +1991,11 @@ Partial Class Form1
         Me.TRBigKey.AutoSize = True
         Me.TRBigKey.BackColor = System.Drawing.Color.Red
         Me.TRBigKey.Image = CType(resources.GetObject("TRBigKey.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.TRBigKey.Location = New System.Drawing.Point(387, 369)
+=======
+        Me.TRBigKey.Location = New System.Drawing.Point(376, 369)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.TRBigKey.Name = "TRBigKey"
         Me.TRBigKey.Size = New System.Drawing.Size(30, 30)
         Me.TRBigKey.TabIndex = 703
@@ -1984,7 +2008,11 @@ Partial Class Form1
         Me.MMBigKey.AutoSize = True
         Me.MMBigKey.BackColor = System.Drawing.Color.Red
         Me.MMBigKey.Image = CType(resources.GetObject("MMBigKey.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.MMBigKey.Location = New System.Drawing.Point(387, 333)
+=======
+        Me.MMBigKey.Location = New System.Drawing.Point(376, 333)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.MMBigKey.Name = "MMBigKey"
         Me.MMBigKey.Size = New System.Drawing.Size(30, 30)
         Me.MMBigKey.TabIndex = 702
@@ -1996,7 +2024,11 @@ Partial Class Form1
         Me.IPBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.IPBigKey.AutoSize = True
         Me.IPBigKey.Image = CType(resources.GetObject("IPBigKey.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.IPBigKey.Location = New System.Drawing.Point(387, 297)
+=======
+        Me.IPBigKey.Location = New System.Drawing.Point(376, 297)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.IPBigKey.Name = "IPBigKey"
         Me.IPBigKey.Size = New System.Drawing.Size(30, 30)
         Me.IPBigKey.TabIndex = 701
@@ -2009,7 +2041,11 @@ Partial Class Form1
         Me.TTBigKey.AutoSize = True
         Me.TTBigKey.BackColor = System.Drawing.Color.Red
         Me.TTBigKey.Image = CType(resources.GetObject("TTBigKey.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.TTBigKey.Location = New System.Drawing.Point(387, 261)
+=======
+        Me.TTBigKey.Location = New System.Drawing.Point(376, 261)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.TTBigKey.Name = "TTBigKey"
         Me.TTBigKey.Size = New System.Drawing.Size(30, 30)
         Me.TTBigKey.TabIndex = 700
@@ -2021,7 +2057,11 @@ Partial Class Form1
         Me.SWBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.SWBigKey.AutoSize = True
         Me.SWBigKey.Image = CType(resources.GetObject("SWBigKey.Image"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.SWBigKey.Location = New System.Drawing.Point(387, 225)
+=======
+        Me.SWBigKey.Location = New System.Drawing.Point(376, 225)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.SWBigKey.Name = "SWBigKey"
         Me.SWBigKey.Size = New System.Drawing.Size(30, 30)
         Me.SWBigKey.TabIndex = 699
@@ -2110,7 +2150,11 @@ Partial Class Form1
         Me.TRMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.TRMap.AutoSize = True
         Me.TRMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+<<<<<<< HEAD
         Me.TRMap.Location = New System.Drawing.Point(358, 369)
+=======
+        Me.TRMap.Location = New System.Drawing.Point(347, 369)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.TRMap.Name = "TRMap"
         Me.TRMap.Size = New System.Drawing.Size(30, 30)
         Me.TRMap.TabIndex = 692
@@ -2121,7 +2165,11 @@ Partial Class Form1
         Me.MMMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.MMMap.AutoSize = True
         Me.MMMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+<<<<<<< HEAD
         Me.MMMap.Location = New System.Drawing.Point(358, 333)
+=======
+        Me.MMMap.Location = New System.Drawing.Point(347, 333)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.MMMap.Name = "MMMap"
         Me.MMMap.Size = New System.Drawing.Size(30, 30)
         Me.MMMap.TabIndex = 691
@@ -2132,7 +2180,11 @@ Partial Class Form1
         Me.IPMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.IPMap.AutoSize = True
         Me.IPMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+<<<<<<< HEAD
         Me.IPMap.Location = New System.Drawing.Point(358, 297)
+=======
+        Me.IPMap.Location = New System.Drawing.Point(347, 297)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.IPMap.Name = "IPMap"
         Me.IPMap.Size = New System.Drawing.Size(30, 30)
         Me.IPMap.TabIndex = 690
@@ -2143,7 +2195,11 @@ Partial Class Form1
         Me.TTMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.TTMap.AutoSize = True
         Me.TTMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+<<<<<<< HEAD
         Me.TTMap.Location = New System.Drawing.Point(358, 261)
+=======
+        Me.TTMap.Location = New System.Drawing.Point(347, 261)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.TTMap.Name = "TTMap"
         Me.TTMap.Size = New System.Drawing.Size(30, 30)
         Me.TTMap.TabIndex = 689
@@ -2154,13 +2210,18 @@ Partial Class Form1
         Me.SWMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.SWMap.AutoSize = True
         Me.SWMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+<<<<<<< HEAD
         Me.SWMap.Location = New System.Drawing.Point(358, 225)
+=======
+        Me.SWMap.Location = New System.Drawing.Point(347, 225)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.SWMap.Name = "SWMap"
         Me.SWMap.Size = New System.Drawing.Size(30, 30)
         Me.SWMap.TabIndex = 688
         Me.SWMap.UseVisualStyleBackColor = True
         '
         'GTMap
+<<<<<<< HEAD
         '
         Me.GTMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.GTMap.AutoSize = True
@@ -2218,6 +2279,66 @@ Partial Class Form1
         '
         'EPMap
         '
+=======
+        '
+        Me.GTMap.Appearance = System.Windows.Forms.Appearance.Button
+        Me.GTMap.AutoSize = True
+        Me.GTMap.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GTMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+        Me.GTMap.Location = New System.Drawing.Point(132, 405)
+        Me.GTMap.Name = "GTMap"
+        Me.GTMap.Size = New System.Drawing.Size(30, 30)
+        Me.GTMap.TabIndex = 687
+        Me.GTMap.UseVisualStyleBackColor = False
+        Me.GTMap.Visible = False
+        '
+        'SPMap
+        '
+        Me.SPMap.Appearance = System.Windows.Forms.Appearance.Button
+        Me.SPMap.AutoSize = True
+        Me.SPMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+        Me.SPMap.Location = New System.Drawing.Point(132, 369)
+        Me.SPMap.Name = "SPMap"
+        Me.SPMap.Size = New System.Drawing.Size(30, 30)
+        Me.SPMap.TabIndex = 686
+        Me.SPMap.UseVisualStyleBackColor = True
+        '
+        'PODMap
+        '
+        Me.PODMap.Appearance = System.Windows.Forms.Appearance.Button
+        Me.PODMap.AutoSize = True
+        Me.PODMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+        Me.PODMap.Location = New System.Drawing.Point(132, 333)
+        Me.PODMap.Name = "PODMap"
+        Me.PODMap.Size = New System.Drawing.Size(30, 30)
+        Me.PODMap.TabIndex = 685
+        Me.PODMap.UseVisualStyleBackColor = True
+        '
+        'HeraMap
+        '
+        Me.HeraMap.Appearance = System.Windows.Forms.Appearance.Button
+        Me.HeraMap.AutoSize = True
+        Me.HeraMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+        Me.HeraMap.Location = New System.Drawing.Point(132, 297)
+        Me.HeraMap.Name = "HeraMap"
+        Me.HeraMap.Size = New System.Drawing.Size(30, 30)
+        Me.HeraMap.TabIndex = 684
+        Me.HeraMap.UseVisualStyleBackColor = True
+        '
+        'DPMap
+        '
+        Me.DPMap.Appearance = System.Windows.Forms.Appearance.Button
+        Me.DPMap.AutoSize = True
+        Me.DPMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
+        Me.DPMap.Location = New System.Drawing.Point(132, 261)
+        Me.DPMap.Name = "DPMap"
+        Me.DPMap.Size = New System.Drawing.Size(30, 30)
+        Me.DPMap.TabIndex = 683
+        Me.DPMap.UseVisualStyleBackColor = True
+        '
+        'EPMap
+        '
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.EPMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.EPMap.AutoSize = True
         Me.EPMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
@@ -2252,7 +2373,7 @@ Partial Class Form1
         Me.TRChests.ForeColor = System.Drawing.Color.White
         Me.TRChests.Image = Global.RandoTracker.My.Resources.Resources.chest
         Me.TRChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.TRChests.Location = New System.Drawing.Point(270, 368)
+        Me.TRChests.Location = New System.Drawing.Point(259, 368)
         Me.TRChests.MinimumSize = New System.Drawing.Size(48, 32)
         Me.TRChests.Name = "TRChests"
         Me.TRChests.Size = New System.Drawing.Size(48, 32)
@@ -2268,7 +2389,7 @@ Partial Class Form1
         Me.MMChests.ForeColor = System.Drawing.Color.White
         Me.MMChests.Image = Global.RandoTracker.My.Resources.Resources.chest
         Me.MMChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.MMChests.Location = New System.Drawing.Point(270, 332)
+        Me.MMChests.Location = New System.Drawing.Point(259, 332)
         Me.MMChests.MinimumSize = New System.Drawing.Size(48, 32)
         Me.MMChests.Name = "MMChests"
         Me.MMChests.Size = New System.Drawing.Size(48, 32)
@@ -2284,7 +2405,7 @@ Partial Class Form1
         Me.IPChests.ForeColor = System.Drawing.Color.White
         Me.IPChests.Image = Global.RandoTracker.My.Resources.Resources.chest
         Me.IPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IPChests.Location = New System.Drawing.Point(270, 296)
+        Me.IPChests.Location = New System.Drawing.Point(259, 296)
         Me.IPChests.MinimumSize = New System.Drawing.Size(48, 32)
         Me.IPChests.Name = "IPChests"
         Me.IPChests.Size = New System.Drawing.Size(48, 32)
@@ -2300,7 +2421,7 @@ Partial Class Form1
         Me.TTChests.ForeColor = System.Drawing.Color.White
         Me.TTChests.Image = Global.RandoTracker.My.Resources.Resources.chest
         Me.TTChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.TTChests.Location = New System.Drawing.Point(270, 260)
+        Me.TTChests.Location = New System.Drawing.Point(259, 260)
         Me.TTChests.MinimumSize = New System.Drawing.Size(48, 32)
         Me.TTChests.Name = "TTChests"
         Me.TTChests.Size = New System.Drawing.Size(48, 32)
@@ -2316,7 +2437,7 @@ Partial Class Form1
         Me.SWChests.ForeColor = System.Drawing.Color.White
         Me.SWChests.Image = Global.RandoTracker.My.Resources.Resources.chest
         Me.SWChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.SWChests.Location = New System.Drawing.Point(270, 224)
+        Me.SWChests.Location = New System.Drawing.Point(259, 224)
         Me.SWChests.MinimumSize = New System.Drawing.Size(48, 32)
         Me.SWChests.Name = "SWChests"
         Me.SWChests.Size = New System.Drawing.Size(48, 32)
@@ -2332,7 +2453,7 @@ Partial Class Form1
         Me.AGChests.ForeColor = System.Drawing.Color.White
         Me.AGChests.Image = Global.RandoTracker.My.Resources.Resources.chest
         Me.AGChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.AGChests.Location = New System.Drawing.Point(270, 188)
+        Me.AGChests.Location = New System.Drawing.Point(259, 188)
         Me.AGChests.MinimumSize = New System.Drawing.Size(48, 32)
         Me.AGChests.Name = "AGChests"
         Me.AGChests.Size = New System.Drawing.Size(48, 32)
@@ -2880,6 +3001,10 @@ Partial Class Form1
         '
         Me.BoomButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BoomButton.Cursor = System.Windows.Forms.Cursors.Default
+<<<<<<< HEAD
+=======
+        Me.BoomButton.Image = Global.RandoTracker.My.Resources.Resources.noboomerang
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.BoomButton.Location = New System.Drawing.Point(39, 4)
         Me.BoomButton.Name = "BoomButton"
         Me.BoomButton.Size = New System.Drawing.Size(32, 32)
@@ -3016,6 +3141,7 @@ Partial Class Form1
         Me.PictureBox2.TabStop = False
         '
         'SPPrizes
+<<<<<<< HEAD
         '
         Me.SPPrizes.AutoSize = True
         Me.SPPrizes.BackColor = System.Drawing.Color.Black
@@ -3387,6 +3513,379 @@ Partial Class Form1
         '
         'HCKeys
         '
+=======
+        '
+        Me.SPPrizes.AutoSize = True
+        Me.SPPrizes.BackColor = System.Drawing.Color.Black
+        Me.SPPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPPrizes.ForeColor = System.Drawing.Color.White
+        Me.SPPrizes.Image = CType(resources.GetObject("SPPrizes.Image"), System.Drawing.Image)
+        Me.SPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SPPrizes.Location = New System.Drawing.Point(92, 368)
+        Me.SPPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.SPPrizes.Name = "SPPrizes"
+        Me.SPPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.SPPrizes.TabIndex = 674
+        Me.SPPrizes.Text = "6"
+        Me.SPPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'PODPrizes
+        '
+        Me.PODPrizes.AutoSize = True
+        Me.PODPrizes.BackColor = System.Drawing.Color.Black
+        Me.PODPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODPrizes.ForeColor = System.Drawing.Color.White
+        Me.PODPrizes.Image = CType(resources.GetObject("PODPrizes.Image"), System.Drawing.Image)
+        Me.PODPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.PODPrizes.Location = New System.Drawing.Point(92, 332)
+        Me.PODPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.PODPrizes.Name = "PODPrizes"
+        Me.PODPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.PODPrizes.TabIndex = 673
+        Me.PODPrizes.Text = "5"
+        Me.PODPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TOHPrizes
+        '
+        Me.TOHPrizes.AutoSize = True
+        Me.TOHPrizes.BackColor = System.Drawing.Color.Black
+        Me.TOHPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHPrizes.ForeColor = System.Drawing.Color.White
+        Me.TOHPrizes.Image = CType(resources.GetObject("TOHPrizes.Image"), System.Drawing.Image)
+        Me.TOHPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TOHPrizes.Location = New System.Drawing.Point(92, 296)
+        Me.TOHPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.TOHPrizes.Name = "TOHPrizes"
+        Me.TOHPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.TOHPrizes.TabIndex = 672
+        Me.TOHPrizes.Text = "2"
+        Me.TOHPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DPPrizes
+        '
+        Me.DPPrizes.AutoSize = True
+        Me.DPPrizes.BackColor = System.Drawing.Color.Black
+        Me.DPPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPPrizes.ForeColor = System.Drawing.Color.White
+        Me.DPPrizes.Image = CType(resources.GetObject("DPPrizes.Image"), System.Drawing.Image)
+        Me.DPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.DPPrizes.Location = New System.Drawing.Point(92, 260)
+        Me.DPPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.DPPrizes.Name = "DPPrizes"
+        Me.DPPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.DPPrizes.TabIndex = 671
+        Me.DPPrizes.Text = "2"
+        Me.DPPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'EPPrizes
+        '
+        Me.EPPrizes.AutoSize = True
+        Me.EPPrizes.BackColor = System.Drawing.Color.Black
+        Me.EPPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPPrizes.ForeColor = System.Drawing.Color.White
+        Me.EPPrizes.Image = CType(resources.GetObject("EPPrizes.Image"), System.Drawing.Image)
+        Me.EPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.EPPrizes.Location = New System.Drawing.Point(92, 224)
+        Me.EPPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.EPPrizes.Name = "EPPrizes"
+        Me.EPPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.EPPrizes.TabIndex = 670
+        Me.EPPrizes.Text = "3"
+        Me.EPPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'HCPrizes
+        '
+        Me.HCPrizes.AutoSize = True
+        Me.HCPrizes.BackColor = System.Drawing.Color.Black
+        Me.HCPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCPrizes.ForeColor = System.Drawing.Color.White
+        Me.HCPrizes.Image = CType(resources.GetObject("HCPrizes.Image"), System.Drawing.Image)
+        Me.HCPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.HCPrizes.Location = New System.Drawing.Point(92, 188)
+        Me.HCPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.HCPrizes.Name = "HCPrizes"
+        Me.HCPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.HCPrizes.TabIndex = 669
+        Me.HCPrizes.Text = "6"
+        Me.HCPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TRPrizes
+        '
+        Me.TRPrizes.AutoSize = True
+        Me.TRPrizes.BackColor = System.Drawing.Color.Black
+        Me.TRPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRPrizes.ForeColor = System.Drawing.Color.White
+        Me.TRPrizes.Image = CType(resources.GetObject("TRPrizes.Image"), System.Drawing.Image)
+        Me.TRPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TRPrizes.Location = New System.Drawing.Point(307, 368)
+        Me.TRPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.TRPrizes.Name = "TRPrizes"
+        Me.TRPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.TRPrizes.TabIndex = 681
+        Me.TRPrizes.Text = "5"
+        Me.TRPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'MMPrizes
+        '
+        Me.MMPrizes.AutoSize = True
+        Me.MMPrizes.BackColor = System.Drawing.Color.Black
+        Me.MMPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMPrizes.ForeColor = System.Drawing.Color.White
+        Me.MMPrizes.Image = CType(resources.GetObject("MMPrizes.Image"), System.Drawing.Image)
+        Me.MMPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.MMPrizes.Location = New System.Drawing.Point(307, 332)
+        Me.MMPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.MMPrizes.Name = "MMPrizes"
+        Me.MMPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.MMPrizes.TabIndex = 680
+        Me.MMPrizes.Text = "2"
+        Me.MMPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'IPPrizes
+        '
+        Me.IPPrizes.AutoSize = True
+        Me.IPPrizes.BackColor = System.Drawing.Color.Black
+        Me.IPPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPPrizes.ForeColor = System.Drawing.Color.White
+        Me.IPPrizes.Image = CType(resources.GetObject("IPPrizes.Image"), System.Drawing.Image)
+        Me.IPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IPPrizes.Location = New System.Drawing.Point(307, 296)
+        Me.IPPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.IPPrizes.Name = "IPPrizes"
+        Me.IPPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.IPPrizes.TabIndex = 679
+        Me.IPPrizes.Text = "3"
+        Me.IPPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TTPrizes
+        '
+        Me.TTPrizes.AutoSize = True
+        Me.TTPrizes.BackColor = System.Drawing.Color.Black
+        Me.TTPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTPrizes.ForeColor = System.Drawing.Color.White
+        Me.TTPrizes.Image = CType(resources.GetObject("TTPrizes.Image"), System.Drawing.Image)
+        Me.TTPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TTPrizes.Location = New System.Drawing.Point(307, 260)
+        Me.TTPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.TTPrizes.Name = "TTPrizes"
+        Me.TTPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.TTPrizes.TabIndex = 678
+        Me.TTPrizes.Text = "4"
+        Me.TTPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'SWPrizes
+        '
+        Me.SWPrizes.AutoSize = True
+        Me.SWPrizes.BackColor = System.Drawing.Color.Black
+        Me.SWPrizes.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWPrizes.ForeColor = System.Drawing.Color.White
+        Me.SWPrizes.Image = CType(resources.GetObject("SWPrizes.Image"), System.Drawing.Image)
+        Me.SWPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SWPrizes.Location = New System.Drawing.Point(307, 224)
+        Me.SWPrizes.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.SWPrizes.Name = "SWPrizes"
+        Me.SWPrizes.Size = New System.Drawing.Size(40, 32)
+        Me.SWPrizes.TabIndex = 677
+        Me.SWPrizes.Text = "2"
+        Me.SWPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TRKeys
+        '
+        Me.TRKeys.AutoSize = True
+        Me.TRKeys.BackColor = System.Drawing.Color.Black
+        Me.TRKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRKeys.ForeColor = System.Drawing.Color.White
+        Me.TRKeys.Image = CType(resources.GetObject("TRKeys.Image"), System.Drawing.Image)
+        Me.TRKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TRKeys.Location = New System.Drawing.Point(307, 368)
+        Me.TRKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.TRKeys.Name = "TRKeys"
+        Me.TRKeys.Size = New System.Drawing.Size(40, 32)
+        Me.TRKeys.TabIndex = 668
+        Me.TRKeys.Text = "0"
+        Me.TRKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'MMKeys
+        '
+        Me.MMKeys.AutoSize = True
+        Me.MMKeys.BackColor = System.Drawing.Color.Black
+        Me.MMKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMKeys.ForeColor = System.Drawing.Color.White
+        Me.MMKeys.Image = CType(resources.GetObject("MMKeys.Image"), System.Drawing.Image)
+        Me.MMKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.MMKeys.Location = New System.Drawing.Point(307, 332)
+        Me.MMKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.MMKeys.Name = "MMKeys"
+        Me.MMKeys.Size = New System.Drawing.Size(40, 32)
+        Me.MMKeys.TabIndex = 667
+        Me.MMKeys.Text = "0"
+        Me.MMKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'IPKeys
+        '
+        Me.IPKeys.AutoSize = True
+        Me.IPKeys.BackColor = System.Drawing.Color.Black
+        Me.IPKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPKeys.ForeColor = System.Drawing.Color.White
+        Me.IPKeys.Image = CType(resources.GetObject("IPKeys.Image"), System.Drawing.Image)
+        Me.IPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IPKeys.Location = New System.Drawing.Point(307, 296)
+        Me.IPKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.IPKeys.Name = "IPKeys"
+        Me.IPKeys.Size = New System.Drawing.Size(40, 32)
+        Me.IPKeys.TabIndex = 666
+        Me.IPKeys.Text = "0"
+        Me.IPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TTKeys
+        '
+        Me.TTKeys.AutoSize = True
+        Me.TTKeys.BackColor = System.Drawing.Color.Black
+        Me.TTKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTKeys.ForeColor = System.Drawing.Color.White
+        Me.TTKeys.Image = CType(resources.GetObject("TTKeys.Image"), System.Drawing.Image)
+        Me.TTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TTKeys.Location = New System.Drawing.Point(307, 260)
+        Me.TTKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.TTKeys.Name = "TTKeys"
+        Me.TTKeys.Size = New System.Drawing.Size(40, 32)
+        Me.TTKeys.TabIndex = 665
+        Me.TTKeys.Text = "0"
+        Me.TTKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'SWKeys
+        '
+        Me.SWKeys.AutoSize = True
+        Me.SWKeys.BackColor = System.Drawing.Color.Black
+        Me.SWKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWKeys.ForeColor = System.Drawing.Color.White
+        Me.SWKeys.Image = CType(resources.GetObject("SWKeys.Image"), System.Drawing.Image)
+        Me.SWKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SWKeys.Location = New System.Drawing.Point(307, 224)
+        Me.SWKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.SWKeys.Name = "SWKeys"
+        Me.SWKeys.Size = New System.Drawing.Size(40, 32)
+        Me.SWKeys.TabIndex = 664
+        Me.SWKeys.Text = "0"
+        Me.SWKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'AGKeys
+        '
+        Me.AGKeys.AutoSize = True
+        Me.AGKeys.BackColor = System.Drawing.Color.Black
+        Me.AGKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGKeys.ForeColor = System.Drawing.Color.White
+        Me.AGKeys.Image = Global.RandoTracker.My.Resources.Resources.key
+        Me.AGKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.AGKeys.Location = New System.Drawing.Point(307, 188)
+        Me.AGKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.AGKeys.Name = "AGKeys"
+        Me.AGKeys.Size = New System.Drawing.Size(40, 32)
+        Me.AGKeys.TabIndex = 663
+        Me.AGKeys.Text = "0"
+        Me.AGKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AGKeys.Visible = False
+        '
+        'GTKeys
+        '
+        Me.GTKeys.AutoSize = True
+        Me.GTKeys.BackColor = System.Drawing.Color.Black
+        Me.GTKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTKeys.ForeColor = System.Drawing.Color.White
+        Me.GTKeys.Image = CType(resources.GetObject("GTKeys.Image"), System.Drawing.Image)
+        Me.GTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.GTKeys.Location = New System.Drawing.Point(92, 404)
+        Me.GTKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.GTKeys.Name = "GTKeys"
+        Me.GTKeys.Size = New System.Drawing.Size(40, 32)
+        Me.GTKeys.TabIndex = 662
+        Me.GTKeys.Text = "0"
+        Me.GTKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.GTKeys.Visible = False
+        '
+        'SPKeys
+        '
+        Me.SPKeys.AutoSize = True
+        Me.SPKeys.BackColor = System.Drawing.Color.Black
+        Me.SPKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPKeys.ForeColor = System.Drawing.Color.White
+        Me.SPKeys.Image = CType(resources.GetObject("SPKeys.Image"), System.Drawing.Image)
+        Me.SPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SPKeys.Location = New System.Drawing.Point(92, 368)
+        Me.SPKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.SPKeys.Name = "SPKeys"
+        Me.SPKeys.Size = New System.Drawing.Size(40, 32)
+        Me.SPKeys.TabIndex = 661
+        Me.SPKeys.Text = "0"
+        Me.SPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'PODKeys
+        '
+        Me.PODKeys.AutoSize = True
+        Me.PODKeys.BackColor = System.Drawing.Color.Black
+        Me.PODKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODKeys.ForeColor = System.Drawing.Color.White
+        Me.PODKeys.Image = CType(resources.GetObject("PODKeys.Image"), System.Drawing.Image)
+        Me.PODKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.PODKeys.Location = New System.Drawing.Point(92, 332)
+        Me.PODKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.PODKeys.Name = "PODKeys"
+        Me.PODKeys.Size = New System.Drawing.Size(40, 32)
+        Me.PODKeys.TabIndex = 660
+        Me.PODKeys.Text = "0"
+        Me.PODKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TOHKeys
+        '
+        Me.TOHKeys.AutoSize = True
+        Me.TOHKeys.BackColor = System.Drawing.Color.Black
+        Me.TOHKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHKeys.ForeColor = System.Drawing.Color.White
+        Me.TOHKeys.Image = CType(resources.GetObject("TOHKeys.Image"), System.Drawing.Image)
+        Me.TOHKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TOHKeys.Location = New System.Drawing.Point(92, 296)
+        Me.TOHKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.TOHKeys.Name = "TOHKeys"
+        Me.TOHKeys.Size = New System.Drawing.Size(40, 32)
+        Me.TOHKeys.TabIndex = 659
+        Me.TOHKeys.Text = "0"
+        Me.TOHKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DPKeys
+        '
+        Me.DPKeys.AutoSize = True
+        Me.DPKeys.BackColor = System.Drawing.Color.Black
+        Me.DPKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPKeys.ForeColor = System.Drawing.Color.White
+        Me.DPKeys.Image = CType(resources.GetObject("DPKeys.Image"), System.Drawing.Image)
+        Me.DPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.DPKeys.Location = New System.Drawing.Point(92, 260)
+        Me.DPKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.DPKeys.Name = "DPKeys"
+        Me.DPKeys.Size = New System.Drawing.Size(40, 32)
+        Me.DPKeys.TabIndex = 658
+        Me.DPKeys.Text = "0"
+        Me.DPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'EPKeys
+        '
+        Me.EPKeys.AutoSize = True
+        Me.EPKeys.BackColor = System.Drawing.Color.Black
+        Me.EPKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPKeys.ForeColor = System.Drawing.Color.White
+        Me.EPKeys.Image = CType(resources.GetObject("EPKeys.Image"), System.Drawing.Image)
+        Me.EPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.EPKeys.Location = New System.Drawing.Point(92, 224)
+        Me.EPKeys.MinimumSize = New System.Drawing.Size(40, 32)
+        Me.EPKeys.Name = "EPKeys"
+        Me.EPKeys.Size = New System.Drawing.Size(40, 32)
+        Me.EPKeys.TabIndex = 657
+        Me.EPKeys.Text = "-"
+        Me.EPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'HCKeys
+        '
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.HCKeys.AutoSize = True
         Me.HCKeys.BackColor = System.Drawing.Color.Black
         Me.HCKeys.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -3617,7 +4116,10 @@ Partial Class Form1
         Me.Controls.Add(Me.DPKeys)
         Me.Controls.Add(Me.EPKeys)
         Me.Controls.Add(Me.HCKeys)
+<<<<<<< HEAD
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+=======
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False

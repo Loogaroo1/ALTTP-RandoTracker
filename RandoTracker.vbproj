@@ -308,5 +308,8 @@
   <ItemGroup>
     <None Include="Resources\bothboom.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\bothboom.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

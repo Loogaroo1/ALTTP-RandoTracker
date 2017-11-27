@@ -370,11 +370,19 @@
             HeraBoss.Left = 132
             PODBoss.Left = 132
             SPBoss.Left = 132
+<<<<<<< HEAD
             SWBoss.Left = 358
             TTBoss.Left = 358
             IPBoss.Left = 358
             MMBoss.Left = 358
             TRBoss.Left = 358
+=======
+            SWBoss.Left = 347
+            TTBoss.Left = 347
+            IPBoss.Left = 347
+            MMBoss.Left = 347
+            TRBoss.Left = 347
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
             EPReward = 0
             DPReward = 0
             TOHReward = 0
@@ -491,11 +499,19 @@
             HeraBoss.Left = 190
             PODBoss.Left = 190
             SPBoss.Left = 190
+<<<<<<< HEAD
             SWBoss.Left = 416
             TTBoss.Left = 416
             IPBoss.Left = 416
             MMBoss.Left = 416
             TRBoss.Left = 416
+=======
+            SWBoss.Left = 405
+            TTBoss.Left = 405
+            IPBoss.Left = 405
+            MMBoss.Left = 405
+            TRBoss.Left = 405
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
             EPReward = -1
             DPReward = -1
             TOHReward = -1
@@ -1641,7 +1657,7 @@
                 AgaButton.Visible = True
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
-            ElseIf (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
+            ElseIf (Sword >= 2 Or (Cape = True And Sword > 0)) Then
                 AgaButton.Visible = False
                 AGLabel.BackColor = Color.Yellow
                 AGLabel.ForeColor = Color.Black
@@ -2297,7 +2313,7 @@
     End Sub
     Public Sub TRCheck()
         If RadioButton1.Checked = True Then
-            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True Then
+            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
                 TRChests.Text = 12
                 If Lamp = True And Sword > 1 Then
@@ -2540,7 +2556,7 @@
                 End Select
         End Select
         LWCheck()
-        DWCheck()
+            DWCheck()
         CrystalCheck()
     End Sub
     Public Sub CrystalCheck()
@@ -2693,6 +2709,7 @@
         GTCheck()
     End Sub
 
+<<<<<<< HEAD
     Private Sub BowButton_Click(sender As Object, e As EventArgs) Handles BowButton.MouseDown
         If MouseButtons = MouseButtons.Left Then Bow = (Bow + 1) Mod 3 Else Bow = (Bow + 2) Mod 3
         Select Case Bow
@@ -2716,6 +2733,14 @@
                 End Using
                 BowButton.Image = nobow
                 BowButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+    Private Sub BowButton_MouseDown(sender As Object, e As EventArgs) Handles BowButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Bow = (Bow + 1) Mod 3 Else Bow = ((Bow - 1) + 3) Mod 3
+        Select Case Bow
+            Case 0
+                BowButton.Image = My.Resources.nobow
+                BowButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
             Case 1
                 BowButton.Image = My.Resources.bow
                 BowButton.BackColor = Color.WhiteSmoke
@@ -2728,6 +2753,7 @@
     End Sub
 
     Private Sub BoomButton_Click(sender As Object, e As EventArgs) Handles BoomButton.MouseDown
+<<<<<<< HEAD
         If MouseButtons = MouseButtons.Left Then Boomerang = (Boomerang + 1) Mod 4 Else Boomerang = (Boomerang + 4) Mod 4
         Select Case Boomerang
             Case 0
@@ -2750,15 +2776,27 @@
                 End Using
                 BoomButton.Image = noboomerang
                 BoomButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+        If MouseButtons = MouseButtons.Left Then Boomerang = (Boomerang + 1) Mod 4 Else Boomerang = ((Boomerang - 1) + 4) Mod 4
+        Select Case Boomerang
+            Case 0
+                BoomButton.Image = My.Resources.noboomerang
+                BoomButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
             Case 1
                 BoomButton.Image = My.Resources.blueboom
                 BoomButton.BackColor = Color.WhiteSmoke
             Case 2
                 BoomButton.Image = My.Resources.redboom
+<<<<<<< HEAD
                 BoomButton.BackColor = Color.WhiteSmoke
             Case 3
                 BoomButton.Image = My.Resources.bothboom
                 BoomButton.BackColor = Color.WhiteSmoke
+=======
+            Case 3
+                BoomButton.Image = My.Resources.bothboom
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End Select
     End Sub
 
@@ -2768,6 +2806,7 @@
             HookButton.Image = My.Resources.hookshot
             HookButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -2787,6 +2826,10 @@
             End Using
             HookButton.Image = nohook
             HookButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            HookButton.Image = My.Resources.nohook
+            HookButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         TOHCheck()
         SPCheck()
@@ -2805,6 +2848,7 @@
             BombButton.Image = My.Resources.bombs
             BombButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -2826,6 +2870,11 @@
             BombButton.BackColor = Color.FromArgb(64, 64, 64)
         End If
         HCCheck()
+=======
+            BombButton.Image = My.Resources.nobombs
+            BombButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         SPCheck()
         LWCheck()
         DWCheck()
@@ -2837,6 +2886,7 @@
             PowderButton.Image = My.Resources.powder
             PowderButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -2856,6 +2906,10 @@
             End Using
             PowderButton.Image = nopowder
             PowderButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            PowderButton.Image = My.Resources.nopowder
+            PowderButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         LWCheck()
     End Sub
@@ -2866,6 +2920,7 @@
             FireButton.Image = My.Resources.firerod
             FireButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -2885,6 +2940,10 @@
             End Using
             FireButton.Image = nofirerod
             FireButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            FireButton.Image = My.Resources.nofirerod
+            FireButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         DPCheck()
         TOHCheck()
@@ -2902,6 +2961,7 @@
             IceButton.Image = My.Resources.icerod
             IceButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -2921,6 +2981,10 @@
             End Using
             IceButton.Image = noicerod
             IceButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            IceButton.Image = My.Resources.noicerod
+            IceButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         TRCheck()
     End Sub
@@ -2930,6 +2994,7 @@
         If Bombos = True Then
             BombosButton.Image = My.Resources.bombos
             BombosButton.BackColor = Color.WhiteSmoke
+<<<<<<< HEAD
         Else
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
@@ -2950,6 +3015,13 @@
             End Using
             BombosButton.Image = nobombos
             BombosButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            MedallionCount = MedallionCount + 1
+        Else
+            BombosButton.Image = My.Resources.nobombos
+            BombosButton.BackColor = Color.FromArgb(32, 32, 32)
+            MedallionCount = MedallionCount - 1
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         IPCheck()
         MMCheck()
@@ -2961,6 +3033,7 @@
         If Ether = True Then
             EtherButton.Image = My.Resources.ether
             EtherButton.BackColor = Color.WhiteSmoke
+<<<<<<< HEAD
         Else
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
@@ -2981,6 +3054,13 @@
             End Using
             EtherButton.Image = noether
             EtherButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            MedallionCount = MedallionCount + 1
+        Else
+            EtherButton.Image = My.Resources.noether
+            EtherButton.BackColor = Color.FromArgb(32, 32, 32)
+            MedallionCount = MedallionCount - 1
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         MMCheck()
         TRCheck()
@@ -2991,6 +3071,7 @@
         If Quake = True Then
             QuakeButton.Image = My.Resources.quake
             QuakeButton.BackColor = Color.WhiteSmoke
+<<<<<<< HEAD
         Else
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
@@ -3011,6 +3092,13 @@
             End Using
             QuakeButton.Image = noquake
             QuakeButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            MedallionCount = MedallionCount + 1
+        Else
+            QuakeButton.Image = My.Resources.noquake
+            QuakeButton.BackColor = Color.FromArgb(32, 32, 32)
+            MedallionCount = MedallionCount - 1
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         MMCheck()
         TRCheck()
@@ -3022,6 +3110,7 @@
             LampButton.Image = My.Resources.lamp
             LampButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3043,6 +3132,11 @@
             LampButton.BackColor = Color.FromArgb(64, 64, 64)
         End If
         HCCheck()
+=======
+            LampButton.Image = My.Resources.nolamp
+            LampButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         EPCheck()
         DPCheck()
         TOHCheck()
@@ -3060,6 +3154,7 @@
             HammerButton.Image = My.Resources.hammer
             HammerButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3079,6 +3174,10 @@
             End Using
             HammerButton.Image = nohammer
             HammerButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            HammerButton.Image = My.Resources.nohammer
+            HammerButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         TOHCheck()
         PODCheck()
@@ -3097,6 +3196,7 @@
             FluteButton.Image = My.Resources.flute
             FluteButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3116,6 +3216,10 @@
             End Using
             FluteButton.Image = noflute
             FluteButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            FluteButton.Image = My.Resources.noflute
+            FluteButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         DPCheck()
         TOHCheck()
@@ -3130,6 +3234,7 @@
             NetButton.Image = My.Resources.bugnet
             NetButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3149,6 +3254,10 @@
             End Using
             NetButton.Image = nobugnet
             NetButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            NetButton.Image = My.Resources.nobugnet
+            NetButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         AgaCheck()
     End Sub
@@ -3159,6 +3268,7 @@
             BookButton.Image = My.Resources.book
             BookButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3178,6 +3288,10 @@
             End Using
             BookButton.Image = nobook
             BookButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            BookButton.Image = My.Resources.nobook
+            BookButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         DPCheck()
         LWCheck()
@@ -3189,6 +3303,7 @@
             BottleButton.Image = My.Resources.bottle
             BottleButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3208,6 +3323,10 @@
             End Using
             BottleButton.Image = nobottle
             BottleButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            BottleButton.Image = My.Resources.nobottle
+            BottleButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         LWCheck()
     End Sub
@@ -3218,6 +3337,7 @@
             SomariaButton.Image = My.Resources.somaria
             SomariaButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3237,6 +3357,10 @@
             End Using
             SomariaButton.Image = nosomaria
             SomariaButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            SomariaButton.Image = My.Resources.nosomaria
+            SomariaButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         MMCheck()
         TRCheck()
@@ -3250,6 +3374,7 @@
             ByrnaButton.Image = My.Resources.byrna
             ByrnaButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3269,6 +3394,10 @@
             End Using
             ByrnaButton.Image = nobyrna
             ByrnaButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            ByrnaButton.Image = My.Resources.nobyrna
+            ByrnaButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         MMCheck()
         TRCheck()
@@ -3281,6 +3410,7 @@
             CapeButton.Image = My.Resources.cape
             CapeButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3300,6 +3430,10 @@
             End Using
             CapeButton.Image = nocape
             CapeButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            CapeButton.Image = My.Resources.nocape
+            CapeButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         AgaCheck()
         MMCheck()
@@ -3313,6 +3447,7 @@
             MirrorButton.Image = My.Resources.mirror
             MirrorButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3332,6 +3467,10 @@
             End Using
             MirrorButton.Image = nomirror
             MirrorButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            MirrorButton.Image = My.Resources.nomirror
+            MirrorButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         DPCheck()
         TOHCheck()
@@ -3347,6 +3486,7 @@
             BootButton.Image = My.Resources.boots
             BootButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3368,12 +3508,18 @@
             BootButton.BackColor = Color.FromArgb(64, 64, 64)
         End If
         HCCheck()
+=======
+            BootButton.Image = My.Resources.noboots
+            BootButton.BackColor = Color.FromArgb(32, 32, 32)
+        End If
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         DPCheck()
         MMCheck()
         LWCheck()
     End Sub
 
     Private Sub GloveButton_Click(sender As Object, e As EventArgs) Handles GloveButton.MouseDown
+<<<<<<< HEAD
         Glove = (Glove + 1) Mod 3
         Select Case Glove
             Case 0
@@ -3396,6 +3542,13 @@
                 End Using
                 GloveButton.Image = noglove
                 GloveButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+        If MouseButtons = MouseButtons.Left Then Glove = (Glove + 1) Mod 3 Else Glove = ((Glove - 1) + 3) Mod 3
+        Select Case Glove
+            Case 0
+                GloveButton.Image = My.Resources.noglove
+                GloveButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
             Case 1
                 GloveButton.Image = My.Resources.glove
                 GloveButton.BackColor = Color.WhiteSmoke
@@ -3423,6 +3576,7 @@
             FlipperButton.Image = My.Resources.flippers
             FlipperButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3442,6 +3596,10 @@
             End Using
             FlipperButton.Image = noflippers
             FlipperButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            FlipperButton.Image = My.Resources.noflippers
+            FlipperButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         PODCheck()
         SPCheck()
@@ -3458,6 +3616,7 @@
             PearlButton.Image = My.Resources.pearl
             PearlButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3477,6 +3636,10 @@
             End Using
             PearlButton.Image = nopearl
             PearlButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            PearlButton.Image = My.Resources.nopearl
+            PearlButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         PODCheck()
         SPCheck()
@@ -3495,6 +3658,7 @@
             MushButton.Image = My.Resources.mushroom
             MushButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3514,6 +3678,10 @@
             End Using
             MushButton.Image = nomushroom
             MushButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            MushButton.Image = My.Resources.nomushroom
+            MushButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         LWCheck()
     End Sub
@@ -3524,6 +3692,7 @@
             ShovelButton.Image = My.Resources.shovel
             ShovelButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3543,6 +3712,10 @@
             End Using
             ShovelButton.Image = noshovel
             ShovelButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            ShovelButton.Image = My.Resources.noshovel
+            ShovelButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         LWCheck()
     End Sub
@@ -3553,6 +3726,7 @@
             AgaButton.Image = My.Resources.aganhim
             AgaButton.BackColor = Color.WhiteSmoke
         Else
+<<<<<<< HEAD
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -3572,6 +3746,10 @@
             End Using
             AgaButton.Image = noaganhim
             AgaButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+            AgaButton.Image = My.Resources.noaganhim
+            AgaButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         End If
         PODCheck()
         SWCheck()
@@ -3581,6 +3759,7 @@
     End Sub
 
     Private Sub SwordButton_Click(sender As Object, e As EventArgs) Handles SwordButton.MouseDown
+<<<<<<< HEAD
         If MouseButtons = MouseButtons.Left Then Sword = (Sword + 1) Mod 5 Else Sword = (Sword + 4) Mod 5
         Select Case Sword
             Case 0
@@ -3603,6 +3782,13 @@
                 End Using
                 SwordButton.Image = nosword
                 SwordButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+        If MouseButtons = MouseButtons.Left Then Sword = (Sword + 1) Mod 5 Else Sword = ((Sword - 1) + 5) Mod 5
+        Select Case Sword
+            Case 0
+                SwordButton.Image = My.Resources.nosword
+                SwordButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
             Case 1
                 SwordButton.Image = My.Resources.sword1
                 SwordButton.BackColor = Color.WhiteSmoke
@@ -3623,7 +3809,11 @@
     End Sub
 
     Private Sub ArmorButton_Click(sender As Object, e As EventArgs) Handles ArmorButton.MouseDown
+<<<<<<< HEAD
         If MouseButtons = MouseButtons.Left Then Armor = (Armor + 1) Mod 3 Else Armor = (Armor + 2) Mod 3
+=======
+        If MouseButtons = MouseButtons.Left Then Armor = (Armor + 1) Mod 3 Else Armor = ((Armor - 1) + 3) Mod 3
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
         Select Case Armor
             Case 0
                 ArmorButton.Image = My.Resources.greenmail
@@ -3636,6 +3826,7 @@
     End Sub
 
     Private Sub ShieldButton_Click(sender As Object, e As EventArgs) Handles ShieldButton.MouseDown
+<<<<<<< HEAD
         If MouseButtons = MouseButtons.Left Then Shield = (Shield + 1) Mod 4 Else Shield = (Shield + 3) Mod 4
         Select Case Shield
             Case 0
@@ -3658,6 +3849,13 @@
                 End Using
                 ShieldButton.Image = noshield
                 ShieldButton.BackColor = Color.FromArgb(64, 64, 64)
+=======
+        If MouseButtons = MouseButtons.Left Then Shield = (Shield + 1) Mod 4 Else Shield = ((Shield - 1) + 4) Mod 4
+        Select Case Shield
+            Case 0
+                ShieldButton.Image = My.Resources.noshield
+                ShieldButton.BackColor = Color.FromArgb(32, 32, 32)
+>>>>>>> 1ee81ee6372970416e73aa0bb1233e5a44526903
             Case 1
                 ShieldButton.Image = My.Resources.shield1
                 ShieldButton.BackColor = Color.WhiteSmoke
@@ -3671,7 +3869,7 @@
         TRCheck()
     End Sub
 
-    Private Sub HlpButton_Click(sender As Object, e As EventArgs) Handles HlpButton.Click
+    Private Sub HlpButton_Click(sender As Object, e As EventArgs) Handles HlpButton.MouseDown
         Form2.ShowDialog()
     End Sub
 
