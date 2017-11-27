@@ -125,6 +125,10 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\nobigkey.png" />
+    <None Include="Resources\nobow.png" />
+    <None Include="Resources\nomap.png" />
+    <None Include="Resources\nosword.png" />
     <None Include="RetGanon.ttf" />
   </ItemGroup>
   <ItemGroup>
@@ -233,96 +237,6 @@
     <None Include="Resources\mushroom.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\noaganhim.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nobombos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nobombs.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nobook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noboom.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noboomerang.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noboots.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nobottle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nobow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nobugnet.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nobyrna.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nocape.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noether.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nofirerod.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noflippers.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noflute.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noglove.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nohammer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nohook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noicerod.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nolamp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nomirror.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nomushroom.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nopearl.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nopowder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noquake.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noshield.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noshovel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nosomaria.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nosword.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\otherpendant.png" />
   </ItemGroup>
   <ItemGroup>
@@ -392,10 +306,7 @@
     <None Include="Resources\map.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\nobigkey.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nomap.png" />
+    <None Include="Resources\bothboom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

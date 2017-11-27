@@ -2,32 +2,248 @@
     Dim Bow, Boomerang, Glove, Sword, Armor, Shield, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, MazeRace, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper As Integer
     Dim Hookshot, Bombs, Powder, FireRod, IceRod, Bombos, Ether, Quake, Lamp, Hammer, Flute, Net, Book, Bottle, Somaria, Byrna, Cape, Mirror, Boots, Flippers, Pearl, Mushroom, Shovel, Aganhim, GreenPendant, TRAccess As Boolean
 
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+        Dim nobow As New Bitmap(My.Resources.nobow)
+        Dim noboomerang As New Bitmap(My.Resources.redboom)
+        Dim nohook As New Bitmap(My.Resources.hookshot)
+        Dim nobombs As New Bitmap(My.Resources.bombs)
+        Dim nopowder As New Bitmap(My.Resources.powder)
+        Dim nofirerod As New Bitmap(My.Resources.firerod)
+        Dim noicerod As New Bitmap(My.Resources.icerod)
+        Dim nobombos As New Bitmap(My.Resources.bombos)
+        Dim noether As New Bitmap(My.Resources.ether)
+        Dim noquake As New Bitmap(My.Resources.quake)
+        Dim nolamp As New Bitmap(My.Resources.lamp)
+        Dim nohammer As New Bitmap(My.Resources.hammer)
+        Dim noflute As New Bitmap(My.Resources.flute)
+        Dim nobugnet As New Bitmap(My.Resources.bugnet)
+        Dim nobook As New Bitmap(My.Resources.book)
+        Dim nobottle As New Bitmap(My.Resources.bottle)
+        Dim nosomaria As New Bitmap(My.Resources.somaria)
+        Dim nobyrna As New Bitmap(My.Resources.byrna)
+        Dim nocape As New Bitmap(My.Resources.cape)
+        Dim nomirror As New Bitmap(My.Resources.mirror)
+        Dim noboots As New Bitmap(My.Resources.boots)
+        Dim noglove As New Bitmap(My.Resources.glove)
+        Dim noflippers As New Bitmap(My.Resources.flippers)
+        Dim nopearl As New Bitmap(My.Resources.pearl)
+        Dim nomushroom As New Bitmap(My.Resources.mushroom)
+        Dim noshovel As New Bitmap(My.Resources.shovel)
+        Dim nosword As New Bitmap(My.Resources.nosword)
+        Dim noshield As New Bitmap(My.Resources.shield1)
+        Dim noaganhim As New Bitmap(My.Resources.aganhim)
+        Dim imgattr As New Imaging.ImageAttributes()
+        imgattr.SetColorMatrix(grayscale)
+        Using g As Graphics = Graphics.FromImage(nobow)
+            g.DrawImage(nobow, New Rectangle(0, 0, nobow.Width, nobow.Height),
+                    0, 0, nobow.Width, nobow.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noboomerang)
+            g.DrawImage(noboomerang, New Rectangle(0, 0, noboomerang.Width, noboomerang.Height),
+                    0, 0, noboomerang.Width, noboomerang.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nohook)
+            g.DrawImage(nohook, New Rectangle(0, 0, nohook.Width, nohook.Height),
+                    0, 0, nohook.Width, nohook.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nobombs)
+            g.DrawImage(nobombs, New Rectangle(0, 0, nobombs.Width, nobombs.Height),
+                    0, 0, nobombs.Width, nobombs.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nopowder)
+            g.DrawImage(nopowder, New Rectangle(0, 0, nopowder.Width, nopowder.Height),
+                    0, 0, nopowder.Width, nopowder.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nofirerod)
+            g.DrawImage(nofirerod, New Rectangle(0, 0, nofirerod.Width, nofirerod.Height),
+                    0, 0, nofirerod.Width, nofirerod.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noicerod)
+            g.DrawImage(noicerod, New Rectangle(0, 0, noicerod.Width, noicerod.Height),
+                    0, 0, noicerod.Width, noicerod.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nobombos)
+            g.DrawImage(nobombos, New Rectangle(0, 0, nobombos.Width, nobombos.Height),
+                    0, 0, nobombos.Width, nobombos.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noether)
+            g.DrawImage(noether, New Rectangle(0, 0, noether.Width, noether.Height),
+                    0, 0, noether.Width, noether.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noquake)
+            g.DrawImage(noquake, New Rectangle(0, 0, noquake.Width, noquake.Height),
+                    0, 0, noquake.Width, noquake.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nolamp)
+            g.DrawImage(nolamp, New Rectangle(0, 0, nolamp.Width, nolamp.Height),
+                    0, 0, nolamp.Width, nolamp.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nohammer)
+            g.DrawImage(nohammer, New Rectangle(0, 0, nohammer.Width, nohammer.Height),
+                    0, 0, nohammer.Width, nohammer.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noflute)
+            g.DrawImage(noflute, New Rectangle(0, 0, noflute.Width, noflute.Height),
+                    0, 0, noflute.Width, noflute.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nobugnet)
+            g.DrawImage(nobugnet, New Rectangle(0, 0, nobugnet.Width, nobugnet.Height),
+                    0, 0, nobugnet.Width, nobugnet.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nobook)
+            g.DrawImage(nobook, New Rectangle(0, 0, nobook.Width, nobook.Height),
+                    0, 0, nobook.Width, nobook.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nobottle)
+            g.DrawImage(nobottle, New Rectangle(0, 0, nobottle.Width, nobottle.Height),
+                    0, 0, nobottle.Width, nobottle.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nosomaria)
+            g.DrawImage(nosomaria, New Rectangle(0, 0, nosomaria.Width, nosomaria.Height),
+                    0, 0, nosomaria.Width, nosomaria.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nobyrna)
+            g.DrawImage(nobyrna, New Rectangle(0, 0, nobyrna.Width, nobyrna.Height),
+                    0, 0, nobyrna.Width, nobyrna.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nocape)
+            g.DrawImage(nocape, New Rectangle(0, 0, nocape.Width, nocape.Height),
+                    0, 0, nocape.Width, nocape.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nomirror)
+            g.DrawImage(nomirror, New Rectangle(0, 0, nomirror.Width, nomirror.Height),
+                    0, 0, nomirror.Width, nomirror.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noboots)
+            g.DrawImage(noboots, New Rectangle(0, 0, noboots.Width, noboots.Height),
+                    0, 0, noboots.Width, noboots.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noglove)
+            g.DrawImage(noglove, New Rectangle(0, 0, noglove.Width, noglove.Height),
+                    0, 0, noglove.Width, noglove.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noflippers)
+            g.DrawImage(noflippers, New Rectangle(0, 0, noflippers.Width, noflippers.Height),
+                    0, 0, noflippers.Width, noflippers.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nopearl)
+            g.DrawImage(nopearl, New Rectangle(0, 0, nopearl.Width, nopearl.Height),
+                    0, 0, nopearl.Width, nopearl.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nomushroom)
+            g.DrawImage(nomushroom, New Rectangle(0, 0, nomushroom.Width, nomushroom.Height),
+                    0, 0, nomushroom.Width, nomushroom.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noshovel)
+            g.DrawImage(noshovel, New Rectangle(0, 0, noshovel.Width, noshovel.Height),
+                    0, 0, noshovel.Width, noshovel.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(nosword)
+            g.DrawImage(nosword, New Rectangle(0, 0, nosword.Width, nosword.Height),
+                    0, 0, nosword.Width, nosword.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noshield)
+            g.DrawImage(noshield, New Rectangle(0, 0, noshield.Width, noshield.Height),
+                    0, 0, noshield.Width, noshield.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        Using g As Graphics = Graphics.FromImage(noaganhim)
+            g.DrawImage(noaganhim, New Rectangle(0, 0, noaganhim.Width, noaganhim.Height),
+                    0, 0, noaganhim.Width, noaganhim.Height,
+                    GraphicsUnit.Pixel, imgattr)
+        End Using
+        BowButton.Image = nobow
+        BoomButton.Image = noboomerang
+        HookButton.Image = nohook
+        BombButton.Image = nobombs
+        PowderButton.Image = nopowder
+        FireButton.Image = nofirerod
+        IceButton.Image = noicerod
+        BombosButton.Image = nobombos
+        EtherButton.Image = noether
+        QuakeButton.Image = noquake
+        LampButton.Image = nolamp
+        HammerButton.Image = nohammer
+        FluteButton.Image = noflute
+        NetButton.Image = nobugnet
+        BookButton.Image = nobook
+        BottleButton.Image = nobottle
+        SomariaButton.Image = nosomaria
+        ByrnaButton.Image = nobyrna
+        CapeButton.Image = nocape
+        MirrorButton.Image = nomirror
+        BootButton.Image = noboots
+        GloveButton.Image = noglove
+        FlipperButton.Image = noflippers
+        PearlButton.Image = nopearl
+        MushButton.Image = nomushroom
+        ShovelButton.Image = noshovel
+        SwordButton.Image = nosword
+        ShieldButton.Image = noshield
+    End Sub
+
     Private Sub Form1_KeyDown() Handles Me.KeyDown
         If My.Computer.Keyboard.ShiftKeyDown Then
-            EPLabel2.Text = "1"
-            DPLabel2.Text = "2"
-            TOHLabel2.Text = "3"
-            PODLabel2.Text = "4"
-            SPLabel2.Text = "5"
-            SWLabel2.Text = "6"
-            TTLabel2.Text = "7"
-            IPLabel2.Text = "8"
-            MMLabel2.Text = "9"
-            TRLabel2.Text = "0"
+            EPLabel.Text = "1"
+            DPLabel.Text = "2"
+            TOHLabel.Text = "3"
+            PODLabel.Text = "4"
+            SPLabel.Text = "5"
+            SWLabel.Text = "6"
+            TTLabel.Text = "7"
+            IPLabel.Text = "8"
+            MMLabel.Text = "9"
+            TRLabel.Text = "0"
         End If
     End Sub
 
     Private Sub Form1_KeyUp() Handles Me.KeyUp
-        EPLabel2.Text = "EP"
-        DPLabel2.Text = "DP"
-        TOHLabel2.Text = "TOH"
-        PODLabel2.Text = "POD"
-        SPLabel2.Text = "SP"
-        SWLabel2.Text = "SW"
-        TTLabel2.Text = "TT"
-        IPLabel2.Text = "IP"
-        MMLabel2.Text = "MM"
-        TRLabel2.Text = "TR"
+        EPLabel.Text = "EP"
+        DPLabel.Text = "DP"
+        TOHLabel.Text = "TOH"
+        PODLabel.Text = "POD"
+        SPLabel.Text = "SP"
+        SWLabel.Text = "SW"
+        TTLabel.Text = "TT"
+        IPLabel.Text = "IP"
+        MMLabel.Text = "MM"
+        TRLabel.Text = "TR"
     End Sub
 
 
@@ -149,16 +365,16 @@
             IPPrizes.Visible = True
             MMPrizes.Visible = True
             TRPrizes.Visible = True
-            EPBoss.Left = 137
-            DPBoss.Left = 137
-            HeraBoss.Left = 137
-            PODBoss.Left = 137
-            SPBoss.Left = 137
-            SWBoss.Left = 362
-            TTBoss.Left = 362
-            IPBoss.Left = 362
-            MMBoss.Left = 362
-            TRBoss.Left = 362
+            EPBoss.Left = 132
+            DPBoss.Left = 132
+            HeraBoss.Left = 132
+            PODBoss.Left = 132
+            SPBoss.Left = 132
+            SWBoss.Left = 358
+            TTBoss.Left = 358
+            IPBoss.Left = 358
+            MMBoss.Left = 358
+            TRBoss.Left = 358
             EPReward = 0
             DPReward = 0
             TOHReward = 0
@@ -270,16 +486,16 @@
             IPPrizes.Visible = False
             MMPrizes.Visible = False
             TRPrizes.Visible = False
-            EPBoss.Left = 195
-            DPBoss.Left = 195
-            HeraBoss.Left = 195
-            PODBoss.Left = 195
-            SPBoss.Left = 195
-            SWBoss.Left = 420
-            TTBoss.Left = 420
-            IPBoss.Left = 420
-            MMBoss.Left = 420
-            TRBoss.Left = 420
+            EPBoss.Left = 190
+            DPBoss.Left = 190
+            HeraBoss.Left = 190
+            PODBoss.Left = 190
+            SPBoss.Left = 190
+            SWBoss.Left = 416
+            TTBoss.Left = 416
+            IPBoss.Left = 416
+            MMBoss.Left = 416
+            TRBoss.Left = 416
             EPReward = -1
             DPReward = -1
             TOHReward = -1
@@ -1185,11 +1401,11 @@
                 If Lamp = True Then EPChests.ForeColor = Color.White Else EPChests.ForeColor = Color.Yellow
             End If
         Else
-            If Bow > 0 And Lamp = True Then
+            If Bow > 0 And Lamp = True And EPBigKey.Checked = True Then
                 EPLabel.ForeColor = Color.White
                 EPLabel.BackColor = Color.Green
                 EPBoss.Enabled = True
-            ElseIf Bow > 0 Then
+            ElseIf Bow > 0 And EPBigKey.Checked = True Then
                 EPLabel.ForeColor = Color.White
                 EPLabel.BackColor = Color.Orange
                 EPBoss.Enabled = True
@@ -1729,142 +1945,6 @@
         End If
     End Sub
 
-    Private Sub TRPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TRPrizes.MouseDown
-
-    End Sub
-
-    Private Sub MMPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles MMPrizes.MouseDown
-
-    End Sub
-
-    Private Sub IPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles IPPrizes.MouseDown
-
-    End Sub
-
-    Private Sub TTPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TTPrizes.MouseDown
-
-    End Sub
-
-    Private Sub SWPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles SWPrizes.MouseDown
-
-    End Sub
-
-    Private Sub SPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles SPPrizes.MouseDown
-
-    End Sub
-
-    Private Sub PODPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles PODPrizes.MouseDown
-
-    End Sub
-
-    Private Sub DPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles DPPrizes.MouseDown
-
-    End Sub
-
-    Private Sub EPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles EPPrizes.MouseDown
-
-    End Sub
-
-    Private Sub TOHPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHPrizes.MouseDown
-
-    End Sub
-
-    Private Sub HCKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles HCKeys.MouseDown
-
-    End Sub
-
-    Private Sub GTKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles GTKeys.MouseDown
-
-    End Sub
-
-    Private Sub TRKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TRKeys.MouseDown
-
-    End Sub
-
-    Private Sub MMKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles MMKeys.MouseDown
-
-    End Sub
-
-    Private Sub IPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles IPKeys.MouseDown
-
-    End Sub
-
-    Private Sub TTKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TTKeys.MouseDown
-
-    End Sub
-
-    Private Sub SWKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles SWKeys.MouseDown
-
-    End Sub
-
-    Private Sub SPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles SPKeys.MouseDown
-
-    End Sub
-
-    Private Sub PODKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles PODKeys.MouseDown
-
-    End Sub
-
-    Private Sub DPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles DPKeys.MouseDown
-
-    End Sub
-
-    Private Sub AGKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles AGKeys.MouseDown
-
-    End Sub
-
-    Private Sub GTChests_MouseDown(sender As Object, e As MouseEventArgs) Handles GTChests.MouseDown
-
-    End Sub
-
-    Private Sub HCChests_MouseDown(sender As Object, e As MouseEventArgs) Handles HCChests.MouseDown
-
-    End Sub
-
-    Private Sub IPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles IPChests.MouseDown
-
-    End Sub
-
-    Private Sub TRChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TRChests.MouseDown
-
-    End Sub
-
-    Private Sub MMChests_MouseDown(sender As Object, e As MouseEventArgs) Handles MMChests.MouseDown
-
-    End Sub
-
-    Private Sub TTChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TTChests.MouseDown
-
-    End Sub
-
-    Private Sub SWChests_MouseDown(sender As Object, e As MouseEventArgs) Handles SWChests.MouseDown
-
-    End Sub
-
-    Private Sub TOHChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHChests.MouseDown
-
-    End Sub
-
-    Private Sub SPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles SPChests.MouseDown
-
-    End Sub
-
-    Private Sub PODChests_MouseDown(sender As Object, e As MouseEventArgs) Handles PODChests.MouseDown
-
-    End Sub
-
-    Private Sub DPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles DPChests.MouseDown
-
-    End Sub
-
-    Private Sub EPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles EPChests.MouseDown
-
-    End Sub
-
-    Private Sub HeraKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHKeys.MouseDown
-
-    End Sub
-
     Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "TTMap"
@@ -1888,10 +1968,6 @@
         End Select
         TTCheck()
         CrystalCheck()
-    End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 
     Private Sub TTPrizes_MouseDown(sender As Object, e As EventArgs) Handles TTPrizes.MouseDown
@@ -2155,11 +2231,11 @@
             Case 0
                 MireBEQ.Image = My.Resources.whatmedallion
             Case 1
-                MireBEQ.Image = My.Resources.bombosMMTR
+                MireBEQ.Image = My.Resources.bombos
             Case 2
-                MireBEQ.Image = My.Resources.etherMMTR
+                MireBEQ.Image = My.Resources.ether
             Case 3
-                MireBEQ.Image = My.Resources.quakeMMTR
+                MireBEQ.Image = My.Resources.quake
         End Select
         MMCheck()
     End Sub
@@ -2281,11 +2357,11 @@
             Case 0
                 TurtleBEQ.Image = My.Resources.whatmedallion
             Case 1
-                TurtleBEQ.Image = My.Resources.bombosMMTR
+                TurtleBEQ.Image = My.Resources.bombos
             Case 2
-                TurtleBEQ.Image = My.Resources.etherMMTR
+                TurtleBEQ.Image = My.Resources.ether
             Case 3
-                TurtleBEQ.Image = My.Resources.quakeMMTR
+                TurtleBEQ.Image = My.Resources.quake
         End Select
         TRCheck()
     End Sub
@@ -2318,7 +2394,7 @@
 
     Private Sub GTKeys_MouseDown(sender As Object, e As EventArgs) Handles GTKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then
-            If GTKeys.Text < 3 Then GTKeys.Text = GTKeys.Text + 1
+            If GTKeys.Text < 4 Then GTKeys.Text = GTKeys.Text + 1
         End If
         If MouseButtons = MouseButtons.Right = True Then
             If GTKeys.Text > 0 Then GTKeys.Text = GTKeys.Text - 1
@@ -2340,7 +2416,7 @@
         End If
     End Sub
 
-    Private Sub CrystalClick(sender As Object, e As EventArgs) Handles EPButton.Click, DPButton.Click, TOHButton.Click, PODButton.Click, SPButton.Click, SWButton.Click, TTButton.Click, IPButton.Click, MMButton.Click, TRButton.Click
+    Private Sub CrystalClick(sender As Object, e As EventArgs) Handles EPButton.MouseDown, DPButton.MouseDown, TOHButton.MouseDown, PODButton.MouseDown, SPButton.MouseDown, SWButton.MouseDown, TTButton.MouseDown, IPButton.MouseDown, MMButton.MouseDown, TRButton.MouseDown
         Select Case DirectCast(sender, PictureBox).Name
             Case "EPButton"
                 EPReward = (EPReward + 1) Mod 4
@@ -2617,35 +2693,101 @@
         GTCheck()
     End Sub
 
-    Private Sub BowButton_Click(sender As Object, e As EventArgs) Handles BowButton.Click
-        Bow = (Bow + 1) Mod 3
+    Private Sub BowButton_Click(sender As Object, e As EventArgs) Handles BowButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Bow = (Bow + 1) Mod 3 Else Bow = (Bow + 2) Mod 3
         Select Case Bow
             Case 0
-                BowButton.Image = My.Resources.nobow
+                Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+                Dim nobow As New Bitmap(My.Resources.nobow)
+                Dim imgattr As New Imaging.ImageAttributes()
+                imgattr.SetColorMatrix(grayscale)
+                Using g As Graphics = Graphics.FromImage(nobow)
+                    g.DrawImage(nobow, New Rectangle(0, 0, nobow.Width, nobow.Height),
+                    0, 0, nobow.Width, nobow.Height,
+                    GraphicsUnit.Pixel, imgattr)
+                End Using
+                BowButton.Image = nobow
+                BowButton.BackColor = Color.FromArgb(64, 64, 64)
             Case 1
                 BowButton.Image = My.Resources.bow
+                BowButton.BackColor = Color.WhiteSmoke
             Case 2
                 BowButton.Image = My.Resources.silvers
+                BowButton.BackColor = Color.WhiteSmoke
         End Select
         EPCheck()
         PODCheck()
     End Sub
 
-    Private Sub BoomButton_Click(sender As Object, e As EventArgs) Handles BoomButton.Click
-        Boomerang = (Boomerang + 1) Mod 3
+    Private Sub BoomButton_Click(sender As Object, e As EventArgs) Handles BoomButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Boomerang = (Boomerang + 1) Mod 4 Else Boomerang = (Boomerang + 4) Mod 4
         Select Case Boomerang
             Case 0
-                BoomButton.Image = My.Resources.noboomerang
+                Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+                Dim noboomerang As New Bitmap(My.Resources.blueboom)
+                Dim imgattr As New Imaging.ImageAttributes()
+                imgattr.SetColorMatrix(grayscale)
+                Using g As Graphics = Graphics.FromImage(noboomerang)
+                    g.DrawImage(noboomerang, New Rectangle(0, 0, noboomerang.Width, noboomerang.Height),
+                    0, 0, noboomerang.Width, noboomerang.Height,
+                    GraphicsUnit.Pixel, imgattr)
+                End Using
+                BoomButton.Image = noboomerang
+                BoomButton.BackColor = Color.FromArgb(64, 64, 64)
             Case 1
                 BoomButton.Image = My.Resources.blueboom
+                BoomButton.BackColor = Color.WhiteSmoke
             Case 2
                 BoomButton.Image = My.Resources.redboom
+                BoomButton.BackColor = Color.WhiteSmoke
+            Case 3
+                BoomButton.Image = My.Resources.bothboom
+                BoomButton.BackColor = Color.WhiteSmoke
         End Select
     End Sub
 
-    Private Sub HookButton_Click(sender As Object, e As EventArgs) Handles HookButton.Click
+    Private Sub HookButton_Click(sender As Object, e As EventArgs) Handles HookButton.MouseDown
         If Hookshot = False Then Hookshot = True Else Hookshot = False
-        If Hookshot = True Then HookButton.Image = My.Resources.hookshot Else HookButton.Image = My.Resources.nohook
+        If Hookshot = True Then
+            HookButton.Image = My.Resources.hookshot
+            HookButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nohook As New Bitmap(My.Resources.hookshot)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nohook)
+                g.DrawImage(nohook, New Rectangle(0, 0, nohook.Width, nohook.Height),
+                    0, 0, nohook.Width, nohook.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            HookButton.Image = nohook
+            HookButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         TOHCheck()
         SPCheck()
         SWCheck()
@@ -2657,23 +2799,93 @@
         DWCheck()
     End Sub
 
-    Private Sub BombButton_Click(sender As Object, e As EventArgs) Handles BombButton.Click
+    Private Sub BombButton_Click(sender As Object, e As EventArgs) Handles BombButton.MouseDown
         If Bombs = False Then Bombs = True Else Bombs = False
-        If Bombs = True Then BombButton.Image = My.Resources.bombs Else BombButton.Image = My.Resources.nobombs
+        If Bombs = True Then
+            BombButton.Image = My.Resources.bombs
+            BombButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nobombs As New Bitmap(My.Resources.bombs)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nobombs)
+                g.DrawImage(nobombs, New Rectangle(0, 0, nobombs.Width, nobombs.Height),
+                    0, 0, nobombs.Width, nobombs.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            BombButton.Image = nobombs
+            BombButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
+        HCCheck()
         SPCheck()
         LWCheck()
         DWCheck()
     End Sub
 
-    Private Sub PowderButton_Click(sender As Object, e As EventArgs) Handles PowderButton.Click
+    Private Sub PowderButton_Click(sender As Object, e As EventArgs) Handles PowderButton.MouseDown
         If Powder = False Then Powder = True Else Powder = False
-        If Powder = True Then PowderButton.Image = My.Resources.powder Else PowderButton.Image = My.Resources.nopowder
+        If Powder = True Then
+            PowderButton.Image = My.Resources.powder
+            PowderButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nopowder As New Bitmap(My.Resources.powder)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nopowder)
+                g.DrawImage(nopowder, New Rectangle(0, 0, nopowder.Width, nopowder.Height),
+                    0, 0, nopowder.Width, nopowder.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            PowderButton.Image = nopowder
+            PowderButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         LWCheck()
     End Sub
 
-    Private Sub FireButton_Click(sender As Object, e As EventArgs) Handles FireButton.Click
+    Private Sub FireButton_Click(sender As Object, e As EventArgs) Handles FireButton.MouseDown
         If FireRod = False Then FireRod = True Else FireRod = False
-        If FireRod = True Then FireButton.Image = My.Resources.firerod Else FireButton.Image = My.Resources.nofirerod
+        If FireRod = True Then
+            FireButton.Image = My.Resources.firerod
+            FireButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nofirerod As New Bitmap(My.Resources.firerod)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nofirerod)
+                g.DrawImage(nofirerod, New Rectangle(0, 0, nofirerod.Width, nofirerod.Height),
+                    0, 0, nofirerod.Width, nofirerod.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            FireButton.Image = nofirerod
+            FireButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         DPCheck()
         TOHCheck()
         SWCheck()
@@ -2684,55 +2896,153 @@
         DWCheck()
     End Sub
 
-    Private Sub IceButton_Click(sender As Object, e As EventArgs) Handles IceButton.Click
+    Private Sub IceButton_Click(sender As Object, e As EventArgs) Handles IceButton.MouseDown
         If IceRod = False Then IceRod = True Else IceRod = False
-        If IceRod = True Then IceButton.Image = My.Resources.icerod Else IceButton.Image = My.Resources.noicerod
+        If IceRod = True Then
+            IceButton.Image = My.Resources.icerod
+            IceButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim noicerod As New Bitmap(My.Resources.icerod)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(noicerod)
+                g.DrawImage(noicerod, New Rectangle(0, 0, noicerod.Width, noicerod.Height),
+                    0, 0, noicerod.Width, noicerod.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            IceButton.Image = noicerod
+            IceButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         TRCheck()
     End Sub
 
-    Private Sub BombosButton_Click(sender As Object, e As EventArgs) Handles BombosButton.Click
+    Private Sub BombosButton_Click(sender As Object, e As EventArgs) Handles BombosButton.MouseDown
         If Bombos = False Then Bombos = True Else Bombos = False
         If Bombos = True Then
             BombosButton.Image = My.Resources.bombos
-            MedallionCount = MedallionCount + 1
+            BombosButton.BackColor = Color.WhiteSmoke
         Else
-            BombosButton.Image = My.Resources.nobombos
-            MedallionCount = MedallionCount - 1
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nobombos As New Bitmap(My.Resources.bombos)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nobombos)
+                g.DrawImage(nobombos, New Rectangle(0, 0, nobombos.Width, nobombos.Height),
+                    0, 0, nobombos.Width, nobombos.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            BombosButton.Image = nobombos
+            BombosButton.BackColor = Color.FromArgb(64, 64, 64)
         End If
         IPCheck()
         MMCheck()
         TRCheck()
     End Sub
 
-    Private Sub EtherButton_Click(sender As Object, e As EventArgs) Handles EtherButton.Click
+    Private Sub EtherButton_Click(sender As Object, e As EventArgs) Handles EtherButton.MouseDown
         If Ether = False Then Ether = True Else Ether = False
         If Ether = True Then
             EtherButton.Image = My.Resources.ether
-            MedallionCount = MedallionCount + 1
+            EtherButton.BackColor = Color.WhiteSmoke
         Else
-            EtherButton.Image = My.Resources.noether
-            MedallionCount = MedallionCount - 1
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim noether As New Bitmap(My.Resources.ether)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(noether)
+                g.DrawImage(noether, New Rectangle(0, 0, noether.Width, noether.Height),
+                    0, 0, noether.Width, noether.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            EtherButton.Image = noether
+            EtherButton.BackColor = Color.FromArgb(64, 64, 64)
         End If
         MMCheck()
         TRCheck()
     End Sub
 
-    Private Sub QuakeButton_Click(sender As Object, e As EventArgs) Handles QuakeButton.Click
+    Private Sub QuakeButton_Click(sender As Object, e As EventArgs) Handles QuakeButton.MouseDown
         If Quake = False Then Quake = True Else Quake = False
         If Quake = True Then
             QuakeButton.Image = My.Resources.quake
-            MedallionCount = MedallionCount + 1
+            QuakeButton.BackColor = Color.WhiteSmoke
         Else
-            QuakeButton.Image = My.Resources.noquake
-            MedallionCount = MedallionCount - 1
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim noquake As New Bitmap(My.Resources.quake)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(noquake)
+                g.DrawImage(noquake, New Rectangle(0, 0, noquake.Width, noquake.Height),
+                    0, 0, noquake.Width, noquake.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            QuakeButton.Image = noquake
+            QuakeButton.BackColor = Color.FromArgb(64, 64, 64)
         End If
         MMCheck()
         TRCheck()
     End Sub
 
-    Private Sub LampButton_Click(sender As Object, e As EventArgs) Handles LampButton.Click
+    Private Sub LampButton_Click(sender As Object, e As EventArgs) Handles LampButton.MouseDown
         If Lamp = False Then Lamp = True Else Lamp = False
-        If Lamp = True Then LampButton.Image = My.Resources.lamp Else LampButton.Image = My.Resources.nolamp
+        If Lamp = True Then
+            LampButton.Image = My.Resources.lamp
+            LampButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nolamp As New Bitmap(My.Resources.lamp)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nolamp)
+                g.DrawImage(nolamp, New Rectangle(0, 0, nolamp.Width, nolamp.Height),
+                    0, 0, nolamp.Width, nolamp.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            LampButton.Image = nolamp
+            LampButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
+        HCCheck()
         EPCheck()
         DPCheck()
         TOHCheck()
@@ -2744,9 +3054,32 @@
         DWCheck()
     End Sub
 
-    Private Sub HammerButton_Click(sender As Object, e As EventArgs) Handles HammerButton.Click
+    Private Sub HammerButton_Click(sender As Object, e As EventArgs) Handles HammerButton.MouseDown
         If Hammer = False Then Hammer = True Else Hammer = False
-        If Hammer = True Then HammerButton.Image = My.Resources.hammer Else HammerButton.Image = My.Resources.nohammer
+        If Hammer = True Then
+            HammerButton.Image = My.Resources.hammer
+            HammerButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nohammer As New Bitmap(My.Resources.hammer)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nohammer)
+                g.DrawImage(nohammer, New Rectangle(0, 0, nohammer.Width, nohammer.Height),
+                    0, 0, nohammer.Width, nohammer.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            HammerButton.Image = nohammer
+            HammerButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         TOHCheck()
         PODCheck()
         SPCheck()
@@ -2758,9 +3091,32 @@
         DWCheck()
     End Sub
 
-    Private Sub FluteButton_Click(sender As Object, e As EventArgs) Handles FluteButton.Click
+    Private Sub FluteButton_Click(sender As Object, e As EventArgs) Handles FluteButton.MouseDown
         If Flute = False Then Flute = True Else Flute = False
-        If Flute = True Then FluteButton.Image = My.Resources.flute Else FluteButton.Image = My.Resources.noflute
+        If Flute = True Then
+            FluteButton.Image = My.Resources.flute
+            FluteButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim noflute As New Bitmap(My.Resources.flute)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(noflute)
+                g.DrawImage(noflute, New Rectangle(0, 0, noflute.Width, noflute.Height),
+                    0, 0, noflute.Width, noflute.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            FluteButton.Image = noflute
+            FluteButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         DPCheck()
         TOHCheck()
         MMCheck()
@@ -2768,54 +3124,215 @@
         DWCheck()
     End Sub
 
-    Private Sub NetButton_Click(sender As Object, e As EventArgs) Handles NetButton.Click
+    Private Sub NetButton_Click(sender As Object, e As EventArgs) Handles NetButton.MouseDown
         If Net = False Then Net = True Else Net = False
-        If Net = True Then NetButton.Image = My.Resources.bugnet Else NetButton.Image = My.Resources.nobugnet
+        If Net = True Then
+            NetButton.Image = My.Resources.bugnet
+            NetButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nobugnet As New Bitmap(My.Resources.bugnet)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nobugnet)
+                g.DrawImage(nobugnet, New Rectangle(0, 0, nobugnet.Width, nobugnet.Height),
+                    0, 0, nobugnet.Width, nobugnet.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            NetButton.Image = nobugnet
+            NetButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         AgaCheck()
     End Sub
 
-    Private Sub BookButton_Click(sender As Object, e As EventArgs) Handles BookButton.Click
+    Private Sub BookButton_Click(sender As Object, e As EventArgs) Handles BookButton.MouseDown
         If Book = False Then Book = True Else Book = False
-        If Book = True Then BookButton.Image = My.Resources.book Else BookButton.Image = My.Resources.nobook
+        If Book = True Then
+            BookButton.Image = My.Resources.book
+            BookButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nobook As New Bitmap(My.Resources.book)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nobook)
+                g.DrawImage(nobook, New Rectangle(0, 0, nobook.Width, nobook.Height),
+                    0, 0, nobook.Width, nobook.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            BookButton.Image = nobook
+            BookButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         DPCheck()
         LWCheck()
     End Sub
 
-    Private Sub BottleButton_Click(sender As Object, e As EventArgs) Handles BottleButton.Click
+    Private Sub BottleButton_Click(sender As Object, e As EventArgs) Handles BottleButton.MouseDown
         If Bottle = False Then Bottle = True Else Bottle = False
-        If Bottle = True Then BottleButton.Image = My.Resources.bottle Else BottleButton.Image = My.Resources.nobottle
+        If Bottle = True Then
+            BottleButton.Image = My.Resources.bottle
+            BottleButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nobottle As New Bitmap(My.Resources.bottle)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nobottle)
+                g.DrawImage(nobottle, New Rectangle(0, 0, nobottle.Width, nobottle.Height),
+                    0, 0, nobottle.Width, nobottle.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            BottleButton.Image = nobottle
+            BottleButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         LWCheck()
     End Sub
 
-    Private Sub SomariaButton_Click(sender As Object, e As EventArgs) Handles SomariaButton.Click
+    Private Sub SomariaButton_Click(sender As Object, e As EventArgs) Handles SomariaButton.MouseDown
         If Somaria = False Then Somaria = True Else Somaria = False
-        If Somaria = True Then SomariaButton.Image = My.Resources.somaria Else SomariaButton.Image = My.Resources.nosomaria
+        If Somaria = True Then
+            SomariaButton.Image = My.Resources.somaria
+            SomariaButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nosomaria As New Bitmap(My.Resources.somaria)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nosomaria)
+                g.DrawImage(nosomaria, New Rectangle(0, 0, nosomaria.Width, nosomaria.Height),
+                    0, 0, nosomaria.Width, nosomaria.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            SomariaButton.Image = nosomaria
+            SomariaButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         MMCheck()
         TRCheck()
         LWCheck()
         DWCheck()
     End Sub
 
-    Private Sub ByrnaButton_Click(sender As Object, e As EventArgs) Handles ByrnaButton.Click
+    Private Sub ByrnaButton_Click(sender As Object, e As EventArgs) Handles ByrnaButton.MouseDown
         If Byrna = False Then Byrna = True Else Byrna = False
-        If Byrna = True Then ByrnaButton.Image = My.Resources.byrna Else ByrnaButton.Image = My.Resources.nobyrna
+        If Byrna = True Then
+            ByrnaButton.Image = My.Resources.byrna
+            ByrnaButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nobyrna As New Bitmap(My.Resources.byrna)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nobyrna)
+                g.DrawImage(nobyrna, New Rectangle(0, 0, nobyrna.Width, nobyrna.Height),
+                    0, 0, nobyrna.Width, nobyrna.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            ByrnaButton.Image = nobyrna
+            ByrnaButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         MMCheck()
         TRCheck()
         DWCheck()
     End Sub
 
-    Private Sub CapeButton_Click(sender As Object, e As EventArgs) Handles CapeButton.Click
+    Private Sub CapeButton_Click(sender As Object, e As EventArgs) Handles CapeButton.MouseDown
         If Cape = False Then Cape = True Else Cape = False
-        If Cape = True Then CapeButton.Image = My.Resources.cape Else CapeButton.Image = My.Resources.nocape
+        If Cape = True Then
+            CapeButton.Image = My.Resources.cape
+            CapeButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nocape As New Bitmap(My.Resources.cape)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nocape)
+                g.DrawImage(nocape, New Rectangle(0, 0, nocape.Width, nocape.Height),
+                    0, 0, nocape.Width, nocape.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            CapeButton.Image = nocape
+            CapeButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         AgaCheck()
         MMCheck()
         TRCheck()
         DWCheck()
     End Sub
 
-    Private Sub MirrorButton_Click(sender As Object, e As EventArgs) Handles MirrorButton.Click
+    Private Sub MirrorButton_Click(sender As Object, e As EventArgs) Handles MirrorButton.MouseDown
         If Mirror = False Then Mirror = True Else Mirror = False
-        If Mirror = True Then MirrorButton.Image = My.Resources.mirror Else MirrorButton.Image = My.Resources.nomirror
+        If Mirror = True Then
+            MirrorButton.Image = My.Resources.mirror
+            MirrorButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nomirror As New Bitmap(My.Resources.mirror)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nomirror)
+                g.DrawImage(nomirror, New Rectangle(0, 0, nomirror.Width, nomirror.Height),
+                    0, 0, nomirror.Width, nomirror.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            MirrorButton.Image = nomirror
+            MirrorButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         DPCheck()
         TOHCheck()
         SPCheck()
@@ -2824,24 +3341,69 @@
         DWCheck()
     End Sub
 
-    Private Sub BootButton_Click(sender As Object, e As EventArgs) Handles BootButton.Click
+    Private Sub BootButton_Click(sender As Object, e As EventArgs) Handles BootButton.MouseDown
         If Boots = False Then Boots = True Else Boots = False
-        If Boots = True Then BootButton.Image = My.Resources.boots Else BootButton.Image = My.Resources.noboots
+        If Boots = True Then
+            BootButton.Image = My.Resources.boots
+            BootButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim noboots As New Bitmap(My.Resources.boots)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(noboots)
+                g.DrawImage(noboots, New Rectangle(0, 0, noboots.Width, noboots.Height),
+                    0, 0, noboots.Width, noboots.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            BootButton.Image = noboots
+            BootButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
+        HCCheck()
         DPCheck()
         MMCheck()
         LWCheck()
     End Sub
 
-    Private Sub GloveButton_Click(sender As Object, e As EventArgs) Handles GloveButton.Click
+    Private Sub GloveButton_Click(sender As Object, e As EventArgs) Handles GloveButton.MouseDown
         Glove = (Glove + 1) Mod 3
         Select Case Glove
             Case 0
-                GloveButton.Image = My.Resources.noglove
+                Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+                Dim noglove As New Bitmap(My.Resources.glove)
+                Dim imgattr As New Imaging.ImageAttributes()
+                imgattr.SetColorMatrix(grayscale)
+                Using g As Graphics = Graphics.FromImage(noglove)
+                    g.DrawImage(noglove, New Rectangle(0, 0, noglove.Width, noglove.Height),
+                    0, 0, noglove.Width, noglove.Height,
+                    GraphicsUnit.Pixel, imgattr)
+                End Using
+                GloveButton.Image = noglove
+                GloveButton.BackColor = Color.FromArgb(64, 64, 64)
             Case 1
                 GloveButton.Image = My.Resources.glove
+                GloveButton.BackColor = Color.WhiteSmoke
             Case 2
                 GloveButton.Image = My.Resources.mitt
+                GloveButton.BackColor = Color.WhiteSmoke
         End Select
+        HCCheck()
         DPCheck()
         TOHCheck()
         PODCheck()
@@ -2855,9 +3417,32 @@
         DWCheck()
     End Sub
 
-    Private Sub FlipperButton_Click(sender As Object, e As EventArgs) Handles FlipperButton.Click
+    Private Sub FlipperButton_Click(sender As Object, e As EventArgs) Handles FlipperButton.MouseDown
         If Flippers = False Then Flippers = True Else Flippers = False
-        If Flippers = True Then FlipperButton.Image = My.Resources.flippers Else FlipperButton.Image = My.Resources.noflippers
+        If Flippers = True Then
+            FlipperButton.Image = My.Resources.flippers
+            FlipperButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim noflippers As New Bitmap(My.Resources.flippers)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(noflippers)
+                g.DrawImage(noflippers, New Rectangle(0, 0, noflippers.Width, noflippers.Height),
+                    0, 0, noflippers.Width, noflippers.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            FlipperButton.Image = noflippers
+            FlipperButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         PODCheck()
         SPCheck()
         SWCheck()
@@ -2867,9 +3452,32 @@
         DWCheck()
     End Sub
 
-    Private Sub PearlButton_Click(sender As Object, e As EventArgs) Handles PearlButton.Click
+    Private Sub PearlButton_Click(sender As Object, e As EventArgs) Handles PearlButton.MouseDown
         If Pearl = False Then Pearl = True Else Pearl = False
-        If Pearl = True Then PearlButton.Image = My.Resources.pearl Else PearlButton.Image = My.Resources.nopearl
+        If Pearl = True Then
+            PearlButton.Image = My.Resources.pearl
+            PearlButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nopearl As New Bitmap(My.Resources.pearl)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nopearl)
+                g.DrawImage(nopearl, New Rectangle(0, 0, nopearl.Width, nopearl.Height),
+                    0, 0, nopearl.Width, nopearl.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            PearlButton.Image = nopearl
+            PearlButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         PODCheck()
         SPCheck()
         SWCheck()
@@ -2881,21 +3489,90 @@
         DWCheck()
     End Sub
 
-    Private Sub MushButton_Click(sender As Object, e As EventArgs) Handles MushButton.Click
+    Private Sub MushButton_Click(sender As Object, e As EventArgs) Handles MushButton.MouseDown
         If Mushroom = False Then Mushroom = True Else Mushroom = False
-        If Mushroom = True Then MushButton.Image = My.Resources.mushroom Else MushButton.Image = My.Resources.nomushroom
+        If Mushroom = True Then
+            MushButton.Image = My.Resources.mushroom
+            MushButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim nomushroom As New Bitmap(My.Resources.mushroom)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(nomushroom)
+                g.DrawImage(nomushroom, New Rectangle(0, 0, nomushroom.Width, nomushroom.Height),
+                    0, 0, nomushroom.Width, nomushroom.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            MushButton.Image = nomushroom
+            MushButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         LWCheck()
     End Sub
 
-    Private Sub ShovelButton_Click(sender As Object, e As EventArgs) Handles ShovelButton.Click
+    Private Sub ShovelButton_Click(sender As Object, e As EventArgs) Handles ShovelButton.MouseDown
         If Shovel = False Then Shovel = True Else Shovel = False
-        If Shovel = True Then ShovelButton.Image = My.Resources.shovel Else ShovelButton.Image = My.Resources.noshovel
+        If Shovel = True Then
+            ShovelButton.Image = My.Resources.shovel
+            ShovelButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim noshovel As New Bitmap(My.Resources.shovel)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(noshovel)
+                g.DrawImage(noshovel, New Rectangle(0, 0, noshovel.Width, noshovel.Height),
+                    0, 0, noshovel.Width, noshovel.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            ShovelButton.Image = noshovel
+            ShovelButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         LWCheck()
     End Sub
 
-    Private Sub AgaButton_Click(sender As Object, e As EventArgs) Handles AgaButton.Click
+    Private Sub AgaButton_Click(sender As Object, e As EventArgs) Handles AgaButton.MouseDown
         If Aganhim = False Then Aganhim = True Else Aganhim = False
-        If Aganhim = True Then AgaButton.Image = My.Resources.aganhim Else AgaButton.Image = My.Resources.noaganhim
+        If Aganhim = True Then
+            AgaButton.Image = My.Resources.aganhim
+            AgaButton.BackColor = Color.WhiteSmoke
+        Else
+            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+            Dim noaganhim As New Bitmap(My.Resources.aganhim)
+            Dim imgattr As New Imaging.ImageAttributes()
+            imgattr.SetColorMatrix(grayscale)
+            Using g As Graphics = Graphics.FromImage(noaganhim)
+                g.DrawImage(noaganhim, New Rectangle(0, 0, noaganhim.Width, noaganhim.Height),
+                    0, 0, noaganhim.Width, noaganhim.Height,
+                    GraphicsUnit.Pixel, imgattr)
+            End Using
+            AgaButton.Image = noaganhim
+            AgaButton.BackColor = Color.FromArgb(64, 64, 64)
+        End If
         PODCheck()
         SWCheck()
         TTCheck()
@@ -2903,27 +3580,50 @@
         DWCheck()
     End Sub
 
-    Private Sub SwordButton_Click(sender As Object, e As EventArgs) Handles SwordButton.Click
-        Sword = (Sword + 1) Mod 5
+    Private Sub SwordButton_Click(sender As Object, e As EventArgs) Handles SwordButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Sword = (Sword + 1) Mod 5 Else Sword = (Sword + 4) Mod 5
         Select Case Sword
             Case 0
-                SwordButton.Image = My.Resources.nosword
+                Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+                Dim nosword As New Bitmap(My.Resources.nosword)
+                Dim imgattr As New Imaging.ImageAttributes()
+                imgattr.SetColorMatrix(grayscale)
+                Using g As Graphics = Graphics.FromImage(nosword)
+                    g.DrawImage(nosword, New Rectangle(0, 0, nosword.Width, nosword.Height),
+                    0, 0, nosword.Width, nosword.Height,
+                    GraphicsUnit.Pixel, imgattr)
+                End Using
+                SwordButton.Image = nosword
+                SwordButton.BackColor = Color.FromArgb(64, 64, 64)
             Case 1
                 SwordButton.Image = My.Resources.sword1
+                SwordButton.BackColor = Color.WhiteSmoke
             Case 2
                 SwordButton.Image = My.Resources.sword2
+                SwordButton.BackColor = Color.WhiteSmoke
             Case 3
                 SwordButton.Image = My.Resources.sword3
+                SwordButton.BackColor = Color.WhiteSmoke
             Case 4
                 SwordButton.Image = My.Resources.sword4
+                SwordButton.BackColor = Color.WhiteSmoke
         End Select
         AgaCheck()
         TOHCheck()
         SWCheck()
+        TRCheck()
     End Sub
 
-    Private Sub ArmorButton_Click(sender As Object, e As EventArgs) Handles ArmorButton.Click
-        Armor = (Armor + 1) Mod 3
+    Private Sub ArmorButton_Click(sender As Object, e As EventArgs) Handles ArmorButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Armor = (Armor + 1) Mod 3 Else Armor = (Armor + 2) Mod 3
         Select Case Armor
             Case 0
                 ArmorButton.Image = My.Resources.greenmail
@@ -2935,17 +3635,38 @@
 
     End Sub
 
-    Private Sub ShieldButton_Click(sender As Object, e As EventArgs) Handles ShieldButton.Click
-        Shield = (Shield + 1) Mod 4
+    Private Sub ShieldButton_Click(sender As Object, e As EventArgs) Handles ShieldButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Shield = (Shield + 1) Mod 4 Else Shield = (Shield + 3) Mod 4
         Select Case Shield
             Case 0
-                ShieldButton.Image = My.Resources.noshield
+                Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+
+                Dim noshield As New Bitmap(My.Resources.shield1)
+                Dim imgattr As New Imaging.ImageAttributes()
+                imgattr.SetColorMatrix(grayscale)
+                Using g As Graphics = Graphics.FromImage(noshield)
+                    g.DrawImage(noshield, New Rectangle(0, 0, noshield.Width, noshield.Height),
+                    0, 0, noshield.Width, noshield.Height,
+                    GraphicsUnit.Pixel, imgattr)
+                End Using
+                ShieldButton.Image = noshield
+                ShieldButton.BackColor = Color.FromArgb(64, 64, 64)
             Case 1
                 ShieldButton.Image = My.Resources.shield1
+                ShieldButton.BackColor = Color.WhiteSmoke
             Case 2
                 ShieldButton.Image = My.Resources.shield2
+                ShieldButton.BackColor = Color.WhiteSmoke
             Case 3
                 ShieldButton.Image = My.Resources.shield3
+                ShieldButton.BackColor = Color.WhiteSmoke
         End Select
         TRCheck()
     End Sub
