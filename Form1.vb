@@ -1638,7 +1638,24 @@
     Public Sub AgaCheck()
         If RadioButton1.Checked = True Then
             If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
+                Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        {
+            New Single() {0.299, 0.299, 0.299, 0, 0},
+            New Single() {0.587, 0.587, 0.587, 0, 0},
+            New Single() {0.114, 0.114, 0.114, 0, 0},
+            New Single() {0, 0, 0, 1, 0},
+            New Single() {0, 0, 0, 0, 1}
+        })
+                Dim noaganhim As New Bitmap(My.Resources.aganhim)
+                Dim imgattr As New Imaging.ImageAttributes()
+                imgattr.SetColorMatrix(grayscale)
+                Using g As Graphics = Graphics.FromImage(noaganhim)
+                    g.DrawImage(noaganhim, New Rectangle(0, 0, noaganhim.Width, noaganhim.Height),
+                    0, 0, noaganhim.Width, noaganhim.Height,
+                    GraphicsUnit.Pixel, imgattr)
+                End Using
                 AgaButton.Visible = True
+                AgaButton.Image = noaganhim
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
             Else
@@ -1649,6 +1666,7 @@
         Else
             If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True And AGKeys.Text = 2 Then
                 AgaButton.Visible = True
+                AgaButton.Image = My.Resources.noaganhim
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
             ElseIf (Sword >= 2 Or (Cape = True And Sword > 0)) Then
@@ -1955,6 +1973,10 @@
         End If
     End Sub
 
+    Private Sub MireBEQ_Click(sender As Object, e As MouseEventArgs) Handles MireBEQ.MouseDown
+
+    End Sub
+
     Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "TTMap"
@@ -2235,7 +2257,7 @@
         End If
     End Sub
 
-    Private Sub MireBEQ_Click(sender As Object, e As EventArgs) Handles MireBEQ.Click
+    Private Sub MireBEQ_Click(sender As Object, e As EventArgs) Handles MireBEQ.MouseDown
         MireMedallion = (MireMedallion + 1) Mod 4
         Select Case MireMedallion
             Case 0
@@ -2361,7 +2383,7 @@
         End If
     End Sub
 
-    Private Sub TurtleBEQ_Click(sender As Object, e As EventArgs) Handles TurtleBEQ.Click
+    Private Sub TurtleBEQ_Click(sender As Object, e As EventArgs) Handles TurtleBEQ.MouseDown
         TurtleMedallion = (TurtleMedallion + 1) Mod 4
         Select Case TurtleMedallion
             Case 0
@@ -2704,7 +2726,7 @@
     End Sub
 
     Private Sub BowButton_Click(sender As Object, e As EventArgs) Handles BowButton.MouseDown
-        If MouseButtons = MouseButtons.Left Then Bow = (Bow + 1) Mod 3 Else Bow = (Bow + 2) Mod 3
+        If MouseButtons = MouseButtons.Left Then Bow = (Bow + 1) Mod 4 Else Bow = (Bow + 3) Mod 4
         Select Case Bow
             Case 0
                 Dim grayscale As New Imaging.ColorMatrix(New Single()() _
@@ -2725,12 +2747,15 @@
                     GraphicsUnit.Pixel, imgattr)
                 End Using
                 BowButton.Image = nobow
-                BowButton.BackColor = Color.FromArgb(64, 64, 64)
+                BowButton.BackColor = Color.Black
             Case 1
                 BowButton.Image = My.Resources.bow
                 BowButton.BackColor = Color.WhiteSmoke
             Case 2
                 BowButton.Image = My.Resources.silvers
+                BowButton.BackColor = Color.WhiteSmoke
+            Case 3
+                BowButton.Image = My.Resources.Agsonly
                 BowButton.BackColor = Color.WhiteSmoke
         End Select
         EPCheck()
@@ -2759,7 +2784,7 @@
                     GraphicsUnit.Pixel, imgattr)
                 End Using
                 BoomButton.Image = noboomerang
-                BoomButton.BackColor = Color.FromArgb(64, 64, 64)
+                BoomButton.BackColor = Color.Black
             Case 1
                 BoomButton.Image = My.Resources.blueboom
                 BoomButton.BackColor = Color.WhiteSmoke
@@ -2796,7 +2821,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             HookButton.Image = nohook
-            HookButton.BackColor = Color.FromArgb(64, 64, 64)
+            HookButton.BackColor = Color.Black
         End If
         TOHCheck()
         SPCheck()
@@ -2833,7 +2858,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             BombButton.Image = nobombs
-            BombButton.BackColor = Color.FromArgb(64, 64, 64)
+            BombButton.BackColor = Color.Black
         End If
         HCCheck()
         SPCheck()
@@ -2865,7 +2890,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             PowderButton.Image = nopowder
-            PowderButton.BackColor = Color.FromArgb(64, 64, 64)
+            PowderButton.BackColor = Color.Black
         End If
         LWCheck()
     End Sub
@@ -2894,7 +2919,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             FireButton.Image = nofirerod
-            FireButton.BackColor = Color.FromArgb(64, 64, 64)
+            FireButton.BackColor = Color.Black
         End If
         DPCheck()
         TOHCheck()
@@ -2930,7 +2955,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             IceButton.Image = noicerod
-            IceButton.BackColor = Color.FromArgb(64, 64, 64)
+            IceButton.BackColor = Color.Black
         End If
         TRCheck()
     End Sub
@@ -2959,7 +2984,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             BombosButton.Image = nobombos
-            BombosButton.BackColor = Color.FromArgb(64, 64, 64)
+            BombosButton.BackColor = Color.Black
         End If
         IPCheck()
         MMCheck()
@@ -2990,7 +3015,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             EtherButton.Image = noether
-            EtherButton.BackColor = Color.FromArgb(64, 64, 64)
+            EtherButton.BackColor = Color.Black
         End If
         MMCheck()
         TRCheck()
@@ -3020,7 +3045,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             QuakeButton.Image = noquake
-            QuakeButton.BackColor = Color.FromArgb(64, 64, 64)
+            QuakeButton.BackColor = Color.Black
         End If
         MMCheck()
         TRCheck()
@@ -3050,7 +3075,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             LampButton.Image = nolamp
-            LampButton.BackColor = Color.FromArgb(64, 64, 64)
+            LampButton.BackColor = Color.Black
         End If
         HCCheck()
         EPCheck()
@@ -3088,7 +3113,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             HammerButton.Image = nohammer
-            HammerButton.BackColor = Color.FromArgb(64, 64, 64)
+            HammerButton.BackColor = Color.Black
         End If
         TOHCheck()
         PODCheck()
@@ -3125,7 +3150,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             FluteButton.Image = noflute
-            FluteButton.BackColor = Color.FromArgb(64, 64, 64)
+            FluteButton.BackColor = Color.Black
         End If
         DPCheck()
         TOHCheck()
@@ -3158,7 +3183,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             NetButton.Image = nobugnet
-            NetButton.BackColor = Color.FromArgb(64, 64, 64)
+            NetButton.BackColor = Color.Black
         End If
         AgaCheck()
     End Sub
@@ -3187,7 +3212,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             BookButton.Image = nobook
-            BookButton.BackColor = Color.FromArgb(64, 64, 64)
+            BookButton.BackColor = Color.Black
         End If
         DPCheck()
         LWCheck()
@@ -3217,7 +3242,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             BottleButton.Image = nobottle
-            BottleButton.BackColor = Color.FromArgb(64, 64, 64)
+            BottleButton.BackColor = Color.Black
         End If
         LWCheck()
     End Sub
@@ -3246,7 +3271,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             SomariaButton.Image = nosomaria
-            SomariaButton.BackColor = Color.FromArgb(64, 64, 64)
+            SomariaButton.BackColor = Color.Black
         End If
         MMCheck()
         TRCheck()
@@ -3278,7 +3303,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             ByrnaButton.Image = nobyrna
-            ByrnaButton.BackColor = Color.FromArgb(64, 64, 64)
+            ByrnaButton.BackColor = Color.Black
         End If
         MMCheck()
         TRCheck()
@@ -3309,7 +3334,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             CapeButton.Image = nocape
-            CapeButton.BackColor = Color.FromArgb(64, 64, 64)
+            CapeButton.BackColor = Color.Black
         End If
         AgaCheck()
         MMCheck()
@@ -3341,7 +3366,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             MirrorButton.Image = nomirror
-            MirrorButton.BackColor = Color.FromArgb(64, 64, 64)
+            MirrorButton.BackColor = Color.Black
         End If
         DPCheck()
         TOHCheck()
@@ -3375,7 +3400,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             BootButton.Image = noboots
-            BootButton.BackColor = Color.FromArgb(64, 64, 64)
+            BootButton.BackColor = Color.Black
         End If
         HCCheck()
         DPCheck()
@@ -3405,7 +3430,7 @@
                     GraphicsUnit.Pixel, imgattr)
                 End Using
                 GloveButton.Image = noglove
-                GloveButton.BackColor = Color.FromArgb(64, 64, 64)
+                GloveButton.BackColor = Color.Black
             Case 1
                 GloveButton.Image = My.Resources.glove
                 GloveButton.BackColor = Color.WhiteSmoke
@@ -3451,7 +3476,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             FlipperButton.Image = noflippers
-            FlipperButton.BackColor = Color.FromArgb(64, 64, 64)
+            FlipperButton.BackColor = Color.Black
         End If
         PODCheck()
         SPCheck()
@@ -3486,7 +3511,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             PearlButton.Image = nopearl
-            PearlButton.BackColor = Color.FromArgb(64, 64, 64)
+            PearlButton.BackColor = Color.Black
         End If
         PODCheck()
         SPCheck()
@@ -3523,7 +3548,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             MushButton.Image = nomushroom
-            MushButton.BackColor = Color.FromArgb(64, 64, 64)
+            MushButton.BackColor = Color.Black
         End If
         LWCheck()
     End Sub
@@ -3552,7 +3577,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             ShovelButton.Image = noshovel
-            ShovelButton.BackColor = Color.FromArgb(64, 64, 64)
+            ShovelButton.BackColor = Color.Black
         End If
         LWCheck()
     End Sub
@@ -3581,7 +3606,7 @@
                     GraphicsUnit.Pixel, imgattr)
             End Using
             AgaButton.Image = noaganhim
-            AgaButton.BackColor = Color.FromArgb(64, 64, 64)
+            AgaButton.BackColor = Color.Black
         End If
         PODCheck()
         SWCheck()
@@ -3612,7 +3637,7 @@
                     GraphicsUnit.Pixel, imgattr)
                 End Using
                 SwordButton.Image = nosword
-                SwordButton.BackColor = Color.FromArgb(64, 64, 64)
+                SwordButton.BackColor = Color.Black
             Case 1
                 SwordButton.Image = My.Resources.sword1
                 SwordButton.BackColor = Color.WhiteSmoke
@@ -3667,7 +3692,7 @@
                     GraphicsUnit.Pixel, imgattr)
                 End Using
                 ShieldButton.Image = noshield
-                ShieldButton.BackColor = Color.FromArgb(64, 64, 64)
+                ShieldButton.BackColor = Color.Black
             Case 1
                 ShieldButton.Image = My.Resources.shield1
                 ShieldButton.BackColor = Color.WhiteSmoke

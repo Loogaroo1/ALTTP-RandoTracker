@@ -118,8 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="noflute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\noflute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="quakeMMTR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quakeMMTR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bigkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bigkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="greenchest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\greenchest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,6 +154,9 @@
   <data name="bombos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bombos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="noshovel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noshovel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="noicerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noicerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,9 +186,6 @@
   </data>
   <data name="boots" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shield1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shield1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="crystal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +226,8 @@
   <data name="mushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mushroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="whatmedallion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\whatmedallion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chestmaybe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chestmaybe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mitt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mitt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,8 +262,8 @@
   <data name="quake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quakeMMTR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quakeMMTR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="noboots" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noboots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,17 +307,14 @@
   <data name="nohammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nohammer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bothboom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bothboom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rupee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rupee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nobombs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nobombs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="noshovel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\noshovel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nobigkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nobigkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,6 +325,9 @@
   <data name="pearl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="nopearl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nopearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nomushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nomushroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -334,14 +337,14 @@
   <data name="fairycrystal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fairycrystal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chestmaybe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chestmaybe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shield1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shield1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="etherMMTR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\etherMMTR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bugnet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bugnet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bigkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bigkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bottle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,8 +355,8 @@
   <data name="nofirerod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nofirerod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nopearl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nopearl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="whatmedallion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whatmedallion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="noboom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noboom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -361,8 +364,8 @@
   <data name="nosword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nosword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="etherMMTR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\etherMMTR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="noflute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noflute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\powder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -388,7 +391,7 @@
   <data name="glove" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bothboom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bothboom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Agsonly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agsonly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

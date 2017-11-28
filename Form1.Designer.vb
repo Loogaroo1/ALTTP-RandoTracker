@@ -109,8 +109,6 @@ Partial Class Form1
         Me.TOHLabel = New System.Windows.Forms.Label()
         Me.DPLabel = New System.Windows.Forms.Label()
         Me.EPLabel = New System.Windows.Forms.Label()
-        Me.TurtleBEQ = New System.Windows.Forms.Button()
-        Me.MireBEQ = New System.Windows.Forms.Button()
         Me.TRBoss = New System.Windows.Forms.CheckBox()
         Me.MMBoss = New System.Windows.Forms.CheckBox()
         Me.IPBoss = New System.Windows.Forms.CheckBox()
@@ -233,6 +231,8 @@ Partial Class Form1
         Me.DPKeys = New System.Windows.Forms.Label()
         Me.EPKeys = New System.Windows.Forms.Label()
         Me.HCKeys = New System.Windows.Forms.Label()
+        Me.MireBEQ = New System.Windows.Forms.PictureBox()
+        Me.TurtleBEQ = New System.Windows.Forms.PictureBox()
         CType(Me.TRButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MMButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IPButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -274,12 +274,14 @@ Partial Class Form1
         CType(Me.BoomButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BowButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'HlpButton
         '
         Me.HlpButton.ForeColor = System.Drawing.Color.Black
-        Me.HlpButton.Location = New System.Drawing.Point(784, 441)
+        Me.HlpButton.Location = New System.Drawing.Point(768, 441)
         Me.HlpButton.Name = "HlpButton"
         Me.HlpButton.Size = New System.Drawing.Size(38, 23)
         Me.HlpButton.TabIndex = 602
@@ -290,7 +292,7 @@ Partial Class Form1
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.ForeColor = System.Drawing.Color.White
-        Me.RadioButton2.Location = New System.Drawing.Point(573, 444)
+        Me.RadioButton2.Location = New System.Drawing.Point(557, 444)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(70, 17)
         Me.RadioButton2.TabIndex = 601
@@ -302,7 +304,7 @@ Partial Class Form1
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
         Me.RadioButton1.ForeColor = System.Drawing.Color.White
-        Me.RadioButton1.Location = New System.Drawing.Point(468, 444)
+        Me.RadioButton1.Location = New System.Drawing.Point(452, 444)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(99, 17)
         Me.RadioButton1.TabIndex = 600
@@ -366,7 +368,7 @@ Partial Class Form1
         Me.TRLabel2.BackColor = System.Drawing.Color.Black
         Me.TRLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRLabel2.ForeColor = System.Drawing.Color.White
-        Me.TRLabel2.Location = New System.Drawing.Point(297, 148)
+        Me.TRLabel2.Location = New System.Drawing.Point(293, 143)
         Me.TRLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TRLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.TRLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -383,7 +385,7 @@ Partial Class Form1
         Me.MMLabel2.BackColor = System.Drawing.Color.Black
         Me.MMLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMLabel2.ForeColor = System.Drawing.Color.White
-        Me.MMLabel2.Location = New System.Drawing.Point(297, 112)
+        Me.MMLabel2.Location = New System.Drawing.Point(293, 108)
         Me.MMLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.MMLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.MMLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -400,7 +402,7 @@ Partial Class Form1
         Me.IPLabel2.BackColor = System.Drawing.Color.Black
         Me.IPLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPLabel2.ForeColor = System.Drawing.Color.White
-        Me.IPLabel2.Location = New System.Drawing.Point(297, 76)
+        Me.IPLabel2.Location = New System.Drawing.Point(293, 73)
         Me.IPLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.IPLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.IPLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -417,7 +419,7 @@ Partial Class Form1
         Me.TTLabel2.BackColor = System.Drawing.Color.Black
         Me.TTLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTLabel2.ForeColor = System.Drawing.Color.White
-        Me.TTLabel2.Location = New System.Drawing.Point(297, 40)
+        Me.TTLabel2.Location = New System.Drawing.Point(293, 38)
         Me.TTLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TTLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.TTLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -434,7 +436,7 @@ Partial Class Form1
         Me.SWLabel2.BackColor = System.Drawing.Color.Black
         Me.SWLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWLabel2.ForeColor = System.Drawing.Color.White
-        Me.SWLabel2.Location = New System.Drawing.Point(297, 4)
+        Me.SWLabel2.Location = New System.Drawing.Point(293, 3)
         Me.SWLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.SWLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.SWLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -451,7 +453,7 @@ Partial Class Form1
         Me.SPLabel2.BackColor = System.Drawing.Color.Black
         Me.SPLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPLabel2.ForeColor = System.Drawing.Color.White
-        Me.SPLabel2.Location = New System.Drawing.Point(223, 148)
+        Me.SPLabel2.Location = New System.Drawing.Point(223, 143)
         Me.SPLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.SPLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.SPLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -468,7 +470,7 @@ Partial Class Form1
         Me.PODLabel2.BackColor = System.Drawing.Color.Black
         Me.PODLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODLabel2.ForeColor = System.Drawing.Color.White
-        Me.PODLabel2.Location = New System.Drawing.Point(223, 112)
+        Me.PODLabel2.Location = New System.Drawing.Point(223, 108)
         Me.PODLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.PODLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.PODLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -485,7 +487,7 @@ Partial Class Form1
         Me.TOHLabel2.BackColor = System.Drawing.Color.Black
         Me.TOHLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHLabel2.ForeColor = System.Drawing.Color.White
-        Me.TOHLabel2.Location = New System.Drawing.Point(223, 76)
+        Me.TOHLabel2.Location = New System.Drawing.Point(223, 73)
         Me.TOHLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TOHLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.TOHLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -502,7 +504,7 @@ Partial Class Form1
         Me.DPLabel2.BackColor = System.Drawing.Color.Black
         Me.DPLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPLabel2.ForeColor = System.Drawing.Color.White
-        Me.DPLabel2.Location = New System.Drawing.Point(223, 40)
+        Me.DPLabel2.Location = New System.Drawing.Point(223, 38)
         Me.DPLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.DPLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.DPLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -519,7 +521,7 @@ Partial Class Form1
         Me.EPLabel2.BackColor = System.Drawing.Color.Black
         Me.EPLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPLabel2.ForeColor = System.Drawing.Color.White
-        Me.EPLabel2.Location = New System.Drawing.Point(223, 4)
+        Me.EPLabel2.Location = New System.Drawing.Point(223, 3)
         Me.EPLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.EPLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.EPLabel2.MinimumSize = New System.Drawing.Size(32, 34)
@@ -539,7 +541,7 @@ Partial Class Form1
         Me.DW16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW16.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW16.ForeColor = System.Drawing.Color.Black
-        Me.DW16.Location = New System.Drawing.Point(732, 411)
+        Me.DW16.Location = New System.Drawing.Point(716, 411)
         Me.DW16.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW16.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW16.Name = "DW16"
@@ -558,7 +560,7 @@ Partial Class Form1
         Me.DW15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW15.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW15.ForeColor = System.Drawing.Color.Black
-        Me.DW15.Location = New System.Drawing.Point(732, 382)
+        Me.DW15.Location = New System.Drawing.Point(716, 382)
         Me.DW15.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW15.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW15.Name = "DW15"
@@ -577,7 +579,7 @@ Partial Class Form1
         Me.DW14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW14.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW14.ForeColor = System.Drawing.Color.Black
-        Me.DW14.Location = New System.Drawing.Point(732, 353)
+        Me.DW14.Location = New System.Drawing.Point(716, 353)
         Me.DW14.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW14.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW14.Name = "DW14"
@@ -596,7 +598,7 @@ Partial Class Form1
         Me.DW13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW13.ForeColor = System.Drawing.Color.Black
-        Me.DW13.Location = New System.Drawing.Point(732, 324)
+        Me.DW13.Location = New System.Drawing.Point(716, 324)
         Me.DW13.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW13.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW13.Name = "DW13"
@@ -615,7 +617,7 @@ Partial Class Form1
         Me.DW12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW12.ForeColor = System.Drawing.Color.Black
-        Me.DW12.Location = New System.Drawing.Point(732, 34)
+        Me.DW12.Location = New System.Drawing.Point(716, 34)
         Me.DW12.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW12.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW12.Name = "DW12"
@@ -634,7 +636,7 @@ Partial Class Form1
         Me.DW11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW11.ForeColor = System.Drawing.Color.Black
-        Me.DW11.Location = New System.Drawing.Point(732, 237)
+        Me.DW11.Location = New System.Drawing.Point(716, 237)
         Me.DW11.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW11.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW11.Name = "DW11"
@@ -653,7 +655,7 @@ Partial Class Form1
         Me.DW10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW10.ForeColor = System.Drawing.Color.Black
-        Me.DW10.Location = New System.Drawing.Point(732, 208)
+        Me.DW10.Location = New System.Drawing.Point(716, 208)
         Me.DW10.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW10.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW10.Name = "DW10"
@@ -672,7 +674,7 @@ Partial Class Form1
         Me.DW9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW9.ForeColor = System.Drawing.Color.Black
-        Me.DW9.Location = New System.Drawing.Point(732, 179)
+        Me.DW9.Location = New System.Drawing.Point(716, 179)
         Me.DW9.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW9.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW9.Name = "DW9"
@@ -691,7 +693,7 @@ Partial Class Form1
         Me.DW8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW8.ForeColor = System.Drawing.Color.Black
-        Me.DW8.Location = New System.Drawing.Point(554, 266)
+        Me.DW8.Location = New System.Drawing.Point(538, 266)
         Me.DW8.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW8.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW8.Name = "DW8"
@@ -710,7 +712,7 @@ Partial Class Form1
         Me.DW7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW7.ForeColor = System.Drawing.Color.Black
-        Me.DW7.Location = New System.Drawing.Point(732, 266)
+        Me.DW7.Location = New System.Drawing.Point(716, 266)
         Me.DW7.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW7.MinimumSize = New System.Drawing.Size(60, 30)
         Me.DW7.Name = "DW7"
@@ -729,7 +731,7 @@ Partial Class Form1
         Me.DW6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW6.ForeColor = System.Drawing.Color.Black
-        Me.DW6.Location = New System.Drawing.Point(732, 295)
+        Me.DW6.Location = New System.Drawing.Point(716, 295)
         Me.DW6.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW6.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW6.Name = "DW6"
@@ -748,7 +750,7 @@ Partial Class Form1
         Me.DW5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW5.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW5.ForeColor = System.Drawing.Color.Black
-        Me.DW5.Location = New System.Drawing.Point(732, 150)
+        Me.DW5.Location = New System.Drawing.Point(716, 150)
         Me.DW5.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW5.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW5.Name = "DW5"
@@ -767,7 +769,7 @@ Partial Class Form1
         Me.DW4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW4.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW4.ForeColor = System.Drawing.Color.Black
-        Me.DW4.Location = New System.Drawing.Point(732, 121)
+        Me.DW4.Location = New System.Drawing.Point(716, 121)
         Me.DW4.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW4.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW4.Name = "DW4"
@@ -786,7 +788,7 @@ Partial Class Form1
         Me.DW3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW3.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW3.ForeColor = System.Drawing.Color.Black
-        Me.DW3.Location = New System.Drawing.Point(732, 92)
+        Me.DW3.Location = New System.Drawing.Point(716, 92)
         Me.DW3.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW3.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW3.Name = "DW3"
@@ -805,7 +807,7 @@ Partial Class Form1
         Me.DW2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW2.ForeColor = System.Drawing.Color.Black
-        Me.DW2.Location = New System.Drawing.Point(732, 63)
+        Me.DW2.Location = New System.Drawing.Point(716, 63)
         Me.DW2.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW2.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW2.Name = "DW2"
@@ -823,7 +825,7 @@ Partial Class Form1
         Me.DW1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW1.ForeColor = System.Drawing.Color.Black
-        Me.DW1.Location = New System.Drawing.Point(732, 5)
+        Me.DW1.Location = New System.Drawing.Point(716, 5)
         Me.DW1.MaximumSize = New System.Drawing.Size(90, 30)
         Me.DW1.MinimumSize = New System.Drawing.Size(90, 30)
         Me.DW1.Name = "DW1"
@@ -842,7 +844,7 @@ Partial Class Form1
         Me.LW47.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW47.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW47.ForeColor = System.Drawing.Color.Black
-        Me.LW47.Location = New System.Drawing.Point(643, 411)
+        Me.LW47.Location = New System.Drawing.Point(627, 411)
         Me.LW47.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW47.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW47.Name = "LW47"
@@ -861,7 +863,7 @@ Partial Class Form1
         Me.LW46.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW46.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW46.ForeColor = System.Drawing.Color.Black
-        Me.LW46.Location = New System.Drawing.Point(643, 382)
+        Me.LW46.Location = New System.Drawing.Point(627, 382)
         Me.LW46.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW46.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW46.Name = "LW46"
@@ -880,7 +882,7 @@ Partial Class Form1
         Me.LW45.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW45.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW45.ForeColor = System.Drawing.Color.Black
-        Me.LW45.Location = New System.Drawing.Point(554, 208)
+        Me.LW45.Location = New System.Drawing.Point(538, 208)
         Me.LW45.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW45.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW45.Name = "LW45"
@@ -899,7 +901,7 @@ Partial Class Form1
         Me.LW44.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW44.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW44.ForeColor = System.Drawing.Color.Black
-        Me.LW44.Location = New System.Drawing.Point(554, 179)
+        Me.LW44.Location = New System.Drawing.Point(538, 179)
         Me.LW44.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW44.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW44.Name = "LW44"
@@ -918,7 +920,7 @@ Partial Class Form1
         Me.LW43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW43.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW43.ForeColor = System.Drawing.Color.Black
-        Me.LW43.Location = New System.Drawing.Point(554, 150)
+        Me.LW43.Location = New System.Drawing.Point(538, 150)
         Me.LW43.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW43.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW43.Name = "LW43"
@@ -937,7 +939,7 @@ Partial Class Form1
         Me.LW42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW42.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW42.ForeColor = System.Drawing.Color.Black
-        Me.LW42.Location = New System.Drawing.Point(554, 121)
+        Me.LW42.Location = New System.Drawing.Point(538, 121)
         Me.LW42.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW42.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW42.Name = "LW42"
@@ -956,7 +958,7 @@ Partial Class Form1
         Me.LW41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW41.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW41.ForeColor = System.Drawing.Color.Black
-        Me.LW41.Location = New System.Drawing.Point(554, 92)
+        Me.LW41.Location = New System.Drawing.Point(538, 92)
         Me.LW41.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW41.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW41.Name = "LW41"
@@ -975,7 +977,7 @@ Partial Class Form1
         Me.LW40.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW40.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW40.ForeColor = System.Drawing.Color.Black
-        Me.LW40.Location = New System.Drawing.Point(554, 63)
+        Me.LW40.Location = New System.Drawing.Point(538, 63)
         Me.LW40.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW40.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW40.Name = "LW40"
@@ -994,7 +996,7 @@ Partial Class Form1
         Me.LW39.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW39.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW39.ForeColor = System.Drawing.Color.Black
-        Me.LW39.Location = New System.Drawing.Point(554, 34)
+        Me.LW39.Location = New System.Drawing.Point(538, 34)
         Me.LW39.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW39.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW39.Name = "LW39"
@@ -1013,7 +1015,7 @@ Partial Class Form1
         Me.LW38.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW38.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW38.ForeColor = System.Drawing.Color.Black
-        Me.LW38.Location = New System.Drawing.Point(554, 5)
+        Me.LW38.Location = New System.Drawing.Point(538, 5)
         Me.LW38.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW38.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW38.Name = "LW38"
@@ -1032,7 +1034,7 @@ Partial Class Form1
         Me.LW37.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW37.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW37.ForeColor = System.Drawing.Color.Black
-        Me.LW37.Location = New System.Drawing.Point(643, 324)
+        Me.LW37.Location = New System.Drawing.Point(627, 324)
         Me.LW37.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW37.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW37.Name = "LW37"
@@ -1051,7 +1053,7 @@ Partial Class Form1
         Me.LW36.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW36.ForeColor = System.Drawing.Color.Black
         Me.LW36.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.LW36.Location = New System.Drawing.Point(643, 295)
+        Me.LW36.Location = New System.Drawing.Point(627, 295)
         Me.LW36.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW36.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW36.Name = "LW36"
@@ -1070,7 +1072,7 @@ Partial Class Form1
         Me.LW35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW35.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW35.ForeColor = System.Drawing.Color.Black
-        Me.LW35.Location = New System.Drawing.Point(643, 266)
+        Me.LW35.Location = New System.Drawing.Point(627, 266)
         Me.LW35.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW35.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW35.Name = "LW35"
@@ -1089,7 +1091,7 @@ Partial Class Form1
         Me.LW34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW34.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW34.ForeColor = System.Drawing.Color.Black
-        Me.LW34.Location = New System.Drawing.Point(554, 382)
+        Me.LW34.Location = New System.Drawing.Point(538, 382)
         Me.LW34.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW34.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW34.Name = "LW34"
@@ -1107,7 +1109,7 @@ Partial Class Form1
         Me.LW33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW33.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW33.ForeColor = System.Drawing.Color.Black
-        Me.LW33.Location = New System.Drawing.Point(643, 353)
+        Me.LW33.Location = New System.Drawing.Point(627, 353)
         Me.LW33.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW33.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW33.Name = "LW33"
@@ -1125,7 +1127,7 @@ Partial Class Form1
         Me.LW32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW32.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW32.ForeColor = System.Drawing.Color.Black
-        Me.LW32.Location = New System.Drawing.Point(643, 237)
+        Me.LW32.Location = New System.Drawing.Point(627, 237)
         Me.LW32.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW32.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW32.Name = "LW32"
@@ -1144,7 +1146,7 @@ Partial Class Form1
         Me.LW31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW31.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW31.ForeColor = System.Drawing.Color.Black
-        Me.LW31.Location = New System.Drawing.Point(554, 353)
+        Me.LW31.Location = New System.Drawing.Point(538, 353)
         Me.LW31.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW31.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW31.Name = "LW31"
@@ -1163,7 +1165,7 @@ Partial Class Form1
         Me.LW30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW30.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW30.ForeColor = System.Drawing.Color.Black
-        Me.LW30.Location = New System.Drawing.Point(554, 324)
+        Me.LW30.Location = New System.Drawing.Point(538, 324)
         Me.LW30.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW30.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW30.Name = "LW30"
@@ -1182,7 +1184,7 @@ Partial Class Form1
         Me.LW29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW29.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW29.ForeColor = System.Drawing.Color.Black
-        Me.LW29.Location = New System.Drawing.Point(554, 295)
+        Me.LW29.Location = New System.Drawing.Point(538, 295)
         Me.LW29.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW29.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW29.Name = "LW29"
@@ -1201,7 +1203,7 @@ Partial Class Form1
         Me.LW28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW28.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW28.ForeColor = System.Drawing.Color.Black
-        Me.LW28.Location = New System.Drawing.Point(465, 411)
+        Me.LW28.Location = New System.Drawing.Point(449, 411)
         Me.LW28.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW28.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW28.Name = "LW28"
@@ -1220,7 +1222,7 @@ Partial Class Form1
         Me.LW27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW27.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW27.ForeColor = System.Drawing.Color.Black
-        Me.LW27.Location = New System.Drawing.Point(554, 411)
+        Me.LW27.Location = New System.Drawing.Point(538, 411)
         Me.LW27.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW27.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW27.Name = "LW27"
@@ -1239,7 +1241,7 @@ Partial Class Form1
         Me.LW26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW26.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW26.ForeColor = System.Drawing.Color.Black
-        Me.LW26.Location = New System.Drawing.Point(465, 324)
+        Me.LW26.Location = New System.Drawing.Point(449, 324)
         Me.LW26.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW26.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW26.Name = "LW26"
@@ -1258,7 +1260,7 @@ Partial Class Form1
         Me.LW25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW25.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW25.ForeColor = System.Drawing.Color.Black
-        Me.LW25.Location = New System.Drawing.Point(554, 237)
+        Me.LW25.Location = New System.Drawing.Point(538, 237)
         Me.LW25.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW25.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW25.Name = "LW25"
@@ -1277,7 +1279,7 @@ Partial Class Form1
         Me.LW24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW24.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW24.ForeColor = System.Drawing.Color.Black
-        Me.LW24.Location = New System.Drawing.Point(643, 208)
+        Me.LW24.Location = New System.Drawing.Point(627, 208)
         Me.LW24.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW24.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW24.Name = "LW24"
@@ -1296,7 +1298,7 @@ Partial Class Form1
         Me.LW23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW23.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW23.ForeColor = System.Drawing.Color.Black
-        Me.LW23.Location = New System.Drawing.Point(643, 179)
+        Me.LW23.Location = New System.Drawing.Point(627, 179)
         Me.LW23.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW23.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW23.Name = "LW23"
@@ -1315,7 +1317,7 @@ Partial Class Form1
         Me.LW22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW22.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW22.ForeColor = System.Drawing.Color.Black
-        Me.LW22.Location = New System.Drawing.Point(643, 150)
+        Me.LW22.Location = New System.Drawing.Point(627, 150)
         Me.LW22.Margin = New System.Windows.Forms.Padding(0)
         Me.LW22.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW22.MinimumSize = New System.Drawing.Size(60, 30)
@@ -1335,7 +1337,7 @@ Partial Class Form1
         Me.LW21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW21.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW21.ForeColor = System.Drawing.Color.Black
-        Me.LW21.Location = New System.Drawing.Point(643, 5)
+        Me.LW21.Location = New System.Drawing.Point(627, 5)
         Me.LW21.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW21.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW21.Name = "LW21"
@@ -1354,7 +1356,7 @@ Partial Class Form1
         Me.LW20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW20.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW20.ForeColor = System.Drawing.Color.Black
-        Me.LW20.Location = New System.Drawing.Point(643, 92)
+        Me.LW20.Location = New System.Drawing.Point(627, 92)
         Me.LW20.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW20.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW20.Name = "LW20"
@@ -1373,7 +1375,7 @@ Partial Class Form1
         Me.LW19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW19.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW19.ForeColor = System.Drawing.Color.Black
-        Me.LW19.Location = New System.Drawing.Point(643, 121)
+        Me.LW19.Location = New System.Drawing.Point(627, 121)
         Me.LW19.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW19.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW19.Name = "LW19"
@@ -1392,7 +1394,7 @@ Partial Class Form1
         Me.LW18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW18.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW18.ForeColor = System.Drawing.Color.Black
-        Me.LW18.Location = New System.Drawing.Point(643, 63)
+        Me.LW18.Location = New System.Drawing.Point(627, 63)
         Me.LW18.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW18.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW18.Name = "LW18"
@@ -1409,7 +1411,7 @@ Partial Class Form1
         Me.LW17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW17.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW17.ForeColor = System.Drawing.Color.Black
-        Me.LW17.Location = New System.Drawing.Point(643, 34)
+        Me.LW17.Location = New System.Drawing.Point(627, 34)
         Me.LW17.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW17.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW17.Name = "LW17"
@@ -1428,7 +1430,7 @@ Partial Class Form1
         Me.LW16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW16.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW16.ForeColor = System.Drawing.Color.Black
-        Me.LW16.Location = New System.Drawing.Point(465, 382)
+        Me.LW16.Location = New System.Drawing.Point(449, 382)
         Me.LW16.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW16.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW16.Name = "LW16"
@@ -1447,7 +1449,7 @@ Partial Class Form1
         Me.LW15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW15.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW15.ForeColor = System.Drawing.Color.Black
-        Me.LW15.Location = New System.Drawing.Point(465, 353)
+        Me.LW15.Location = New System.Drawing.Point(449, 353)
         Me.LW15.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW15.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW15.Name = "LW15"
@@ -1466,7 +1468,7 @@ Partial Class Form1
         Me.LW14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW14.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW14.ForeColor = System.Drawing.Color.Black
-        Me.LW14.Location = New System.Drawing.Point(465, 295)
+        Me.LW14.Location = New System.Drawing.Point(449, 295)
         Me.LW14.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW14.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW14.Name = "LW14"
@@ -1484,7 +1486,7 @@ Partial Class Form1
         Me.LW13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW13.ForeColor = System.Drawing.Color.Black
-        Me.LW13.Location = New System.Drawing.Point(465, 266)
+        Me.LW13.Location = New System.Drawing.Point(449, 266)
         Me.LW13.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW13.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW13.Name = "LW13"
@@ -1503,7 +1505,7 @@ Partial Class Form1
         Me.LW12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW12.ForeColor = System.Drawing.Color.Black
-        Me.LW12.Location = New System.Drawing.Point(465, 237)
+        Me.LW12.Location = New System.Drawing.Point(449, 237)
         Me.LW12.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW12.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW12.Name = "LW12"
@@ -1521,7 +1523,7 @@ Partial Class Form1
         Me.LW11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW11.ForeColor = System.Drawing.Color.Black
-        Me.LW11.Location = New System.Drawing.Point(465, 208)
+        Me.LW11.Location = New System.Drawing.Point(449, 208)
         Me.LW11.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW11.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW11.Name = "LW11"
@@ -1539,7 +1541,7 @@ Partial Class Form1
         Me.LW10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW10.ForeColor = System.Drawing.Color.Black
-        Me.LW10.Location = New System.Drawing.Point(465, 179)
+        Me.LW10.Location = New System.Drawing.Point(449, 179)
         Me.LW10.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW10.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW10.Name = "LW10"
@@ -1557,7 +1559,7 @@ Partial Class Form1
         Me.LW9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW9.ForeColor = System.Drawing.Color.Black
-        Me.LW9.Location = New System.Drawing.Point(465, 150)
+        Me.LW9.Location = New System.Drawing.Point(449, 150)
         Me.LW9.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW9.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW9.Name = "LW9"
@@ -1575,7 +1577,7 @@ Partial Class Form1
         Me.LW8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW8.ForeColor = System.Drawing.Color.Black
-        Me.LW8.Location = New System.Drawing.Point(465, 121)
+        Me.LW8.Location = New System.Drawing.Point(449, 121)
         Me.LW8.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW8.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW8.Name = "LW8"
@@ -1593,7 +1595,7 @@ Partial Class Form1
         Me.LW7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW7.ForeColor = System.Drawing.Color.Black
-        Me.LW7.Location = New System.Drawing.Point(465, 92)
+        Me.LW7.Location = New System.Drawing.Point(449, 92)
         Me.LW7.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW7.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW7.Name = "LW7"
@@ -1612,7 +1614,7 @@ Partial Class Form1
         Me.LW6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW6.ForeColor = System.Drawing.Color.Black
-        Me.LW6.Location = New System.Drawing.Point(465, 63)
+        Me.LW6.Location = New System.Drawing.Point(449, 63)
         Me.LW6.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW6.MinimumSize = New System.Drawing.Size(60, 30)
         Me.LW6.Name = "LW6"
@@ -1630,7 +1632,7 @@ Partial Class Form1
         Me.LW2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW2.ForeColor = System.Drawing.Color.Black
-        Me.LW2.Location = New System.Drawing.Point(465, 34)
+        Me.LW2.Location = New System.Drawing.Point(449, 34)
         Me.LW2.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW2.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW2.Name = "LW2"
@@ -1647,7 +1649,7 @@ Partial Class Form1
         Me.LW1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW1.ForeColor = System.Drawing.Color.Black
-        Me.LW1.Location = New System.Drawing.Point(465, 5)
+        Me.LW1.Location = New System.Drawing.Point(449, 5)
         Me.LW1.MaximumSize = New System.Drawing.Size(90, 30)
         Me.LW1.MinimumSize = New System.Drawing.Size(90, 30)
         Me.LW1.Name = "LW1"
@@ -1816,34 +1818,6 @@ Partial Class Form1
         Me.EPLabel.TabIndex = 504
         Me.EPLabel.Text = "EP"
         Me.EPLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TurtleBEQ
-        '
-        Me.TurtleBEQ.AutoSize = True
-        Me.TurtleBEQ.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TurtleBEQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.TurtleBEQ.Image = Global.RandoTracker.My.Resources.Resources.whatmedallion
-        Me.TurtleBEQ.Location = New System.Drawing.Point(361, 148)
-        Me.TurtleBEQ.Margin = New System.Windows.Forms.Padding(0)
-        Me.TurtleBEQ.MaximumSize = New System.Drawing.Size(34, 34)
-        Me.TurtleBEQ.Name = "TurtleBEQ"
-        Me.TurtleBEQ.Size = New System.Drawing.Size(34, 34)
-        Me.TurtleBEQ.TabIndex = 715
-        Me.TurtleBEQ.UseVisualStyleBackColor = False
-        '
-        'MireBEQ
-        '
-        Me.MireBEQ.AutoSize = True
-        Me.MireBEQ.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MireBEQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MireBEQ.Image = Global.RandoTracker.My.Resources.Resources.whatmedallion
-        Me.MireBEQ.Location = New System.Drawing.Point(361, 112)
-        Me.MireBEQ.Margin = New System.Windows.Forms.Padding(0)
-        Me.MireBEQ.MaximumSize = New System.Drawing.Size(34, 34)
-        Me.MireBEQ.Name = "MireBEQ"
-        Me.MireBEQ.Size = New System.Drawing.Size(34, 34)
-        Me.MireBEQ.TabIndex = 714
-        Me.MireBEQ.UseVisualStyleBackColor = False
         '
         'TRBoss
         '
@@ -2443,7 +2417,7 @@ Partial Class Form1
         Me.TRButton.BackColor = System.Drawing.Color.Black
         Me.TRButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.TRButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.TRButton.Location = New System.Drawing.Point(329, 148)
+        Me.TRButton.Location = New System.Drawing.Point(325, 143)
         Me.TRButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.TRButton.Name = "TRButton"
         Me.TRButton.Size = New System.Drawing.Size(32, 34)
@@ -2456,7 +2430,7 @@ Partial Class Form1
         Me.MMButton.BackColor = System.Drawing.Color.Black
         Me.MMButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.MMButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.MMButton.Location = New System.Drawing.Point(329, 112)
+        Me.MMButton.Location = New System.Drawing.Point(325, 108)
         Me.MMButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.MMButton.Name = "MMButton"
         Me.MMButton.Size = New System.Drawing.Size(32, 34)
@@ -2469,7 +2443,7 @@ Partial Class Form1
         Me.IPButton.BackColor = System.Drawing.Color.Black
         Me.IPButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.IPButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.IPButton.Location = New System.Drawing.Point(329, 76)
+        Me.IPButton.Location = New System.Drawing.Point(325, 73)
         Me.IPButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.IPButton.Name = "IPButton"
         Me.IPButton.Size = New System.Drawing.Size(32, 34)
@@ -2482,7 +2456,7 @@ Partial Class Form1
         Me.TTButton.BackColor = System.Drawing.Color.Black
         Me.TTButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.TTButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.TTButton.Location = New System.Drawing.Point(329, 40)
+        Me.TTButton.Location = New System.Drawing.Point(325, 38)
         Me.TTButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.TTButton.Name = "TTButton"
         Me.TTButton.Size = New System.Drawing.Size(32, 34)
@@ -2495,7 +2469,7 @@ Partial Class Form1
         Me.SWButton.BackColor = System.Drawing.Color.Black
         Me.SWButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.SWButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.SWButton.Location = New System.Drawing.Point(329, 4)
+        Me.SWButton.Location = New System.Drawing.Point(325, 3)
         Me.SWButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.SWButton.Name = "SWButton"
         Me.SWButton.Size = New System.Drawing.Size(32, 34)
@@ -2508,7 +2482,7 @@ Partial Class Form1
         Me.SPButton.BackColor = System.Drawing.Color.Black
         Me.SPButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.SPButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.SPButton.Location = New System.Drawing.Point(255, 148)
+        Me.SPButton.Location = New System.Drawing.Point(255, 143)
         Me.SPButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.SPButton.Name = "SPButton"
         Me.SPButton.Size = New System.Drawing.Size(32, 34)
@@ -2521,7 +2495,7 @@ Partial Class Form1
         Me.PODButton.BackColor = System.Drawing.Color.Black
         Me.PODButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.PODButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.PODButton.Location = New System.Drawing.Point(255, 112)
+        Me.PODButton.Location = New System.Drawing.Point(255, 108)
         Me.PODButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.PODButton.Name = "PODButton"
         Me.PODButton.Size = New System.Drawing.Size(32, 34)
@@ -2534,7 +2508,7 @@ Partial Class Form1
         Me.TOHButton.BackColor = System.Drawing.Color.Black
         Me.TOHButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.TOHButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.TOHButton.Location = New System.Drawing.Point(255, 76)
+        Me.TOHButton.Location = New System.Drawing.Point(255, 73)
         Me.TOHButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.TOHButton.Name = "TOHButton"
         Me.TOHButton.Size = New System.Drawing.Size(32, 34)
@@ -2547,7 +2521,7 @@ Partial Class Form1
         Me.DPButton.BackColor = System.Drawing.Color.Black
         Me.DPButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.DPButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.DPButton.Location = New System.Drawing.Point(255, 40)
+        Me.DPButton.Location = New System.Drawing.Point(255, 38)
         Me.DPButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.DPButton.Name = "DPButton"
         Me.DPButton.Size = New System.Drawing.Size(32, 34)
@@ -2560,7 +2534,7 @@ Partial Class Form1
         Me.EPButton.BackColor = System.Drawing.Color.Black
         Me.EPButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.EPButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.EPButton.Location = New System.Drawing.Point(255, 4)
+        Me.EPButton.Location = New System.Drawing.Point(255, 3)
         Me.EPButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.EPButton.Name = "EPButton"
         Me.EPButton.Size = New System.Drawing.Size(32, 34)
@@ -2570,7 +2544,7 @@ Partial Class Form1
         '
         'ShovelButton
         '
-        Me.ShovelButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ShovelButton.BackColor = System.Drawing.Color.Black
         Me.ShovelButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.ShovelButton.Location = New System.Drawing.Point(144, 161)
         Me.ShovelButton.Name = "ShovelButton"
@@ -2581,7 +2555,7 @@ Partial Class Form1
         '
         'MushButton
         '
-        Me.MushButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MushButton.BackColor = System.Drawing.Color.Black
         Me.MushButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.MushButton.Location = New System.Drawing.Point(144, 145)
         Me.MushButton.Name = "MushButton"
@@ -2592,7 +2566,7 @@ Partial Class Form1
         '
         'PearlButton
         '
-        Me.PearlButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PearlButton.BackColor = System.Drawing.Color.Black
         Me.PearlButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.PearlButton.Location = New System.Drawing.Point(109, 145)
         Me.PearlButton.Name = "PearlButton"
@@ -2603,7 +2577,7 @@ Partial Class Form1
         '
         'FlipperButton
         '
-        Me.FlipperButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.FlipperButton.BackColor = System.Drawing.Color.Black
         Me.FlipperButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.FlipperButton.Location = New System.Drawing.Point(74, 145)
         Me.FlipperButton.Name = "FlipperButton"
@@ -2614,7 +2588,7 @@ Partial Class Form1
         '
         'GloveButton
         '
-        Me.GloveButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GloveButton.BackColor = System.Drawing.Color.Black
         Me.GloveButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.GloveButton.Location = New System.Drawing.Point(39, 145)
         Me.GloveButton.Name = "GloveButton"
@@ -2625,7 +2599,7 @@ Partial Class Form1
         '
         'BootButton
         '
-        Me.BootButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BootButton.BackColor = System.Drawing.Color.Black
         Me.BootButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BootButton.Location = New System.Drawing.Point(4, 145)
         Me.BootButton.Name = "BootButton"
@@ -2636,7 +2610,7 @@ Partial Class Form1
         '
         'AgaButton
         '
-        Me.AgaButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.AgaButton.BackColor = System.Drawing.Color.Black
         Me.AgaButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.AgaButton.Location = New System.Drawing.Point(184, 110)
         Me.AgaButton.Name = "AgaButton"
@@ -2648,7 +2622,7 @@ Partial Class Form1
         '
         'MirrorButton
         '
-        Me.MirrorButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MirrorButton.BackColor = System.Drawing.Color.Black
         Me.MirrorButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.MirrorButton.Location = New System.Drawing.Point(144, 110)
         Me.MirrorButton.Name = "MirrorButton"
@@ -2659,7 +2633,7 @@ Partial Class Form1
         '
         'CapeButton
         '
-        Me.CapeButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CapeButton.BackColor = System.Drawing.Color.Black
         Me.CapeButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.CapeButton.Location = New System.Drawing.Point(109, 110)
         Me.CapeButton.Name = "CapeButton"
@@ -2670,7 +2644,7 @@ Partial Class Form1
         '
         'ByrnaButton
         '
-        Me.ByrnaButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ByrnaButton.BackColor = System.Drawing.Color.Black
         Me.ByrnaButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.ByrnaButton.Location = New System.Drawing.Point(74, 110)
         Me.ByrnaButton.Name = "ByrnaButton"
@@ -2681,7 +2655,7 @@ Partial Class Form1
         '
         'SomariaButton
         '
-        Me.SomariaButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.SomariaButton.BackColor = System.Drawing.Color.Black
         Me.SomariaButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.SomariaButton.Location = New System.Drawing.Point(39, 110)
         Me.SomariaButton.Name = "SomariaButton"
@@ -2692,7 +2666,7 @@ Partial Class Form1
         '
         'BottleButton
         '
-        Me.BottleButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BottleButton.BackColor = System.Drawing.Color.Black
         Me.BottleButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BottleButton.Location = New System.Drawing.Point(4, 110)
         Me.BottleButton.Name = "BottleButton"
@@ -2703,7 +2677,7 @@ Partial Class Form1
         '
         'ShieldButton
         '
-        Me.ShieldButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ShieldButton.BackColor = System.Drawing.Color.Black
         Me.ShieldButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.ShieldButton.Location = New System.Drawing.Point(184, 75)
         Me.ShieldButton.Name = "ShieldButton"
@@ -2714,7 +2688,7 @@ Partial Class Form1
         '
         'BookButton
         '
-        Me.BookButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BookButton.BackColor = System.Drawing.Color.Black
         Me.BookButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BookButton.Location = New System.Drawing.Point(144, 75)
         Me.BookButton.Name = "BookButton"
@@ -2725,7 +2699,7 @@ Partial Class Form1
         '
         'NetButton
         '
-        Me.NetButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NetButton.BackColor = System.Drawing.Color.Black
         Me.NetButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.NetButton.Location = New System.Drawing.Point(109, 75)
         Me.NetButton.Name = "NetButton"
@@ -2736,7 +2710,7 @@ Partial Class Form1
         '
         'FluteButton
         '
-        Me.FluteButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.FluteButton.BackColor = System.Drawing.Color.Black
         Me.FluteButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.FluteButton.Location = New System.Drawing.Point(74, 75)
         Me.FluteButton.Name = "FluteButton"
@@ -2747,7 +2721,7 @@ Partial Class Form1
         '
         'HammerButton
         '
-        Me.HammerButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.HammerButton.BackColor = System.Drawing.Color.Black
         Me.HammerButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.HammerButton.Location = New System.Drawing.Point(39, 75)
         Me.HammerButton.Name = "HammerButton"
@@ -2758,7 +2732,7 @@ Partial Class Form1
         '
         'LampButton
         '
-        Me.LampButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LampButton.BackColor = System.Drawing.Color.Black
         Me.LampButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.LampButton.Location = New System.Drawing.Point(4, 75)
         Me.LampButton.Name = "LampButton"
@@ -2780,7 +2754,7 @@ Partial Class Form1
         '
         'QuakeButton
         '
-        Me.QuakeButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.QuakeButton.BackColor = System.Drawing.Color.Black
         Me.QuakeButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.QuakeButton.Location = New System.Drawing.Point(144, 40)
         Me.QuakeButton.Name = "QuakeButton"
@@ -2791,7 +2765,7 @@ Partial Class Form1
         '
         'EtherButton
         '
-        Me.EtherButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.EtherButton.BackColor = System.Drawing.Color.Black
         Me.EtherButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.EtherButton.Location = New System.Drawing.Point(109, 40)
         Me.EtherButton.Name = "EtherButton"
@@ -2802,7 +2776,7 @@ Partial Class Form1
         '
         'BombosButton
         '
-        Me.BombosButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BombosButton.BackColor = System.Drawing.Color.Black
         Me.BombosButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BombosButton.Location = New System.Drawing.Point(74, 40)
         Me.BombosButton.Name = "BombosButton"
@@ -2813,7 +2787,7 @@ Partial Class Form1
         '
         'IceButton
         '
-        Me.IceButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.IceButton.BackColor = System.Drawing.Color.Black
         Me.IceButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.IceButton.Location = New System.Drawing.Point(39, 40)
         Me.IceButton.Name = "IceButton"
@@ -2824,7 +2798,7 @@ Partial Class Form1
         '
         'FireButton
         '
-        Me.FireButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.FireButton.BackColor = System.Drawing.Color.Black
         Me.FireButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.FireButton.Location = New System.Drawing.Point(4, 40)
         Me.FireButton.Name = "FireButton"
@@ -2835,7 +2809,7 @@ Partial Class Form1
         '
         'SwordButton
         '
-        Me.SwordButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.SwordButton.BackColor = System.Drawing.Color.Black
         Me.SwordButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.SwordButton.Location = New System.Drawing.Point(184, 4)
         Me.SwordButton.Name = "SwordButton"
@@ -2846,7 +2820,7 @@ Partial Class Form1
         '
         'PowderButton
         '
-        Me.PowderButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PowderButton.BackColor = System.Drawing.Color.Black
         Me.PowderButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.PowderButton.Location = New System.Drawing.Point(144, 4)
         Me.PowderButton.Name = "PowderButton"
@@ -2857,7 +2831,7 @@ Partial Class Form1
         '
         'BombButton
         '
-        Me.BombButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BombButton.BackColor = System.Drawing.Color.Black
         Me.BombButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BombButton.Location = New System.Drawing.Point(109, 4)
         Me.BombButton.Name = "BombButton"
@@ -2868,7 +2842,7 @@ Partial Class Form1
         '
         'HookButton
         '
-        Me.HookButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.HookButton.BackColor = System.Drawing.Color.Black
         Me.HookButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.HookButton.Location = New System.Drawing.Point(74, 4)
         Me.HookButton.Name = "HookButton"
@@ -2879,7 +2853,7 @@ Partial Class Form1
         '
         'BoomButton
         '
-        Me.BoomButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BoomButton.BackColor = System.Drawing.Color.Black
         Me.BoomButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BoomButton.Location = New System.Drawing.Point(39, 4)
         Me.BoomButton.Name = "BoomButton"
@@ -2890,7 +2864,7 @@ Partial Class Form1
         '
         'BowButton
         '
-        Me.BowButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BowButton.BackColor = System.Drawing.Color.Black
         Me.BowButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BowButton.Location = New System.Drawing.Point(4, 4)
         Me.BowButton.Name = "BowButton"
@@ -2901,7 +2875,8 @@ Partial Class Form1
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(792, 266)
+        Me.Button12.Image = Global.RandoTracker.My.Resources.Resources.chestmaybe
+        Me.Button12.Location = New System.Drawing.Point(776, 266)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(30, 30)
         Me.Button12.TabIndex = 599
@@ -2910,7 +2885,7 @@ Partial Class Form1
         'Button11
         '
         Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
-        Me.Button11.Location = New System.Drawing.Point(703, 411)
+        Me.Button11.Location = New System.Drawing.Point(687, 411)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(30, 30)
         Me.Button11.TabIndex = 598
@@ -2919,7 +2894,7 @@ Partial Class Form1
         'Button10
         '
         Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
-        Me.Button10.Location = New System.Drawing.Point(703, 353)
+        Me.Button10.Location = New System.Drawing.Point(687, 353)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(30, 30)
         Me.Button10.TabIndex = 597
@@ -2928,7 +2903,7 @@ Partial Class Form1
         'Button9
         '
         Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
-        Me.Button9.Location = New System.Drawing.Point(703, 324)
+        Me.Button9.Location = New System.Drawing.Point(687, 324)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(30, 30)
         Me.Button9.TabIndex = 596
@@ -2937,7 +2912,7 @@ Partial Class Form1
         'Button8
         '
         Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
-        Me.Button8.Location = New System.Drawing.Point(703, 179)
+        Me.Button8.Location = New System.Drawing.Point(687, 179)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(30, 30)
         Me.Button8.TabIndex = 595
@@ -2946,7 +2921,7 @@ Partial Class Form1
         'Button7
         '
         Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.Location = New System.Drawing.Point(703, 150)
+        Me.Button7.Location = New System.Drawing.Point(687, 150)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(30, 30)
         Me.Button7.TabIndex = 594
@@ -2955,7 +2930,7 @@ Partial Class Form1
         'Button6
         '
         Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
-        Me.Button6.Location = New System.Drawing.Point(614, 179)
+        Me.Button6.Location = New System.Drawing.Point(598, 179)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(30, 30)
         Me.Button6.TabIndex = 593
@@ -2964,7 +2939,7 @@ Partial Class Form1
         'Button5
         '
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(614, 92)
+        Me.Button5.Location = New System.Drawing.Point(598, 92)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(30, 30)
         Me.Button5.TabIndex = 592
@@ -2973,7 +2948,7 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.Location = New System.Drawing.Point(614, 63)
+        Me.Button4.Location = New System.Drawing.Point(598, 63)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(30, 30)
         Me.Button4.TabIndex = 591
@@ -2982,7 +2957,7 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(525, 382)
+        Me.Button3.Location = New System.Drawing.Point(509, 382)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(30, 30)
         Me.Button3.TabIndex = 590
@@ -2991,7 +2966,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(525, 353)
+        Me.Button2.Location = New System.Drawing.Point(509, 353)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(30, 30)
         Me.Button2.TabIndex = 589
@@ -3000,7 +2975,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(525, 63)
+        Me.Button1.Location = New System.Drawing.Point(509, 63)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(30, 30)
         Me.Button1.TabIndex = 588
@@ -3008,7 +2983,7 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.PictureBox2.BackColor = System.Drawing.Color.Black
         Me.PictureBox2.Location = New System.Drawing.Point(4, 3)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(213, 174)
@@ -3401,12 +3376,32 @@ Partial Class Form1
         Me.HCKeys.Text = "0"
         Me.HCKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'MireBEQ
+        '
+        Me.MireBEQ.Image = Global.RandoTracker.My.Resources.Resources.whatmedallion
+        Me.MireBEQ.Location = New System.Drawing.Point(357, 108)
+        Me.MireBEQ.Name = "MireBEQ"
+        Me.MireBEQ.Size = New System.Drawing.Size(32, 34)
+        Me.MireBEQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.MireBEQ.TabIndex = 716
+        Me.MireBEQ.TabStop = False
+        '
+        'TurtleBEQ
+        '
+        Me.TurtleBEQ.Image = Global.RandoTracker.My.Resources.Resources.whatmedallion
+        Me.TurtleBEQ.Location = New System.Drawing.Point(357, 143)
+        Me.TurtleBEQ.Name = "TurtleBEQ"
+        Me.TurtleBEQ.Size = New System.Drawing.Size(32, 34)
+        Me.TurtleBEQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.TurtleBEQ.TabIndex = 717
+        Me.TurtleBEQ.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(826, 466)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(811, 466)
         Me.Controls.Add(Me.TurtleBEQ)
         Me.Controls.Add(Me.MireBEQ)
         Me.Controls.Add(Me.TRBigKey)
@@ -3664,6 +3659,8 @@ Partial Class Form1
         CType(Me.BoomButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BowButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3877,6 +3874,6 @@ Partial Class Form1
     Friend WithEvents IPBoss As CheckBox
     Friend WithEvents TTBoss As CheckBox
     Friend WithEvents SWBoss As CheckBox
-    Friend WithEvents MireBEQ As Button
-    Friend WithEvents TurtleBEQ As Button
+    Friend WithEvents MireBEQ As PictureBox
+    Friend WithEvents TurtleBEQ As PictureBox
 End Class

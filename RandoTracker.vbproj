@@ -129,7 +129,7 @@
     <None Include="Resources\nobow.png" />
     <None Include="Resources\nomap.png" />
     <None Include="Resources\nosword.png" />
-    <None Include="RetGanon.ttf" />
+    <EmbeddedResource Include="RetGanon.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\aganhim.png" />
@@ -142,9 +142,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bombos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bombosMMTR.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bombs.png" />
@@ -187,9 +184,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ether.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\etherMMTR.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fairycrystal.png" />
@@ -249,9 +243,6 @@
     <None Include="Resources\quake.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\quakeMMTR.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\redboom.png" />
   </ItemGroup>
   <ItemGroup>
@@ -309,6 +300,7 @@
     <None Include="Resources\bothboom.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Agsonly.png" />
     <Content Include="Resources\bothboom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
