@@ -566,20 +566,12 @@
     End Sub
 
     Public Sub LWCheck()
-        '' Hyrule Castle - Dark chest lamp blocked; sewer chests blocked by glove or Key, then boots or bombs
-        If Lamp = True And (Glove > 0 Or HCKeys.Text = 1) And (Bombs = True Or Boots = True) Then
-            HCLabel.BackColor = Color.Green
-            HCLabel.ForeColor = Color.White
-        Else
-            HCLabel.BackColor = Color.Yellow
-            HCLabel.ForeColor = Color.Black
-        End If
-
         '' Lumberjack Tree - Aganhim and Boots
         If Aganhim = True And Boots = True Then
             LW6.Enabled = True
             LW6.BackColor = Color.WhiteSmoke
         Else
+            LW6.Checked = False
             LW6.Enabled = False
             LW6.BackColor = Color.Red
         End If
@@ -603,10 +595,13 @@
             LW9.BackColor = Color.Yellow
             LW10.Enabled = True
             LW10.BackColor = Color.Yellow
+            LW12.Checked = False
             LW12.Enabled = False
             LW12.BackColor = Color.Red
+            LW18.Checked = False
             LW18.Enabled = False
             LW18.BackColor = Color.Red
+            LW19.Checked = False
             LW19.Enabled = False
             LW19.BackColor = Color.Red
             LW20.Enabled = False
@@ -618,6 +613,7 @@
             LW14.Enabled = True
             LW14.BackColor = Color.WhiteSmoke
         Else
+            LW14.Checked = False
             LW14.Enabled = False
             LW14.BackColor = Color.Red
         End If
@@ -629,9 +625,11 @@
             LW29.Enabled = True
             LW29.BackColor = Color.WhiteSmoke
         Else
+            LW15.Checked = False
             LW15.Enabled = False
             LW15.BackColor = Color.Red
-            LW29.Enabled = True
+            LW29.Checked = False
+            LW29.Enabled = False
             LW29.BackColor = Color.Red
         End If
 
@@ -642,8 +640,10 @@
             LW21.Enabled = True
             LW21.BackColor = Color.WhiteSmoke
         Else
+            LW16.Checked = False
             LW16.Enabled = False
             LW16.BackColor = Color.Red
+            LW21.Checked = False
             LW21.Enabled = True
             LW21.BackColor = Color.Red
         End If
@@ -653,6 +653,7 @@
             LW22.Enabled = True
             LW22.BackColor = Color.WhiteSmoke
         Else
+            LW22.Checked = False
             LW22.Enabled = False
             LW22.BackColor = Color.Red
         End If
@@ -662,6 +663,7 @@
             LW23.Enabled = True
             LW23.BackColor = Color.WhiteSmoke
         Else
+            LW23.Checked = False
             LW23.Enabled = False
             LW23.BackColor = Color.Red
         End If
@@ -671,6 +673,7 @@
             LW24.Enabled = True
             LW24.BackColor = Color.WhiteSmoke
         Else
+            LW24.Checked = False
             LW24.Enabled = False
             LW24.BackColor = Color.Red
         End If
@@ -680,6 +683,7 @@
             LW25.Enabled = True
             LW25.BackColor = Color.WhiteSmoke
         Else
+            LW25.Checked = False
             LW25.Enabled = False
             LW25.BackColor = Color.Red
         End If
@@ -689,6 +693,7 @@
             LW26.Enabled = True
             LW26.BackColor = Color.WhiteSmoke
         Else
+            LW26.Checked = False
             LW26.Enabled = False
             LW26.BackColor = Color.Red
         End If
@@ -698,6 +703,7 @@
             LW27.Enabled = True
             LW27.BackColor = Color.WhiteSmoke
         Else
+            LW27.Checked = False
             LW27.Enabled = False
             LW27.BackColor = Color.Red
         End If
@@ -709,8 +715,10 @@
             LW30.Enabled = True
             LW30.BackColor = Color.WhiteSmoke
         Else
+            LW28.Checked = False
             LW28.Enabled = False
             LW28.BackColor = Color.Red
+            LW30.Checked = False
             LW30.Enabled = False
             LW30.BackColor = Color.Red
         End If
@@ -733,15 +741,18 @@
             LW37.Enabled = True
             LW37.BackColor = Color.WhiteSmoke
         Else
+            LW32.Checked = False
             LW32.Enabled = True
             LW32.BackColor = Color.Orange
             If Pearl = True Then
                 LW35.Enabled = True
                 LW35.BackColor = Color.Orange
             Else
+                LW35.Checked = False
                 LW35.Enabled = False
                 LW35.BackColor = Color.Red
             End If
+            LW37.Checked = False
             LW37.Enabled = False
             LW37.BackColor = Color.Red
         End If
@@ -751,6 +762,7 @@
             LW33.Enabled = True
             LW33.BackColor = Color.WhiteSmoke
         Else
+            LW33.Checked = False
             LW33.Enabled = False
             LW33.BackColor = Color.Red
         End If
@@ -760,6 +772,7 @@
             LW34.Enabled = True
             LW34.BackColor = Color.WhiteSmoke
         Else
+            LW34.Checked = False
             LW34.Enabled = False
             LW34.BackColor = Color.Red
         End If
@@ -783,6 +796,7 @@
                 LW38.BackColor = Color.Orange
             End If
         Else
+            LW38.Checked = False
             LW38.Enabled = False
             LW38.BackColor = Color.Red
         End If
@@ -795,6 +809,7 @@
             LW39.Enabled = True
             LW39.BackColor = Color.Orange
         Else
+            LW39.Checked = False
             LW39.Enabled = False
             LW39.BackColor = Color.Red
         End If
@@ -807,6 +822,7 @@
             LW40.Enabled = True
             LW40.BackColor = Color.Orange
         Else
+            LW40.Checked = False
             LW40.Enabled = False
             LW40.BackColor = Color.Red
         End If
@@ -819,6 +835,7 @@
             LW41.Enabled = True
             LW41.BackColor = Color.Orange
         Else
+            LW41.Checked = False
             LW41.Enabled = False
             LW41.BackColor = Color.Red
         End If
@@ -845,8 +862,10 @@
             LW43.Enabled = True
             LW43.BackColor = Color.Orange
         Else
+            LW42.Checked = False
             LW42.Enabled = False
             LW42.BackColor = Color.Red
+            LW43.Checked = False
             LW43.Enabled = False
             LW43.BackColor = Color.Red
         End If
@@ -861,6 +880,7 @@
                 LW44.BackColor = Color.Orange
             End If
         Else
+            LW44.Checked = False
             LW44.Enabled = False
             LW44.BackColor = Color.Red
         End If
@@ -875,6 +895,7 @@
                 LW45.BackColor = Color.Yellow
             End If
         Else
+            LW45.Checked = False
             LW45.Enabled = False
             LW45.BackColor = Color.Red
         End If
@@ -884,6 +905,7 @@
             LW46.Enabled = True
             LW46.BackColor = Color.WhiteSmoke
         Else
+            LW46.Checked = False
             LW46.Enabled = False
             LW46.BackColor = Color.Red
         End If
@@ -893,6 +915,7 @@
             LW47.Enabled = True
             LW47.BackColor = Color.WhiteSmoke
         Else
+            LW47.Checked = False
             LW47.Enabled = False
             LW47.BackColor = Color.Red
         End If
@@ -950,6 +973,7 @@
             DW1.Enabled = True
             DW1.BackColor = Color.WhiteSmoke
         Else
+            DW1.Checked = False
             DW1.Enabled = False
             DW1.BackColor = Color.Red
         End If
@@ -966,16 +990,21 @@
                 DW7.Enabled = True
                 DW7.BackColor = Color.WhiteSmoke
             Else
+                DW7.Checked = False
                 DW7.Enabled = False
                 DW7.BackColor = Color.Red
             End If
         Else
+            DW2.Checked = False
             DW2.Enabled = False
             DW2.BackColor = Color.Red
+            DW3.Checked = False
             DW3.Enabled = False
             DW3.BackColor = Color.Red
+            DW4.Checked = False
             DW4.Enabled = False
             DW4.BackColor = Color.Red
+            DW7.Checked = False
             DW7.Enabled = False
             DW7.BackColor = Color.Red
         End If
@@ -990,14 +1019,18 @@
                 DW11.Enabled = True
                 DW11.BackColor = Color.WhiteSmoke
             Else
+                DW11.Checked = False
                 DW11.Enabled = False
                 DW11.BackColor = Color.Red
             End If
         Else
+            DW5.Checked = False
             DW5.Enabled = False
             DW5.BackColor = Color.Red
+            DW10.Checked = False
             DW10.Enabled = False
             DW10.BackColor = Color.Red
+            DW11.Checked = False
             DW11.Enabled = False
             DW11.BackColor = Color.Red
         End If
@@ -1007,6 +1040,7 @@
             DW6.Enabled = True
             DW6.BackColor = Color.WhiteSmoke
         Else
+            DW6.Checked = False
             DW6.Enabled = False
             DW6.BackColor = Color.Red
         End If
@@ -1016,6 +1050,7 @@
             DW8.Enabled = True
             DW8.BackColor = Color.WhiteSmoke
         Else
+            DW8.Checked = False
             DW8.Enabled = False
             DW8.BackColor = Color.Red
         End If
@@ -1025,6 +1060,7 @@
             DW9.Enabled = True
             DW9.BackColor = Color.WhiteSmoke
         Else
+            DW9.Checked = False
             DW9.Enabled = False
             DW9.BackColor = Color.Red
         End If
@@ -1034,6 +1070,7 @@
             DW12.Enabled = True
             DW12.BackColor = Color.WhiteSmoke
         Else
+            DW12.Checked = False
             DW12.Enabled = False
             DW12.BackColor = Color.Red
         End If
@@ -1051,6 +1088,7 @@
             DW13.Enabled = True
             DW13.BackColor = Color.Orange
         Else
+            DW13.Checked = False
             DW13.Enabled = False
             DW13.BackColor = Color.Red
         End If
@@ -1065,6 +1103,7 @@
                 DW14.BackColor = Color.Orange
             End If
         Else
+            DW14.Checked = False
             DW14.Enabled = False
             DW14.BackColor = Color.Red
         End If
@@ -1082,6 +1121,7 @@
             DW15.Enabled = True
             DW15.BackColor = Color.Yellow
         Else
+            DW15.Checked = False
             DW15.Enabled = False
             DW15.BackColor = Color.Red
         End If
@@ -1091,6 +1131,7 @@
             DW16.Enabled = True
             DW16.BackColor = Color.WhiteSmoke
         Else
+            DW16.Checked = False
             DW16.Enabled = False
             DW16.BackColor = Color.Red
         End If
@@ -1279,6 +1320,11 @@
                 HCLabel.ForeColor = Color.Black
                 HCChests.Text = 8
                 HCChests.ForeColor = Color.Yellow
+            ElseIf Glove > 0 And (Bombs = True Or Boots = True) Then
+                HCLabel.BackColor = Color.Yellow
+                HCLabel.ForeColor = Color.Black
+                HCChests.Text = 8
+                HCChests.ForeColor = Color.Orange
             ElseIf Lamp = True Then
                 HCLabel.BackColor = Color.Yellow
                 HCLabel.ForeColor = Color.Black
@@ -1343,7 +1389,12 @@
     Private Sub EPClick(sender As Object, e As EventArgs) Handles EPMap.CheckedChanged, EPBigKey.CheckedChanged, EPBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "EPMap"
-                If EPMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If EPMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    EPButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "EPBigKey"
                 If EPBigKey.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.bigkey
@@ -1392,7 +1443,7 @@
 
     Public Sub EPCheck()
         If RadioButton1.Checked = True Then
-            If Bow > 0 Then
+            If Bow > 1 Then
                 EPLabel.ForeColor = Color.White
                 EPBoss.Enabled = True
                 EPChests.Text = 6
@@ -1411,11 +1462,11 @@
                 If Lamp = True Then EPChests.ForeColor = Color.White Else EPChests.ForeColor = Color.Yellow
             End If
         Else
-            If Bow > 0 And Lamp = True And EPBigKey.Checked = True Then
+            If Bow > 1 And Lamp = True And EPBigKey.Checked = True Then
                 EPLabel.ForeColor = Color.White
                 EPLabel.BackColor = Color.Green
                 EPBoss.Enabled = True
-            ElseIf Bow > 0 And EPBigKey.Checked = True Then
+            ElseIf bow > 1 And EPBigKey.Checked = True Then
                 EPLabel.ForeColor = Color.White
                 EPLabel.BackColor = Color.Orange
                 EPBoss.Enabled = True
@@ -1430,7 +1481,12 @@
     Private Sub DPClick(sender As Object, e As EventArgs) Handles DPMap.CheckedChanged, DPBigKey.CheckedChanged, DPBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "DPMap"
-                If DPMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If DPMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    DPButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "DPBigKey"
                 If DPBigKey.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.bigkey
@@ -1532,7 +1588,12 @@
     Private Sub TOHClick(sender As Object, e As EventArgs) Handles HeraMap.CheckedChanged, HeraBigKey.CheckedChanged, HeraBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "HeraMap"
-                If HeraMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If HeraMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    TOHButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "HeraBigKey"
                 If HeraBigKey.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.bigkey
@@ -1683,9 +1744,14 @@
     Private Sub PODClick(sender As Object, e As EventArgs) Handles PODMap.CheckedChanged, PODBigKey.CheckedChanged, PODBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "PODMap"
-                If PODMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If PODMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    PODButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "PODBigKey"
-                If PODBigKey.Checked = True Then
+                    If PODBigKey.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.bigkey
                     PODBigKey.BackColor = Color.WhiteSmoke
                 Else
@@ -1738,7 +1804,7 @@
     End Sub
     Public Sub PODCheck()
         If RadioButton1.Checked = True Then
-            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 0 And Hammer = True Then
+            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True Then
                 PODBoss.Enabled = True
                 PODChests.Text = 14
                 PODChests.ForeColor = Color.White
@@ -1749,7 +1815,7 @@
                     PODLabel.BackColor = Color.Orange
                     PODChests.ForeColor = Color.Orange
                 End If
-            ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 0 Then
+            ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And bow > 1 Then
                 PODBoss.Enabled = False
                 PODChests.Text = 13
                 PODChests.ForeColor = Color.Yellow
@@ -1769,7 +1835,7 @@
                 PODBoss.Enabled = False
             End If
         Else
-            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 0 And Hammer = True And PODBigKey.Checked = True Then
+            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True And PODBigKey.Checked = True Then
                 If Lamp = True Then PODLabel.BackColor = Color.Green Else PODLabel.BackColor = Color.Orange
                 PODLabel.ForeColor = Color.White
                 PODBoss.Enabled = True
@@ -1787,7 +1853,12 @@
     Private Sub SPClick(sender As Object, e As EventArgs) Handles SPMap.CheckedChanged, SPBigKey.CheckedChanged, SPBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "SPMap"
-                If SPMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If SPMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    SPButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "SPBigKey"
                 If SPBigKey.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.bigkey Else DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
             Case "SPBoss"
@@ -1879,7 +1950,12 @@
     Private Sub SWClick(sender As Object, e As EventArgs) Handles SWMap.CheckedChanged, SWBigKey.CheckedChanged, SWBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "SWMap"
-                If SWMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If SWMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    SWButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "SWBigKey"
                 If SWBigKey.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.bigkey Else DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
             Case "SWBoss"
@@ -1980,7 +2056,12 @@
     Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "TTMap"
-                If TTMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If TTMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    TTButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "TTBigKey"
                 If TTBigKey.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.bigkey
@@ -2066,7 +2147,12 @@
     Private Sub IPClick(sender As Object, e As EventArgs) Handles IPMap.CheckedChanged, IPBigKey.CheckedChanged, IPBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "IPMap"
-                If IPMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If IPMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    IPButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "IPBigKey"
                 If IPBigKey.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.bigkey Else DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
             Case "IPBoss"
@@ -2161,7 +2247,12 @@
     Private Sub MMClick(sender As Object, e As EventArgs) Handles MMMap.CheckedChanged, MMBigKey.CheckedChanged, MMBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "MMMap"
-                If MMMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If MMMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    MMButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "MMBigKey"
                 If MMBigKey.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.bigkey
@@ -2216,7 +2307,7 @@
     End Sub
     Public Sub MMCheck()
         If RadioButton1.Checked = True Then
-            If Pearl = True And Glove = 2 And Flute = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True Then
+            If Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True Then
                 MMBoss.Enabled = True
                 MMChests.Text = 8
                 MMLabel.ForeColor = Color.White
@@ -2227,7 +2318,7 @@
                     MMLabel.BackColor = Color.Orange
                     MMChests.ForeColor = Color.Orange
                 End If
-            ElseIf Pearl = True And Glove = 2 And Flute = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
                 MMLabel.BackColor = Color.Yellow
                 MMLabel.ForeColor = Color.Black
                 MMChests.Text = 7
@@ -2241,11 +2332,11 @@
                 MMBoss.Enabled = False
             End If
         Else
-            If Pearl = True And Glove = 2 And Flute = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
+            If Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
                 If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
                 MMLabel.ForeColor = Color.White
                 MMBoss.Enabled = True
-            ElseIf Pearl = True And Glove = 2 And Flute = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
                 MMLabel.BackColor = Color.Yellow
                 MMLabel.ForeColor = Color.Black
                 MMBoss.Enabled = False
@@ -2274,7 +2365,12 @@
     Private Sub TRClick(sender As Object, e As EventArgs) Handles TRMap.CheckedChanged, TRBigKey.CheckedChanged, TRBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "TRMap"
-                If TRMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                If TRMap.Checked = True Then
+                    DirectCast(sender, CheckBox).Image = My.Resources.map
+                    TRButton.Image = My.Resources.map
+                Else
+                    DirectCast(sender, CheckBox).Image = My.Resources.nomap
+                End If
             Case "TRBigKey"
                 If TRBigKey.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.bigkey
@@ -2329,7 +2425,7 @@
     End Sub
     Public Sub TRCheck()
         If RadioButton1.Checked = True Then
-            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
                 TRChests.Text = 12
                 If Lamp = True And Sword > 1 Then
@@ -2341,14 +2437,14 @@
                 End If
                 TRLabel.ForeColor = Color.White
                 TRBoss.Enabled = True
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And FireRod = True Then
+            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And FireRod = True Then
                 TRAccess = True
                 TRChests.Text = 11
                 If Lamp = True Then TRChests.ForeColor = Color.White Else TRChests.ForeColor = Color.Yellow
                 TRLabel.BackColor = Color.Yellow
                 TRLabel.ForeColor = Color.Black
                 TRBoss.Enabled = False
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
                 TRChests.Text = 9
                 TRChests.ForeColor = Color.Yellow
@@ -2364,12 +2460,12 @@
                 TRBoss.Enabled = False
             End If
         Else
-            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True Then
+            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True Then
                 TRAccess = True
                 If Lamp = True And Sword > 1 Then TRLabel.BackColor = Color.Green Else TRLabel.BackColor = Color.Orange
                 TRLabel.ForeColor = Color.White
                 TRBoss.Enabled = True
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
                 TRLabel.BackColor = Color.Yellow
                 TRLabel.ForeColor = Color.Black
@@ -2749,13 +2845,13 @@
                 BowButton.Image = nobow
                 BowButton.BackColor = Color.Black
             Case 1
-                BowButton.Image = My.Resources.bow
+                BowButton.Image = My.Resources.Agsonly
                 BowButton.BackColor = Color.WhiteSmoke
             Case 2
-                BowButton.Image = My.Resources.silvers
+                BowButton.Image = My.Resources.bow
                 BowButton.BackColor = Color.WhiteSmoke
             Case 3
-                BowButton.Image = My.Resources.Agsonly
+                BowButton.Image = My.Resources.silvers
                 BowButton.BackColor = Color.WhiteSmoke
         End Select
         EPCheck()
@@ -2965,6 +3061,7 @@
         If Bombos = True Then
             BombosButton.Image = My.Resources.bombos
             BombosButton.BackColor = Color.WhiteSmoke
+            MedallionCount = MedallionCount + 1
         Else
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
@@ -2985,6 +3082,7 @@
             End Using
             BombosButton.Image = nobombos
             BombosButton.BackColor = Color.Black
+            MedallionCount = MedallionCount - 1
         End If
         IPCheck()
         MMCheck()
@@ -2996,6 +3094,7 @@
         If Ether = True Then
             EtherButton.Image = My.Resources.ether
             EtherButton.BackColor = Color.WhiteSmoke
+            MedallionCount = MedallionCount + 1
         Else
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
@@ -3016,6 +3115,7 @@
             End Using
             EtherButton.Image = noether
             EtherButton.BackColor = Color.Black
+            MedallionCount = MedallionCount - 1
         End If
         MMCheck()
         TRCheck()
@@ -3026,6 +3126,7 @@
         If Quake = True Then
             QuakeButton.Image = My.Resources.quake
             QuakeButton.BackColor = Color.WhiteSmoke
+            MedallionCount = MedallionCount + 1
         Else
             Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
@@ -3046,6 +3147,7 @@
             End Using
             QuakeButton.Image = noquake
             QuakeButton.BackColor = Color.Black
+            MedallionCount = MedallionCount - 1
         End If
         MMCheck()
         TRCheck()
@@ -3651,9 +3753,11 @@
                 SwordButton.Image = My.Resources.sword4
                 SwordButton.BackColor = Color.WhiteSmoke
         End Select
+        LWCheck()
         AgaCheck()
         TOHCheck()
         SWCheck()
+        MMCheck()
         TRCheck()
     End Sub
 
