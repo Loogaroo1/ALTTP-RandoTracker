@@ -135,7 +135,6 @@ Partial Class Form1
         Me.IPMap = New System.Windows.Forms.CheckBox()
         Me.TTMap = New System.Windows.Forms.CheckBox()
         Me.SWMap = New System.Windows.Forms.CheckBox()
-        Me.GTMap = New System.Windows.Forms.CheckBox()
         Me.SPMap = New System.Windows.Forms.CheckBox()
         Me.PODMap = New System.Windows.Forms.CheckBox()
         Me.HeraMap = New System.Windows.Forms.CheckBox()
@@ -1417,7 +1416,7 @@ Partial Class Form1
         Me.LW17.Name = "LW17"
         Me.LW17.Size = New System.Drawing.Size(90, 30)
         Me.LW17.TabIndex = 527
-        Me.LW17.Text = "Flood/Sunken"
+        Me.LW17.Text = "Dam (2)"
         Me.LW17.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.LW17.UseVisualStyleBackColor = False
         '
@@ -2008,7 +2007,7 @@ Partial Class Form1
         Me.GTBigKey.AutoSize = True
         Me.GTBigKey.BackColor = System.Drawing.Color.Red
         Me.GTBigKey.Image = CType(resources.GetObject("GTBigKey.Image"), System.Drawing.Image)
-        Me.GTBigKey.Location = New System.Drawing.Point(161, 405)
+        Me.GTBigKey.Location = New System.Drawing.Point(132, 405)
         Me.GTBigKey.Name = "GTBigKey"
         Me.GTBigKey.Size = New System.Drawing.Size(30, 30)
         Me.GTBigKey.TabIndex = 698
@@ -2133,19 +2132,6 @@ Partial Class Form1
         Me.SWMap.Size = New System.Drawing.Size(30, 30)
         Me.SWMap.TabIndex = 688
         Me.SWMap.UseVisualStyleBackColor = True
-        '
-        'GTMap
-        '
-        Me.GTMap.Appearance = System.Windows.Forms.Appearance.Button
-        Me.GTMap.AutoSize = True
-        Me.GTMap.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.GTMap.Image = Global.RandoTracker.My.Resources.Resources.nomap
-        Me.GTMap.Location = New System.Drawing.Point(132, 405)
-        Me.GTMap.Name = "GTMap"
-        Me.GTMap.Size = New System.Drawing.Size(30, 30)
-        Me.GTMap.TabIndex = 687
-        Me.GTMap.UseVisualStyleBackColor = False
-        Me.GTMap.Visible = False
         '
         'SPMap
         '
@@ -3415,7 +3401,6 @@ Partial Class Form1
         Me.Controls.Add(Me.HeraBigKey)
         Me.Controls.Add(Me.DPBigKey)
         Me.Controls.Add(Me.EPBigKey)
-        Me.Controls.Add(Me.GTMap)
         Me.Controls.Add(Me.GTChests)
         Me.Controls.Add(Me.TRChests)
         Me.Controls.Add(Me.MMChests)
@@ -3847,7 +3832,6 @@ Partial Class Form1
     Friend WithEvents HeraMap As CheckBox
     Friend WithEvents PODMap As CheckBox
     Friend WithEvents SPMap As CheckBox
-    Friend WithEvents GTMap As CheckBox
     Friend WithEvents TRMap As CheckBox
     Friend WithEvents MMMap As CheckBox
     Friend WithEvents IPMap As CheckBox

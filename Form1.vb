@@ -252,61 +252,52 @@
             Case "!"
                 EPBoss.Checked = True
                 EPBoss.Image = My.Resources.bossdead
-                EPLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then EPPrizes.Text = 0 Else EPChests.Text = 0
                 EPLabel2.BackColor = Color.Green
+
             Case "@"
                 DPBoss.Checked = True
                 DPBoss.Image = My.Resources.bossdead
-                DPLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then DPPrizes.Text = 0 Else DPChests.Text = 0
                 DPLabel2.BackColor = Color.Green
             Case "#"
                 HeraBoss.Checked = True
                 HeraBoss.Image = My.Resources.bossdead
-                TOHLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then TOHPrizes.Text = 0 Else TOHChests.Text = 0
                 TOHLabel2.BackColor = Color.Green
             Case "$"
                 PODBoss.Checked = True
                 PODBoss.Image = My.Resources.bossdead
-                PODLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then PODPrizes.Text = 0 Else PODChests.Text = 0
                 PODLabel2.BackColor = Color.Green
             Case "%"
                 SPBoss.Checked = True
                 SPBoss.Image = My.Resources.bossdead
-                SPLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then SPPrizes.Text = 0 Else SPChests.Text = 0
                 SPLabel2.BackColor = Color.Green
             Case "^"
                 SWBoss.Checked = True
                 SWBoss.Image = My.Resources.bossdead
-                SWLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then SWPrizes.Text = 0 Else SWChests.Text = 0
                 SWLabel2.BackColor = Color.Green
             Case "&"
                 TTBoss.Checked = True
                 TTBoss.Image = My.Resources.bossdead
-                TTLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then TTPrizes.Text = 0 Else TTChests.Text = 0
                 TTLabel2.BackColor = Color.Green
             Case "*"
                 IPBoss.Checked = True
                 IPBoss.Image = My.Resources.bossdead
-                IPLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then IPPrizes.Text = 0 Else IPChests.Text = 0
                 IPLabel2.BackColor = Color.Green
             Case "("
                 MMBoss.Checked = True
                 MMBoss.Image = My.Resources.bossdead
-                MMLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then MMPrizes.Text = 0 Else MMChests.Text = 0
                 MMLabel2.BackColor = Color.Green
             Case ")"
                 TRBoss.Checked = True
                 TRBoss.Image = My.Resources.bossdead
-                TRLabel.BackColor = Color.Green
                 If RadioButton1.Checked = True Then TRPrizes.Text = 0 Else TRChests.Text = 0
                 TRLabel2.BackColor = Color.Green
         End Select
@@ -352,7 +343,6 @@
             GTLabel.Visible = False
             GTChests.Visible = False
             GTKeys.Visible = False
-            GTMap.Visible = False
             GTBigKey.Visible = False
             HCPrizes.Visible = True
             EPPrizes.Visible = True
@@ -478,7 +468,6 @@
             GTLabel.Visible = True
             GTChests.Visible = True
             GTKeys.Visible = True
-            GTMap.Visible = True
             GTBigKey.Visible = True
             HCPrizes.Visible = False
             EPPrizes.Visible = False
@@ -741,7 +730,6 @@
             LW37.Enabled = True
             LW37.BackColor = Color.WhiteSmoke
         Else
-            LW32.Checked = False
             LW32.Enabled = True
             LW32.BackColor = Color.Orange
             If Pearl = True Then
@@ -1340,9 +1328,11 @@
             If (Glove > 0 Or HCKeys.Text = 1) And Lamp = True And (Bombs = True Or Boots = True) Then
                 HCLabel.BackColor = Color.Green
                 HCLabel.ForeColor = Color.White
+                HCChests.ForeColor = Color.White
             Else
                 HCLabel.BackColor = Color.Yellow
                 HCLabel.ForeColor = Color.Black
+                HCChests.ForeColor = Color.Yellow
             End If
         End If
     End Sub
@@ -1361,6 +1351,7 @@
     Private Sub HCKeys_MouseDown(sender As Object, e As EventArgs) Handles HCKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then HCKeys.Text = 1
         If MouseButtons = MouseButtons.Right = True Then HCKeys.Text = 0
+        HCCheck()
         LWCheck()
     End Sub
 
@@ -1391,7 +1382,7 @@
             Case "EPMap"
                 If EPMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    EPButton.Image = My.Resources.map
+                    If EPReward = -1 Then EPButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -1466,7 +1457,7 @@
                 EPLabel.ForeColor = Color.White
                 EPLabel.BackColor = Color.Green
                 EPBoss.Enabled = True
-            ElseIf bow > 1 And EPBigKey.Checked = True Then
+            ElseIf Bow > 1 And EPBigKey.Checked = True Then
                 EPLabel.ForeColor = Color.White
                 EPLabel.BackColor = Color.Orange
                 EPBoss.Enabled = True
@@ -1483,7 +1474,7 @@
             Case "DPMap"
                 If DPMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    DPButton.Image = My.Resources.map
+                    If DPReward = -1 Then DPButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -1566,7 +1557,7 @@
                 DPBoss.Enabled = False
             End If
         Else
-            If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Boots = True And Glove > 0 And DPBigKey.Checked = True Then
+            If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 And DPBigKey.Checked = True Then
                 DPLabel.BackColor = Color.Green
                 DPLabel.ForeColor = Color.White
                 DPBoss.Enabled = True
@@ -1590,7 +1581,7 @@
             Case "HeraMap"
                 If HeraMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    TOHButton.Image = My.Resources.map
+                    If TOHReward = -1 Then TOHButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -1645,19 +1636,19 @@
     End Sub
     Public Sub TOHCheck()
         If RadioButton1.Checked = True Then
-            If Glove > 0 And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And (Lamp = True Or FireRod = True) And (Sword > 0 Or Hammer = True) Then
+            If (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And (Lamp = True Or FireRod = True) And (Sword > 0 Or Hammer = True) Then
                 TOHLabel.ForeColor = Color.White
                 HeraBoss.Enabled = True
                 If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
                 TOHChests.Text = 6
                 TOHChests.ForeColor = Color.White
-            ElseIf Glove > 0 And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) Then
+            ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) Then
                 TOHLabel.BackColor = Color.Yellow
                 TOHLabel.ForeColor = Color.Black
                 HeraBoss.Enabled = True
                 TOHChests.Text = 5
                 TOHChests.ForeColor = Color.Yellow
-            ElseIf Glove > 0 And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
+            ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
                 TOHLabel.BackColor = Color.Yellow
                 TOHLabel.ForeColor = Color.Black
                 HeraBoss.Enabled = False
@@ -1671,7 +1662,7 @@
                 TOHChests.ForeColor = Color.White
             End If
         Else
-            If Glove > 0 And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And HeraBigKey.Checked = True Then
+            If (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And HeraBigKey.Checked = True Then
                 TOHLabel.ForeColor = Color.White
                 HeraBoss.Enabled = True
                 If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
@@ -1697,9 +1688,7 @@
     End Sub
 
     Public Sub AgaCheck()
-        If RadioButton1.Checked = True Then
-            If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
-                Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+        Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
             New Single() {0.587, 0.587, 0.587, 0, 0},
@@ -1707,16 +1696,18 @@
             New Single() {0, 0, 0, 1, 0},
             New Single() {0, 0, 0, 0, 1}
         })
-                Dim noaganhim As New Bitmap(My.Resources.aganhim)
-                Dim imgattr As New Imaging.ImageAttributes()
-                imgattr.SetColorMatrix(grayscale)
-                Using g As Graphics = Graphics.FromImage(noaganhim)
-                    g.DrawImage(noaganhim, New Rectangle(0, 0, noaganhim.Width, noaganhim.Height),
+        Dim noaganhim As New Bitmap(My.Resources.aganhim)
+        Dim imgattr As New Imaging.ImageAttributes()
+        imgattr.SetColorMatrix(grayscale)
+        Using g As Graphics = Graphics.FromImage(noaganhim)
+            g.DrawImage(noaganhim, New Rectangle(0, 0, noaganhim.Width, noaganhim.Height),
                     0, 0, noaganhim.Width, noaganhim.Height,
                     GraphicsUnit.Pixel, imgattr)
-                End Using
+        End Using
+        If RadioButton1.Checked = True Then
+            If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
                 AgaButton.Visible = True
-                AgaButton.Image = noaganhim
+                If Aganhim = False Then AgaButton.Image = noaganhim
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
             Else
@@ -1727,7 +1718,7 @@
         Else
             If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True And AGKeys.Text = 2 Then
                 AgaButton.Visible = True
-                AgaButton.Image = My.Resources.noaganhim
+                If Aganhim = False Then AgaButton.Image = noaganhim
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
             ElseIf (Sword >= 2 Or (Cape = True And Sword > 0)) Then
@@ -1746,7 +1737,7 @@
             Case "PODMap"
                 If PODMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    PODButton.Image = My.Resources.map
+                    If PODReward = -1 Then PODButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -1814,6 +1805,7 @@
                 Else
                     PODLabel.BackColor = Color.Orange
                     PODChests.ForeColor = Color.Orange
+                    PODLabel.ForeColor = Color.White
                 End If
             ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And bow > 1 Then
                 PODBoss.Enabled = False
@@ -1855,7 +1847,7 @@
             Case "SPMap"
                 If SPMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    SPButton.Image = My.Resources.map
+                    If SPReward = -1 Then SPButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -1952,7 +1944,7 @@
             Case "SWMap"
                 If SWMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    SWButton.Image = My.Resources.map
+                    If SWReward = -1 Then SWButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -2058,7 +2050,7 @@
             Case "TTMap"
                 If TTMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    TTButton.Image = My.Resources.map
+                    If TTReward = -1 Then TTButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -2149,7 +2141,7 @@
             Case "IPMap"
                 If IPMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    IPButton.Image = My.Resources.map
+                    If IPReward = -1 Then IPButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -2215,10 +2207,18 @@
                     IPLabel.BackColor = Color.Orange
                     IPChests.ForeColor = Color.Orange
                 End If
+            ElseIf Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) And Hammer = True Then
+                IPLabel.BackColor = Color.Yellow
+                IPLabel.ForeColor = Color.Black
+                IPChests.Text = 8
+                IPChests.ForeColor = Color.Yellow
+                If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
+                IPBoss.Enabled = True
             ElseIf Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) Then
                 IPLabel.BackColor = Color.Yellow
                 IPLabel.ForeColor = Color.Black
                 IPChests.Text = 7
+                IPChests.ForeColor = Color.Yellow
                 If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
                 IPBoss.Enabled = False
             Else
@@ -2249,7 +2249,7 @@
             Case "MMMap"
                 If MMMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    MMButton.Image = My.Resources.map
+                    If MMReward = -1 Then MMButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -2367,7 +2367,7 @@
             Case "TRMap"
                 If TRMap.Checked = True Then
                     DirectCast(sender, CheckBox).Image = My.Resources.map
-                    TRButton.Image = My.Resources.map
+                    If TRReward = -1 Then TRButton.Image = My.Resources.map
                 Else
                     DirectCast(sender, CheckBox).Image = My.Resources.nomap
                 End If
@@ -2460,7 +2460,7 @@
                 TRBoss.Enabled = False
             End If
         Else
-            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True Then
+            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True And TRKeys.Text = 4 Then
                 TRAccess = True
                 If Lamp = True And Sword > 1 Then TRLabel.BackColor = Color.Green Else TRLabel.BackColor = Color.Orange
                 TRLabel.ForeColor = Color.White
@@ -2491,24 +2491,19 @@
             Case 3
                 TurtleBEQ.Image = My.Resources.quake
         End Select
+        DWCheck()
         TRCheck()
     End Sub
 
-    Private Sub GTClick(sender As Object, e As EventArgs) Handles GTMap.CheckedChanged, GTBigKey.CheckedChanged
-        Select Case DirectCast(sender, CheckBox).Name
-            Case "GTMap"
-                If GTMap.Checked = True Then DirectCast(sender, CheckBox).Image = My.Resources.map Else DirectCast(sender, CheckBox).Image = My.Resources.nomap
-            Case "GTBigKey"
-                If GTBigKey.Checked = True Then
-                    DirectCast(sender, CheckBox).Image = My.Resources.bigkey
-                    GTBigKey.BackColor = Color.WhiteSmoke
-                Else
-                    DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
-                    GTBigKey.BackColor = Color.Red
-                End If
-        End Select
+    Private Sub GTClick(sender As Object, e As EventArgs) Handles GTBigKey.CheckedChanged
+        If GTBigKey.Checked = True Then
+            DirectCast(sender, CheckBox).Image = My.Resources.bigkey
+            GTBigKey.BackColor = Color.WhiteSmoke
+        Else
+            DirectCast(sender, CheckBox).Image = My.Resources.nobigkey
+            GTBigKey.BackColor = Color.Red
+        End If
         GTCheck()
-        CrystalCheck()
     End Sub
 
     Private Sub GTChests_MouseDown(sender As Object, e As EventArgs) Handles GTChests.MouseDown

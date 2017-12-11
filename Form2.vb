@@ -5,6 +5,6 @@
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Top = Form1.Top + 40
-        Me.Left = Form1.Left + 425
+        Me.Left = Form1.Left + 405
     End Sub
 End Class
