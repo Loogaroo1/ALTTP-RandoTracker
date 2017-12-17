@@ -1721,7 +1721,7 @@
                 If Aganhim = False Then AgaButton.Image = noaganhim
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
-            ElseIf (Sword >= 2 Or (Cape = True And Sword > 0)) Then
+            ElseIf Sword >= 2 Or Cape = True Then
                 AgaButton.Visible = False
                 AGLabel.BackColor = Color.Yellow
                 AGLabel.ForeColor = Color.Black
@@ -2041,10 +2041,6 @@
         End If
     End Sub
 
-    Private Sub MireBEQ_Click(sender As Object, e As MouseEventArgs) Handles MireBEQ.MouseDown
-
-    End Sub
-
     Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "TTMap"
@@ -2318,6 +2314,17 @@
                     MMLabel.BackColor = Color.Orange
                     MMChests.ForeColor = Color.Orange
                 End If
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
+                MMLabel.BackColor = Color.Yellow
+                If Somaria = True Then
+                    MMBoss.Enabled = True
+                    MMChests.Text = 8
+                    MMChests.ForeColor = Color.Yellow
+                Else
+                    MMBoss.Enabled = False
+                    MMChests.Text = 7
+                    MMChests.ForeColor = Color.Yellow
+                End If
             ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
                 MMLabel.BackColor = Color.Yellow
                 MMLabel.ForeColor = Color.Black
@@ -2336,6 +2343,10 @@
                 If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
                 MMLabel.ForeColor = Color.White
                 MMBoss.Enabled = True
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount = 1 And MireMedallion = 0 Then
+                MMLabel.BackColor = Color.Yellow
+                MMLabel.ForeColor = Color.Black
+                If Somaria = True Then MMBoss.Enabled = True Else MMBoss.Enabled = False
             ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
                 MMLabel.BackColor = Color.Yellow
                 MMLabel.ForeColor = Color.Black
@@ -2437,6 +2448,23 @@
                 End If
                 TRLabel.ForeColor = Color.White
                 TRBoss.Enabled = True
+            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And MedallionCount > 0 And TurtleMedallion = 0 Then
+                TRAccess = True
+                TRLabel.BackColor = Color.Yellow
+                TRLabel.ForeColor = Color.Black
+                If FireRod = True And IceRod = True Then
+                    TRChests.Text = 12
+                    TRChests.ForeColor = Color.Yellow
+                    TRBoss.Enabled = True
+                ElseIf FireRod = True Then
+                    TRChests.Text = 11
+                    TRChests.ForeColor = Color.Yellow
+                    TRBoss.Enabled = False
+                Else
+                    TRChests.Text = 9
+                    TRChests.ForeColor = Color.Yellow
+                    TRBoss.Enabled = False
+                End If
             ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And FireRod = True Then
                 TRAccess = True
                 TRChests.Text = 11
@@ -2464,6 +2492,11 @@
                 TRAccess = True
                 If Lamp = True And Sword > 1 Then TRLabel.BackColor = Color.Green Else TRLabel.BackColor = Color.Orange
                 TRLabel.ForeColor = Color.White
+                TRBoss.Enabled = True
+            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And TurtleMedallion = 0 Then
+                TRAccess = True
+                TRLabel.BackColor = Color.Yellow
+                TRLabel.ForeColor = Color.Black
                 TRBoss.Enabled = True
             ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
@@ -3079,6 +3112,7 @@
             BombosButton.BackColor = Color.Black
             MedallionCount = MedallionCount - 1
         End If
+        DWCheck()
         IPCheck()
         MMCheck()
         TRCheck()
@@ -3112,6 +3146,7 @@
             EtherButton.BackColor = Color.Black
             MedallionCount = MedallionCount - 1
         End If
+        DWCheck()
         MMCheck()
         TRCheck()
     End Sub
@@ -3144,6 +3179,7 @@
             QuakeButton.BackColor = Color.Black
             MedallionCount = MedallionCount - 1
         End If
+        DWCheck()
         MMCheck()
         TRCheck()
     End Sub
