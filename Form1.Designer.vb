@@ -280,7 +280,7 @@ Partial Class Form1
         'HlpButton
         '
         Me.HlpButton.ForeColor = System.Drawing.Color.Black
-        Me.HlpButton.Location = New System.Drawing.Point(768, 441)
+        Me.HlpButton.Location = New System.Drawing.Point(449, 443)
         Me.HlpButton.Name = "HlpButton"
         Me.HlpButton.Size = New System.Drawing.Size(38, 23)
         Me.HlpButton.TabIndex = 602
@@ -291,7 +291,7 @@ Partial Class Form1
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.ForeColor = System.Drawing.Color.White
-        Me.RadioButton2.Location = New System.Drawing.Point(557, 444)
+        Me.RadioButton2.Location = New System.Drawing.Point(112, 444)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(70, 17)
         Me.RadioButton2.TabIndex = 601
@@ -303,7 +303,7 @@ Partial Class Form1
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
         Me.RadioButton1.ForeColor = System.Drawing.Color.White
-        Me.RadioButton1.Location = New System.Drawing.Point(452, 444)
+        Me.RadioButton1.Location = New System.Drawing.Point(7, 444)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(99, 17)
         Me.RadioButton1.TabIndex = 600
@@ -3384,10 +3384,11 @@ Partial Class Form1
         '
         'Form1
         '
+        Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(811, 466)
+        Me.ClientSize = New System.Drawing.Size(811, 470)
         Me.Controls.Add(Me.TurtleBEQ)
         Me.Controls.Add(Me.MireBEQ)
         Me.Controls.Add(Me.TRBigKey)
@@ -3559,12 +3560,10 @@ Partial Class Form1
         Me.Controls.Add(Me.DPPrizes)
         Me.Controls.Add(Me.EPPrizes)
         Me.Controls.Add(Me.HCPrizes)
-        Me.Controls.Add(Me.TRPrizes)
         Me.Controls.Add(Me.MMPrizes)
         Me.Controls.Add(Me.IPPrizes)
         Me.Controls.Add(Me.TTPrizes)
         Me.Controls.Add(Me.SWPrizes)
-        Me.Controls.Add(Me.TRKeys)
         Me.Controls.Add(Me.MMKeys)
         Me.Controls.Add(Me.IPKeys)
         Me.Controls.Add(Me.TTKeys)
@@ -3597,12 +3596,14 @@ Partial Class Form1
         Me.Controls.Add(Me.HeraBoss)
         Me.Controls.Add(Me.DPBoss)
         Me.Controls.Add(Me.EPBoss)
+        Me.Controls.Add(Me.TRPrizes)
+        Me.Controls.Add(Me.TRKeys)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "ALTTP RandoTracker (Logic v8.27)"
+        Me.Text = "ALTTP RandoTracker (Logic v8.28)"
         CType(Me.TRButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MMButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.IPButton, System.ComponentModel.ISupportInitialize).EndInit()
