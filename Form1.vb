@@ -698,7 +698,7 @@
         End If
 
         '' Cave south of Grove, Graveyard Cave - Mirror, Access via Dark World
-        If Mirror = True And Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or (Aganhim = True And Hookshot = True And Flippers = True And Glove > 0)) Then
+        If Mirror = True And Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Flippers = True))) Then
             LW28.Enabled = True
             LW28.BackColor = Color.WhiteSmoke
             LW30.Enabled = True
