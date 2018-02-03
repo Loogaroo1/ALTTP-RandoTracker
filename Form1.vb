@@ -2899,7 +2899,7 @@
     End Sub
 
     Private Sub BoomButton_Click(sender As Object, e As EventArgs) Handles BoomButton.MouseDown
-        If MouseButtons = MouseButtons.Left Then Boomerang = (Boomerang + 1) Mod 4 Else Boomerang = (Boomerang + 4) Mod 4
+        If MouseButtons = MouseButtons.Left Then Boomerang = (Boomerang + 1) Mod 4 Else Boomerang = (Boomerang + 3) Mod 4
         Select Case Boomerang
             Case 0
                 Dim grayscale As New Imaging.ColorMatrix(New Single()() _
@@ -3554,7 +3554,7 @@
     End Sub
 
     Private Sub GloveButton_Click(sender As Object, e As EventArgs) Handles GloveButton.MouseDown
-        Glove = (Glove + 1) Mod 3
+        If MouseButtons = MouseButtons.Left Then Glove = (Glove + 1) Mod 3 Else Glove = (Glove + 2) Mod 3
         Select Case Glove
             Case 0
                 Dim grayscale As New Imaging.ColorMatrix(New Single()() _
