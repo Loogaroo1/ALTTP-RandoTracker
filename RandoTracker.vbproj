@@ -140,9 +140,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="Resources\nobigkey.png" />
     <None Include="Resources\nobow.png" />
-    <None Include="Resources\nomap.png" />
     <None Include="Resources\nosword.png" />
     <EmbeddedResource Include="RetGanon.ttf" />
   </ItemGroup>
@@ -168,12 +166,6 @@
     <None Include="Resources\boots.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\boss.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bossdead.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\bottle.png" />
   </ItemGroup>
   <ItemGroup>
@@ -190,9 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\chest.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chestmaybe.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\crystal.png" />
@@ -261,13 +250,7 @@
     <None Include="Resources\redboom.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\redchest.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\redmail.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rupee.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shield1.png" />
@@ -303,12 +286,6 @@
     <None Include="Resources\whatmedallion.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\key.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bigkey.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\map.png" />
   </ItemGroup>
   <ItemGroup>
@@ -316,7 +293,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Agsonly.png" />
+    <None Include="Resources\mapsmall.png" />
+    <None Include="Resources\redchestsmall.png" />
+    <None Include="Resources\greenchestsmall.png" />
+    <None Include="Resources\chestmaybesmall.png" />
+    <None Include="Resources\nobigkeysmall.png" />
+    <None Include="Resources\bosssmall.png" />
+    <None Include="Resources\bigkeysmall.png" />
+    <None Include="Resources\bossdeadsmall.png" />
+    <None Include="Resources\bootssmall.png" />
     <Content Include="Resources\bothboom.png" />
+    <None Include="Resources\nomapsmall.png" />
+    <None Include="Resources\rupeesmall.png" />
+    <None Include="Resources\keysmall.png" />
+    <None Include="Resources\chestsmall.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

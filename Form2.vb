@@ -5,6 +5,10 @@
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Top = Form1.Top + 40
-        Me.Left = Form1.Left + 405
+        Me.Left = Form1.HlpButton.Left
+    End Sub
+
+    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
+
     End Sub
 End Class

@@ -42,11 +42,12 @@ Partial Class Form2
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(165, 306)
+        Me.Button1.Location = New System.Drawing.Point(165, 321)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -91,7 +92,7 @@ Partial Class Form2
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(12, 48)
+        Me.Label4.Location = New System.Drawing.Point(12, 63)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(311, 13)
         Me.Label4.TabIndex = 4
@@ -102,7 +103,7 @@ Partial Class Form2
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(12, 61)
+        Me.Label5.Location = New System.Drawing.Point(12, 76)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(228, 13)
         Me.Label5.TabIndex = 5
@@ -113,7 +114,7 @@ Partial Class Form2
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(12, 74)
+        Me.Label6.Location = New System.Drawing.Point(12, 89)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(340, 13)
         Me.Label6.TabIndex = 6
@@ -124,7 +125,7 @@ Partial Class Form2
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(12, 87)
+        Me.Label7.Location = New System.Drawing.Point(12, 102)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(363, 13)
         Me.Label7.TabIndex = 7
@@ -135,7 +136,7 @@ Partial Class Form2
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(12, 252)
+        Me.Label20.Location = New System.Drawing.Point(12, 267)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(265, 13)
         Me.Label20.TabIndex = 25
@@ -146,7 +147,7 @@ Partial Class Form2
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.White
-        Me.Label24.Location = New System.Drawing.Point(12, 266)
+        Me.Label24.Location = New System.Drawing.Point(12, 281)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(259, 13)
         Me.Label24.TabIndex = 21
@@ -157,7 +158,7 @@ Partial Class Form2
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.White
-        Me.Label25.Location = New System.Drawing.Point(12, 238)
+        Me.Label25.Location = New System.Drawing.Point(12, 253)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(123, 13)
         Me.Label25.TabIndex = 20
@@ -168,7 +169,7 @@ Partial Class Form2
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.White
-        Me.Label21.Location = New System.Drawing.Point(12, 280)
+        Me.Label21.Location = New System.Drawing.Point(12, 295)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(351, 13)
         Me.Label21.TabIndex = 26
@@ -179,7 +180,7 @@ Partial Class Form2
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(12, 156)
+        Me.Label14.Location = New System.Drawing.Point(12, 171)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(310, 13)
         Me.Label14.TabIndex = 34
@@ -190,7 +191,7 @@ Partial Class Form2
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(63, 170)
+        Me.Label18.Location = New System.Drawing.Point(63, 185)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(262, 13)
         Me.Label18.TabIndex = 33
@@ -201,7 +202,7 @@ Partial Class Form2
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(12, 128)
+        Me.Label13.Location = New System.Drawing.Point(12, 143)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(367, 13)
         Me.Label13.TabIndex = 32
@@ -212,7 +213,7 @@ Partial Class Form2
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(11, 209)
+        Me.Label12.Location = New System.Drawing.Point(11, 224)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(322, 13)
         Me.Label12.TabIndex = 31
@@ -223,7 +224,7 @@ Partial Class Form2
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(12, 196)
+        Me.Label11.Location = New System.Drawing.Point(12, 211)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(258, 13)
         Me.Label11.TabIndex = 30
@@ -234,7 +235,7 @@ Partial Class Form2
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(11, 183)
+        Me.Label10.Location = New System.Drawing.Point(11, 198)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(325, 13)
         Me.Label10.TabIndex = 29
@@ -245,7 +246,7 @@ Partial Class Form2
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(92, 142)
+        Me.Label9.Location = New System.Drawing.Point(92, 157)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(291, 13)
         Me.Label9.TabIndex = 28
@@ -256,19 +257,31 @@ Partial Class Form2
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(12, 114)
+        Me.Label8.Location = New System.Drawing.Point(12, 129)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 13)
         Me.Label8.TabIndex = 27
         Me.Label8.Text = "Dungeon Tracking"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(12, 49)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(235, 13)
+        Me.Label15.TabIndex = 35
+        Me.Label15.Text = "(Right-click reward to clear it out in case of error)"
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(397, 335)
+        Me.ClientSize = New System.Drawing.Size(397, 349)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label13)
@@ -321,4 +334,5 @@ Partial Class Form2
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents Label15 As Label
 End Class
