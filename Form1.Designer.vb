@@ -194,7 +194,6 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.MMPrizes = New System.Windows.Forms.Label()
         Me.IPPrizes = New System.Windows.Forms.Label()
         Me.TTPrizes = New System.Windows.Forms.Label()
@@ -247,6 +246,7 @@ Partial Class Form1
         Me.HCBorder = New System.Windows.Forms.PictureBox()
         Me.AGBorder = New System.Windows.Forms.PictureBox()
         Me.GTBorder = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TRButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -289,7 +289,6 @@ Partial Class Form1
         CType(Me.HookButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BoomButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BowButton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TRBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MMBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IPBorder, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -303,6 +302,7 @@ Partial Class Form1
         CType(Me.HCBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AGBorder, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GTBorder, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'HlpButton
@@ -2647,6 +2647,7 @@ Partial Class Form1
         '
         'ArmorButton
         '
+        Me.ArmorButton.BackColor = System.Drawing.Color.Black
         Me.ArmorButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.ArmorButton.Image = Global.RandoTracker.My.Resources.Resources.greenmail
         Me.ArmorButton.Location = New System.Drawing.Point(184, 40)
@@ -2884,15 +2885,6 @@ Partial Class Form1
         Me.Button1.Size = New System.Drawing.Size(24, 24)
         Me.Button1.TabIndex = 588
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Black
-        Me.PictureBox2.Location = New System.Drawing.Point(4, 3)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(213, 174)
-        Me.PictureBox2.TabIndex = 574
-        Me.PictureBox2.TabStop = False
         '
         'MMPrizes
         '
@@ -3569,6 +3561,17 @@ Partial Class Form1
         Me.GTBorder.TabStop = False
         Me.GTBorder.Visible = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Black
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox1.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(212, 173)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 733
+        Me.PictureBox1.TabStop = False
+        '
         'Form1
         '
         Me.AllowDrop = True
@@ -3576,6 +3579,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(779, 395)
+        Me.Controls.Add(Me.GTLabel)
+        Me.Controls.Add(Me.AGLabel)
         Me.Controls.Add(Me.DW15Boots)
         Me.Controls.Add(Me.ResetButton)
         Me.Controls.Add(Me.MMKeys)
@@ -3744,7 +3749,6 @@ Partial Class Form1
         Me.Controls.Add(Me.TOHLabel)
         Me.Controls.Add(Me.DPLabel)
         Me.Controls.Add(Me.EPLabel)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.MMPrizes)
         Me.Controls.Add(Me.IPPrizes)
         Me.Controls.Add(Me.TTPrizes)
@@ -3796,10 +3800,9 @@ Partial Class Form1
         Me.Controls.Add(Me.DPBorder)
         Me.Controls.Add(Me.EPBorder)
         Me.Controls.Add(Me.HCBorder)
-        Me.Controls.Add(Me.GTLabel)
-        Me.Controls.Add(Me.AGLabel)
         Me.Controls.Add(Me.AGBorder)
         Me.Controls.Add(Me.GTBorder)
+        Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.KeyPreview = True
         Me.MaximizeBox = False
@@ -3849,7 +3852,6 @@ Partial Class Form1
         CType(Me.HookButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BoomButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BowButton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TRBorder, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MMBorder, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.IPBorder, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3863,6 +3865,7 @@ Partial Class Form1
         CType(Me.HCBorder, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AGBorder, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GTBorder, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3996,7 +3999,6 @@ Partial Class Form1
     Friend WithEvents TOHLabel As Label
     Friend WithEvents DPLabel As Label
     Friend WithEvents EPLabel As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents EPButton As PictureBox
     Friend WithEvents DPButton As PictureBox
     Friend WithEvents PODButton As PictureBox
@@ -4092,4 +4094,5 @@ Partial Class Form1
     Friend WithEvents TRBorder As PictureBox
     Friend WithEvents ResetButton As Button
     Friend WithEvents DW15Boots As CheckBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

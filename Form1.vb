@@ -871,31 +871,6 @@
             LW44.BackColor = Color.Red
         End If
 
-        '' Mimic Cave - Turtle Rock access (Lamp prevents sequence break if Glove is used), Mirror, At least 2 keys in Keysanity
-        If TRAccess = True And Mirror = True Then
-            If RadioButton1.Checked = True Then
-                If FireRod = True Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.WhiteSmoke
-                Else
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.Yellow
-                End If
-            Else
-                If TRKeys.Text >= 2 Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.WhiteSmoke
-                Else
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.Yellow
-                End If
-            End If
-        Else
-            LW45.Checked = False
-            LW45.Enabled = False
-            LW45.BackColor = Color.Red
-        End If
-
         '' Sahasrahla's Green Pendant
         If GreenPendant = True Then
             LW46.Enabled = True
@@ -1330,7 +1305,7 @@
                 HCLabel.ForeColor = Color.Black
                 HCChests.Text = 8
                 HCChests.ForeColor = Color.Orange
-                HCBorder.BackColor = Color.White
+                HCBorder.BackColor = Color.Black
             ElseIf Lamp = True Then
                 HCLabel.BackColor = Color.Yellow
                 HCLabel.ForeColor = Color.Black
@@ -1592,7 +1567,7 @@
             End If
         Else
             If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 And DPBigKey.Checked = True Then
-                DPLabel.BackColor = Color.Green
+                If DPKeys.Text = 1 Then DPLabel.BackColor = Color.Green Else DPLabel.BackColor = Color.Orange
                 DPLabel.ForeColor = Color.White
                 DPBoss.Enabled = True
                 DPBorder.BackColor = Color.White
@@ -1883,7 +1858,7 @@
                 PODBorder.BackColor = Color.Black
             End If
         Else
-            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True And PODBigKey.Checked = True Then
+            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True And PODBigKey.Checked = True And (PODKeys.Text >= 2 Or (PODKeys.Text = 1 And Boots = True)) Then
                 If Lamp = True And PODKeys.Text = 6 Then PODLabel.BackColor = Color.Green Else PODLabel.BackColor = Color.Orange
                 PODLabel.ForeColor = Color.White
                 PODBoss.Enabled = True
@@ -2060,6 +2035,7 @@
         If MouseButtons = MouseButtons.Right = True Then
             If SWKeys.Text > 0 Then SWKeys.Text = SWKeys.Text - 1
         End If
+        SWCheck()
     End Sub
 
 
@@ -2096,7 +2072,7 @@
             End If
         Else
             If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True And Sword > 0 Then
-                SWLabel.BackColor = Color.Green
+                If SWKeys.Text >= 2 Then SWLabel.BackColor = Color.Green Else SWLabel.BackColor = Color.Orange
                 SWLabel.ForeColor = Color.White
                 SWBoss.Enabled = True
                 SWBorder.BackColor = Color.White
@@ -2697,6 +2673,10 @@
         If DW15Boots.Checked = True Then DW15Boots.BackColor = Color.FromArgb(64, 64, 64) Else DW15Boots.BackColor = Color.WhiteSmoke
     End Sub
 
+    Private Sub AgaButton_Click(sender As Object, e As MouseEventArgs) Handles AgaButton.MouseDown
+
+    End Sub
+
     Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
             Case "TTMap"
@@ -2755,6 +2735,7 @@
     Private Sub TTKeys_MouseDown(sender As Object, e As EventArgs) Handles TTKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then TTKeys.Text = 1
         If MouseButtons = MouseButtons.Right = True Then TTKeys.Text = 0
+        TTCheck()
     End Sub
 
     Public Sub TTCheck()
@@ -2776,7 +2757,7 @@
             End If
         Else
             If Pearl = True And TTBigKey.Checked = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-                TTLabel.BackColor = Color.Green
+                If TTKeys.Text = 1 Then TTLabel.BackColor = Color.Green Else TTLabel.BackColor = Color.Orange
                 TTLabel.ForeColor = Color.White
                 TTBoss.Enabled = True
                 TTBorder.BackColor = Color.White
@@ -2849,6 +2830,7 @@
         If MouseButtons = MouseButtons.Right = True Then
             If IPKeys.Text > 0 Then IPKeys.Text = IPKeys.Text - 1
         End If
+        IPCheck()
     End Sub
 
     Public Sub IPCheck()
@@ -2891,7 +2873,7 @@
             End If
         Else
             If Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) And Hammer = True Then
-                If Flippers = True And Hookshot = True And (Somaria = True Or IPBigKey.Checked = True) Then IPLabel.BackColor = Color.Green Else IPLabel.BackColor = Color.Orange
+                If Flippers = True And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria = True)) Then IPLabel.BackColor = Color.Green Else IPLabel.BackColor = Color.Orange
                 IPLabel.ForeColor = Color.White
                 IPBoss.Enabled = True
                 IPBorder.BackColor = Color.White
@@ -2983,7 +2965,7 @@
                     MMLabel.BackColor = Color.Orange
                     MMChests.ForeColor = Color.Orange
                 End If
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MireMedallion = 0 Then
                 MMLabel.BackColor = Color.Yellow
                 MMBorder.BackColor = Color.Black
                 If Somaria = True Then
@@ -3126,6 +3108,14 @@
                 TRLabel.ForeColor = Color.White
                 TRBorder.BackColor = Color.White
                 TRBoss.Enabled = True
+                If Mirror = True Then
+                    LW45.Enabled = True
+                    LW45.BackColor = Color.WhiteSmoke
+                Else
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
             ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And MedallionCount > 0 And TurtleMedallion = 0 Then
                 TRAccess = True
                 TRLabel.BackColor = Color.Yellow
@@ -3144,6 +3134,14 @@
                     TRChests.ForeColor = Color.Yellow
                     TRBoss.Enabled = False
                 End If
+                If Mirror = True Then
+                    LW45.Enabled = True
+                    LW45.BackColor = Color.Yellow
+                Else
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
             ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And FireRod = True Then
                 TRAccess = True
                 TRChests.Text = 11
@@ -3152,6 +3150,14 @@
                 TRLabel.ForeColor = Color.Black
                 TRBoss.Enabled = False
                 TRBorder.BackColor = Color.Black
+                If Mirror = True Then
+                    LW45.Enabled = True
+                    LW45.BackColor = Color.WhiteSmoke
+                Else
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
             ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
                 TRChests.Text = 9
@@ -3160,6 +3166,14 @@
                 TRLabel.ForeColor = Color.Black
                 TRBoss.Enabled = False
                 TRBorder.BackColor = Color.Black
+                If Mirror = True Then
+                    LW45.Enabled = True
+                    LW45.BackColor = Color.Yellow
+                Else
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
             Else
                 TRAccess = False
                 TRLabel.BackColor = Color.Red
@@ -3168,6 +3182,9 @@
                 TRChests.ForeColor = Color.White
                 TRBoss.Enabled = False
                 TRBorder.BackColor = Color.Black
+                LW45.Enabled = True
+                LW45.Checked = False
+                LW45.BackColor = Color.Red
             End If
         Else
             If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True And TRKeys.Text >= 3 Then
@@ -3181,24 +3198,51 @@
                 End If
                 TRBoss.Enabled = True
                 TRBorder.BackColor = Color.White
+                If TRKeys.Text >= 2 And Mirror = True Then
+                    LW45.Enabled = True
+                    LW45.BackColor = Color.WhiteSmoke
+                Else
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
             ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And TurtleMedallion = 0 Then
                 TRAccess = True
                 TRLabel.BackColor = Color.Yellow
                 TRLabel.ForeColor = Color.Black
                 TRBorder.BackColor = Color.Black
                 If FireRod = True And IceRod = True Then TRBoss.Enabled = True Else TRBoss.Enabled = False
+                If TRKeys.Text >= 2 And Mirror = True Then
+                    LW45.Enabled = True
+                    LW45.BackColor = Color.Yellow
+                Else
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
             ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
                 TRLabel.BackColor = Color.Yellow
                 TRLabel.ForeColor = Color.Black
                 TRBoss.Enabled = False
                 TRBorder.BackColor = Color.Black
+                If TRKeys.Text >= 2 And Mirror = True Then
+                    LW45.Enabled = True
+                    LW45.BackColor = Color.WhiteSmoke
+                Else
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
             Else
                 TRAccess = False
                 TRLabel.BackColor = Color.Red
                 TRLabel.ForeColor = Color.Black
                 TRBoss.Enabled = False
                 TRBorder.BackColor = Color.Black
+                LW45.Enabled = True
+                LW45.Checked = False
+                LW45.BackColor = Color.Red
             End If
         End If
     End Sub
