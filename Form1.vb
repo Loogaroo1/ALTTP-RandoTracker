@@ -1064,9 +1064,9 @@
             DW13.BackColor = Color.Red
         End If
 
-        '' East DW DM - Death Mountain access (Lamp prevents sequence break if Glove is used), Pearl, Mitt, Hookshot or Hammer+Mirror
+        '' East DW DM - Death Mountain access (Lamp prevents sequence break if Glove is used, Pearl prevents sequence break), Mitt, Hookshot or Hammer+Mirror
         If Glove = 2 And (Hookshot = True Or (Hammer = True And Mirror = True)) Then
-            If Flute = True Or Lamp = True Then
+            If Flute = True Or Lamp = True And Pearl = True Then
                 DW14.Enabled = True
                 DW14.BackColor = Color.WhiteSmoke
             Else
@@ -2965,7 +2965,7 @@
                     MMLabel.BackColor = Color.Orange
                     MMChests.ForeColor = Color.Orange
                 End If
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MireMedallion = 0 Then
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
                 MMLabel.BackColor = Color.Yellow
                 MMBorder.BackColor = Color.Black
                 If Somaria = True Then
@@ -3206,7 +3206,7 @@
                     LW45.Checked = False
                     LW45.BackColor = Color.Red
                 End If
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And TurtleMedallion = 0 Then
+            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And TurtleMedallion = 0 And MedallionCount > 0 Then
                 TRAccess = True
                 TRLabel.BackColor = Color.Yellow
                 TRLabel.ForeColor = Color.Black
@@ -3245,6 +3245,7 @@
                 LW45.BackColor = Color.Red
             End If
         End If
+        If LW45.Checked = True Then LW45.BackColor = Color.FromArgb(64, 64, 64)
     End Sub
 
     Private Sub TurtleBEQ_Click(sender As Object, e As EventArgs) Handles TurtleBEQ.MouseDown
