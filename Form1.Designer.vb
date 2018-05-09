@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,10 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.HlpButton = New System.Windows.Forms.Button()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.GTLabel = New System.Windows.Forms.Label()
         Me.AGLabel = New System.Windows.Forms.Label()
         Me.HCLabel = New System.Windows.Forms.Label()
@@ -110,12 +108,12 @@ Partial Class Form1
         Me.DPLabel = New System.Windows.Forms.Label()
         Me.EPLabel = New System.Windows.Forms.Label()
         Me.ResetButton = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BottleNumber = New System.Windows.Forms.Label()
+        Me.MagicButton = New System.Windows.Forms.PictureBox()
+        Me.AGPrizes = New System.Windows.Forms.Label()
         Me.DW15Boots = New System.Windows.Forms.CheckBox()
-        Me.MMKeys = New System.Windows.Forms.Label()
-        Me.IPKeys = New System.Windows.Forms.Label()
-        Me.TTKeys = New System.Windows.Forms.Label()
-        Me.SWKeys = New System.Windows.Forms.Label()
-        Me.TRKeys = New System.Windows.Forms.Label()
         Me.TurtleBEQ = New System.Windows.Forms.PictureBox()
         Me.MireBEQ = New System.Windows.Forms.PictureBox()
         Me.TRBigKey = New System.Windows.Forms.CheckBox()
@@ -191,21 +189,12 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MMPrizes = New System.Windows.Forms.Label()
         Me.IPPrizes = New System.Windows.Forms.Label()
         Me.TTPrizes = New System.Windows.Forms.Label()
         Me.SWPrizes = New System.Windows.Forms.Label()
-        Me.AGKeys = New System.Windows.Forms.Label()
-        Me.GTKeys = New System.Windows.Forms.Label()
-        Me.SPKeys = New System.Windows.Forms.Label()
-        Me.PODKeys = New System.Windows.Forms.Label()
-        Me.TOHKeys = New System.Windows.Forms.Label()
-        Me.DPKeys = New System.Windows.Forms.Label()
-        Me.EPKeys = New System.Windows.Forms.Label()
-        Me.HCKeys = New System.Windows.Forms.Label()
         Me.TRBoss = New System.Windows.Forms.CheckBox()
         Me.MMBoss = New System.Windows.Forms.CheckBox()
         Me.IPBoss = New System.Windows.Forms.CheckBox()
@@ -247,6 +236,27 @@ Partial Class Form1
         Me.AGBorder = New System.Windows.Forms.PictureBox()
         Me.GTBorder = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.MMKeys = New System.Windows.Forms.Label()
+        Me.IPKeys = New System.Windows.Forms.Label()
+        Me.TTKeys = New System.Windows.Forms.Label()
+        Me.SWKeys = New System.Windows.Forms.Label()
+        Me.TRKeys = New System.Windows.Forms.Label()
+        Me.AGKeys = New System.Windows.Forms.Label()
+        Me.GTKeys = New System.Windows.Forms.Label()
+        Me.SPKeys = New System.Windows.Forms.Label()
+        Me.PODKeys = New System.Windows.Forms.Label()
+        Me.TOHKeys = New System.Windows.Forms.Label()
+        Me.DPKeys = New System.Windows.Forms.Label()
+        Me.EPKeys = New System.Windows.Forms.Label()
+        Me.HCKeys = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        CType(Me.MagicButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TRButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -308,42 +318,19 @@ Partial Class Form1
         'HlpButton
         '
         Me.HlpButton.ForeColor = System.Drawing.Color.Black
-        Me.HlpButton.Location = New System.Drawing.Point(414, 367)
+        Me.HlpButton.Location = New System.Drawing.Point(684, 463)
+        Me.HlpButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HlpButton.Name = "HlpButton"
         Me.HlpButton.Size = New System.Drawing.Size(38, 23)
         Me.HlpButton.TabIndex = 602
         Me.HlpButton.Text = "Help"
         Me.HlpButton.UseVisualStyleBackColor = True
         '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.ForeColor = System.Drawing.Color.White
-        Me.RadioButton2.Location = New System.Drawing.Point(112, 371)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(70, 17)
-        Me.RadioButton2.TabIndex = 601
-        Me.RadioButton2.Text = "Keysanity"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.ForeColor = System.Drawing.Color.White
-        Me.RadioButton1.Location = New System.Drawing.Point(7, 371)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(99, 17)
-        Me.RadioButton1.TabIndex = 600
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Standard/Open"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
         'GTLabel
         '
         Me.GTLabel.AutoSize = True
         Me.GTLabel.BackColor = System.Drawing.Color.Red
-        Me.GTLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GTLabel.ForeColor = System.Drawing.Color.Black
         Me.GTLabel.Location = New System.Drawing.Point(4, 328)
         Me.GTLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -359,7 +346,7 @@ Partial Class Form1
         '
         Me.AGLabel.AutoSize = True
         Me.AGLabel.BackColor = System.Drawing.Color.Red
-        Me.AGLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGLabel.ForeColor = System.Drawing.Color.Black
         Me.AGLabel.Location = New System.Drawing.Point(206, 184)
         Me.AGLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -375,7 +362,7 @@ Partial Class Form1
         '
         Me.HCLabel.AutoSize = True
         Me.HCLabel.BackColor = System.Drawing.Color.Yellow
-        Me.HCLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCLabel.ForeColor = System.Drawing.Color.Black
         Me.HCLabel.Location = New System.Drawing.Point(4, 184)
         Me.HCLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -390,14 +377,14 @@ Partial Class Form1
         '
         Me.TRLabel2.AutoSize = True
         Me.TRLabel2.BackColor = System.Drawing.Color.Black
-        Me.TRLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRLabel2.ForeColor = System.Drawing.Color.White
         Me.TRLabel2.Location = New System.Drawing.Point(293, 143)
         Me.TRLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TRLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.TRLabel2.MinimumSize = New System.Drawing.Size(32, 34)
         Me.TRLabel2.Name = "TRLabel2"
-        Me.TRLabel2.Padding = New System.Windows.Forms.Padding(4, 4, 3, 3)
+        Me.TRLabel2.Padding = New System.Windows.Forms.Padding(4, 4, 2, 3)
         Me.TRLabel2.Size = New System.Drawing.Size(32, 34)
         Me.TRLabel2.TabIndex = 584
         Me.TRLabel2.Text = "TR"
@@ -407,7 +394,7 @@ Partial Class Form1
         '
         Me.MMLabel2.AutoSize = True
         Me.MMLabel2.BackColor = System.Drawing.Color.Black
-        Me.MMLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMLabel2.ForeColor = System.Drawing.Color.White
         Me.MMLabel2.Location = New System.Drawing.Point(293, 108)
         Me.MMLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -424,14 +411,14 @@ Partial Class Form1
         '
         Me.IPLabel2.AutoSize = True
         Me.IPLabel2.BackColor = System.Drawing.Color.Black
-        Me.IPLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPLabel2.ForeColor = System.Drawing.Color.White
         Me.IPLabel2.Location = New System.Drawing.Point(293, 73)
         Me.IPLabel2.Margin = New System.Windows.Forms.Padding(0)
         Me.IPLabel2.MaximumSize = New System.Drawing.Size(32, 28)
         Me.IPLabel2.MinimumSize = New System.Drawing.Size(32, 34)
         Me.IPLabel2.Name = "IPLabel2"
-        Me.IPLabel2.Padding = New System.Windows.Forms.Padding(8, 4, 3, 3)
+        Me.IPLabel2.Padding = New System.Windows.Forms.Padding(8, 4, 2, 3)
         Me.IPLabel2.Size = New System.Drawing.Size(32, 34)
         Me.IPLabel2.TabIndex = 582
         Me.IPLabel2.Text = "IP"
@@ -441,7 +428,7 @@ Partial Class Form1
         '
         Me.TTLabel2.AutoSize = True
         Me.TTLabel2.BackColor = System.Drawing.Color.Black
-        Me.TTLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTLabel2.ForeColor = System.Drawing.Color.White
         Me.TTLabel2.Location = New System.Drawing.Point(293, 38)
         Me.TTLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -458,7 +445,7 @@ Partial Class Form1
         '
         Me.SWLabel2.AutoSize = True
         Me.SWLabel2.BackColor = System.Drawing.Color.Black
-        Me.SWLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWLabel2.ForeColor = System.Drawing.Color.White
         Me.SWLabel2.Location = New System.Drawing.Point(293, 3)
         Me.SWLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -475,7 +462,7 @@ Partial Class Form1
         '
         Me.SPLabel2.AutoSize = True
         Me.SPLabel2.BackColor = System.Drawing.Color.Black
-        Me.SPLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPLabel2.ForeColor = System.Drawing.Color.White
         Me.SPLabel2.Location = New System.Drawing.Point(223, 143)
         Me.SPLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -492,7 +479,7 @@ Partial Class Form1
         '
         Me.PODLabel2.AutoSize = True
         Me.PODLabel2.BackColor = System.Drawing.Color.Black
-        Me.PODLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODLabel2.ForeColor = System.Drawing.Color.White
         Me.PODLabel2.Location = New System.Drawing.Point(223, 108)
         Me.PODLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -509,7 +496,7 @@ Partial Class Form1
         '
         Me.TOHLabel2.AutoSize = True
         Me.TOHLabel2.BackColor = System.Drawing.Color.Black
-        Me.TOHLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHLabel2.ForeColor = System.Drawing.Color.White
         Me.TOHLabel2.Location = New System.Drawing.Point(223, 73)
         Me.TOHLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -526,7 +513,7 @@ Partial Class Form1
         '
         Me.DPLabel2.AutoSize = True
         Me.DPLabel2.BackColor = System.Drawing.Color.Black
-        Me.DPLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPLabel2.ForeColor = System.Drawing.Color.White
         Me.DPLabel2.Location = New System.Drawing.Point(223, 38)
         Me.DPLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -543,7 +530,7 @@ Partial Class Form1
         '
         Me.EPLabel2.AutoSize = True
         Me.EPLabel2.BackColor = System.Drawing.Color.Black
-        Me.EPLabel2.Font = New System.Drawing.Font("Return of Ganon", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPLabel2.ForeColor = System.Drawing.Color.White
         Me.EPLabel2.Location = New System.Drawing.Point(223, 3)
         Me.EPLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -565,7 +552,8 @@ Partial Class Form1
         Me.DW16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW16.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW16.ForeColor = System.Drawing.Color.Black
-        Me.DW16.Location = New System.Drawing.Point(684, 340)
+        Me.DW16.Location = New System.Drawing.Point(684, 390)
+        Me.DW16.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW16.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW16.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW16.Name = "DW16"
@@ -584,7 +572,8 @@ Partial Class Form1
         Me.DW15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW15.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW15.ForeColor = System.Drawing.Color.Black
-        Me.DW15.Location = New System.Drawing.Point(684, 316)
+        Me.DW15.Location = New System.Drawing.Point(594, 438)
+        Me.DW15.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW15.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW15.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW15.Name = "DW15"
@@ -603,7 +592,8 @@ Partial Class Form1
         Me.DW14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW14.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW14.ForeColor = System.Drawing.Color.Black
-        Me.DW14.Location = New System.Drawing.Point(684, 292)
+        Me.DW14.Location = New System.Drawing.Point(594, 414)
+        Me.DW14.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW14.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW14.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW14.Name = "DW14"
@@ -622,7 +612,8 @@ Partial Class Form1
         Me.DW13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW13.ForeColor = System.Drawing.Color.Black
-        Me.DW13.Location = New System.Drawing.Point(684, 268)
+        Me.DW13.Location = New System.Drawing.Point(594, 390)
+        Me.DW13.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW13.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW13.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW13.Name = "DW13"
@@ -641,7 +632,8 @@ Partial Class Form1
         Me.DW12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW12.ForeColor = System.Drawing.Color.Black
-        Me.DW12.Location = New System.Drawing.Point(684, 28)
+        Me.DW12.Location = New System.Drawing.Point(504, 250)
+        Me.DW12.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW12.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW12.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW12.Name = "DW12"
@@ -660,7 +652,8 @@ Partial Class Form1
         Me.DW11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW11.ForeColor = System.Drawing.Color.Black
-        Me.DW11.Location = New System.Drawing.Point(684, 196)
+        Me.DW11.Location = New System.Drawing.Point(594, 250)
+        Me.DW11.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW11.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW11.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW11.Name = "DW11"
@@ -679,7 +672,8 @@ Partial Class Form1
         Me.DW10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW10.ForeColor = System.Drawing.Color.Black
-        Me.DW10.Location = New System.Drawing.Point(684, 172)
+        Me.DW10.Location = New System.Drawing.Point(594, 343)
+        Me.DW10.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW10.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW10.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW10.Name = "DW10"
@@ -698,7 +692,8 @@ Partial Class Form1
         Me.DW9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW9.ForeColor = System.Drawing.Color.Black
-        Me.DW9.Location = New System.Drawing.Point(684, 148)
+        Me.DW9.Location = New System.Drawing.Point(504, 319)
+        Me.DW9.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW9.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW9.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW9.Name = "DW9"
@@ -717,7 +712,8 @@ Partial Class Form1
         Me.DW8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW8.ForeColor = System.Drawing.Color.Black
-        Me.DW8.Location = New System.Drawing.Point(504, 220)
+        Me.DW8.Location = New System.Drawing.Point(504, 343)
+        Me.DW8.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW8.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW8.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW8.Name = "DW8"
@@ -736,7 +732,8 @@ Partial Class Form1
         Me.DW7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW7.ForeColor = System.Drawing.Color.Black
-        Me.DW7.Location = New System.Drawing.Point(684, 220)
+        Me.DW7.Location = New System.Drawing.Point(684, 250)
+        Me.DW7.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW7.MaximumSize = New System.Drawing.Size(66, 24)
         Me.DW7.MinimumSize = New System.Drawing.Size(66, 24)
         Me.DW7.Name = "DW7"
@@ -755,7 +752,8 @@ Partial Class Form1
         Me.DW6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW6.ForeColor = System.Drawing.Color.Black
-        Me.DW6.Location = New System.Drawing.Point(684, 244)
+        Me.DW6.Location = New System.Drawing.Point(684, 274)
+        Me.DW6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW6.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW6.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW6.Name = "DW6"
@@ -774,7 +772,8 @@ Partial Class Form1
         Me.DW5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW5.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW5.ForeColor = System.Drawing.Color.Black
-        Me.DW5.Location = New System.Drawing.Point(684, 124)
+        Me.DW5.Location = New System.Drawing.Point(414, 319)
+        Me.DW5.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW5.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW5.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW5.Name = "DW5"
@@ -793,7 +792,8 @@ Partial Class Form1
         Me.DW4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW4.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW4.ForeColor = System.Drawing.Color.Black
-        Me.DW4.Location = New System.Drawing.Point(684, 100)
+        Me.DW4.Location = New System.Drawing.Point(594, 274)
+        Me.DW4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW4.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW4.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW4.Name = "DW4"
@@ -812,7 +812,8 @@ Partial Class Form1
         Me.DW3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW3.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW3.ForeColor = System.Drawing.Color.Black
-        Me.DW3.Location = New System.Drawing.Point(684, 76)
+        Me.DW3.Location = New System.Drawing.Point(504, 274)
+        Me.DW3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW3.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW3.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW3.Name = "DW3"
@@ -831,7 +832,8 @@ Partial Class Form1
         Me.DW2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW2.ForeColor = System.Drawing.Color.Black
-        Me.DW2.Location = New System.Drawing.Point(684, 52)
+        Me.DW2.Location = New System.Drawing.Point(414, 274)
+        Me.DW2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW2.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW2.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW2.Name = "DW2"
@@ -849,7 +851,8 @@ Partial Class Form1
         Me.DW1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DW1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DW1.ForeColor = System.Drawing.Color.Black
-        Me.DW1.Location = New System.Drawing.Point(684, 4)
+        Me.DW1.Location = New System.Drawing.Point(414, 250)
+        Me.DW1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW1.MaximumSize = New System.Drawing.Size(90, 24)
         Me.DW1.MinimumSize = New System.Drawing.Size(90, 24)
         Me.DW1.Name = "DW1"
@@ -868,7 +871,8 @@ Partial Class Form1
         Me.LW47.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW47.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW47.ForeColor = System.Drawing.Color.Black
-        Me.LW47.Location = New System.Drawing.Point(594, 340)
+        Me.LW47.Location = New System.Drawing.Point(684, 438)
+        Me.LW47.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW47.MaximumSize = New System.Drawing.Size(66, 24)
         Me.LW47.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW47.Name = "LW47"
@@ -887,7 +891,8 @@ Partial Class Form1
         Me.LW46.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW46.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW46.ForeColor = System.Drawing.Color.Black
-        Me.LW46.Location = New System.Drawing.Point(594, 316)
+        Me.LW46.Location = New System.Drawing.Point(684, 414)
+        Me.LW46.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW46.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW46.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW46.Name = "LW46"
@@ -906,7 +911,8 @@ Partial Class Form1
         Me.LW45.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW45.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW45.ForeColor = System.Drawing.Color.Black
-        Me.LW45.Location = New System.Drawing.Point(504, 172)
+        Me.LW45.Location = New System.Drawing.Point(504, 462)
+        Me.LW45.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW45.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW45.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW45.Name = "LW45"
@@ -925,7 +931,8 @@ Partial Class Form1
         Me.LW44.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW44.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW44.ForeColor = System.Drawing.Color.Black
-        Me.LW44.Location = New System.Drawing.Point(504, 148)
+        Me.LW44.Location = New System.Drawing.Point(504, 438)
+        Me.LW44.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW44.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW44.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW44.Name = "LW44"
@@ -944,7 +951,8 @@ Partial Class Form1
         Me.LW43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW43.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW43.ForeColor = System.Drawing.Color.Black
-        Me.LW43.Location = New System.Drawing.Point(504, 124)
+        Me.LW43.Location = New System.Drawing.Point(504, 414)
+        Me.LW43.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW43.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW43.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW43.Name = "LW43"
@@ -963,7 +971,8 @@ Partial Class Form1
         Me.LW42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW42.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW42.ForeColor = System.Drawing.Color.Black
-        Me.LW42.Location = New System.Drawing.Point(504, 100)
+        Me.LW42.Location = New System.Drawing.Point(504, 390)
+        Me.LW42.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW42.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW42.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW42.Name = "LW42"
@@ -982,7 +991,8 @@ Partial Class Form1
         Me.LW41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW41.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW41.ForeColor = System.Drawing.Color.Black
-        Me.LW41.Location = New System.Drawing.Point(504, 76)
+        Me.LW41.Location = New System.Drawing.Point(414, 462)
+        Me.LW41.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW41.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW41.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW41.Name = "LW41"
@@ -1001,7 +1011,8 @@ Partial Class Form1
         Me.LW40.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW40.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW40.ForeColor = System.Drawing.Color.Black
-        Me.LW40.Location = New System.Drawing.Point(504, 52)
+        Me.LW40.Location = New System.Drawing.Point(414, 438)
+        Me.LW40.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW40.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW40.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW40.Name = "LW40"
@@ -1020,7 +1031,8 @@ Partial Class Form1
         Me.LW39.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW39.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW39.ForeColor = System.Drawing.Color.Black
-        Me.LW39.Location = New System.Drawing.Point(504, 28)
+        Me.LW39.Location = New System.Drawing.Point(414, 414)
+        Me.LW39.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW39.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW39.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW39.Name = "LW39"
@@ -1039,7 +1051,8 @@ Partial Class Form1
         Me.LW38.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW38.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW38.ForeColor = System.Drawing.Color.Black
-        Me.LW38.Location = New System.Drawing.Point(504, 4)
+        Me.LW38.Location = New System.Drawing.Point(414, 390)
+        Me.LW38.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW38.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW38.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW38.Name = "LW38"
@@ -1058,13 +1071,14 @@ Partial Class Form1
         Me.LW37.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW37.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW37.ForeColor = System.Drawing.Color.Black
-        Me.LW37.Location = New System.Drawing.Point(594, 268)
+        Me.LW37.Location = New System.Drawing.Point(594, 205)
+        Me.LW37.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW37.MaximumSize = New System.Drawing.Size(66, 24)
         Me.LW37.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW37.Name = "LW37"
         Me.LW37.Size = New System.Drawing.Size(66, 24)
         Me.LW37.TabIndex = 547
-        Me.LW37.Text = "Zora Ledge"
+        Me.LW37.Text = "Ledge"
         Me.LW37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW37.UseVisualStyleBackColor = False
         '
@@ -1077,13 +1091,14 @@ Partial Class Form1
         Me.LW36.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW36.ForeColor = System.Drawing.Color.Black
         Me.LW36.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.LW36.Location = New System.Drawing.Point(594, 244)
-        Me.LW36.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW36.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW36.Location = New System.Drawing.Point(534, 205)
+        Me.LW36.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW36.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW36.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW36.Name = "LW36"
-        Me.LW36.Size = New System.Drawing.Size(90, 24)
+        Me.LW36.Size = New System.Drawing.Size(60, 24)
         Me.LW36.TabIndex = 546
-        Me.LW36.Text = "King Zora"
+        Me.LW36.Text = "Zora"
         Me.LW36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW36.UseVisualStyleBackColor = False
         '
@@ -1096,13 +1111,14 @@ Partial Class Form1
         Me.LW35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW35.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW35.ForeColor = System.Drawing.Color.Black
-        Me.LW35.Location = New System.Drawing.Point(594, 220)
-        Me.LW35.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW35.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW35.Location = New System.Drawing.Point(474, 205)
+        Me.LW35.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW35.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW35.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW35.Name = "LW35"
-        Me.LW35.Size = New System.Drawing.Size(90, 24)
+        Me.LW35.Size = New System.Drawing.Size(60, 24)
         Me.LW35.TabIndex = 545
-        Me.LW35.Text = "Waterfall (2)"
+        Me.LW35.Text = "Falls (2)"
         Me.LW35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW35.UseVisualStyleBackColor = False
         '
@@ -1115,7 +1131,8 @@ Partial Class Form1
         Me.LW34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW34.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW34.ForeColor = System.Drawing.Color.Black
-        Me.LW34.Location = New System.Drawing.Point(504, 316)
+        Me.LW34.Location = New System.Drawing.Point(504, 160)
+        Me.LW34.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW34.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW34.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW34.Name = "LW34"
@@ -1133,13 +1150,14 @@ Partial Class Form1
         Me.LW33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW33.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW33.ForeColor = System.Drawing.Color.Black
-        Me.LW33.Location = New System.Drawing.Point(594, 292)
+        Me.LW33.Location = New System.Drawing.Point(684, 205)
+        Me.LW33.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW33.MaximumSize = New System.Drawing.Size(66, 24)
         Me.LW33.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW33.Name = "LW33"
         Me.LW33.Size = New System.Drawing.Size(66, 24)
         Me.LW33.TabIndex = 543
-        Me.LW33.Text = "Lake Isle"
+        Me.LW33.Text = "Island"
         Me.LW33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW33.UseVisualStyleBackColor = False
         '
@@ -1151,11 +1169,12 @@ Partial Class Form1
         Me.LW32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW32.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW32.ForeColor = System.Drawing.Color.Black
-        Me.LW32.Location = New System.Drawing.Point(594, 196)
-        Me.LW32.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW32.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW32.Location = New System.Drawing.Point(414, 205)
+        Me.LW32.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW32.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW32.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW32.Name = "LW32"
-        Me.LW32.Size = New System.Drawing.Size(90, 24)
+        Me.LW32.Size = New System.Drawing.Size(60, 24)
         Me.LW32.TabIndex = 542
         Me.LW32.Text = "Hobo"
         Me.LW32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1170,7 +1189,8 @@ Partial Class Form1
         Me.LW31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW31.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW31.ForeColor = System.Drawing.Color.Black
-        Me.LW31.Location = New System.Drawing.Point(504, 292)
+        Me.LW31.Location = New System.Drawing.Point(594, 136)
+        Me.LW31.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW31.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW31.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW31.Name = "LW31"
@@ -1189,7 +1209,8 @@ Partial Class Form1
         Me.LW30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW30.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW30.ForeColor = System.Drawing.Color.Black
-        Me.LW30.Location = New System.Drawing.Point(504, 268)
+        Me.LW30.Location = New System.Drawing.Point(504, 136)
+        Me.LW30.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW30.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW30.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW30.Name = "LW30"
@@ -1208,7 +1229,8 @@ Partial Class Form1
         Me.LW29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW29.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW29.ForeColor = System.Drawing.Color.Black
-        Me.LW29.Location = New System.Drawing.Point(504, 244)
+        Me.LW29.Location = New System.Drawing.Point(414, 136)
+        Me.LW29.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW29.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW29.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW29.Name = "LW29"
@@ -1227,7 +1249,8 @@ Partial Class Form1
         Me.LW28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW28.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW28.ForeColor = System.Drawing.Color.Black
-        Me.LW28.Location = New System.Drawing.Point(414, 340)
+        Me.LW28.Location = New System.Drawing.Point(414, 343)
+        Me.LW28.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW28.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW28.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW28.Name = "LW28"
@@ -1246,7 +1269,8 @@ Partial Class Form1
         Me.LW27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW27.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW27.ForeColor = System.Drawing.Color.Black
-        Me.LW27.Location = New System.Drawing.Point(504, 340)
+        Me.LW27.Location = New System.Drawing.Point(414, 160)
+        Me.LW27.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW27.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW27.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW27.Name = "LW27"
@@ -1265,7 +1289,8 @@ Partial Class Form1
         Me.LW26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW26.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW26.ForeColor = System.Drawing.Color.Black
-        Me.LW26.Location = New System.Drawing.Point(414, 268)
+        Me.LW26.Location = New System.Drawing.Point(594, 319)
+        Me.LW26.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW26.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW26.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW26.Name = "LW26"
@@ -1284,7 +1309,8 @@ Partial Class Form1
         Me.LW25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW25.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW25.ForeColor = System.Drawing.Color.Black
-        Me.LW25.Location = New System.Drawing.Point(504, 196)
+        Me.LW25.Location = New System.Drawing.Point(684, 319)
+        Me.LW25.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW25.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW25.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW25.Name = "LW25"
@@ -1303,7 +1329,8 @@ Partial Class Form1
         Me.LW24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW24.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW24.ForeColor = System.Drawing.Color.Black
-        Me.LW24.Location = New System.Drawing.Point(594, 172)
+        Me.LW24.Location = New System.Drawing.Point(684, 160)
+        Me.LW24.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW24.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW24.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW24.Name = "LW24"
@@ -1322,7 +1349,8 @@ Partial Class Form1
         Me.LW23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW23.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW23.ForeColor = System.Drawing.Color.Black
-        Me.LW23.Location = New System.Drawing.Point(594, 148)
+        Me.LW23.Location = New System.Drawing.Point(594, 160)
+        Me.LW23.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW23.MaximumSize = New System.Drawing.Size(66, 24)
         Me.LW23.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW23.Name = "LW23"
@@ -1341,7 +1369,7 @@ Partial Class Form1
         Me.LW22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW22.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW22.ForeColor = System.Drawing.Color.Black
-        Me.LW22.Location = New System.Drawing.Point(594, 124)
+        Me.LW22.Location = New System.Drawing.Point(684, 112)
         Me.LW22.Margin = New System.Windows.Forms.Padding(0)
         Me.LW22.MaximumSize = New System.Drawing.Size(66, 24)
         Me.LW22.MinimumSize = New System.Drawing.Size(66, 24)
@@ -1361,13 +1389,14 @@ Partial Class Form1
         Me.LW21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW21.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW21.ForeColor = System.Drawing.Color.Black
-        Me.LW21.Location = New System.Drawing.Point(594, 4)
-        Me.LW21.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW21.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW21.Location = New System.Drawing.Point(535, 67)
+        Me.LW21.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW21.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW21.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW21.Name = "LW21"
-        Me.LW21.Size = New System.Drawing.Size(90, 24)
+        Me.LW21.Size = New System.Drawing.Size(60, 24)
         Me.LW21.TabIndex = 531
-        Me.LW21.Text = "Sahasrahla (3)"
+        Me.LW21.Text = "Sahas (3)"
         Me.LW21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW21.UseVisualStyleBackColor = False
         '
@@ -1380,11 +1409,12 @@ Partial Class Form1
         Me.LW20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW20.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW20.ForeColor = System.Drawing.Color.Black
-        Me.LW20.Location = New System.Drawing.Point(594, 76)
-        Me.LW20.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW20.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW20.Location = New System.Drawing.Point(595, 67)
+        Me.LW20.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW20.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW20.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW20.Name = "LW20"
-        Me.LW20.Size = New System.Drawing.Size(90, 24)
+        Me.LW20.Size = New System.Drawing.Size(60, 24)
         Me.LW20.TabIndex = 530
         Me.LW20.Text = "Ice Cave"
         Me.LW20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1399,11 +1429,12 @@ Partial Class Form1
         Me.LW19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW19.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW19.ForeColor = System.Drawing.Color.Black
-        Me.LW19.Location = New System.Drawing.Point(594, 100)
-        Me.LW19.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW19.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW19.Location = New System.Drawing.Point(655, 67)
+        Me.LW19.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW19.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW19.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW19.Name = "LW19"
-        Me.LW19.Size = New System.Drawing.Size(90, 24)
+        Me.LW19.Size = New System.Drawing.Size(60, 24)
         Me.LW19.TabIndex = 529
         Me.LW19.Text = "Aginah"
         Me.LW19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1418,13 +1449,14 @@ Partial Class Form1
         Me.LW18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW18.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW18.ForeColor = System.Drawing.Color.Black
-        Me.LW18.Location = New System.Drawing.Point(594, 52)
-        Me.LW18.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW18.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW18.Location = New System.Drawing.Point(475, 67)
+        Me.LW18.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW18.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW18.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW18.Name = "LW18"
-        Me.LW18.Size = New System.Drawing.Size(90, 24)
+        Me.LW18.Size = New System.Drawing.Size(60, 24)
         Me.LW18.TabIndex = 528
-        Me.LW18.Text = "Moldorm (5)"
+        Me.LW18.Text = "Mold (5)"
         Me.LW18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW18.UseVisualStyleBackColor = False
         '
@@ -1435,11 +1467,12 @@ Partial Class Form1
         Me.LW17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW17.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW17.ForeColor = System.Drawing.Color.Black
-        Me.LW17.Location = New System.Drawing.Point(594, 28)
-        Me.LW17.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW17.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW17.Location = New System.Drawing.Point(415, 67)
+        Me.LW17.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW17.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW17.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW17.Name = "LW17"
-        Me.LW17.Size = New System.Drawing.Size(90, 24)
+        Me.LW17.Size = New System.Drawing.Size(60, 24)
         Me.LW17.TabIndex = 527
         Me.LW17.Text = "Dam (2)"
         Me.LW17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1454,11 +1487,12 @@ Partial Class Form1
         Me.LW16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW16.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW16.ForeColor = System.Drawing.Color.Black
-        Me.LW16.Location = New System.Drawing.Point(414, 316)
-        Me.LW16.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW16.MinimumSize = New System.Drawing.Size(66, 24)
+        Me.LW16.Location = New System.Drawing.Point(655, 43)
+        Me.LW16.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW16.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW16.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW16.Name = "LW16"
-        Me.LW16.Size = New System.Drawing.Size(66, 24)
+        Me.LW16.Size = New System.Drawing.Size(60, 24)
         Me.LW16.TabIndex = 526
         Me.LW16.Text = "Maze"
         Me.LW16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1473,7 +1507,8 @@ Partial Class Form1
         Me.LW15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW15.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW15.ForeColor = System.Drawing.Color.Black
-        Me.LW15.Location = New System.Drawing.Point(414, 292)
+        Me.LW15.Location = New System.Drawing.Point(594, 112)
+        Me.LW15.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW15.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW15.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW15.Name = "LW15"
@@ -1492,7 +1527,8 @@ Partial Class Form1
         Me.LW14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW14.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW14.ForeColor = System.Drawing.Color.Black
-        Me.LW14.Location = New System.Drawing.Point(414, 244)
+        Me.LW14.Location = New System.Drawing.Point(504, 112)
+        Me.LW14.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW14.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW14.MinimumSize = New System.Drawing.Size(90, 24)
         Me.LW14.Name = "LW14"
@@ -1510,11 +1546,12 @@ Partial Class Form1
         Me.LW13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW13.ForeColor = System.Drawing.Color.Black
-        Me.LW13.Location = New System.Drawing.Point(414, 220)
-        Me.LW13.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW13.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW13.Location = New System.Drawing.Point(595, 43)
+        Me.LW13.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW13.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW13.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW13.Name = "LW13"
-        Me.LW13.Size = New System.Drawing.Size(90, 24)
+        Me.LW13.Size = New System.Drawing.Size(60, 24)
         Me.LW13.TabIndex = 523
         Me.LW13.Text = "Tavern"
         Me.LW13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1529,13 +1566,14 @@ Partial Class Form1
         Me.LW12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW12.ForeColor = System.Drawing.Color.Black
-        Me.LW12.Location = New System.Drawing.Point(414, 196)
-        Me.LW12.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW12.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW12.Location = New System.Drawing.Point(535, 43)
+        Me.LW12.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW12.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW12.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW12.Name = "LW12"
-        Me.LW12.Size = New System.Drawing.Size(90, 24)
+        Me.LW12.Size = New System.Drawing.Size(60, 24)
         Me.LW12.TabIndex = 522
-        Me.LW12.Text = "Chicken House"
+        Me.LW12.Text = "Chickens"
         Me.LW12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW12.UseVisualStyleBackColor = False
         '
@@ -1547,13 +1585,14 @@ Partial Class Form1
         Me.LW11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW11.ForeColor = System.Drawing.Color.Black
-        Me.LW11.Location = New System.Drawing.Point(414, 172)
-        Me.LW11.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW11.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW11.Location = New System.Drawing.Point(475, 43)
+        Me.LW11.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW11.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW11.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW11.Name = "LW11"
-        Me.LW11.Size = New System.Drawing.Size(90, 24)
+        Me.LW11.Size = New System.Drawing.Size(60, 24)
         Me.LW11.TabIndex = 521
-        Me.LW11.Text = "Bottle Vendor"
+        Me.LW11.Text = "Vendor"
         Me.LW11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW11.UseVisualStyleBackColor = False
         '
@@ -1565,13 +1604,14 @@ Partial Class Form1
         Me.LW10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW10.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW10.ForeColor = System.Drawing.Color.Black
-        Me.LW10.Location = New System.Drawing.Point(414, 148)
-        Me.LW10.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW10.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW10.Location = New System.Drawing.Point(415, 43)
+        Me.LW10.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW10.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW10.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW10.Name = "LW10"
-        Me.LW10.Size = New System.Drawing.Size(90, 24)
+        Me.LW10.Size = New System.Drawing.Size(60, 24)
         Me.LW10.TabIndex = 520
-        Me.LW10.Text = "Kakariko Well (5)"
+        Me.LW10.Text = "Well (5)"
         Me.LW10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW10.UseVisualStyleBackColor = False
         '
@@ -1583,13 +1623,14 @@ Partial Class Form1
         Me.LW9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW9.ForeColor = System.Drawing.Color.Black
-        Me.LW9.Location = New System.Drawing.Point(414, 124)
-        Me.LW9.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW9.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW9.Location = New System.Drawing.Point(655, 19)
+        Me.LW9.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW9.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW9.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW9.Name = "LW9"
-        Me.LW9.Size = New System.Drawing.Size(90, 24)
+        Me.LW9.Size = New System.Drawing.Size(60, 24)
         Me.LW9.TabIndex = 519
-        Me.LW9.Text = "Blind House (5)"
+        Me.LW9.Text = "Blind (5)"
         Me.LW9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW9.UseVisualStyleBackColor = False
         '
@@ -1601,13 +1642,14 @@ Partial Class Form1
         Me.LW8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW8.ForeColor = System.Drawing.Color.Black
-        Me.LW8.Location = New System.Drawing.Point(414, 100)
-        Me.LW8.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW8.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW8.Location = New System.Drawing.Point(595, 19)
+        Me.LW8.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW8.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW8.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW8.Name = "LW8"
-        Me.LW8.Size = New System.Drawing.Size(90, 24)
+        Me.LW8.Size = New System.Drawing.Size(60, 24)
         Me.LW8.TabIndex = 518
-        Me.LW8.Text = "Woods Hideout"
+        Me.LW8.Text = "Hideout"
         Me.LW8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW8.UseVisualStyleBackColor = False
         '
@@ -1619,13 +1661,14 @@ Partial Class Form1
         Me.LW7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW7.ForeColor = System.Drawing.Color.Black
-        Me.LW7.Location = New System.Drawing.Point(414, 76)
-        Me.LW7.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW7.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW7.Location = New System.Drawing.Point(535, 19)
+        Me.LW7.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW7.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW7.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW7.Name = "LW7"
-        Me.LW7.Size = New System.Drawing.Size(90, 24)
+        Me.LW7.Size = New System.Drawing.Size(60, 24)
         Me.LW7.TabIndex = 517
-        Me.LW7.Text = "Mushroom Spot"
+        Me.LW7.Text = "Mush. Spot"
         Me.LW7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW7.UseVisualStyleBackColor = False
         '
@@ -1638,7 +1681,8 @@ Partial Class Form1
         Me.LW6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW6.ForeColor = System.Drawing.Color.Black
-        Me.LW6.Location = New System.Drawing.Point(414, 52)
+        Me.LW6.Location = New System.Drawing.Point(414, 112)
+        Me.LW6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW6.MaximumSize = New System.Drawing.Size(90, 24)
         Me.LW6.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW6.Name = "LW6"
@@ -1656,13 +1700,14 @@ Partial Class Form1
         Me.LW2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW2.ForeColor = System.Drawing.Color.Black
-        Me.LW2.Location = New System.Drawing.Point(414, 28)
-        Me.LW2.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW2.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW2.Location = New System.Drawing.Point(475, 19)
+        Me.LW2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW2.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW2.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW2.Name = "LW2"
-        Me.LW2.Size = New System.Drawing.Size(90, 24)
+        Me.LW2.Size = New System.Drawing.Size(60, 24)
         Me.LW2.TabIndex = 515
-        Me.LW2.Text = "Uncle/Passage"
+        Me.LW2.Text = "Uncle (2)"
         Me.LW2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW2.UseVisualStyleBackColor = False
         '
@@ -1673,13 +1718,14 @@ Partial Class Form1
         Me.LW1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW1.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW1.ForeColor = System.Drawing.Color.Black
-        Me.LW1.Location = New System.Drawing.Point(414, 4)
-        Me.LW1.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW1.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW1.Location = New System.Drawing.Point(415, 19)
+        Me.LW1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.LW1.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW1.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW1.Name = "LW1"
-        Me.LW1.Size = New System.Drawing.Size(90, 24)
+        Me.LW1.Size = New System.Drawing.Size(60, 24)
         Me.LW1.TabIndex = 514
-        Me.LW1.Text = "Link's House"
+        Me.LW1.Text = "Start"
         Me.LW1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW1.UseVisualStyleBackColor = False
         '
@@ -1687,7 +1733,7 @@ Partial Class Form1
         '
         Me.TRLabel.AutoSize = True
         Me.TRLabel.BackColor = System.Drawing.Color.Red
-        Me.TRLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRLabel.ForeColor = System.Drawing.Color.Black
         Me.TRLabel.Location = New System.Drawing.Point(206, 304)
         Me.TRLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1702,7 +1748,7 @@ Partial Class Form1
         '
         Me.MMLabel.AutoSize = True
         Me.MMLabel.BackColor = System.Drawing.Color.Red
-        Me.MMLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMLabel.ForeColor = System.Drawing.Color.Black
         Me.MMLabel.Location = New System.Drawing.Point(206, 280)
         Me.MMLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1717,7 +1763,7 @@ Partial Class Form1
         '
         Me.IPLabel.AutoSize = True
         Me.IPLabel.BackColor = System.Drawing.Color.Red
-        Me.IPLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPLabel.ForeColor = System.Drawing.Color.Black
         Me.IPLabel.Location = New System.Drawing.Point(206, 256)
         Me.IPLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1732,7 +1778,7 @@ Partial Class Form1
         '
         Me.TTLabel.AutoSize = True
         Me.TTLabel.BackColor = System.Drawing.Color.Red
-        Me.TTLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTLabel.ForeColor = System.Drawing.Color.Black
         Me.TTLabel.Location = New System.Drawing.Point(206, 232)
         Me.TTLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1747,7 +1793,7 @@ Partial Class Form1
         '
         Me.SWLabel.AutoSize = True
         Me.SWLabel.BackColor = System.Drawing.Color.Red
-        Me.SWLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWLabel.ForeColor = System.Drawing.Color.Black
         Me.SWLabel.Location = New System.Drawing.Point(206, 208)
         Me.SWLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1762,7 +1808,7 @@ Partial Class Form1
         '
         Me.SPLabel.AutoSize = True
         Me.SPLabel.BackColor = System.Drawing.Color.Red
-        Me.SPLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPLabel.ForeColor = System.Drawing.Color.Black
         Me.SPLabel.Location = New System.Drawing.Point(4, 304)
         Me.SPLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1777,7 +1823,7 @@ Partial Class Form1
         '
         Me.PODLabel.AutoSize = True
         Me.PODLabel.BackColor = System.Drawing.Color.Red
-        Me.PODLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODLabel.ForeColor = System.Drawing.Color.Black
         Me.PODLabel.Location = New System.Drawing.Point(4, 280)
         Me.PODLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1792,7 +1838,7 @@ Partial Class Form1
         '
         Me.TOHLabel.AutoSize = True
         Me.TOHLabel.BackColor = System.Drawing.Color.Red
-        Me.TOHLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHLabel.ForeColor = System.Drawing.Color.Black
         Me.TOHLabel.Location = New System.Drawing.Point(4, 256)
         Me.TOHLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1807,7 +1853,7 @@ Partial Class Form1
         '
         Me.DPLabel.AutoSize = True
         Me.DPLabel.BackColor = System.Drawing.Color.Red
-        Me.DPLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPLabel.ForeColor = System.Drawing.Color.Black
         Me.DPLabel.Location = New System.Drawing.Point(4, 232)
         Me.DPLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1822,7 +1868,7 @@ Partial Class Form1
         '
         Me.EPLabel.AutoSize = True
         Me.EPLabel.BackColor = System.Drawing.Color.Yellow
-        Me.EPLabel.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPLabel.ForeColor = System.Drawing.Color.Black
         Me.EPLabel.Location = New System.Drawing.Point(4, 208)
         Me.EPLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1835,19 +1881,90 @@ Partial Class Form1
         '
         'ResetButton
         '
-        Me.ResetButton.Location = New System.Drawing.Point(721, 367)
+        Me.ResetButton.Location = New System.Drawing.Point(721, 463)
+        Me.ResetButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.ResetButton.Name = "ResetButton"
         Me.ResetButton.Size = New System.Drawing.Size(53, 23)
         Me.ResetButton.TabIndex = 731
         Me.ResetButton.Text = "RESET"
         Me.ResetButton.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.ItemHeight = 13
+        Me.ComboBox1.Items.AddRange(New Object() {"Standard/Open", "Keysanity w/ Swords", "Retro w/ Swords", "Swordless", "Keysanity Swordless", "Retro Swordless"})
+        Me.ComboBox1.Location = New System.Drawing.Point(74, 462)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(114, 21)
+        Me.ComboBox1.TabIndex = 734
+        Me.ComboBox1.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(4, 466)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(65, 13)
+        Me.Label1.TabIndex = 735
+        Me.Label1.Text = "Game Mode"
+        '
+        'BottleNumber
+        '
+        Me.BottleNumber.AutoSize = True
+        Me.BottleNumber.BackColor = System.Drawing.Color.Black
+        Me.BottleNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BottleNumber.ForeColor = System.Drawing.Color.White
+        Me.BottleNumber.Location = New System.Drawing.Point(23, 129)
+        Me.BottleNumber.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.BottleNumber.Name = "BottleNumber"
+        Me.BottleNumber.Size = New System.Drawing.Size(13, 13)
+        Me.BottleNumber.TabIndex = 737
+        Me.BottleNumber.Text = "0"
+        Me.BottleNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'MagicButton
+        '
+        Me.MagicButton.BackColor = System.Drawing.Color.Black
+        Me.MagicButton.Cursor = System.Windows.Forms.Cursors.Default
+        Me.MagicButton.Image = Global.RandoTracker.My.Resources.Resources.magicbottle
+        Me.MagicButton.Location = New System.Drawing.Point(184, 110)
+        Me.MagicButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.MagicButton.Name = "MagicButton"
+        Me.MagicButton.Size = New System.Drawing.Size(32, 32)
+        Me.MagicButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.MagicButton.TabIndex = 738
+        Me.MagicButton.TabStop = False
+        '
+        'AGPrizes
+        '
+        Me.AGPrizes.AutoSize = True
+        Me.AGPrizes.BackColor = System.Drawing.Color.Black
+        Me.AGPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGPrizes.ForeColor = System.Drawing.Color.White
+        Me.AGPrizes.Image = CType(resources.GetObject("AGPrizes.Image"), System.Drawing.Image)
+        Me.AGPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.AGPrizes.Location = New System.Drawing.Point(281, 183)
+        Me.AGPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.AGPrizes.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.AGPrizes.Name = "AGPrizes"
+        Me.AGPrizes.Size = New System.Drawing.Size(36, 24)
+        Me.AGPrizes.TabIndex = 736
+        Me.AGPrizes.Text = "-"
+        Me.AGPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AGPrizes.Visible = False
+        '
         'DW15Boots
         '
         Me.DW15Boots.Appearance = System.Windows.Forms.Appearance.Button
         Me.DW15Boots.BackColor = System.Drawing.Color.WhiteSmoke
         Me.DW15Boots.Image = Global.RandoTracker.My.Resources.Resources.bootssmall
-        Me.DW15Boots.Location = New System.Drawing.Point(750, 316)
+        Me.DW15Boots.Location = New System.Drawing.Point(660, 438)
+        Me.DW15Boots.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW15Boots.MinimumSize = New System.Drawing.Size(24, 24)
         Me.DW15Boots.Name = "DW15Boots"
         Me.DW15Boots.Size = New System.Drawing.Size(24, 24)
@@ -1855,90 +1972,11 @@ Partial Class Form1
         Me.DW15Boots.UseVisualStyleBackColor = False
         Me.DW15Boots.Visible = False
         '
-        'MMKeys
-        '
-        Me.MMKeys.AutoSize = True
-        Me.MMKeys.BackColor = System.Drawing.Color.Black
-        Me.MMKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MMKeys.ForeColor = System.Drawing.Color.White
-        Me.MMKeys.Image = CType(resources.GetObject("MMKeys.Image"), System.Drawing.Image)
-        Me.MMKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.MMKeys.Location = New System.Drawing.Point(281, 279)
-        Me.MMKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.MMKeys.Name = "MMKeys"
-        Me.MMKeys.Size = New System.Drawing.Size(36, 24)
-        Me.MMKeys.TabIndex = 667
-        Me.MMKeys.Text = "0"
-        Me.MMKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'IPKeys
-        '
-        Me.IPKeys.AutoSize = True
-        Me.IPKeys.BackColor = System.Drawing.Color.Black
-        Me.IPKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IPKeys.ForeColor = System.Drawing.Color.White
-        Me.IPKeys.Image = CType(resources.GetObject("IPKeys.Image"), System.Drawing.Image)
-        Me.IPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IPKeys.Location = New System.Drawing.Point(281, 255)
-        Me.IPKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.IPKeys.Name = "IPKeys"
-        Me.IPKeys.Size = New System.Drawing.Size(36, 24)
-        Me.IPKeys.TabIndex = 666
-        Me.IPKeys.Text = "0"
-        Me.IPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'TTKeys
-        '
-        Me.TTKeys.AutoSize = True
-        Me.TTKeys.BackColor = System.Drawing.Color.Black
-        Me.TTKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TTKeys.ForeColor = System.Drawing.Color.White
-        Me.TTKeys.Image = CType(resources.GetObject("TTKeys.Image"), System.Drawing.Image)
-        Me.TTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.TTKeys.Location = New System.Drawing.Point(281, 231)
-        Me.TTKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.TTKeys.Name = "TTKeys"
-        Me.TTKeys.Size = New System.Drawing.Size(36, 24)
-        Me.TTKeys.TabIndex = 665
-        Me.TTKeys.Text = "0"
-        Me.TTKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'SWKeys
-        '
-        Me.SWKeys.AutoSize = True
-        Me.SWKeys.BackColor = System.Drawing.Color.Black
-        Me.SWKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SWKeys.ForeColor = System.Drawing.Color.White
-        Me.SWKeys.Image = CType(resources.GetObject("SWKeys.Image"), System.Drawing.Image)
-        Me.SWKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.SWKeys.Location = New System.Drawing.Point(281, 207)
-        Me.SWKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.SWKeys.Name = "SWKeys"
-        Me.SWKeys.Size = New System.Drawing.Size(36, 24)
-        Me.SWKeys.TabIndex = 664
-        Me.SWKeys.Text = "0"
-        Me.SWKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'TRKeys
-        '
-        Me.TRKeys.AutoSize = True
-        Me.TRKeys.BackColor = System.Drawing.Color.Black
-        Me.TRKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TRKeys.ForeColor = System.Drawing.Color.White
-        Me.TRKeys.Image = CType(resources.GetObject("TRKeys.Image"), System.Drawing.Image)
-        Me.TRKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.TRKeys.Location = New System.Drawing.Point(281, 303)
-        Me.TRKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.TRKeys.Name = "TRKeys"
-        Me.TRKeys.Size = New System.Drawing.Size(36, 24)
-        Me.TRKeys.TabIndex = 668
-        Me.TRKeys.Text = "0"
-        Me.TRKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
         'TurtleBEQ
         '
         Me.TurtleBEQ.Image = Global.RandoTracker.My.Resources.Resources.whatmedallion
-        Me.TurtleBEQ.Location = New System.Drawing.Point(357, 143)
+        Me.TurtleBEQ.Location = New System.Drawing.Point(356, 143)
+        Me.TurtleBEQ.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TurtleBEQ.Name = "TurtleBEQ"
         Me.TurtleBEQ.Size = New System.Drawing.Size(32, 34)
         Me.TurtleBEQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1948,7 +1986,8 @@ Partial Class Form1
         'MireBEQ
         '
         Me.MireBEQ.Image = Global.RandoTracker.My.Resources.Resources.whatmedallion
-        Me.MireBEQ.Location = New System.Drawing.Point(357, 108)
+        Me.MireBEQ.Location = New System.Drawing.Point(356, 108)
+        Me.MireBEQ.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MireBEQ.Name = "MireBEQ"
         Me.MireBEQ.Size = New System.Drawing.Size(32, 34)
         Me.MireBEQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1962,6 +2001,7 @@ Partial Class Form1
         Me.TRBigKey.BackColor = System.Drawing.Color.Red
         Me.TRBigKey.Image = CType(resources.GetObject("TRBigKey.Image"), System.Drawing.Image)
         Me.TRBigKey.Location = New System.Drawing.Point(341, 304)
+        Me.TRBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.TRBigKey.Name = "TRBigKey"
         Me.TRBigKey.Size = New System.Drawing.Size(24, 24)
@@ -1976,6 +2016,7 @@ Partial Class Form1
         Me.MMBigKey.BackColor = System.Drawing.Color.Red
         Me.MMBigKey.Image = CType(resources.GetObject("MMBigKey.Image"), System.Drawing.Image)
         Me.MMBigKey.Location = New System.Drawing.Point(341, 280)
+        Me.MMBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.MMBigKey.Name = "MMBigKey"
         Me.MMBigKey.Size = New System.Drawing.Size(24, 24)
@@ -1989,6 +2030,7 @@ Partial Class Form1
         Me.IPBigKey.AutoSize = True
         Me.IPBigKey.Image = CType(resources.GetObject("IPBigKey.Image"), System.Drawing.Image)
         Me.IPBigKey.Location = New System.Drawing.Point(341, 256)
+        Me.IPBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.IPBigKey.Name = "IPBigKey"
         Me.IPBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2003,6 +2045,7 @@ Partial Class Form1
         Me.TTBigKey.BackColor = System.Drawing.Color.Red
         Me.TTBigKey.Image = CType(resources.GetObject("TTBigKey.Image"), System.Drawing.Image)
         Me.TTBigKey.Location = New System.Drawing.Point(341, 232)
+        Me.TTBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.TTBigKey.Name = "TTBigKey"
         Me.TTBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2016,6 +2059,7 @@ Partial Class Form1
         Me.SWBigKey.AutoSize = True
         Me.SWBigKey.Image = Global.RandoTracker.My.Resources.Resources.nobigkeysmall
         Me.SWBigKey.Location = New System.Drawing.Point(341, 208)
+        Me.SWBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.SWBigKey.Name = "SWBigKey"
         Me.SWBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2030,6 +2074,7 @@ Partial Class Form1
         Me.GTBigKey.BackColor = System.Drawing.Color.Red
         Me.GTBigKey.Image = CType(resources.GetObject("GTBigKey.Image"), System.Drawing.Image)
         Me.GTBigKey.Location = New System.Drawing.Point(115, 328)
+        Me.GTBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.GTBigKey.Name = "GTBigKey"
         Me.GTBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2043,6 +2088,7 @@ Partial Class Form1
         Me.SPBigKey.AutoSize = True
         Me.SPBigKey.Image = CType(resources.GetObject("SPBigKey.Image"), System.Drawing.Image)
         Me.SPBigKey.Location = New System.Drawing.Point(139, 304)
+        Me.SPBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.SPBigKey.Name = "SPBigKey"
         Me.SPBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2057,6 +2103,7 @@ Partial Class Form1
         Me.PODBigKey.BackColor = System.Drawing.Color.Red
         Me.PODBigKey.Image = CType(resources.GetObject("PODBigKey.Image"), System.Drawing.Image)
         Me.PODBigKey.Location = New System.Drawing.Point(139, 280)
+        Me.PODBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PODBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.PODBigKey.Name = "PODBigKey"
         Me.PODBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2071,6 +2118,7 @@ Partial Class Form1
         Me.HeraBigKey.BackColor = System.Drawing.Color.Red
         Me.HeraBigKey.Image = CType(resources.GetObject("HeraBigKey.Image"), System.Drawing.Image)
         Me.HeraBigKey.Location = New System.Drawing.Point(139, 256)
+        Me.HeraBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HeraBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.HeraBigKey.Name = "HeraBigKey"
         Me.HeraBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2085,6 +2133,7 @@ Partial Class Form1
         Me.DPBigKey.BackColor = System.Drawing.Color.Red
         Me.DPBigKey.Image = CType(resources.GetObject("DPBigKey.Image"), System.Drawing.Image)
         Me.DPBigKey.Location = New System.Drawing.Point(139, 232)
+        Me.DPBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.DPBigKey.Name = "DPBigKey"
         Me.DPBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2099,6 +2148,7 @@ Partial Class Form1
         Me.EPBigKey.BackColor = System.Drawing.Color.Red
         Me.EPBigKey.Image = Global.RandoTracker.My.Resources.Resources.nobigkeysmall
         Me.EPBigKey.Location = New System.Drawing.Point(139, 208)
+        Me.EPBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EPBigKey.MinimumSize = New System.Drawing.Size(24, 24)
         Me.EPBigKey.Name = "EPBigKey"
         Me.EPBigKey.Size = New System.Drawing.Size(24, 24)
@@ -2110,11 +2160,12 @@ Partial Class Form1
         '
         Me.GTChests.AutoSize = True
         Me.GTChests.BackColor = System.Drawing.Color.Black
-        Me.GTChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GTChests.ForeColor = System.Drawing.Color.White
         Me.GTChests.Image = CType(resources.GetObject("GTChests.Image"), System.Drawing.Image)
         Me.GTChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.GTChests.Location = New System.Drawing.Point(39, 327)
+        Me.GTChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.GTChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.GTChests.Name = "GTChests"
         Me.GTChests.Size = New System.Drawing.Size(40, 24)
@@ -2127,11 +2178,12 @@ Partial Class Form1
         '
         Me.TRChests.AutoSize = True
         Me.TRChests.BackColor = System.Drawing.Color.Black
-        Me.TRChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRChests.ForeColor = System.Drawing.Color.White
         Me.TRChests.Image = CType(resources.GetObject("TRChests.Image"), System.Drawing.Image)
         Me.TRChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TRChests.Location = New System.Drawing.Point(241, 303)
+        Me.TRChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.TRChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.TRChests.Name = "TRChests"
         Me.TRChests.Size = New System.Drawing.Size(40, 24)
@@ -2143,11 +2195,12 @@ Partial Class Form1
         '
         Me.MMChests.AutoSize = True
         Me.MMChests.BackColor = System.Drawing.Color.Black
-        Me.MMChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMChests.ForeColor = System.Drawing.Color.White
         Me.MMChests.Image = CType(resources.GetObject("MMChests.Image"), System.Drawing.Image)
         Me.MMChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MMChests.Location = New System.Drawing.Point(241, 279)
+        Me.MMChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MMChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.MMChests.Name = "MMChests"
         Me.MMChests.Size = New System.Drawing.Size(40, 24)
@@ -2159,11 +2212,12 @@ Partial Class Form1
         '
         Me.IPChests.AutoSize = True
         Me.IPChests.BackColor = System.Drawing.Color.Black
-        Me.IPChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPChests.ForeColor = System.Drawing.Color.White
         Me.IPChests.Image = CType(resources.GetObject("IPChests.Image"), System.Drawing.Image)
         Me.IPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IPChests.Location = New System.Drawing.Point(241, 255)
+        Me.IPChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.IPChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.IPChests.Name = "IPChests"
         Me.IPChests.Size = New System.Drawing.Size(40, 24)
@@ -2175,11 +2229,12 @@ Partial Class Form1
         '
         Me.TTChests.AutoSize = True
         Me.TTChests.BackColor = System.Drawing.Color.Black
-        Me.TTChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTChests.ForeColor = System.Drawing.Color.White
         Me.TTChests.Image = CType(resources.GetObject("TTChests.Image"), System.Drawing.Image)
         Me.TTChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TTChests.Location = New System.Drawing.Point(241, 231)
+        Me.TTChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.TTChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.TTChests.Name = "TTChests"
         Me.TTChests.Size = New System.Drawing.Size(40, 24)
@@ -2191,11 +2246,12 @@ Partial Class Form1
         '
         Me.SWChests.AutoSize = True
         Me.SWChests.BackColor = System.Drawing.Color.Black
-        Me.SWChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWChests.ForeColor = System.Drawing.Color.White
         Me.SWChests.Image = CType(resources.GetObject("SWChests.Image"), System.Drawing.Image)
         Me.SWChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SWChests.Location = New System.Drawing.Point(241, 207)
+        Me.SWChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.SWChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.SWChests.Name = "SWChests"
         Me.SWChests.Size = New System.Drawing.Size(40, 24)
@@ -2207,11 +2263,12 @@ Partial Class Form1
         '
         Me.AGChests.AutoSize = True
         Me.AGChests.BackColor = System.Drawing.Color.Black
-        Me.AGChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGChests.ForeColor = System.Drawing.Color.White
         Me.AGChests.Image = CType(resources.GetObject("AGChests.Image"), System.Drawing.Image)
         Me.AGChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AGChests.Location = New System.Drawing.Point(241, 183)
+        Me.AGChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.AGChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.AGChests.Name = "AGChests"
         Me.AGChests.Size = New System.Drawing.Size(40, 24)
@@ -2224,11 +2281,12 @@ Partial Class Form1
         '
         Me.SPChests.AutoSize = True
         Me.SPChests.BackColor = System.Drawing.Color.Black
-        Me.SPChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPChests.ForeColor = System.Drawing.Color.White
         Me.SPChests.Image = CType(resources.GetObject("SPChests.Image"), System.Drawing.Image)
         Me.SPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SPChests.Location = New System.Drawing.Point(39, 303)
+        Me.SPChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.SPChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.SPChests.Name = "SPChests"
         Me.SPChests.Size = New System.Drawing.Size(40, 24)
@@ -2240,11 +2298,12 @@ Partial Class Form1
         '
         Me.PODChests.AutoSize = True
         Me.PODChests.BackColor = System.Drawing.Color.Black
-        Me.PODChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODChests.ForeColor = System.Drawing.Color.White
         Me.PODChests.Image = CType(resources.GetObject("PODChests.Image"), System.Drawing.Image)
         Me.PODChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.PODChests.Location = New System.Drawing.Point(39, 279)
+        Me.PODChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.PODChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.PODChests.Name = "PODChests"
         Me.PODChests.Size = New System.Drawing.Size(40, 24)
@@ -2256,11 +2315,12 @@ Partial Class Form1
         '
         Me.TOHChests.AutoSize = True
         Me.TOHChests.BackColor = System.Drawing.Color.Black
-        Me.TOHChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHChests.ForeColor = System.Drawing.Color.White
         Me.TOHChests.Image = CType(resources.GetObject("TOHChests.Image"), System.Drawing.Image)
         Me.TOHChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TOHChests.Location = New System.Drawing.Point(39, 255)
+        Me.TOHChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.TOHChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.TOHChests.Name = "TOHChests"
         Me.TOHChests.Size = New System.Drawing.Size(40, 24)
@@ -2272,11 +2332,12 @@ Partial Class Form1
         '
         Me.DPChests.AutoSize = True
         Me.DPChests.BackColor = System.Drawing.Color.Black
-        Me.DPChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPChests.ForeColor = System.Drawing.Color.White
         Me.DPChests.Image = CType(resources.GetObject("DPChests.Image"), System.Drawing.Image)
         Me.DPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.DPChests.Location = New System.Drawing.Point(39, 231)
+        Me.DPChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DPChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.DPChests.Name = "DPChests"
         Me.DPChests.Size = New System.Drawing.Size(40, 24)
@@ -2288,11 +2349,12 @@ Partial Class Form1
         '
         Me.EPChests.AutoSize = True
         Me.EPChests.BackColor = System.Drawing.Color.Black
-        Me.EPChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPChests.ForeColor = System.Drawing.Color.Yellow
         Me.EPChests.Image = CType(resources.GetObject("EPChests.Image"), System.Drawing.Image)
         Me.EPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EPChests.Location = New System.Drawing.Point(39, 207)
+        Me.EPChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.EPChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.EPChests.Name = "EPChests"
         Me.EPChests.Size = New System.Drawing.Size(40, 24)
@@ -2304,11 +2366,12 @@ Partial Class Form1
         '
         Me.HCChests.AutoSize = True
         Me.HCChests.BackColor = System.Drawing.Color.Black
-        Me.HCChests.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCChests.ForeColor = System.Drawing.Color.Yellow
         Me.HCChests.Image = CType(resources.GetObject("HCChests.Image"), System.Drawing.Image)
         Me.HCChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.HCChests.Location = New System.Drawing.Point(39, 183)
+        Me.HCChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.HCChests.MinimumSize = New System.Drawing.Size(40, 24)
         Me.HCChests.Name = "HCChests"
         Me.HCChests.Size = New System.Drawing.Size(40, 24)
@@ -2322,6 +2385,7 @@ Partial Class Form1
         Me.TRButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.TRButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
         Me.TRButton.Location = New System.Drawing.Point(325, 143)
+        Me.TRButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.TRButton.Name = "TRButton"
         Me.TRButton.Size = New System.Drawing.Size(32, 34)
@@ -2335,6 +2399,7 @@ Partial Class Form1
         Me.MMButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.MMButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
         Me.MMButton.Location = New System.Drawing.Point(325, 108)
+        Me.MMButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.MMButton.Name = "MMButton"
         Me.MMButton.Size = New System.Drawing.Size(32, 34)
@@ -2348,6 +2413,7 @@ Partial Class Form1
         Me.IPButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.IPButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
         Me.IPButton.Location = New System.Drawing.Point(325, 73)
+        Me.IPButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.IPButton.Name = "IPButton"
         Me.IPButton.Size = New System.Drawing.Size(32, 34)
@@ -2361,6 +2427,7 @@ Partial Class Form1
         Me.TTButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.TTButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
         Me.TTButton.Location = New System.Drawing.Point(325, 38)
+        Me.TTButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.TTButton.Name = "TTButton"
         Me.TTButton.Size = New System.Drawing.Size(32, 34)
@@ -2374,6 +2441,7 @@ Partial Class Form1
         Me.SWButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.SWButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
         Me.SWButton.Location = New System.Drawing.Point(325, 3)
+        Me.SWButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.SWButton.Name = "SWButton"
         Me.SWButton.Size = New System.Drawing.Size(32, 34)
@@ -2386,7 +2454,8 @@ Partial Class Form1
         Me.SPButton.BackColor = System.Drawing.Color.Black
         Me.SPButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.SPButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.SPButton.Location = New System.Drawing.Point(255, 143)
+        Me.SPButton.Location = New System.Drawing.Point(254, 143)
+        Me.SPButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.SPButton.Name = "SPButton"
         Me.SPButton.Size = New System.Drawing.Size(32, 34)
@@ -2399,7 +2468,8 @@ Partial Class Form1
         Me.PODButton.BackColor = System.Drawing.Color.Black
         Me.PODButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.PODButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.PODButton.Location = New System.Drawing.Point(255, 108)
+        Me.PODButton.Location = New System.Drawing.Point(254, 108)
+        Me.PODButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PODButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.PODButton.Name = "PODButton"
         Me.PODButton.Size = New System.Drawing.Size(32, 34)
@@ -2412,7 +2482,8 @@ Partial Class Form1
         Me.TOHButton.BackColor = System.Drawing.Color.Black
         Me.TOHButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.TOHButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.TOHButton.Location = New System.Drawing.Point(255, 73)
+        Me.TOHButton.Location = New System.Drawing.Point(254, 73)
+        Me.TOHButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TOHButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.TOHButton.Name = "TOHButton"
         Me.TOHButton.Size = New System.Drawing.Size(32, 34)
@@ -2425,7 +2496,8 @@ Partial Class Form1
         Me.DPButton.BackColor = System.Drawing.Color.Black
         Me.DPButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.DPButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.DPButton.Location = New System.Drawing.Point(255, 38)
+        Me.DPButton.Location = New System.Drawing.Point(254, 38)
+        Me.DPButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.DPButton.Name = "DPButton"
         Me.DPButton.Size = New System.Drawing.Size(32, 34)
@@ -2438,7 +2510,8 @@ Partial Class Form1
         Me.EPButton.BackColor = System.Drawing.Color.Black
         Me.EPButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.EPButton.Image = Global.RandoTracker.My.Resources.Resources.crystal
-        Me.EPButton.Location = New System.Drawing.Point(255, 3)
+        Me.EPButton.Location = New System.Drawing.Point(254, 3)
+        Me.EPButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EPButton.MinimumSize = New System.Drawing.Size(32, 34)
         Me.EPButton.Name = "EPButton"
         Me.EPButton.Size = New System.Drawing.Size(32, 34)
@@ -2451,6 +2524,7 @@ Partial Class Form1
         Me.ShovelButton.BackColor = System.Drawing.Color.Black
         Me.ShovelButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.ShovelButton.Location = New System.Drawing.Point(144, 161)
+        Me.ShovelButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.ShovelButton.Name = "ShovelButton"
         Me.ShovelButton.Size = New System.Drawing.Size(32, 16)
         Me.ShovelButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -2462,6 +2536,7 @@ Partial Class Form1
         Me.MushButton.BackColor = System.Drawing.Color.Black
         Me.MushButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.MushButton.Location = New System.Drawing.Point(144, 145)
+        Me.MushButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MushButton.Name = "MushButton"
         Me.MushButton.Size = New System.Drawing.Size(32, 16)
         Me.MushButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -2473,6 +2548,7 @@ Partial Class Form1
         Me.PearlButton.BackColor = System.Drawing.Color.Black
         Me.PearlButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.PearlButton.Location = New System.Drawing.Point(109, 145)
+        Me.PearlButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PearlButton.Name = "PearlButton"
         Me.PearlButton.Size = New System.Drawing.Size(32, 32)
         Me.PearlButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2484,6 +2560,7 @@ Partial Class Form1
         Me.FlipperButton.BackColor = System.Drawing.Color.Black
         Me.FlipperButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.FlipperButton.Location = New System.Drawing.Point(74, 145)
+        Me.FlipperButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.FlipperButton.Name = "FlipperButton"
         Me.FlipperButton.Size = New System.Drawing.Size(32, 32)
         Me.FlipperButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2494,7 +2571,8 @@ Partial Class Form1
         '
         Me.GloveButton.BackColor = System.Drawing.Color.Black
         Me.GloveButton.Cursor = System.Windows.Forms.Cursors.Default
-        Me.GloveButton.Location = New System.Drawing.Point(39, 145)
+        Me.GloveButton.Location = New System.Drawing.Point(38, 145)
+        Me.GloveButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GloveButton.Name = "GloveButton"
         Me.GloveButton.Size = New System.Drawing.Size(32, 32)
         Me.GloveButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2506,6 +2584,7 @@ Partial Class Form1
         Me.BootButton.BackColor = System.Drawing.Color.Black
         Me.BootButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BootButton.Location = New System.Drawing.Point(4, 145)
+        Me.BootButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BootButton.Name = "BootButton"
         Me.BootButton.Size = New System.Drawing.Size(32, 32)
         Me.BootButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2516,7 +2595,8 @@ Partial Class Form1
         '
         Me.AgaButton.BackColor = System.Drawing.Color.Black
         Me.AgaButton.Cursor = System.Windows.Forms.Cursors.Default
-        Me.AgaButton.Location = New System.Drawing.Point(184, 110)
+        Me.AgaButton.Location = New System.Drawing.Point(184, 145)
+        Me.AgaButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.AgaButton.Name = "AgaButton"
         Me.AgaButton.Size = New System.Drawing.Size(32, 32)
         Me.AgaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2529,6 +2609,7 @@ Partial Class Form1
         Me.MirrorButton.BackColor = System.Drawing.Color.Black
         Me.MirrorButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.MirrorButton.Location = New System.Drawing.Point(144, 110)
+        Me.MirrorButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MirrorButton.Name = "MirrorButton"
         Me.MirrorButton.Size = New System.Drawing.Size(32, 32)
         Me.MirrorButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2540,6 +2621,7 @@ Partial Class Form1
         Me.CapeButton.BackColor = System.Drawing.Color.Black
         Me.CapeButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.CapeButton.Location = New System.Drawing.Point(109, 110)
+        Me.CapeButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.CapeButton.Name = "CapeButton"
         Me.CapeButton.Size = New System.Drawing.Size(32, 32)
         Me.CapeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2551,6 +2633,7 @@ Partial Class Form1
         Me.ByrnaButton.BackColor = System.Drawing.Color.Black
         Me.ByrnaButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.ByrnaButton.Location = New System.Drawing.Point(74, 110)
+        Me.ByrnaButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.ByrnaButton.Name = "ByrnaButton"
         Me.ByrnaButton.Size = New System.Drawing.Size(32, 32)
         Me.ByrnaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2561,7 +2644,8 @@ Partial Class Form1
         '
         Me.SomariaButton.BackColor = System.Drawing.Color.Black
         Me.SomariaButton.Cursor = System.Windows.Forms.Cursors.Default
-        Me.SomariaButton.Location = New System.Drawing.Point(39, 110)
+        Me.SomariaButton.Location = New System.Drawing.Point(38, 110)
+        Me.SomariaButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SomariaButton.Name = "SomariaButton"
         Me.SomariaButton.Size = New System.Drawing.Size(32, 32)
         Me.SomariaButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2573,6 +2657,7 @@ Partial Class Form1
         Me.BottleButton.BackColor = System.Drawing.Color.Black
         Me.BottleButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BottleButton.Location = New System.Drawing.Point(4, 110)
+        Me.BottleButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BottleButton.Name = "BottleButton"
         Me.BottleButton.Size = New System.Drawing.Size(32, 32)
         Me.BottleButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2584,6 +2669,7 @@ Partial Class Form1
         Me.ShieldButton.BackColor = System.Drawing.Color.Black
         Me.ShieldButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.ShieldButton.Location = New System.Drawing.Point(184, 75)
+        Me.ShieldButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.ShieldButton.Name = "ShieldButton"
         Me.ShieldButton.Size = New System.Drawing.Size(32, 32)
         Me.ShieldButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2595,6 +2681,7 @@ Partial Class Form1
         Me.BookButton.BackColor = System.Drawing.Color.Black
         Me.BookButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BookButton.Location = New System.Drawing.Point(144, 75)
+        Me.BookButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BookButton.Name = "BookButton"
         Me.BookButton.Size = New System.Drawing.Size(32, 32)
         Me.BookButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2606,6 +2693,7 @@ Partial Class Form1
         Me.NetButton.BackColor = System.Drawing.Color.Black
         Me.NetButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.NetButton.Location = New System.Drawing.Point(109, 75)
+        Me.NetButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.NetButton.Name = "NetButton"
         Me.NetButton.Size = New System.Drawing.Size(32, 32)
         Me.NetButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2617,6 +2705,7 @@ Partial Class Form1
         Me.FluteButton.BackColor = System.Drawing.Color.Black
         Me.FluteButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.FluteButton.Location = New System.Drawing.Point(74, 75)
+        Me.FluteButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.FluteButton.Name = "FluteButton"
         Me.FluteButton.Size = New System.Drawing.Size(32, 32)
         Me.FluteButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2627,7 +2716,8 @@ Partial Class Form1
         '
         Me.HammerButton.BackColor = System.Drawing.Color.Black
         Me.HammerButton.Cursor = System.Windows.Forms.Cursors.Default
-        Me.HammerButton.Location = New System.Drawing.Point(39, 75)
+        Me.HammerButton.Location = New System.Drawing.Point(38, 75)
+        Me.HammerButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HammerButton.Name = "HammerButton"
         Me.HammerButton.Size = New System.Drawing.Size(32, 32)
         Me.HammerButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2639,6 +2729,7 @@ Partial Class Form1
         Me.LampButton.BackColor = System.Drawing.Color.Black
         Me.LampButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.LampButton.Location = New System.Drawing.Point(4, 75)
+        Me.LampButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LampButton.Name = "LampButton"
         Me.LampButton.Size = New System.Drawing.Size(32, 32)
         Me.LampButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2651,6 +2742,7 @@ Partial Class Form1
         Me.ArmorButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.ArmorButton.Image = Global.RandoTracker.My.Resources.Resources.greenmail
         Me.ArmorButton.Location = New System.Drawing.Point(184, 40)
+        Me.ArmorButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.ArmorButton.Name = "ArmorButton"
         Me.ArmorButton.Size = New System.Drawing.Size(32, 32)
         Me.ArmorButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2662,6 +2754,7 @@ Partial Class Form1
         Me.QuakeButton.BackColor = System.Drawing.Color.Black
         Me.QuakeButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.QuakeButton.Location = New System.Drawing.Point(144, 40)
+        Me.QuakeButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.QuakeButton.Name = "QuakeButton"
         Me.QuakeButton.Size = New System.Drawing.Size(32, 32)
         Me.QuakeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2673,6 +2766,7 @@ Partial Class Form1
         Me.EtherButton.BackColor = System.Drawing.Color.Black
         Me.EtherButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.EtherButton.Location = New System.Drawing.Point(109, 40)
+        Me.EtherButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EtherButton.Name = "EtherButton"
         Me.EtherButton.Size = New System.Drawing.Size(32, 32)
         Me.EtherButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2684,6 +2778,7 @@ Partial Class Form1
         Me.BombosButton.BackColor = System.Drawing.Color.Black
         Me.BombosButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BombosButton.Location = New System.Drawing.Point(74, 40)
+        Me.BombosButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BombosButton.Name = "BombosButton"
         Me.BombosButton.Size = New System.Drawing.Size(32, 32)
         Me.BombosButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2694,7 +2789,8 @@ Partial Class Form1
         '
         Me.IceButton.BackColor = System.Drawing.Color.Black
         Me.IceButton.Cursor = System.Windows.Forms.Cursors.Default
-        Me.IceButton.Location = New System.Drawing.Point(39, 40)
+        Me.IceButton.Location = New System.Drawing.Point(38, 40)
+        Me.IceButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IceButton.Name = "IceButton"
         Me.IceButton.Size = New System.Drawing.Size(32, 32)
         Me.IceButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2706,6 +2802,7 @@ Partial Class Form1
         Me.FireButton.BackColor = System.Drawing.Color.Black
         Me.FireButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.FireButton.Location = New System.Drawing.Point(4, 40)
+        Me.FireButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.FireButton.Name = "FireButton"
         Me.FireButton.Size = New System.Drawing.Size(32, 32)
         Me.FireButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2717,6 +2814,7 @@ Partial Class Form1
         Me.SwordButton.BackColor = System.Drawing.Color.Black
         Me.SwordButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.SwordButton.Location = New System.Drawing.Point(184, 4)
+        Me.SwordButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SwordButton.Name = "SwordButton"
         Me.SwordButton.Size = New System.Drawing.Size(32, 32)
         Me.SwordButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2728,6 +2826,7 @@ Partial Class Form1
         Me.PowderButton.BackColor = System.Drawing.Color.Black
         Me.PowderButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.PowderButton.Location = New System.Drawing.Point(144, 4)
+        Me.PowderButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PowderButton.Name = "PowderButton"
         Me.PowderButton.Size = New System.Drawing.Size(32, 32)
         Me.PowderButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2739,6 +2838,7 @@ Partial Class Form1
         Me.BombButton.BackColor = System.Drawing.Color.Black
         Me.BombButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BombButton.Location = New System.Drawing.Point(109, 4)
+        Me.BombButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BombButton.Name = "BombButton"
         Me.BombButton.Size = New System.Drawing.Size(32, 32)
         Me.BombButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2750,6 +2850,7 @@ Partial Class Form1
         Me.HookButton.BackColor = System.Drawing.Color.Black
         Me.HookButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.HookButton.Location = New System.Drawing.Point(74, 4)
+        Me.HookButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HookButton.Name = "HookButton"
         Me.HookButton.Size = New System.Drawing.Size(32, 32)
         Me.HookButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2760,7 +2861,8 @@ Partial Class Form1
         '
         Me.BoomButton.BackColor = System.Drawing.Color.Black
         Me.BoomButton.Cursor = System.Windows.Forms.Cursors.Default
-        Me.BoomButton.Location = New System.Drawing.Point(39, 4)
+        Me.BoomButton.Location = New System.Drawing.Point(38, 4)
+        Me.BoomButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BoomButton.Name = "BoomButton"
         Me.BoomButton.Size = New System.Drawing.Size(32, 32)
         Me.BoomButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -2772,6 +2874,7 @@ Partial Class Form1
         Me.BowButton.BackColor = System.Drawing.Color.Black
         Me.BowButton.Cursor = System.Windows.Forms.Cursors.Default
         Me.BowButton.Location = New System.Drawing.Point(4, 4)
+        Me.BowButton.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.BowButton.Name = "BowButton"
         Me.BowButton.Size = New System.Drawing.Size(32, 32)
         Me.BowButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2781,7 +2884,8 @@ Partial Class Form1
         'Button12
         '
         Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
-        Me.Button12.Location = New System.Drawing.Point(750, 220)
+        Me.Button12.Location = New System.Drawing.Point(750, 250)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(24, 24)
         Me.Button12.TabIndex = 599
@@ -2790,7 +2894,8 @@ Partial Class Form1
         'Button11
         '
         Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
-        Me.Button11.Location = New System.Drawing.Point(660, 340)
+        Me.Button11.Location = New System.Drawing.Point(750, 438)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(24, 24)
         Me.Button11.TabIndex = 598
@@ -2799,7 +2904,8 @@ Partial Class Form1
         'Button10
         '
         Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
-        Me.Button10.Location = New System.Drawing.Point(660, 292)
+        Me.Button10.Location = New System.Drawing.Point(750, 205)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(24, 24)
         Me.Button10.TabIndex = 597
@@ -2808,7 +2914,8 @@ Partial Class Form1
         'Button9
         '
         Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
-        Me.Button9.Location = New System.Drawing.Point(660, 268)
+        Me.Button9.Location = New System.Drawing.Point(660, 205)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(24, 24)
         Me.Button9.TabIndex = 596
@@ -2817,7 +2924,8 @@ Partial Class Form1
         'Button8
         '
         Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
-        Me.Button8.Location = New System.Drawing.Point(660, 148)
+        Me.Button8.Location = New System.Drawing.Point(660, 160)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(24, 24)
         Me.Button8.TabIndex = 595
@@ -2826,7 +2934,8 @@ Partial Class Form1
         'Button7
         '
         Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.Location = New System.Drawing.Point(660, 124)
+        Me.Button7.Location = New System.Drawing.Point(750, 112)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(24, 24)
         Me.Button7.TabIndex = 594
@@ -2835,7 +2944,8 @@ Partial Class Form1
         'Button6
         '
         Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
-        Me.Button6.Location = New System.Drawing.Point(570, 148)
+        Me.Button6.Location = New System.Drawing.Point(570, 438)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(24, 24)
         Me.Button6.TabIndex = 593
@@ -2844,7 +2954,8 @@ Partial Class Form1
         'Button5
         '
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.Location = New System.Drawing.Point(570, 76)
+        Me.Button5.Location = New System.Drawing.Point(480, 462)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(24, 24)
         Me.Button5.TabIndex = 592
@@ -2853,25 +2964,18 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.Location = New System.Drawing.Point(570, 52)
+        Me.Button4.Location = New System.Drawing.Point(480, 438)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(24, 24)
         Me.Button4.TabIndex = 591
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button3
-        '
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(480, 316)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(24, 24)
-        Me.Button3.TabIndex = 590
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Button2
         '
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(480, 292)
+        Me.Button2.Location = New System.Drawing.Point(660, 112)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(24, 24)
         Me.Button2.TabIndex = 589
@@ -2880,7 +2984,8 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(480, 52)
+        Me.Button1.Location = New System.Drawing.Point(480, 112)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(24, 24)
         Me.Button1.TabIndex = 588
@@ -2890,11 +2995,12 @@ Partial Class Form1
         '
         Me.MMPrizes.AutoSize = True
         Me.MMPrizes.BackColor = System.Drawing.Color.Black
-        Me.MMPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMPrizes.ForeColor = System.Drawing.Color.White
         Me.MMPrizes.Image = CType(resources.GetObject("MMPrizes.Image"), System.Drawing.Image)
         Me.MMPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MMPrizes.Location = New System.Drawing.Point(281, 279)
+        Me.MMPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MMPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.MMPrizes.Name = "MMPrizes"
         Me.MMPrizes.Size = New System.Drawing.Size(36, 24)
@@ -2906,11 +3012,12 @@ Partial Class Form1
         '
         Me.IPPrizes.AutoSize = True
         Me.IPPrizes.BackColor = System.Drawing.Color.Black
-        Me.IPPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPPrizes.ForeColor = System.Drawing.Color.White
         Me.IPPrizes.Image = CType(resources.GetObject("IPPrizes.Image"), System.Drawing.Image)
         Me.IPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IPPrizes.Location = New System.Drawing.Point(281, 255)
+        Me.IPPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.IPPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.IPPrizes.Name = "IPPrizes"
         Me.IPPrizes.Size = New System.Drawing.Size(36, 24)
@@ -2922,11 +3029,12 @@ Partial Class Form1
         '
         Me.TTPrizes.AutoSize = True
         Me.TTPrizes.BackColor = System.Drawing.Color.Black
-        Me.TTPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTPrizes.ForeColor = System.Drawing.Color.White
         Me.TTPrizes.Image = CType(resources.GetObject("TTPrizes.Image"), System.Drawing.Image)
         Me.TTPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TTPrizes.Location = New System.Drawing.Point(281, 231)
+        Me.TTPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.TTPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.TTPrizes.Name = "TTPrizes"
         Me.TTPrizes.Size = New System.Drawing.Size(36, 24)
@@ -2938,147 +3046,18 @@ Partial Class Form1
         '
         Me.SWPrizes.AutoSize = True
         Me.SWPrizes.BackColor = System.Drawing.Color.Black
-        Me.SWPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWPrizes.ForeColor = System.Drawing.Color.White
         Me.SWPrizes.Image = CType(resources.GetObject("SWPrizes.Image"), System.Drawing.Image)
         Me.SWPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SWPrizes.Location = New System.Drawing.Point(281, 207)
+        Me.SWPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.SWPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.SWPrizes.Name = "SWPrizes"
         Me.SWPrizes.Size = New System.Drawing.Size(36, 24)
         Me.SWPrizes.TabIndex = 677
         Me.SWPrizes.Text = "2"
         Me.SWPrizes.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'AGKeys
-        '
-        Me.AGKeys.AutoSize = True
-        Me.AGKeys.BackColor = System.Drawing.Color.Black
-        Me.AGKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AGKeys.ForeColor = System.Drawing.Color.White
-        Me.AGKeys.Image = Global.RandoTracker.My.Resources.Resources.keysmall
-        Me.AGKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.AGKeys.Location = New System.Drawing.Point(281, 183)
-        Me.AGKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.AGKeys.Name = "AGKeys"
-        Me.AGKeys.Size = New System.Drawing.Size(36, 24)
-        Me.AGKeys.TabIndex = 663
-        Me.AGKeys.Text = "0"
-        Me.AGKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.AGKeys.Visible = False
-        '
-        'GTKeys
-        '
-        Me.GTKeys.AutoSize = True
-        Me.GTKeys.BackColor = System.Drawing.Color.Black
-        Me.GTKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GTKeys.ForeColor = System.Drawing.Color.White
-        Me.GTKeys.Image = CType(resources.GetObject("GTKeys.Image"), System.Drawing.Image)
-        Me.GTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.GTKeys.Location = New System.Drawing.Point(79, 327)
-        Me.GTKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.GTKeys.Name = "GTKeys"
-        Me.GTKeys.Size = New System.Drawing.Size(36, 24)
-        Me.GTKeys.TabIndex = 662
-        Me.GTKeys.Text = "0"
-        Me.GTKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.GTKeys.Visible = False
-        '
-        'SPKeys
-        '
-        Me.SPKeys.AutoSize = True
-        Me.SPKeys.BackColor = System.Drawing.Color.Black
-        Me.SPKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SPKeys.ForeColor = System.Drawing.Color.White
-        Me.SPKeys.Image = CType(resources.GetObject("SPKeys.Image"), System.Drawing.Image)
-        Me.SPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.SPKeys.Location = New System.Drawing.Point(79, 303)
-        Me.SPKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.SPKeys.Name = "SPKeys"
-        Me.SPKeys.Size = New System.Drawing.Size(36, 24)
-        Me.SPKeys.TabIndex = 661
-        Me.SPKeys.Text = "0"
-        Me.SPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'PODKeys
-        '
-        Me.PODKeys.AutoSize = True
-        Me.PODKeys.BackColor = System.Drawing.Color.Black
-        Me.PODKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PODKeys.ForeColor = System.Drawing.Color.White
-        Me.PODKeys.Image = CType(resources.GetObject("PODKeys.Image"), System.Drawing.Image)
-        Me.PODKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.PODKeys.Location = New System.Drawing.Point(79, 279)
-        Me.PODKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.PODKeys.Name = "PODKeys"
-        Me.PODKeys.Size = New System.Drawing.Size(36, 24)
-        Me.PODKeys.TabIndex = 660
-        Me.PODKeys.Text = "0"
-        Me.PODKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'TOHKeys
-        '
-        Me.TOHKeys.AutoSize = True
-        Me.TOHKeys.BackColor = System.Drawing.Color.Black
-        Me.TOHKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TOHKeys.ForeColor = System.Drawing.Color.White
-        Me.TOHKeys.Image = CType(resources.GetObject("TOHKeys.Image"), System.Drawing.Image)
-        Me.TOHKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.TOHKeys.Location = New System.Drawing.Point(79, 255)
-        Me.TOHKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.TOHKeys.Name = "TOHKeys"
-        Me.TOHKeys.Size = New System.Drawing.Size(36, 24)
-        Me.TOHKeys.TabIndex = 659
-        Me.TOHKeys.Text = "0"
-        Me.TOHKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'DPKeys
-        '
-        Me.DPKeys.AutoSize = True
-        Me.DPKeys.BackColor = System.Drawing.Color.Black
-        Me.DPKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DPKeys.ForeColor = System.Drawing.Color.White
-        Me.DPKeys.Image = CType(resources.GetObject("DPKeys.Image"), System.Drawing.Image)
-        Me.DPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.DPKeys.Location = New System.Drawing.Point(79, 231)
-        Me.DPKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.DPKeys.Name = "DPKeys"
-        Me.DPKeys.Size = New System.Drawing.Size(36, 24)
-        Me.DPKeys.TabIndex = 658
-        Me.DPKeys.Text = "0"
-        Me.DPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'EPKeys
-        '
-        Me.EPKeys.AutoSize = True
-        Me.EPKeys.BackColor = System.Drawing.Color.Black
-        Me.EPKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EPKeys.ForeColor = System.Drawing.Color.White
-        Me.EPKeys.Image = CType(resources.GetObject("EPKeys.Image"), System.Drawing.Image)
-        Me.EPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.EPKeys.Location = New System.Drawing.Point(79, 207)
-        Me.EPKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.EPKeys.Name = "EPKeys"
-        Me.EPKeys.Size = New System.Drawing.Size(36, 24)
-        Me.EPKeys.TabIndex = 657
-        Me.EPKeys.Text = "-"
-        Me.EPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'HCKeys
-        '
-        Me.HCKeys.AutoSize = True
-        Me.HCKeys.BackColor = System.Drawing.Color.Black
-        Me.HCKeys.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HCKeys.ForeColor = System.Drawing.Color.White
-        Me.HCKeys.Image = CType(resources.GetObject("HCKeys.Image"), System.Drawing.Image)
-        Me.HCKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.HCKeys.Location = New System.Drawing.Point(79, 183)
-        Me.HCKeys.MinimumSize = New System.Drawing.Size(36, 24)
-        Me.HCKeys.Name = "HCKeys"
-        Me.HCKeys.Size = New System.Drawing.Size(36, 24)
-        Me.HCKeys.TabIndex = 656
-        Me.HCKeys.Text = "0"
-        Me.HCKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'TRBoss
         '
@@ -3087,6 +3066,7 @@ Partial Class Form1
         Me.TRBoss.Enabled = False
         Me.TRBoss.Image = CType(resources.GetObject("TRBoss.Image"), System.Drawing.Image)
         Me.TRBoss.Location = New System.Drawing.Point(317, 304)
+        Me.TRBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.TRBoss.Name = "TRBoss"
         Me.TRBoss.Size = New System.Drawing.Size(24, 24)
@@ -3100,6 +3080,7 @@ Partial Class Form1
         Me.MMBoss.Enabled = False
         Me.MMBoss.Image = CType(resources.GetObject("MMBoss.Image"), System.Drawing.Image)
         Me.MMBoss.Location = New System.Drawing.Point(317, 280)
+        Me.MMBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.MMBoss.Name = "MMBoss"
         Me.MMBoss.Size = New System.Drawing.Size(24, 24)
@@ -3113,6 +3094,7 @@ Partial Class Form1
         Me.IPBoss.Enabled = False
         Me.IPBoss.Image = CType(resources.GetObject("IPBoss.Image"), System.Drawing.Image)
         Me.IPBoss.Location = New System.Drawing.Point(317, 256)
+        Me.IPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.IPBoss.Name = "IPBoss"
         Me.IPBoss.Size = New System.Drawing.Size(24, 24)
@@ -3126,6 +3108,7 @@ Partial Class Form1
         Me.TTBoss.Enabled = False
         Me.TTBoss.Image = CType(resources.GetObject("TTBoss.Image"), System.Drawing.Image)
         Me.TTBoss.Location = New System.Drawing.Point(317, 232)
+        Me.TTBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.TTBoss.Name = "TTBoss"
         Me.TTBoss.Size = New System.Drawing.Size(24, 24)
@@ -3139,6 +3122,7 @@ Partial Class Form1
         Me.SWBoss.Enabled = False
         Me.SWBoss.Image = CType(resources.GetObject("SWBoss.Image"), System.Drawing.Image)
         Me.SWBoss.Location = New System.Drawing.Point(317, 208)
+        Me.SWBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.SWBoss.Name = "SWBoss"
         Me.SWBoss.Size = New System.Drawing.Size(24, 24)
@@ -3152,6 +3136,7 @@ Partial Class Form1
         Me.SPBoss.Enabled = False
         Me.SPBoss.Image = CType(resources.GetObject("SPBoss.Image"), System.Drawing.Image)
         Me.SPBoss.Location = New System.Drawing.Point(115, 304)
+        Me.SPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.SPBoss.Name = "SPBoss"
         Me.SPBoss.Size = New System.Drawing.Size(24, 24)
@@ -3165,6 +3150,7 @@ Partial Class Form1
         Me.PODBoss.Enabled = False
         Me.PODBoss.Image = CType(resources.GetObject("PODBoss.Image"), System.Drawing.Image)
         Me.PODBoss.Location = New System.Drawing.Point(115, 280)
+        Me.PODBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PODBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.PODBoss.Name = "PODBoss"
         Me.PODBoss.Size = New System.Drawing.Size(24, 24)
@@ -3178,6 +3164,7 @@ Partial Class Form1
         Me.HeraBoss.Enabled = False
         Me.HeraBoss.Image = CType(resources.GetObject("HeraBoss.Image"), System.Drawing.Image)
         Me.HeraBoss.Location = New System.Drawing.Point(115, 256)
+        Me.HeraBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HeraBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.HeraBoss.Name = "HeraBoss"
         Me.HeraBoss.Size = New System.Drawing.Size(24, 24)
@@ -3191,6 +3178,7 @@ Partial Class Form1
         Me.DPBoss.Enabled = False
         Me.DPBoss.Image = CType(resources.GetObject("DPBoss.Image"), System.Drawing.Image)
         Me.DPBoss.Location = New System.Drawing.Point(115, 232)
+        Me.DPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.DPBoss.Name = "DPBoss"
         Me.DPBoss.Size = New System.Drawing.Size(24, 24)
@@ -3204,6 +3192,7 @@ Partial Class Form1
         Me.EPBoss.Enabled = False
         Me.EPBoss.Image = CType(resources.GetObject("EPBoss.Image"), System.Drawing.Image)
         Me.EPBoss.Location = New System.Drawing.Point(115, 208)
+        Me.EPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EPBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.EPBoss.Name = "EPBoss"
         Me.EPBoss.Size = New System.Drawing.Size(24, 24)
@@ -3214,11 +3203,12 @@ Partial Class Form1
         '
         Me.TRPrizes.AutoSize = True
         Me.TRPrizes.BackColor = System.Drawing.Color.Black
-        Me.TRPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRPrizes.ForeColor = System.Drawing.Color.White
         Me.TRPrizes.Image = CType(resources.GetObject("TRPrizes.Image"), System.Drawing.Image)
         Me.TRPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TRPrizes.Location = New System.Drawing.Point(281, 303)
+        Me.TRPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.TRPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.TRPrizes.Name = "TRPrizes"
         Me.TRPrizes.Size = New System.Drawing.Size(36, 24)
@@ -3230,11 +3220,12 @@ Partial Class Form1
         '
         Me.SPPrizes.AutoSize = True
         Me.SPPrizes.BackColor = System.Drawing.Color.Black
-        Me.SPPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPPrizes.ForeColor = System.Drawing.Color.White
         Me.SPPrizes.Image = CType(resources.GetObject("SPPrizes.Image"), System.Drawing.Image)
         Me.SPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SPPrizes.Location = New System.Drawing.Point(79, 303)
+        Me.SPPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.SPPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.SPPrizes.Name = "SPPrizes"
         Me.SPPrizes.Size = New System.Drawing.Size(36, 24)
@@ -3246,11 +3237,12 @@ Partial Class Form1
         '
         Me.PODPrizes.AutoSize = True
         Me.PODPrizes.BackColor = System.Drawing.Color.Black
-        Me.PODPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODPrizes.ForeColor = System.Drawing.Color.White
         Me.PODPrizes.Image = CType(resources.GetObject("PODPrizes.Image"), System.Drawing.Image)
         Me.PODPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.PODPrizes.Location = New System.Drawing.Point(79, 279)
+        Me.PODPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.PODPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.PODPrizes.Name = "PODPrizes"
         Me.PODPrizes.Size = New System.Drawing.Size(36, 24)
@@ -3262,11 +3254,12 @@ Partial Class Form1
         '
         Me.TOHPrizes.AutoSize = True
         Me.TOHPrizes.BackColor = System.Drawing.Color.Black
-        Me.TOHPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHPrizes.ForeColor = System.Drawing.Color.White
         Me.TOHPrizes.Image = CType(resources.GetObject("TOHPrizes.Image"), System.Drawing.Image)
         Me.TOHPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TOHPrizes.Location = New System.Drawing.Point(79, 255)
+        Me.TOHPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.TOHPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.TOHPrizes.Name = "TOHPrizes"
         Me.TOHPrizes.Size = New System.Drawing.Size(36, 24)
@@ -3278,11 +3271,12 @@ Partial Class Form1
         '
         Me.DPPrizes.AutoSize = True
         Me.DPPrizes.BackColor = System.Drawing.Color.Black
-        Me.DPPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPPrizes.ForeColor = System.Drawing.Color.White
         Me.DPPrizes.Image = CType(resources.GetObject("DPPrizes.Image"), System.Drawing.Image)
         Me.DPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.DPPrizes.Location = New System.Drawing.Point(79, 231)
+        Me.DPPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DPPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.DPPrizes.Name = "DPPrizes"
         Me.DPPrizes.Size = New System.Drawing.Size(36, 24)
@@ -3294,11 +3288,12 @@ Partial Class Form1
         '
         Me.EPPrizes.AutoSize = True
         Me.EPPrizes.BackColor = System.Drawing.Color.Black
-        Me.EPPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPPrizes.ForeColor = System.Drawing.Color.White
         Me.EPPrizes.Image = CType(resources.GetObject("EPPrizes.Image"), System.Drawing.Image)
         Me.EPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EPPrizes.Location = New System.Drawing.Point(79, 207)
+        Me.EPPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.EPPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.EPPrizes.Name = "EPPrizes"
         Me.EPPrizes.Size = New System.Drawing.Size(36, 24)
@@ -3310,11 +3305,12 @@ Partial Class Form1
         '
         Me.HCPrizes.AutoSize = True
         Me.HCPrizes.BackColor = System.Drawing.Color.Black
-        Me.HCPrizes.Font = New System.Drawing.Font("Return of Ganon", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCPrizes.ForeColor = System.Drawing.Color.White
         Me.HCPrizes.Image = CType(resources.GetObject("HCPrizes.Image"), System.Drawing.Image)
         Me.HCPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.HCPrizes.Location = New System.Drawing.Point(79, 183)
+        Me.HCPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.HCPrizes.MinimumSize = New System.Drawing.Size(36, 24)
         Me.HCPrizes.Name = "HCPrizes"
         Me.HCPrizes.Size = New System.Drawing.Size(36, 24)
@@ -3328,6 +3324,7 @@ Partial Class Form1
         Me.EPMap.AutoSize = True
         Me.EPMap.Image = Global.RandoTracker.My.Resources.Resources.nomapsmall
         Me.EPMap.Location = New System.Drawing.Point(115, 208)
+        Me.EPMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EPMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.EPMap.Name = "EPMap"
         Me.EPMap.Size = New System.Drawing.Size(24, 24)
@@ -3340,6 +3337,7 @@ Partial Class Form1
         Me.DPMap.AutoSize = True
         Me.DPMap.Image = CType(resources.GetObject("DPMap.Image"), System.Drawing.Image)
         Me.DPMap.Location = New System.Drawing.Point(115, 232)
+        Me.DPMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.DPMap.Name = "DPMap"
         Me.DPMap.Size = New System.Drawing.Size(24, 24)
@@ -3352,6 +3350,7 @@ Partial Class Form1
         Me.SPMap.AutoSize = True
         Me.SPMap.Image = CType(resources.GetObject("SPMap.Image"), System.Drawing.Image)
         Me.SPMap.Location = New System.Drawing.Point(115, 304)
+        Me.SPMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.SPMap.Name = "SPMap"
         Me.SPMap.Size = New System.Drawing.Size(24, 24)
@@ -3364,6 +3363,7 @@ Partial Class Form1
         Me.PODMap.AutoSize = True
         Me.PODMap.Image = Global.RandoTracker.My.Resources.Resources.nomapsmall
         Me.PODMap.Location = New System.Drawing.Point(115, 280)
+        Me.PODMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PODMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.PODMap.Name = "PODMap"
         Me.PODMap.Size = New System.Drawing.Size(24, 24)
@@ -3376,6 +3376,7 @@ Partial Class Form1
         Me.HeraMap.AutoSize = True
         Me.HeraMap.Image = CType(resources.GetObject("HeraMap.Image"), System.Drawing.Image)
         Me.HeraMap.Location = New System.Drawing.Point(115, 256)
+        Me.HeraMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HeraMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.HeraMap.Name = "HeraMap"
         Me.HeraMap.Size = New System.Drawing.Size(24, 24)
@@ -3388,6 +3389,7 @@ Partial Class Form1
         Me.TRMap.AutoSize = True
         Me.TRMap.Image = CType(resources.GetObject("TRMap.Image"), System.Drawing.Image)
         Me.TRMap.Location = New System.Drawing.Point(317, 304)
+        Me.TRMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.TRMap.Name = "TRMap"
         Me.TRMap.Size = New System.Drawing.Size(24, 24)
@@ -3400,6 +3402,7 @@ Partial Class Form1
         Me.MMMap.AutoSize = True
         Me.MMMap.Image = CType(resources.GetObject("MMMap.Image"), System.Drawing.Image)
         Me.MMMap.Location = New System.Drawing.Point(317, 280)
+        Me.MMMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.MMMap.Name = "MMMap"
         Me.MMMap.Size = New System.Drawing.Size(24, 24)
@@ -3412,6 +3415,7 @@ Partial Class Form1
         Me.IPMap.AutoSize = True
         Me.IPMap.Image = CType(resources.GetObject("IPMap.Image"), System.Drawing.Image)
         Me.IPMap.Location = New System.Drawing.Point(317, 256)
+        Me.IPMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.IPMap.Name = "IPMap"
         Me.IPMap.Size = New System.Drawing.Size(24, 24)
@@ -3424,6 +3428,7 @@ Partial Class Form1
         Me.TTMap.AutoSize = True
         Me.TTMap.Image = CType(resources.GetObject("TTMap.Image"), System.Drawing.Image)
         Me.TTMap.Location = New System.Drawing.Point(317, 232)
+        Me.TTMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.TTMap.Name = "TTMap"
         Me.TTMap.Size = New System.Drawing.Size(24, 24)
@@ -3436,6 +3441,7 @@ Partial Class Form1
         Me.SWMap.AutoSize = True
         Me.SWMap.Image = CType(resources.GetObject("SWMap.Image"), System.Drawing.Image)
         Me.SWMap.Location = New System.Drawing.Point(317, 208)
+        Me.SWMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWMap.MinimumSize = New System.Drawing.Size(24, 24)
         Me.SWMap.Name = "SWMap"
         Me.SWMap.Size = New System.Drawing.Size(24, 24)
@@ -3446,6 +3452,7 @@ Partial Class Form1
         '
         Me.TRBorder.BackColor = System.Drawing.Color.Black
         Me.TRBorder.Location = New System.Drawing.Point(205, 303)
+        Me.TRBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRBorder.Name = "TRBorder"
         Me.TRBorder.Size = New System.Drawing.Size(36, 24)
         Me.TRBorder.TabIndex = 730
@@ -3455,6 +3462,7 @@ Partial Class Form1
         '
         Me.MMBorder.BackColor = System.Drawing.Color.Black
         Me.MMBorder.Location = New System.Drawing.Point(205, 279)
+        Me.MMBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMBorder.Name = "MMBorder"
         Me.MMBorder.Size = New System.Drawing.Size(36, 24)
         Me.MMBorder.TabIndex = 729
@@ -3464,6 +3472,7 @@ Partial Class Form1
         '
         Me.IPBorder.BackColor = System.Drawing.Color.Black
         Me.IPBorder.Location = New System.Drawing.Point(205, 255)
+        Me.IPBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPBorder.Name = "IPBorder"
         Me.IPBorder.Size = New System.Drawing.Size(36, 24)
         Me.IPBorder.TabIndex = 728
@@ -3473,6 +3482,7 @@ Partial Class Form1
         '
         Me.TTBorder.BackColor = System.Drawing.Color.Black
         Me.TTBorder.Location = New System.Drawing.Point(205, 231)
+        Me.TTBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTBorder.Name = "TTBorder"
         Me.TTBorder.Size = New System.Drawing.Size(36, 24)
         Me.TTBorder.TabIndex = 727
@@ -3482,6 +3492,7 @@ Partial Class Form1
         '
         Me.SWBorder.BackColor = System.Drawing.Color.Black
         Me.SWBorder.Location = New System.Drawing.Point(205, 207)
+        Me.SWBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWBorder.Name = "SWBorder"
         Me.SWBorder.Size = New System.Drawing.Size(36, 24)
         Me.SWBorder.TabIndex = 726
@@ -3490,7 +3501,8 @@ Partial Class Form1
         'SPBorder
         '
         Me.SPBorder.BackColor = System.Drawing.Color.Black
-        Me.SPBorder.Location = New System.Drawing.Point(3, 303)
+        Me.SPBorder.Location = New System.Drawing.Point(2, 303)
+        Me.SPBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPBorder.Name = "SPBorder"
         Me.SPBorder.Size = New System.Drawing.Size(36, 24)
         Me.SPBorder.TabIndex = 723
@@ -3499,7 +3511,8 @@ Partial Class Form1
         'PODBorder
         '
         Me.PODBorder.BackColor = System.Drawing.Color.Black
-        Me.PODBorder.Location = New System.Drawing.Point(3, 279)
+        Me.PODBorder.Location = New System.Drawing.Point(2, 279)
+        Me.PODBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PODBorder.Name = "PODBorder"
         Me.PODBorder.Size = New System.Drawing.Size(36, 24)
         Me.PODBorder.TabIndex = 722
@@ -3508,7 +3521,8 @@ Partial Class Form1
         'TOHBorder
         '
         Me.TOHBorder.BackColor = System.Drawing.Color.Black
-        Me.TOHBorder.Location = New System.Drawing.Point(3, 255)
+        Me.TOHBorder.Location = New System.Drawing.Point(2, 255)
+        Me.TOHBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TOHBorder.Name = "TOHBorder"
         Me.TOHBorder.Size = New System.Drawing.Size(36, 24)
         Me.TOHBorder.TabIndex = 721
@@ -3517,7 +3531,8 @@ Partial Class Form1
         'DPBorder
         '
         Me.DPBorder.BackColor = System.Drawing.Color.Black
-        Me.DPBorder.Location = New System.Drawing.Point(3, 231)
+        Me.DPBorder.Location = New System.Drawing.Point(2, 231)
+        Me.DPBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPBorder.Name = "DPBorder"
         Me.DPBorder.Size = New System.Drawing.Size(36, 24)
         Me.DPBorder.TabIndex = 720
@@ -3526,7 +3541,8 @@ Partial Class Form1
         'EPBorder
         '
         Me.EPBorder.BackColor = System.Drawing.Color.Black
-        Me.EPBorder.Location = New System.Drawing.Point(3, 207)
+        Me.EPBorder.Location = New System.Drawing.Point(2, 207)
+        Me.EPBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EPBorder.Name = "EPBorder"
         Me.EPBorder.Size = New System.Drawing.Size(36, 24)
         Me.EPBorder.TabIndex = 719
@@ -3535,7 +3551,8 @@ Partial Class Form1
         'HCBorder
         '
         Me.HCBorder.BackColor = System.Drawing.Color.Black
-        Me.HCBorder.Location = New System.Drawing.Point(3, 183)
+        Me.HCBorder.Location = New System.Drawing.Point(2, 183)
+        Me.HCBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HCBorder.Name = "HCBorder"
         Me.HCBorder.Size = New System.Drawing.Size(36, 24)
         Me.HCBorder.TabIndex = 718
@@ -3545,6 +3562,7 @@ Partial Class Form1
         '
         Me.AGBorder.BackColor = System.Drawing.Color.Black
         Me.AGBorder.Location = New System.Drawing.Point(205, 183)
+        Me.AGBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.AGBorder.Name = "AGBorder"
         Me.AGBorder.Size = New System.Drawing.Size(36, 24)
         Me.AGBorder.TabIndex = 725
@@ -3554,7 +3572,8 @@ Partial Class Form1
         'GTBorder
         '
         Me.GTBorder.BackColor = System.Drawing.Color.Black
-        Me.GTBorder.Location = New System.Drawing.Point(3, 327)
+        Me.GTBorder.Location = New System.Drawing.Point(2, 327)
+        Me.GTBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBorder.Name = "GTBorder"
         Me.GTBorder.Size = New System.Drawing.Size(36, 24)
         Me.GTBorder.TabIndex = 724
@@ -3566,11 +3585,319 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.Black
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Default
         Me.PictureBox1.Location = New System.Drawing.Point(4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(212, 173)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 733
         Me.PictureBox1.TabStop = False
+        '
+        'MMKeys
+        '
+        Me.MMKeys.AutoSize = True
+        Me.MMKeys.BackColor = System.Drawing.Color.Black
+        Me.MMKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMKeys.ForeColor = System.Drawing.Color.White
+        Me.MMKeys.Image = CType(resources.GetObject("MMKeys.Image"), System.Drawing.Image)
+        Me.MMKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.MMKeys.Location = New System.Drawing.Point(281, 279)
+        Me.MMKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MMKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.MMKeys.Name = "MMKeys"
+        Me.MMKeys.Size = New System.Drawing.Size(36, 24)
+        Me.MMKeys.TabIndex = 667
+        Me.MMKeys.Text = "0"
+        Me.MMKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'IPKeys
+        '
+        Me.IPKeys.AutoSize = True
+        Me.IPKeys.BackColor = System.Drawing.Color.Black
+        Me.IPKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPKeys.ForeColor = System.Drawing.Color.White
+        Me.IPKeys.Image = CType(resources.GetObject("IPKeys.Image"), System.Drawing.Image)
+        Me.IPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.IPKeys.Location = New System.Drawing.Point(281, 255)
+        Me.IPKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.IPKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.IPKeys.Name = "IPKeys"
+        Me.IPKeys.Size = New System.Drawing.Size(36, 24)
+        Me.IPKeys.TabIndex = 666
+        Me.IPKeys.Text = "0"
+        Me.IPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TTKeys
+        '
+        Me.TTKeys.AutoSize = True
+        Me.TTKeys.BackColor = System.Drawing.Color.Black
+        Me.TTKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTKeys.ForeColor = System.Drawing.Color.White
+        Me.TTKeys.Image = CType(resources.GetObject("TTKeys.Image"), System.Drawing.Image)
+        Me.TTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TTKeys.Location = New System.Drawing.Point(281, 231)
+        Me.TTKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.TTKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.TTKeys.Name = "TTKeys"
+        Me.TTKeys.Size = New System.Drawing.Size(36, 24)
+        Me.TTKeys.TabIndex = 665
+        Me.TTKeys.Text = "0"
+        Me.TTKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'SWKeys
+        '
+        Me.SWKeys.AutoSize = True
+        Me.SWKeys.BackColor = System.Drawing.Color.Black
+        Me.SWKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWKeys.ForeColor = System.Drawing.Color.White
+        Me.SWKeys.Image = CType(resources.GetObject("SWKeys.Image"), System.Drawing.Image)
+        Me.SWKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SWKeys.Location = New System.Drawing.Point(281, 207)
+        Me.SWKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.SWKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.SWKeys.Name = "SWKeys"
+        Me.SWKeys.Size = New System.Drawing.Size(36, 24)
+        Me.SWKeys.TabIndex = 664
+        Me.SWKeys.Text = "0"
+        Me.SWKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TRKeys
+        '
+        Me.TRKeys.AutoSize = True
+        Me.TRKeys.BackColor = System.Drawing.Color.Black
+        Me.TRKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRKeys.ForeColor = System.Drawing.Color.White
+        Me.TRKeys.Image = CType(resources.GetObject("TRKeys.Image"), System.Drawing.Image)
+        Me.TRKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TRKeys.Location = New System.Drawing.Point(281, 303)
+        Me.TRKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.TRKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.TRKeys.Name = "TRKeys"
+        Me.TRKeys.Size = New System.Drawing.Size(36, 24)
+        Me.TRKeys.TabIndex = 668
+        Me.TRKeys.Text = "0"
+        Me.TRKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'AGKeys
+        '
+        Me.AGKeys.AutoSize = True
+        Me.AGKeys.BackColor = System.Drawing.Color.Black
+        Me.AGKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGKeys.ForeColor = System.Drawing.Color.White
+        Me.AGKeys.Image = Global.RandoTracker.My.Resources.Resources.keysmall
+        Me.AGKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.AGKeys.Location = New System.Drawing.Point(281, 183)
+        Me.AGKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.AGKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.AGKeys.Name = "AGKeys"
+        Me.AGKeys.Size = New System.Drawing.Size(36, 24)
+        Me.AGKeys.TabIndex = 663
+        Me.AGKeys.Text = "0"
+        Me.AGKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.AGKeys.Visible = False
+        '
+        'GTKeys
+        '
+        Me.GTKeys.AutoSize = True
+        Me.GTKeys.BackColor = System.Drawing.Color.Black
+        Me.GTKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTKeys.ForeColor = System.Drawing.Color.White
+        Me.GTKeys.Image = CType(resources.GetObject("GTKeys.Image"), System.Drawing.Image)
+        Me.GTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.GTKeys.Location = New System.Drawing.Point(79, 327)
+        Me.GTKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.GTKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.GTKeys.Name = "GTKeys"
+        Me.GTKeys.Size = New System.Drawing.Size(36, 24)
+        Me.GTKeys.TabIndex = 662
+        Me.GTKeys.Text = "0"
+        Me.GTKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.GTKeys.Visible = False
+        '
+        'SPKeys
+        '
+        Me.SPKeys.AutoSize = True
+        Me.SPKeys.BackColor = System.Drawing.Color.Black
+        Me.SPKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPKeys.ForeColor = System.Drawing.Color.White
+        Me.SPKeys.Image = CType(resources.GetObject("SPKeys.Image"), System.Drawing.Image)
+        Me.SPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SPKeys.Location = New System.Drawing.Point(79, 303)
+        Me.SPKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.SPKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.SPKeys.Name = "SPKeys"
+        Me.SPKeys.Size = New System.Drawing.Size(36, 24)
+        Me.SPKeys.TabIndex = 661
+        Me.SPKeys.Text = "0"
+        Me.SPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'PODKeys
+        '
+        Me.PODKeys.AutoSize = True
+        Me.PODKeys.BackColor = System.Drawing.Color.Black
+        Me.PODKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODKeys.ForeColor = System.Drawing.Color.White
+        Me.PODKeys.Image = CType(resources.GetObject("PODKeys.Image"), System.Drawing.Image)
+        Me.PODKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.PODKeys.Location = New System.Drawing.Point(79, 279)
+        Me.PODKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.PODKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.PODKeys.Name = "PODKeys"
+        Me.PODKeys.Size = New System.Drawing.Size(36, 24)
+        Me.PODKeys.TabIndex = 660
+        Me.PODKeys.Text = "0"
+        Me.PODKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TOHKeys
+        '
+        Me.TOHKeys.AutoSize = True
+        Me.TOHKeys.BackColor = System.Drawing.Color.Black
+        Me.TOHKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHKeys.ForeColor = System.Drawing.Color.White
+        Me.TOHKeys.Image = CType(resources.GetObject("TOHKeys.Image"), System.Drawing.Image)
+        Me.TOHKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TOHKeys.Location = New System.Drawing.Point(79, 255)
+        Me.TOHKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.TOHKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.TOHKeys.Name = "TOHKeys"
+        Me.TOHKeys.Size = New System.Drawing.Size(36, 24)
+        Me.TOHKeys.TabIndex = 659
+        Me.TOHKeys.Text = "0"
+        Me.TOHKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'DPKeys
+        '
+        Me.DPKeys.AutoSize = True
+        Me.DPKeys.BackColor = System.Drawing.Color.Black
+        Me.DPKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPKeys.ForeColor = System.Drawing.Color.White
+        Me.DPKeys.Image = CType(resources.GetObject("DPKeys.Image"), System.Drawing.Image)
+        Me.DPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.DPKeys.Location = New System.Drawing.Point(79, 231)
+        Me.DPKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.DPKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.DPKeys.Name = "DPKeys"
+        Me.DPKeys.Size = New System.Drawing.Size(36, 24)
+        Me.DPKeys.TabIndex = 658
+        Me.DPKeys.Text = "0"
+        Me.DPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'EPKeys
+        '
+        Me.EPKeys.AutoSize = True
+        Me.EPKeys.BackColor = System.Drawing.Color.Black
+        Me.EPKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPKeys.ForeColor = System.Drawing.Color.White
+        Me.EPKeys.Image = CType(resources.GetObject("EPKeys.Image"), System.Drawing.Image)
+        Me.EPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.EPKeys.Location = New System.Drawing.Point(79, 207)
+        Me.EPKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.EPKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.EPKeys.Name = "EPKeys"
+        Me.EPKeys.Size = New System.Drawing.Size(36, 24)
+        Me.EPKeys.TabIndex = 657
+        Me.EPKeys.Text = "-"
+        Me.EPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'HCKeys
+        '
+        Me.HCKeys.AutoSize = True
+        Me.HCKeys.BackColor = System.Drawing.Color.Black
+        Me.HCKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCKeys.ForeColor = System.Drawing.Color.White
+        Me.HCKeys.Image = CType(resources.GetObject("HCKeys.Image"), System.Drawing.Image)
+        Me.HCKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.HCKeys.Location = New System.Drawing.Point(79, 183)
+        Me.HCKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.HCKeys.MinimumSize = New System.Drawing.Size(36, 24)
+        Me.HCKeys.Name = "HCKeys"
+        Me.HCKeys.Size = New System.Drawing.Size(36, 24)
+        Me.HCKeys.TabIndex = 656
+        Me.HCKeys.Text = "0"
+        Me.HCKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(412, 4)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(58, 13)
+        Me.Label2.TabIndex = 739
+        Me.Label2.Text = "Sphere 0"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(412, 97)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(81, 13)
+        Me.Label3.TabIndex = 740
+        Me.Label3.Text = "LW Mainland"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(413, 190)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(83, 13)
+        Me.Label4.TabIndex = 741
+        Me.Label4.Text = "LW Wetlands"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(413, 235)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(83, 13)
+        Me.Label5.TabIndex = 742
+        Me.Label5.Text = "DW Mainland"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(413, 304)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(112, 13)
+        Me.Label6.TabIndex = 743
+        Me.Label6.Text = "Froggy World Tour"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(414, 373)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(97, 13)
+        Me.Label7.TabIndex = 744
+        Me.Label7.Text = "Death Mountain"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(681, 373)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(69, 13)
+        Me.Label8.TabIndex = 745
+        Me.Label8.Text = "Macguffins"
         '
         'Form1
         '
@@ -3578,16 +3905,22 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(779, 395)
+        Me.ClientSize = New System.Drawing.Size(779, 490)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.MagicButton)
+        Me.Controls.Add(Me.BottleNumber)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.GTLabel)
         Me.Controls.Add(Me.AGLabel)
         Me.Controls.Add(Me.DW15Boots)
         Me.Controls.Add(Me.ResetButton)
-        Me.Controls.Add(Me.MMKeys)
-        Me.Controls.Add(Me.IPKeys)
-        Me.Controls.Add(Me.TTKeys)
-        Me.Controls.Add(Me.SWKeys)
-        Me.Controls.Add(Me.TRKeys)
         Me.Controls.Add(Me.TurtleBEQ)
         Me.Controls.Add(Me.MireBEQ)
         Me.Controls.Add(Me.TRBigKey)
@@ -3655,8 +3988,6 @@ Partial Class Form1
         Me.Controls.Add(Me.BoomButton)
         Me.Controls.Add(Me.BowButton)
         Me.Controls.Add(Me.HlpButton)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
@@ -3666,7 +3997,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TRLabel2)
@@ -3749,18 +4079,6 @@ Partial Class Form1
         Me.Controls.Add(Me.TOHLabel)
         Me.Controls.Add(Me.DPLabel)
         Me.Controls.Add(Me.EPLabel)
-        Me.Controls.Add(Me.MMPrizes)
-        Me.Controls.Add(Me.IPPrizes)
-        Me.Controls.Add(Me.TTPrizes)
-        Me.Controls.Add(Me.SWPrizes)
-        Me.Controls.Add(Me.AGKeys)
-        Me.Controls.Add(Me.GTKeys)
-        Me.Controls.Add(Me.SPKeys)
-        Me.Controls.Add(Me.PODKeys)
-        Me.Controls.Add(Me.TOHKeys)
-        Me.Controls.Add(Me.DPKeys)
-        Me.Controls.Add(Me.EPKeys)
-        Me.Controls.Add(Me.HCKeys)
         Me.Controls.Add(Me.TRBoss)
         Me.Controls.Add(Me.MMBoss)
         Me.Controls.Add(Me.IPBoss)
@@ -3771,13 +4089,6 @@ Partial Class Form1
         Me.Controls.Add(Me.HeraBoss)
         Me.Controls.Add(Me.DPBoss)
         Me.Controls.Add(Me.EPBoss)
-        Me.Controls.Add(Me.TRPrizes)
-        Me.Controls.Add(Me.SPPrizes)
-        Me.Controls.Add(Me.PODPrizes)
-        Me.Controls.Add(Me.TOHPrizes)
-        Me.Controls.Add(Me.DPPrizes)
-        Me.Controls.Add(Me.EPPrizes)
-        Me.Controls.Add(Me.HCPrizes)
         Me.Controls.Add(Me.EPMap)
         Me.Controls.Add(Me.DPMap)
         Me.Controls.Add(Me.SPMap)
@@ -3803,13 +4114,40 @@ Partial Class Form1
         Me.Controls.Add(Me.AGBorder)
         Me.Controls.Add(Me.GTBorder)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.MMKeys)
+        Me.Controls.Add(Me.IPKeys)
+        Me.Controls.Add(Me.TTKeys)
+        Me.Controls.Add(Me.SWKeys)
+        Me.Controls.Add(Me.TRKeys)
+        Me.Controls.Add(Me.AGKeys)
+        Me.Controls.Add(Me.GTKeys)
+        Me.Controls.Add(Me.SPKeys)
+        Me.Controls.Add(Me.PODKeys)
+        Me.Controls.Add(Me.TOHKeys)
+        Me.Controls.Add(Me.DPKeys)
+        Me.Controls.Add(Me.EPKeys)
+        Me.Controls.Add(Me.HCKeys)
+        Me.Controls.Add(Me.AGPrizes)
+        Me.Controls.Add(Me.MMPrizes)
+        Me.Controls.Add(Me.IPPrizes)
+        Me.Controls.Add(Me.TTPrizes)
+        Me.Controls.Add(Me.SWPrizes)
+        Me.Controls.Add(Me.TRPrizes)
+        Me.Controls.Add(Me.SPPrizes)
+        Me.Controls.Add(Me.PODPrizes)
+        Me.Controls.Add(Me.TOHPrizes)
+        Me.Controls.Add(Me.DPPrizes)
+        Me.Controls.Add(Me.EPPrizes)
+        Me.Controls.Add(Me.HCPrizes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.KeyPreview = True
+        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(40, 39)
         Me.Name = "Form1"
-        Me.Text = "ALTTP RandoTracker (Logic v8.28)"
+        Me.Text = "ALTTP RandoTracker (Logic v8.29)"
+        CType(Me.MagicButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TRButton, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3902,8 +4240,6 @@ Partial Class Form1
     Friend WithEvents BoomButton As PictureBox
     Friend WithEvents BowButton As PictureBox
     Friend WithEvents HlpButton As Button
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Button12 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
@@ -3913,7 +4249,6 @@ Partial Class Form1
     Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents GTLabel As Label
@@ -4095,4 +4430,16 @@ Partial Class Form1
     Friend WithEvents ResetButton As Button
     Friend WithEvents DW15Boots As CheckBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents AGPrizes As Label
+    Friend WithEvents BottleNumber As Label
+    Friend WithEvents MagicButton As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
 End Class

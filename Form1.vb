@@ -1,8 +1,9 @@
 ﻿Public Class Form1
-    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, MazeRace, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper As Integer
+    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, Magic, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper As Integer
     Dim Hookshot, Bombs, Powder, FireRod, IceRod, Bombos, Ether, Quake, Lamp, Hammer, Flute, Net, Book, Bottle, Somaria, Byrna, Cape, Mirror, Boots, Flippers, Pearl, Mushroom, Shovel, Aganhim, GreenPendant, TRAccess As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ComboBox1.SelectedIndex = 0
         Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
@@ -252,302 +253,705 @@
             Case "!"
                 EPBoss.Checked = True
                 EPBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then EPPrizes.Text = 0 Else EPChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then EPPrizes.Text = 0 Else EPChests.Text = 0
                 EPLabel2.BackColor = Color.Green
 
             Case "@"
                 DPBoss.Checked = True
                 DPBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then DPPrizes.Text = 0 Else DPChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then DPPrizes.Text = 0 Else DPChests.Text = 0
                 DPLabel2.BackColor = Color.Green
             Case "#"
                 HeraBoss.Checked = True
                 HeraBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then TOHPrizes.Text = 0 Else TOHChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then TOHPrizes.Text = 0 Else TOHChests.Text = 0
                 TOHLabel2.BackColor = Color.Green
             Case "$"
                 PODBoss.Checked = True
                 PODBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then PODPrizes.Text = 0 Else PODChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then PODPrizes.Text = 0 Else PODChests.Text = 0
                 PODLabel2.BackColor = Color.Green
             Case "%"
                 SPBoss.Checked = True
                 SPBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then SPPrizes.Text = 0 Else SPChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then SPPrizes.Text = 0 Else SPChests.Text = 0
                 SPLabel2.BackColor = Color.Green
             Case "^"
                 SWBoss.Checked = True
                 SWBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then SWPrizes.Text = 0 Else SWChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then SWPrizes.Text = 0 Else SWChests.Text = 0
                 SWLabel2.BackColor = Color.Green
             Case "&"
                 TTBoss.Checked = True
                 TTBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then TTPrizes.Text = 0 Else TTChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then TTPrizes.Text = 0 Else TTChests.Text = 0
                 TTLabel2.BackColor = Color.Green
             Case "*"
                 IPBoss.Checked = True
                 IPBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then IPPrizes.Text = 0 Else IPChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then IPPrizes.Text = 0 Else IPChests.Text = 0
                 IPLabel2.BackColor = Color.Green
             Case "("
                 MMBoss.Checked = True
                 MMBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then MMPrizes.Text = 0 Else MMChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then MMPrizes.Text = 0 Else MMChests.Text = 0
                 MMLabel2.BackColor = Color.Green
             Case ")"
                 TRBoss.Checked = True
                 TRBoss.Image = My.Resources.bossdeadsmall
-                If RadioButton1.Checked = True Then TRPrizes.Text = 0 Else TRChests.Text = 0
+                If ComboBox1.SelectedIndex = 0 Then TRPrizes.Text = 0 Else TRChests.Text = 0
                 TRLabel2.BackColor = Color.Green
         End Select
         CrystalCheck()
     End Sub
 
-    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
-        If RadioButton1.Checked = True Then
-            HCKeys.Visible = False
-            EPKeys.Visible = False
-            EPMap.Visible = False
-            EPBigKey.Visible = False
-            DPKeys.Visible = False
-            DPMap.Visible = False
-            DPBigKey.Visible = False
-            TOHKeys.Visible = False
-            HeraMap.Visible = False
-            HeraBigKey.Visible = False
-            PODKeys.Visible = False
-            PODMap.Visible = False
-            PODBigKey.Visible = False
-            SPKeys.Visible = False
-            SPMap.Visible = False
-            SPBigKey.Visible = False
-            SWKeys.Visible = False
-            SWMap.Visible = False
-            SWBigKey.Visible = False
-            TTKeys.Visible = False
-            TTMap.Visible = False
-            TTBigKey.Visible = False
-            IPKeys.Visible = False
-            IPMap.Visible = False
-            IPBigKey.Visible = False
-            MMKeys.Visible = False
-            MMMap.Visible = False
-            MMBigKey.Visible = False
-            TRKeys.Visible = False
-            TRMap.Visible = False
-            TRBigKey.Visible = False
-            AGBorder.Visible = False
-            AGLabel.Visible = False
-            AGChests.Visible = False
-            AGKeys.Visible = False
-            GTBorder.Visible = False
-            GTLabel.Visible = False
-            GTChests.Visible = False
-            GTKeys.Visible = False
-            GTBigKey.Visible = False
-            HCPrizes.Visible = True
-            EPPrizes.Visible = True
-            DPPrizes.Visible = True
-            TOHPrizes.Visible = True
-            PODPrizes.Visible = True
-            SPPrizes.Visible = True
-            SWPrizes.Visible = True
-            TTPrizes.Visible = True
-            IPPrizes.Visible = True
-            MMPrizes.Visible = True
-            TRPrizes.Visible = True
-            EPBoss.Left = 115
-            DPBoss.Left = 115
-            HeraBoss.Left = 115
-            PODBoss.Left = 115
-            SPBoss.Left = 115
-            SWBoss.Left = 317
-            TTBoss.Left = 317
-            IPBoss.Left = 317
-            MMBoss.Left = 317
-            TRBoss.Left = 317
-            EPReward = 0
-            DPReward = 0
-            TOHReward = 0
-            PODReward = 0
-            SPReward = 0
-            SWReward = 0
-            TTReward = 0
-            IPReward = 0
-            MMReward = 0
-            TRReward = 0
-            EPButton.Image = My.Resources.crystal
-            DPButton.Image = My.Resources.crystal
-            TOHButton.Image = My.Resources.crystal
-            PODButton.Image = My.Resources.crystal
-            SPButton.Image = My.Resources.crystal
-            SWButton.Image = My.Resources.crystal
-            TTButton.Image = My.Resources.crystal
-            IPButton.Image = My.Resources.crystal
-            MMButton.Image = My.Resources.crystal
-            TRButton.Image = My.Resources.crystal
-            HCChests.Text = 0
-            AGChests.Text = 0
-            EPChests.Text = 0
-            DPChests.Text = 0
-            TOHChests.Text = 0
-            PODChests.Text = 0
-            SPChests.Text = 0
-            SWChests.Text = 0
-            TTChests.Text = 0
-            IPChests.Text = 0
-            MMChests.Text = 0
-            TRChests.Text = 0
-            GTChests.Text = 0
-            HCPrizes.Text = 6
-            EPPrizes.Text = 3
-            DPPrizes.Text = 2
-            TOHPrizes.Text = 2
-            PODPrizes.Text = 5
-            SPPrizes.Text = 6
-            SWPrizes.Text = 2
-            TTPrizes.Text = 4
-            IPPrizes.Text = 3
-            MMPrizes.Text = 2
-            TRPrizes.Text = 5
-            HCCheck()
-            EPCheck()
-            DPCheck()
-            TOHCheck()
-            AgaCheck()
-            PODCheck()
-            SPCheck()
-            SWCheck()
-            TTCheck()
-            IPCheck()
-            MMCheck()
-            TRCheck()
-        End If
-    End Sub
-
-    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
-        If RadioButton2.Checked = True Then
-            HCKeys.Visible = True
-            HCChests.ForeColor = Color.White
-            EPKeys.Visible = True
-            EPMap.Visible = True
-            EPBigKey.Visible = True
-            EPChests.ForeColor = Color.White
-            DPKeys.Visible = True
-            DPMap.Visible = True
-            DPBigKey.Visible = True
-            TOHKeys.Visible = True
-            HeraMap.Visible = True
-            HeraBigKey.Visible = True
-            PODKeys.Visible = True
-            PODMap.Visible = True
-            PODBigKey.Visible = True
-            SPKeys.Visible = True
-            SPMap.Visible = True
-            SPBigKey.Visible = True
-            SWKeys.Visible = True
-            SWMap.Visible = True
-            SWBigKey.Visible = True
-            TTKeys.Visible = True
-            TTMap.Visible = True
-            TTBigKey.Visible = True
-            IPKeys.Visible = True
-            IPMap.Visible = True
-            IPBigKey.Visible = True
-            MMKeys.Visible = True
-            MMMap.Visible = True
-            MMBigKey.Visible = True
-            TRKeys.Visible = True
-            TRMap.Visible = True
-            TRBigKey.Visible = True
-            AGBorder.Visible = True
-            AGLabel.Visible = True
-            AGChests.Visible = True
-            AGKeys.Visible = True
-            GTBorder.Visible = True
-            GTLabel.Visible = True
-            GTChests.Visible = True
-            GTKeys.Visible = True
-            GTBigKey.Visible = True
-            HCPrizes.Visible = False
-            EPPrizes.Visible = False
-            DPPrizes.Visible = False
-            TOHPrizes.Visible = False
-            PODPrizes.Visible = False
-            SPPrizes.Visible = False
-            SWPrizes.Visible = False
-            TTPrizes.Visible = False
-            IPPrizes.Visible = False
-            MMPrizes.Visible = False
-            TRPrizes.Visible = False
-            EPBoss.Left = 163
-            DPBoss.Left = 163
-            HeraBoss.Left = 163
-            PODBoss.Left = 163
-            SPBoss.Left = 163
-            SWBoss.Left = 365
-            TTBoss.Left = 365
-            IPBoss.Left = 365
-            MMBoss.Left = 365
-            TRBoss.Left = 365
-            EPReward = -1
-            DPReward = -1
-            TOHReward = -1
-            PODReward = -1
-            SPReward = -1
-            SWReward = -1
-            TTReward = -1
-            IPReward = -1
-            MMReward = -1
-            TRReward = -1
-            EPButton.Image = Nothing
-            DPButton.Image = Nothing
-            TOHButton.Image = Nothing
-            PODButton.Image = Nothing
-            SPButton.Image = Nothing
-            SWButton.Image = Nothing
-            TTButton.Image = Nothing
-            IPButton.Image = Nothing
-            MMButton.Image = Nothing
-            TRButton.Image = Nothing
-            HCChests.Text = 8
-            AGChests.Text = 2
-            EPChests.Text = 6
-            DPChests.Text = 6
-            TOHChests.Text = 6
-            PODChests.Text = 14
-            SPChests.Text = 10
-            SWChests.Text = 8
-            TTChests.Text = 8
-            IPChests.Text = 8
-            MMChests.Text = 8
-            TRChests.Text = 12
-            GTChests.Text = 27
-            HCPrizes.Text = 6
-            EPPrizes.Text = 3
-            DPPrizes.Text = 2
-            TOHPrizes.Text = 2
-            PODPrizes.Text = 5
-            SPPrizes.Text = 6
-            SWPrizes.Text = 2
-            TTPrizes.Text = 4
-            IPPrizes.Text = 3
-            MMPrizes.Text = 2
-            TRPrizes.Text = 5
-            HCCheck()
-            EPCheck()
-            DPCheck()
-            TOHCheck()
-            AgaCheck()
-            PODCheck()
-            SPCheck()
-            SWCheck()
-            TTCheck()
-            IPCheck()
-            MMCheck()
-            TRCheck()
-        End If
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Select Case ComboBox1.SelectedIndex
+            Case 0
+                SwordButton.Visible = True
+                HCKeys.Visible = False
+                EPKeys.Visible = False
+                EPMap.Visible = False
+                EPBigKey.Visible = False
+                DPKeys.Visible = False
+                DPMap.Visible = False
+                DPBigKey.Visible = False
+                TOHKeys.Visible = False
+                HeraMap.Visible = False
+                HeraBigKey.Visible = False
+                PODKeys.Visible = False
+                PODMap.Visible = False
+                PODBigKey.Visible = False
+                SPKeys.Visible = False
+                SPMap.Visible = False
+                SPBigKey.Visible = False
+                SWKeys.Visible = False
+                SWMap.Visible = False
+                SWBigKey.Visible = False
+                TTKeys.Visible = False
+                TTMap.Visible = False
+                TTBigKey.Visible = False
+                IPKeys.Visible = False
+                IPMap.Visible = False
+                IPBigKey.Visible = False
+                MMKeys.Visible = False
+                MMMap.Visible = False
+                MMBigKey.Visible = False
+                TRKeys.Visible = False
+                TRMap.Visible = False
+                TRBigKey.Visible = False
+                AGBorder.Visible = False
+                AGLabel.Visible = False
+                AGChests.Visible = False
+                AGKeys.Visible = False
+                AGPrizes.Visible = False
+                GTBorder.Visible = False
+                GTLabel.Visible = False
+                GTChests.Visible = False
+                GTKeys.Visible = False
+                GTBigKey.Visible = False
+                HCPrizes.Visible = True
+                EPPrizes.Visible = True
+                DPPrizes.Visible = True
+                TOHPrizes.Visible = True
+                PODPrizes.Visible = True
+                SPPrizes.Visible = True
+                SWPrizes.Visible = True
+                TTPrizes.Visible = True
+                IPPrizes.Visible = True
+                MMPrizes.Visible = True
+                TRPrizes.Visible = True
+                EPBoss.Left = 115
+                DPBoss.Left = 115
+                HeraBoss.Left = 115
+                PODBoss.Left = 115
+                SPBoss.Left = 115
+                SWBoss.Left = 317
+                TTBoss.Left = 317
+                IPBoss.Left = 317
+                MMBoss.Left = 317
+                TRBoss.Left = 317
+                EPReward = 0
+                DPReward = 0
+                TOHReward = 0
+                PODReward = 0
+                SPReward = 0
+                SWReward = 0
+                TTReward = 0
+                IPReward = 0
+                MMReward = 0
+                TRReward = 0
+                EPButton.Image = My.Resources.crystal
+                DPButton.Image = My.Resources.crystal
+                TOHButton.Image = My.Resources.crystal
+                PODButton.Image = My.Resources.crystal
+                SPButton.Image = My.Resources.crystal
+                SWButton.Image = My.Resources.crystal
+                TTButton.Image = My.Resources.crystal
+                IPButton.Image = My.Resources.crystal
+                MMButton.Image = My.Resources.crystal
+                TRButton.Image = My.Resources.crystal
+                HCChests.Text = 0
+                AGChests.Text = 0
+                EPChests.Text = 0
+                DPChests.Text = 0
+                TOHChests.Text = 0
+                PODChests.Text = 0
+                SPChests.Text = 0
+                SWChests.Text = 0
+                TTChests.Text = 0
+                IPChests.Text = 0
+                MMChests.Text = 0
+                TRChests.Text = 0
+                GTChests.Text = 0
+                HCPrizes.Text = 6
+                EPPrizes.Text = 3
+                DPPrizes.Text = 2
+                TOHPrizes.Text = 2
+                PODPrizes.Text = 5
+                SPPrizes.Text = 6
+                SWPrizes.Text = 2
+                TTPrizes.Text = 4
+                IPPrizes.Text = 3
+                MMPrizes.Text = 2
+                TRPrizes.Text = 5
+            Case 1
+                SwordButton.Visible = True
+                HCKeys.Visible = True
+                HCChests.ForeColor = Color.White
+                EPKeys.Visible = True
+                EPMap.Visible = True
+                EPBigKey.Visible = True
+                EPChests.ForeColor = Color.White
+                DPKeys.Visible = True
+                DPMap.Visible = True
+                DPBigKey.Visible = True
+                TOHKeys.Visible = True
+                HeraMap.Visible = True
+                HeraBigKey.Visible = True
+                PODKeys.Visible = True
+                PODMap.Visible = True
+                PODBigKey.Visible = True
+                SPKeys.Visible = True
+                SPMap.Visible = True
+                SPBigKey.Visible = True
+                SWKeys.Visible = True
+                SWMap.Visible = True
+                SWBigKey.Visible = True
+                TTKeys.Visible = True
+                TTMap.Visible = True
+                TTBigKey.Visible = True
+                IPKeys.Visible = True
+                IPMap.Visible = True
+                IPBigKey.Visible = True
+                MMKeys.Visible = True
+                MMMap.Visible = True
+                MMBigKey.Visible = True
+                TRKeys.Visible = True
+                TRMap.Visible = True
+                TRBigKey.Visible = True
+                AGBorder.Visible = True
+                AGLabel.Visible = True
+                AGChests.Visible = True
+                AGKeys.Visible = True
+                GTBorder.Visible = True
+                GTLabel.Visible = True
+                GTChests.Visible = True
+                GTKeys.Visible = True
+                GTBigKey.Visible = True
+                HCPrizes.Visible = False
+                EPPrizes.Visible = False
+                DPPrizes.Visible = False
+                TOHPrizes.Visible = False
+                PODPrizes.Visible = False
+                SPPrizes.Visible = False
+                SWPrizes.Visible = False
+                TTPrizes.Visible = False
+                IPPrizes.Visible = False
+                MMPrizes.Visible = False
+                TRPrizes.Visible = False
+                EPBoss.Left = 163
+                DPBoss.Left = 163
+                HeraBoss.Left = 163
+                PODBoss.Left = 163
+                SPBoss.Left = 163
+                SWBoss.Left = 365
+                TTBoss.Left = 365
+                IPBoss.Left = 365
+                MMBoss.Left = 365
+                TRBoss.Left = 365
+                EPReward = -1
+                DPReward = -1
+                TOHReward = -1
+                PODReward = -1
+                SPReward = -1
+                SWReward = -1
+                TTReward = -1
+                IPReward = -1
+                MMReward = -1
+                TRReward = -1
+                EPButton.Image = Nothing
+                DPButton.Image = Nothing
+                TOHButton.Image = Nothing
+                PODButton.Image = Nothing
+                SPButton.Image = Nothing
+                SWButton.Image = Nothing
+                TTButton.Image = Nothing
+                IPButton.Image = Nothing
+                MMButton.Image = Nothing
+                TRButton.Image = Nothing
+                HCChests.Text = 8
+                AGChests.Text = 2
+                EPChests.Text = 6
+                DPChests.Text = 6
+                TOHChests.Text = 6
+                PODChests.Text = 14
+                SPChests.Text = 10
+                SWChests.Text = 8
+                TTChests.Text = 8
+                IPChests.Text = 8
+                MMChests.Text = 8
+                TRChests.Text = 12
+                GTChests.Text = 27
+                HCPrizes.Text = 6
+                EPPrizes.Text = 3
+                DPPrizes.Text = 2
+                TOHPrizes.Text = 2
+                PODPrizes.Text = 5
+                SPPrizes.Text = 6
+                SWPrizes.Text = 2
+                TTPrizes.Text = 4
+                IPPrizes.Text = 3
+                MMPrizes.Text = 2
+                TRPrizes.Text = 5
+            Case 2
+                SwordButton.Visible = True
+                HCKeys.Visible = False
+                EPKeys.Visible = False
+                EPMap.Visible = False
+                EPBigKey.Visible = False
+                DPKeys.Visible = False
+                DPMap.Visible = False
+                DPBigKey.Visible = False
+                TOHKeys.Visible = False
+                HeraMap.Visible = False
+                HeraBigKey.Visible = False
+                PODKeys.Visible = False
+                PODMap.Visible = False
+                PODBigKey.Visible = False
+                SPKeys.Visible = False
+                SPMap.Visible = False
+                SPBigKey.Visible = False
+                SWKeys.Visible = False
+                SWMap.Visible = False
+                SWBigKey.Visible = False
+                TTKeys.Visible = False
+                TTMap.Visible = False
+                TTBigKey.Visible = False
+                IPKeys.Visible = False
+                IPMap.Visible = False
+                IPBigKey.Visible = False
+                MMKeys.Visible = False
+                MMMap.Visible = False
+                MMBigKey.Visible = False
+                TRKeys.Visible = False
+                TRMap.Visible = False
+                TRBigKey.Visible = False
+                AGBorder.Visible = True
+                AGLabel.Visible = True
+                AGChests.Visible = True
+                AGPrizes.Visible = True
+                AGKeys.Visible = False
+                GTBorder.Visible = False
+                GTLabel.Visible = False
+                GTChests.Visible = False
+                GTKeys.Visible = False
+                GTBigKey.Visible = False
+                HCPrizes.Visible = True
+                EPPrizes.Visible = True
+                DPPrizes.Visible = True
+                TOHPrizes.Visible = True
+                PODPrizes.Visible = True
+                SPPrizes.Visible = True
+                SWPrizes.Visible = True
+                TTPrizes.Visible = True
+                IPPrizes.Visible = True
+                MMPrizes.Visible = True
+                TRPrizes.Visible = True
+                EPBoss.Left = 115
+                DPBoss.Left = 115
+                HeraBoss.Left = 115
+                PODBoss.Left = 115
+                SPBoss.Left = 115
+                SWBoss.Left = 317
+                TTBoss.Left = 317
+                IPBoss.Left = 317
+                MMBoss.Left = 317
+                TRBoss.Left = 317
+                EPReward = 0
+                DPReward = 0
+                TOHReward = 0
+                PODReward = 0
+                SPReward = 0
+                SWReward = 0
+                TTReward = 0
+                IPReward = 0
+                MMReward = 0
+                TRReward = 0
+                EPButton.Image = My.Resources.crystal
+                DPButton.Image = My.Resources.crystal
+                TOHButton.Image = My.Resources.crystal
+                PODButton.Image = My.Resources.crystal
+                SPButton.Image = My.Resources.crystal
+                SWButton.Image = My.Resources.crystal
+                TTButton.Image = My.Resources.crystal
+                IPButton.Image = My.Resources.crystal
+                MMButton.Image = My.Resources.crystal
+                TRButton.Image = My.Resources.crystal
+                HCPrizes.Text = 7
+                EPPrizes.Text = 3
+                DPPrizes.Text = 3
+                AGPrizes.Text = 2
+                TOHPrizes.Text = 3
+                PODPrizes.Text = 11
+                SPPrizes.Text = 7
+                SWPrizes.Text = 5
+                TTPrizes.Text = 5
+                IPPrizes.Text = 5
+                MMPrizes.Text = 5
+                TRPrizes.Text = 9
+            Case 3
+                SwordButton.Visible = False
+                Sword = 0
+                HCKeys.Visible = False
+                EPKeys.Visible = False
+                EPMap.Visible = False
+                EPBigKey.Visible = False
+                DPKeys.Visible = False
+                DPMap.Visible = False
+                DPBigKey.Visible = False
+                TOHKeys.Visible = False
+                HeraMap.Visible = False
+                HeraBigKey.Visible = False
+                PODKeys.Visible = False
+                PODMap.Visible = False
+                PODBigKey.Visible = False
+                SPKeys.Visible = False
+                SPMap.Visible = False
+                SPBigKey.Visible = False
+                SWKeys.Visible = False
+                SWMap.Visible = False
+                SWBigKey.Visible = False
+                TTKeys.Visible = False
+                TTMap.Visible = False
+                TTBigKey.Visible = False
+                IPKeys.Visible = False
+                IPMap.Visible = False
+                IPBigKey.Visible = False
+                MMKeys.Visible = False
+                MMMap.Visible = False
+                MMBigKey.Visible = False
+                TRKeys.Visible = False
+                TRMap.Visible = False
+                TRBigKey.Visible = False
+                AGBorder.Visible = False
+                AGLabel.Visible = False
+                AGChests.Visible = False
+                AGKeys.Visible = False
+                AGPrizes.Visible = False
+                GTBorder.Visible = False
+                GTLabel.Visible = False
+                GTChests.Visible = False
+                GTKeys.Visible = False
+                GTBigKey.Visible = False
+                HCPrizes.Visible = True
+                EPPrizes.Visible = True
+                DPPrizes.Visible = True
+                TOHPrizes.Visible = True
+                PODPrizes.Visible = True
+                SPPrizes.Visible = True
+                SWPrizes.Visible = True
+                TTPrizes.Visible = True
+                IPPrizes.Visible = True
+                MMPrizes.Visible = True
+                TRPrizes.Visible = True
+                EPBoss.Left = 115
+                DPBoss.Left = 115
+                HeraBoss.Left = 115
+                PODBoss.Left = 115
+                SPBoss.Left = 115
+                SWBoss.Left = 317
+                TTBoss.Left = 317
+                IPBoss.Left = 317
+                MMBoss.Left = 317
+                TRBoss.Left = 317
+                EPReward = 0
+                DPReward = 0
+                TOHReward = 0
+                PODReward = 0
+                SPReward = 0
+                SWReward = 0
+                TTReward = 0
+                IPReward = 0
+                MMReward = 0
+                TRReward = 0
+                EPButton.Image = My.Resources.crystal
+                DPButton.Image = My.Resources.crystal
+                TOHButton.Image = My.Resources.crystal
+                PODButton.Image = My.Resources.crystal
+                SPButton.Image = My.Resources.crystal
+                SWButton.Image = My.Resources.crystal
+                TTButton.Image = My.Resources.crystal
+                IPButton.Image = My.Resources.crystal
+                MMButton.Image = My.Resources.crystal
+                TRButton.Image = My.Resources.crystal
+                HCChests.Text = 0
+                AGChests.Text = 0
+                EPChests.Text = 0
+                DPChests.Text = 0
+                TOHChests.Text = 0
+                PODChests.Text = 0
+                SPChests.Text = 0
+                SWChests.Text = 0
+                TTChests.Text = 0
+                IPChests.Text = 0
+                MMChests.Text = 0
+                TRChests.Text = 0
+                GTChests.Text = 0
+                HCPrizes.Text = 6
+                EPPrizes.Text = 3
+                DPPrizes.Text = 2
+                TOHPrizes.Text = 2
+                PODPrizes.Text = 5
+                SPPrizes.Text = 6
+                SWPrizes.Text = 2
+                TTPrizes.Text = 4
+                IPPrizes.Text = 3
+                MMPrizes.Text = 2
+                TRPrizes.Text = 5
+            Case 4
+                SwordButton.Visible = False
+                Sword = 0
+                HCKeys.Visible = True
+                HCChests.ForeColor = Color.White
+                EPKeys.Visible = True
+                EPMap.Visible = True
+                EPBigKey.Visible = True
+                EPChests.ForeColor = Color.White
+                DPKeys.Visible = True
+                DPMap.Visible = True
+                DPBigKey.Visible = True
+                TOHKeys.Visible = True
+                HeraMap.Visible = True
+                HeraBigKey.Visible = True
+                PODKeys.Visible = True
+                PODMap.Visible = True
+                PODBigKey.Visible = True
+                SPKeys.Visible = True
+                SPMap.Visible = True
+                SPBigKey.Visible = True
+                SWKeys.Visible = True
+                SWMap.Visible = True
+                SWBigKey.Visible = True
+                TTKeys.Visible = True
+                TTMap.Visible = True
+                TTBigKey.Visible = True
+                IPKeys.Visible = True
+                IPMap.Visible = True
+                IPBigKey.Visible = True
+                MMKeys.Visible = True
+                MMMap.Visible = True
+                MMBigKey.Visible = True
+                TRKeys.Visible = True
+                TRMap.Visible = True
+                TRBigKey.Visible = True
+                AGBorder.Visible = True
+                AGLabel.Visible = True
+                AGChests.Visible = True
+                AGKeys.Visible = True
+                GTBorder.Visible = True
+                GTLabel.Visible = True
+                GTChests.Visible = True
+                GTKeys.Visible = True
+                GTBigKey.Visible = True
+                HCPrizes.Visible = False
+                EPPrizes.Visible = False
+                DPPrizes.Visible = False
+                TOHPrizes.Visible = False
+                PODPrizes.Visible = False
+                SPPrizes.Visible = False
+                SWPrizes.Visible = False
+                TTPrizes.Visible = False
+                IPPrizes.Visible = False
+                MMPrizes.Visible = False
+                TRPrizes.Visible = False
+                EPBoss.Left = 163
+                DPBoss.Left = 163
+                HeraBoss.Left = 163
+                PODBoss.Left = 163
+                SPBoss.Left = 163
+                SWBoss.Left = 365
+                TTBoss.Left = 365
+                IPBoss.Left = 365
+                MMBoss.Left = 365
+                TRBoss.Left = 365
+                EPReward = -1
+                DPReward = -1
+                TOHReward = -1
+                PODReward = -1
+                SPReward = -1
+                SWReward = -1
+                TTReward = -1
+                IPReward = -1
+                MMReward = -1
+                TRReward = -1
+                EPButton.Image = Nothing
+                DPButton.Image = Nothing
+                TOHButton.Image = Nothing
+                PODButton.Image = Nothing
+                SPButton.Image = Nothing
+                SWButton.Image = Nothing
+                TTButton.Image = Nothing
+                IPButton.Image = Nothing
+                MMButton.Image = Nothing
+                TRButton.Image = Nothing
+                HCChests.Text = 8
+                AGChests.Text = 2
+                EPChests.Text = 6
+                DPChests.Text = 6
+                TOHChests.Text = 6
+                PODChests.Text = 14
+                SPChests.Text = 10
+                SWChests.Text = 8
+                TTChests.Text = 8
+                IPChests.Text = 8
+                MMChests.Text = 8
+                TRChests.Text = 12
+                GTChests.Text = 27
+                HCPrizes.Text = 6
+                EPPrizes.Text = 3
+                DPPrizes.Text = 2
+                TOHPrizes.Text = 2
+                PODPrizes.Text = 5
+                SPPrizes.Text = 6
+                SWPrizes.Text = 2
+                TTPrizes.Text = 4
+                IPPrizes.Text = 3
+                MMPrizes.Text = 2
+                TRPrizes.Text = 5
+            Case 5
+                SwordButton.Visible = False
+                Sword = 0
+                HCKeys.Visible = False
+                EPKeys.Visible = False
+                EPMap.Visible = False
+                EPBigKey.Visible = False
+                DPKeys.Visible = False
+                DPMap.Visible = False
+                DPBigKey.Visible = False
+                TOHKeys.Visible = False
+                HeraMap.Visible = False
+                HeraBigKey.Visible = False
+                PODKeys.Visible = False
+                PODMap.Visible = False
+                PODBigKey.Visible = False
+                SPKeys.Visible = False
+                SPMap.Visible = False
+                SPBigKey.Visible = False
+                SWKeys.Visible = False
+                SWMap.Visible = False
+                SWBigKey.Visible = False
+                TTKeys.Visible = False
+                TTMap.Visible = False
+                TTBigKey.Visible = False
+                IPKeys.Visible = False
+                IPMap.Visible = False
+                IPBigKey.Visible = False
+                MMKeys.Visible = False
+                MMMap.Visible = False
+                MMBigKey.Visible = False
+                TRKeys.Visible = False
+                TRMap.Visible = False
+                TRBigKey.Visible = False
+                AGBorder.Visible = True
+                AGLabel.Visible = True
+                AGChests.Visible = True
+                AGPrizes.Visible = True
+                AGKeys.Visible = False
+                GTBorder.Visible = False
+                GTLabel.Visible = False
+                GTChests.Visible = False
+                GTKeys.Visible = False
+                GTBigKey.Visible = False
+                HCPrizes.Visible = True
+                EPPrizes.Visible = True
+                DPPrizes.Visible = True
+                TOHPrizes.Visible = True
+                PODPrizes.Visible = True
+                SPPrizes.Visible = True
+                SWPrizes.Visible = True
+                TTPrizes.Visible = True
+                IPPrizes.Visible = True
+                MMPrizes.Visible = True
+                TRPrizes.Visible = True
+                EPBoss.Left = 115
+                DPBoss.Left = 115
+                HeraBoss.Left = 115
+                PODBoss.Left = 115
+                SPBoss.Left = 115
+                SWBoss.Left = 317
+                TTBoss.Left = 317
+                IPBoss.Left = 317
+                MMBoss.Left = 317
+                TRBoss.Left = 317
+                EPReward = 0
+                DPReward = 0
+                TOHReward = 0
+                PODReward = 0
+                SPReward = 0
+                SWReward = 0
+                TTReward = 0
+                IPReward = 0
+                MMReward = 0
+                TRReward = 0
+                EPButton.Image = My.Resources.crystal
+                DPButton.Image = My.Resources.crystal
+                TOHButton.Image = My.Resources.crystal
+                PODButton.Image = My.Resources.crystal
+                SPButton.Image = My.Resources.crystal
+                SWButton.Image = My.Resources.crystal
+                TTButton.Image = My.Resources.crystal
+                IPButton.Image = My.Resources.crystal
+                MMButton.Image = My.Resources.crystal
+                TRButton.Image = My.Resources.crystal
+                HCPrizes.Text = 7
+                EPPrizes.Text = 3
+                DPPrizes.Text = 3
+                AGPrizes.Text = 2
+                TOHPrizes.Text = 3
+                PODPrizes.Text = 11
+                SPPrizes.Text = 7
+                SWPrizes.Text = 5
+                TTPrizes.Text = 5
+                IPPrizes.Text = 5
+                MMPrizes.Text = 5
+                TRPrizes.Text = 9
+        End Select
+        HCCheck()
+        EPCheck()
+        DPCheck()
+        TOHCheck()
+        AgaCheck()
+        PODCheck()
+        SPCheck()
+        SWCheck()
+        TTCheck()
+        IPCheck()
+        MMCheck()
+        TRCheck()
+        GTCheck()
+        LWCheck()
+        DWCheck()
     End Sub
 
     Public Sub LWCheck()
@@ -644,15 +1048,28 @@
             LW22.BackColor = Color.Red
         End If
 
-        '' Bombos Tablet - Master Sword, Book, Access via Dark World
-        If Pearl = True And Mirror = True And Book = True And Sword >= 2 And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or Aganhim = True And Hookshot = True And (Hammer = True Or Glove > 0 Or Flippers = True)) Then
-            LW23.Enabled = True
-            LW23.BackColor = Color.WhiteSmoke
+        '' Bombos Tablet (Swords) - Master Sword, Book, Access via Dark World
+        '' Bombos Tablet (Swordless) - Hammer, Book, Access via Dark World
+        If ComboBox1.SelectedIndex < 3 Then
+            If Pearl = True And Mirror = True And Book = True And Sword >= 2 And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or Aganhim = True And Hookshot = True And (Hammer = True Or Glove > 0 Or Flippers = True)) Then
+                LW23.Enabled = True
+                LW23.BackColor = Color.WhiteSmoke
+            Else
+                LW23.Checked = False
+                LW23.Enabled = False
+                LW23.BackColor = Color.Red
+            End If
         Else
-            LW23.Checked = False
-            LW23.Enabled = False
-            LW23.BackColor = Color.Red
+            If Pearl = True And Mirror = True And Book = True And Hammer = True And (Glove > 0 Or Aganhim = True) Then
+                LW23.Enabled = True
+                LW23.BackColor = Color.WhiteSmoke
+            Else
+                LW23.Checked = False
+                LW23.Enabled = False
+                LW23.BackColor = Color.Red
+            End If
         End If
+
 
         '' Checkerboard - Flute, Mitt, Mirror (no Pearl required)
         If Flute = True And Glove = 2 And Mirror = True Then
@@ -813,17 +1230,32 @@
             LW40.BackColor = Color.Red
         End If
 
-        '' Ether Tablet - Death Mountain access (Lamp prevents sequence break if Glove is used), Mirror or Hookshot+Hammer, Master Sword, Book
-        If Sword >= 2 And Book = True And (Flute = True Or (Glove > 0 And Lamp = True)) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
-            LW41.Enabled = True
-            LW41.BackColor = Color.WhiteSmoke
-        ElseIf Sword >= 2 And Book = True And Glove > 0 And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
-            LW41.Enabled = True
-            LW41.BackColor = Color.Orange
+        '' Ether Tablet (Swords) - Death Mountain access (Lamp prevents sequence break if Glove is used), Mirror or Hookshot+Hammer, Master Sword, Book
+        '' Ether Tablet (SWordless) - Death Mountain access (Lamp prevents sequence break if Glove is used), Mirror or Hookshot, Hammer, Book
+        If ComboBox1.SelectedIndex < 3 Then
+            If Sword >= 2 And Book = True And (Flute = True Or (Glove > 0 And Lamp = True)) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
+                LW41.Enabled = True
+                LW41.BackColor = Color.WhiteSmoke
+            ElseIf Sword >= 2 And Book = True And Glove > 0 And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
+                LW41.Enabled = True
+                LW41.BackColor = Color.Orange
+            Else
+                LW41.Checked = False
+                LW41.Enabled = False
+                LW41.BackColor = Color.Red
+            End If
         Else
-            LW41.Checked = False
-            LW41.Enabled = False
-            LW41.BackColor = Color.Red
+            If Book = True And Hammer = True And (Flute = True Or (Glove > 0 And Lamp = True)) And (Mirror = True Or Hookshot = True) Then
+                LW41.Enabled = True
+                LW41.BackColor = Color.WhiteSmoke
+            ElseIf Book = True And Glove > 0 And Hammer = True And (Mirror = True Or Hookshot = True) Then
+                LW41.Enabled = True
+                LW41.BackColor = Color.Orange
+            Else
+                LW41.Checked = False
+                LW41.Enabled = False
+                LW41.BackColor = Color.Red
+            End If
         End If
 
         '' East Death Mountain, Spiral Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Hookshot or Mirror+Hammer
@@ -1046,9 +1478,9 @@
             DW12.BackColor = Color.Red
         End If
 
-        '' Spike Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Pearl, Hammer, Safety item (Byrna or Cape)
+        '' Spike Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Pearl, Hammer, Glove; Safety item (Byrna or Cape) and either 1/2 magic or bottle to avoid sequence break
         If Pearl = True And Hammer = True And (Flute = True Or (Glove > 0 And Lamp = True)) Then
-            If Byrna = True Or Cape = True Then
+            If (Byrna = True Or Cape = True And Glove > 0) And (Magic > 0 Or BottleNumber.Text > 0) Then
                 DW13.Enabled = True
                 DW13.BackColor = Color.WhiteSmoke
             Else
@@ -1064,9 +1496,9 @@
             DW13.BackColor = Color.Red
         End If
 
-        '' East DW DM - Death Mountain access (Lamp prevents sequence break if Glove is used, Pearl prevents sequence break), Mitt, Hookshot or Hammer+Mirror
+        '' Superbunny Cave - Death Mountain access (Lamp prevents sequence break if Glove is used, Pearl prevents sequence break), Mitt, Hookshot or Hammer+Mirror
         If Glove = 2 And (Hookshot = True Or (Hammer = True And Mirror = True)) Then
-            If Flute = True Or Lamp = True And Pearl = True Then
+            If (Flute = True Or Lamp = True) And Pearl = True Then
                 DW14.Enabled = True
                 DW14.BackColor = Color.WhiteSmoke
             Else
@@ -1163,18 +1595,6 @@
                 Button2.Image = My.Resources.greenchestsmall
             Case Else
                 Button2.Image = My.Resources.chestmaybesmall
-        End Select
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        MazeRace = (MazeRace + 1) Mod 3
-        Select Case MazeRace
-            Case 1
-                Button3.Image = My.Resources.redchestsmall
-            Case 2
-                Button3.Image = My.Resources.greenchestsmall
-            Case Else
-                Button3.Image = My.Resources.chestmaybesmall
         End Select
     End Sub
 
@@ -1287,7 +1707,7 @@
     End Sub
 
     Public Sub HCCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Then
             If Glove > 0 And Lamp = True And (Bombs = True Or Boots = True) Then
                 HCLabel.BackColor = Color.Green
                 HCLabel.ForeColor = Color.White
@@ -1319,7 +1739,7 @@
                 HCChests.ForeColor = Color.Yellow
                 HCBorder.BackColor = Color.Black
             End If
-        Else
+        ElseIf ComboBox1.SelectedIndex = 1 Then
             If (Glove > 0 Or HCKeys.Text = 1) And (Bombs = True Or Boots = True) Then
                 If Lamp = True Then HCLabel.BackColor = Color.Green Else HCLabel.BackColor = Color.Orange
                 HCLabel.ForeColor = Color.White
@@ -1334,7 +1754,7 @@
     End Sub
 
     Private Sub HCChests_MouseDown(sender As Object, e As EventArgs) Handles HCChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Then
             If MouseButtons = MouseButtons.Left Then
                 If HCChests.Text > 0 Then HCChests.Text = HCChests.Text - 1
             End If
@@ -1352,18 +1772,22 @@
     End Sub
 
     Private Sub HCPrizes_MouseDown(sender As Object, e As EventArgs) Handles HCPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex <> 1 Then
             If MouseButtons = MouseButtons.Left Then
                 If HCPrizes.Text > 0 Then HCPrizes.Text = HCPrizes.Text - 1
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If HCPrizes.Text < 6 Then HCPrizes.Text = HCPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If HCPrizes.Text < 6 Then HCPrizes.Text = HCPrizes.Text + 1
+                Else
+                    If HCPrizes.Text < 7 Then HCPrizes.Text = HCPrizes.Text + 1
+                End If
             End If
         End If
     End Sub
 
     Private Sub AGChests_MouseDown(sender As Object, e As MouseEventArgs) Handles AGChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Then
             If MouseButtons = MouseButtons.Left Then
                 If AGChests.Text > 0 Then AGChests.Text = AGChests.Text - 1
             End If
@@ -1404,7 +1828,7 @@
     End Sub
 
     Private Sub EPChests_MouseDown(sender As Object, e As EventArgs) Handles EPChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If EPChests.Text > 0 Then EPChests.Text = EPChests.Text - 1
                 If EPChests.Text = 0 Then EPLabel2.BackColor = Color.Green
@@ -1416,7 +1840,7 @@
         End If
     End Sub
     Private Sub EPPrizes_MouseDown(sender As Object, e As EventArgs) Handles EPPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If EPPrizes.Text > 0 Then EPPrizes.Text = EPPrizes.Text - 1
                 If EPPrizes.Text = 0 Then EPLabel2.BackColor = Color.Green
@@ -1429,7 +1853,7 @@
     End Sub
 
     Public Sub EPCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If Bow > 1 Then
                 EPLabel.ForeColor = Color.White
                 EPBoss.Enabled = True
@@ -1504,7 +1928,7 @@
         CrystalCheck()
     End Sub
     Private Sub DPChests_MouseDown(sender As Object, e As EventArgs) Handles DPChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If DPChests.Text > 0 Then DPChests.Text = DPChests.Text - 1
                 If DPChests.Text = 0 Then DPLabel2.BackColor = Color.Green
@@ -1516,13 +1940,17 @@
         End If
     End Sub
     Private Sub DPPrizes_MouseDown(sender As Object, e As EventArgs) Handles DPPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If DPPrizes.Text > 0 Then DPPrizes.Text = DPPrizes.Text - 1
                 If DPPrizes.Text = 0 Then DPLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If DPPrizes.Text < 2 Then DPPrizes.Text = DPPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If DPPrizes.Text < 2 Then DPPrizes.Text = DPPrizes.Text + 1
+                Else
+                    If DPPrizes.Text < 3 Then DPPrizes.Text = DPPrizes.Text + 1
+                End If
                 DPLabel2.BackColor = Color.Black
             End If
         End If
@@ -1535,7 +1963,7 @@
     End Sub
 
     Public Sub DPCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Boots = True And Glove > 0 Then
                 DPLabel.BackColor = Color.Green
                 DPLabel.ForeColor = Color.White
@@ -1619,7 +2047,7 @@
         CrystalCheck()
     End Sub
     Private Sub TOHChests_MouseDown(sender As Object, e As EventArgs) Handles TOHChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If TOHChests.Text > 0 Then TOHChests.Text = TOHChests.Text - 1
                 If TOHChests.Text = 0 Then TOHLabel2.BackColor = Color.Green
@@ -1631,13 +2059,17 @@
         End If
     End Sub
     Private Sub TOHPrizes_MouseDown(sender As Object, e As EventArgs) Handles TOHPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If TOHPrizes.Text > 0 Then TOHPrizes.Text = TOHPrizes.Text - 1
                 If TOHPrizes.Text = 0 Then TOHLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If TOHPrizes.Text < 2 Then TOHPrizes.Text = TOHPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If TOHPrizes.Text < 2 Then TOHPrizes.Text = TOHPrizes.Text + 1
+                Else
+                    If TOHPrizes.Text < 3 Then TOHPrizes.Text = TOHPrizes.Text + 1
+                End If
                 TOHLabel2.BackColor = Color.Black
             End If
         End If
@@ -1648,7 +2080,7 @@
         TOHCheck()
     End Sub
     Public Sub TOHCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And (Lamp = True Or FireRod = True) And (Sword > 0 Or Hammer = True) Then
                 TOHLabel.ForeColor = Color.White
                 HeraBoss.Enabled = True
@@ -1678,8 +2110,55 @@
                 TOHChests.ForeColor = Color.White
                 TOHBorder.BackColor = Color.Black
             End If
-        Else
+        ElseIf ComboBox1.SelectedIndex = 1 Then
             If (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And HeraBigKey.Checked = True Then
+                TOHLabel.ForeColor = Color.White
+                HeraBoss.Enabled = True
+                If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
+                TOHBorder.BackColor = Color.White
+            ElseIf (Flute = True Or Glove > 0) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
+                TOHLabel.BackColor = Color.Yellow
+                TOHLabel.ForeColor = Color.Black
+                HeraBoss.Enabled = False
+                TOHBorder.BackColor = Color.Black
+            Else
+                TOHLabel.BackColor = Color.Red
+                TOHLabel.ForeColor = Color.Black
+                HeraBoss.Enabled = False
+                TOHBorder.BackColor = Color.Black
+            End If
+        ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
+            If (Glove > 0 Or Flute = True) And (Mirror = True Or Hookshot = True) And Hammer = True And (Lamp = True Or FireRod = True) Then
+                TOHLabel.ForeColor = Color.White
+                HeraBoss.Enabled = True
+                If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
+                TOHChests.Text = 6
+                TOHChests.ForeColor = Color.White
+                TOHBorder.BackColor = Color.White
+            ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And Hammer = True Then
+                TOHLabel.BackColor = Color.Yellow
+                TOHLabel.ForeColor = Color.Black
+                HeraBoss.Enabled = True
+                TOHChests.Text = 5
+                TOHChests.ForeColor = Color.Yellow
+                TOHBorder.BackColor = Color.Black
+            ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
+                TOHLabel.BackColor = Color.Yellow
+                TOHLabel.ForeColor = Color.Black
+                HeraBoss.Enabled = False
+                TOHChests.Text = 4
+                TOHChests.ForeColor = Color.Yellow
+                TOHBorder.BackColor = Color.Black
+            Else
+                TOHLabel.BackColor = Color.Red
+                TOHLabel.ForeColor = Color.Black
+                HeraBoss.Enabled = False
+                TOHChests.Text = 0
+                TOHChests.ForeColor = Color.White
+                TOHBorder.BackColor = Color.Black
+            End If
+        Else
+            If (Glove > 0 Or Flute = True) And Hammer = True And (Mirror = True Or Hookshot = True) And HeraBigKey.Checked = True Then
                 TOHLabel.ForeColor = Color.White
                 HeraBoss.Enabled = True
                 If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
@@ -1697,6 +2176,17 @@
             End If
         End If
     End Sub
+    Private Sub AGPrizes_MouseDown(sender As Object, e As EventArgs) Handles AGPrizes.MouseDown
+        If ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 5 Then
+            If MouseButtons = MouseButtons.Left Then
+                If AGPrizes.Text > 0 Then AGPrizes.Text = AGPrizes.Text - 1
+            End If
+            If MouseButtons = MouseButtons.Right = True Then
+                If AGPrizes.Text < 2 Then AGPrizes.Text = AGPrizes.Text + 1
+            End If
+        End If
+    End Sub
+
     Private Sub AGKeys_MouseDown(sender As Object, e As EventArgs) Handles AGKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then
             If AGKeys.Text < 2 Then AGKeys.Text = AGKeys.Text + 1
@@ -1724,20 +2214,22 @@
                     0, 0, noaganhim.Width, noaganhim.Height,
                     GraphicsUnit.Pixel, imgattr)
         End Using
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Then
             If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
                 AgaButton.Visible = True
                 If Aganhim = False Then AgaButton.Image = noaganhim
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
                 AGBorder.BackColor = Color.White
+                AGChests.Text = 2
             Else
                 AgaButton.Visible = False
                 AGLabel.BackColor = Color.Red
                 AGLabel.ForeColor = Color.Black
                 AGBorder.BackColor = Color.Black
+                AGChests.Text = 0
             End If
-        Else
+        ElseIf ComboBox1.SelectedIndex = 1 Then
             If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True And AGKeys.Text = 2 Then
                 AgaButton.Visible = True
                 If Aganhim = False Then AgaButton.Image = noaganhim
@@ -1754,6 +2246,42 @@
                 AGLabel.BackColor = Color.Red
                 AGLabel.ForeColor = Color.Black
                 AGBorder.BackColor = Color.Black
+            End If
+        ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
+            If Cape = True And Hammer = True And Lamp = True Then
+                AgaButton.Visible = True
+                If Aganhim = False Then AgaButton.Image = noaganhim
+                AGLabel.BackColor = Color.Green
+                AGLabel.ForeColor = Color.White
+                AGBorder.BackColor = Color.White
+                AGChests.Text = 2
+            Else
+                AgaButton.Visible = False
+                AGLabel.BackColor = Color.Red
+                AGLabel.ForeColor = Color.Black
+                AGBorder.BackColor = Color.Black
+                AGChests.Text = 0
+            End If
+        Else
+            If Cape = True And Hammer = True And Lamp = True And AGKeys.Text = 2 Then
+                AgaButton.Visible = True
+                If Aganhim = False Then AgaButton.Image = noaganhim
+                AGLabel.BackColor = Color.Green
+                AGLabel.ForeColor = Color.White
+                AGBorder.BackColor = Color.White
+                AGChests.Text = 2
+            ElseIf Cape = True And Hammer = True Then
+                AgaButton.Visible = False
+                AGLabel.BackColor = Color.Yellow
+                AGLabel.ForeColor = Color.Black
+                AGBorder.BackColor = Color.Black
+                AGChests.Text = 2
+            Else
+                AgaButton.Visible = False
+                AGLabel.BackColor = Color.Red
+                AGLabel.ForeColor = Color.Black
+                AGBorder.BackColor = Color.Black
+                AGChests.Text = 0
             End If
         End If
     End Sub
@@ -1787,7 +2315,7 @@
         CrystalCheck()
     End Sub
     Private Sub PODChests_MouseDown(sender As Object, e As EventArgs) Handles PODChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If PODChests.Text > 0 Then PODChests.Text = PODChests.Text - 1
                 If PODChests.Text = 0 Then PODLabel2.BackColor = Color.Green
@@ -1799,13 +2327,17 @@
         End If
     End Sub
     Private Sub PODPrizes_MouseDown(sender As Object, e As EventArgs) Handles PODPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If PODPrizes.Text > 0 Then PODPrizes.Text = PODPrizes.Text - 1
                 If PODPrizes.Text = 0 Then PODLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If PODPrizes.Text < 5 Then PODPrizes.Text = PODPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If PODPrizes.Text < 5 Then PODPrizes.Text = PODPrizes.Text + 1
+                Else
+                    If PODPrizes.Text < 11 Then PODPrizes.Text = PODPrizes.Text + 1
+                End If
                 PODLabel2.BackColor = Color.Black
             End If
         End If
@@ -1820,7 +2352,7 @@
         PODCheck()
     End Sub
     Public Sub PODCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True Then
                 PODBoss.Enabled = True
                 PODChests.Text = 14
@@ -1858,11 +2390,21 @@
                 PODBorder.BackColor = Color.Black
             End If
         Else
-            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True And PODBigKey.Checked = True And (PODKeys.Text >= 2 Or (PODKeys.Text = 1 And Boots = True)) Then
-                If Lamp = True And PODKeys.Text = 6 Then PODLabel.BackColor = Color.Green Else PODLabel.BackColor = Color.Orange
-                PODLabel.ForeColor = Color.White
+            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True And PODBigKey.Checked = True And PODKeys.Text = 1 Then
                 PODBoss.Enabled = True
-                PODBorder.BackColor = Color.White
+                If Lamp = True And PODKeys.Text = 6 Then
+                    PODLabel.BackColor = Color.Green
+                    PODLabel.ForeColor = Color.White
+                    PODBorder.BackColor = Color.White
+                ElseIf PODKeys.Text = 6 Then
+                    PODLabel.BackColor = Color.Orange
+                    PODLabel.ForeColor = Color.White
+                    PODBorder.BackColor = Color.White
+                Else
+                    PODLabel.BackColor = Color.Yellow
+                    PODLabel.ForeColor = Color.Black
+                    PODBorder.BackColor = Color.Black
+                End If
             ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) Then
                 PODLabel.BackColor = Color.Yellow
                 PODLabel.ForeColor = Color.Black
@@ -1900,7 +2442,7 @@
         CrystalCheck()
     End Sub
     Private Sub SPChests_MouseDown(sender As Object, e As EventArgs) Handles SPChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If SPChests.Text > 0 Then SPChests.Text = SPChests.Text - 1
                 If SPChests.Text = 0 Then SPLabel2.BackColor = Color.Green
@@ -1912,13 +2454,17 @@
         End If
     End Sub
     Private Sub SPPrizes_MouseDown(sender As Object, e As EventArgs) Handles SPPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If SPPrizes.Text > 0 Then SPPrizes.Text = SPPrizes.Text - 1
                 If SPPrizes.Text = 0 Then SPLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If SPPrizes.Text < 6 Then SPPrizes.Text = SPPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If SPPrizes.Text < 6 Then SPPrizes.Text = SPPrizes.Text + 1
+                Else
+                    If SPPrizes.Text < 7 Then SPPrizes.Text = SPPrizes.Text + 1
+                End If
                 SPLabel2.BackColor = Color.Black
             End If
         End If
@@ -1929,7 +2475,7 @@
         SPCheck()
     End Sub
     Public Sub SPCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If Pearl = True And Flippers = True And Mirror = True And Hammer = True And Hookshot = True And (Glove > 0 Or Aganhim = True) Then
                 SPLabel.BackColor = Color.Green
                 SPLabel.ForeColor = Color.White
@@ -2004,7 +2550,7 @@
         CrystalCheck()
     End Sub
     Private Sub SWChests_MouseDown(sender As Object, e As EventArgs) Handles SWChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If SWChests.Text > 0 Then SWChests.Text = SWChests.Text - 1
                 If SWChests.Text = 0 Then SWLabel2.BackColor = Color.Green
@@ -2016,13 +2562,17 @@
         End If
     End Sub
     Private Sub SWPrizes_MouseDown(sender As Object, e As EventArgs) Handles SWPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If SWPrizes.Text > 0 Then SWPrizes.Text = SWPrizes.Text - 1
                 If SWPrizes.Text = 0 Then SWLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If SWPrizes.Text < 2 Then SWPrizes.Text = SWPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If SWPrizes.Text < 2 Then SWPrizes.Text = SWPrizes.Text + 1
+                Else
+                    If SWPrizes.Text < 5 Then SWPrizes.Text = SWPrizes.Text + 1
+                End If
                 SWLabel2.BackColor = Color.Black
             End If
         End If
@@ -2040,7 +2590,7 @@
 
 
     Public Sub SWCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Then
             If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True And Sword > 0 Then
                 SWLabel.BackColor = Color.Green
                 SWLabel.ForeColor = Color.White
@@ -2070,8 +2620,48 @@
                 SWBoss.Enabled = False
                 SWBorder.BackColor = Color.Black
             End If
-        Else
+        ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
+            If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True Then
+                SWLabel.BackColor = Color.Green
+                SWLabel.ForeColor = Color.White
+                SWChests.Text = 8
+                SWChests.ForeColor = Color.White
+                SWBoss.Enabled = True
+                SWBorder.BackColor = Color.White
+            ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                SWLabel.BackColor = Color.Yellow
+                SWLabel.ForeColor = Color.Black
+                SWChests.Text = 6
+                SWChests.ForeColor = Color.White
+                SWBoss.Enabled = False
+                SWBorder.BackColor = Color.Black
+            Else
+                SWLabel.BackColor = Color.Red
+                SWLabel.ForeColor = Color.Black
+                SWChests.Text = 0
+                SWChests.ForeColor = Color.White
+                SWBoss.Enabled = False
+                SWBorder.BackColor = Color.Black
+            End If
+        ElseIf ComboBox1.SelectedIndex = 1 Then
             If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True And Sword > 0 Then
+                If SWKeys.Text >= 2 Then SWLabel.BackColor = Color.Green Else SWLabel.BackColor = Color.Orange
+                SWLabel.ForeColor = Color.White
+                SWBoss.Enabled = True
+                SWBorder.BackColor = Color.White
+            ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                SWLabel.BackColor = Color.Yellow
+                SWLabel.ForeColor = Color.Black
+                SWBoss.Enabled = False
+                SWBorder.BackColor = Color.Black
+            Else
+                SWLabel.BackColor = Color.Red
+                SWLabel.ForeColor = Color.Black
+                SWBoss.Enabled = False
+                SWBorder.BackColor = Color.Black
+            End If
+        Else
+            If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True Then
                 If SWKeys.Text >= 2 Then SWLabel.BackColor = Color.Green Else SWLabel.BackColor = Color.Orange
                 SWLabel.ForeColor = Color.White
                 SWBoss.Enabled = True
@@ -2352,6 +2942,7 @@
             Net = False
             Book = False
             Bottle = False
+            BottleNumber.Text = 0
             Somaria = False
             Byrna = False
             Cape = False
@@ -2365,6 +2956,7 @@
             Sword = 0
             Armor = 0
             Shield = 0
+            MedallionCount = 0
             ' Resetting all dungeons
             HCLabel.ForeColor = Color.Black
             HCLabel.BackColor = Color.Yellow
@@ -2372,7 +2964,7 @@
             HCKeys.Text = 0
             HCPrizes.Text = 6
             HCChests.ForeColor = Color.Yellow
-            If RadioButton1.Checked = True Then HCChests.Text = 5 Else HCChests.Text = 8
+            If ComboBox1.SelectedIndex = 0 Then HCChests.Text = 5 Else HCChests.Text = 8
             EPLabel.ForeColor = Color.Black
             EPLabel.BackColor = Color.Yellow
             EPBorder.BackColor = Color.Black
@@ -2384,7 +2976,7 @@
             EPChests.ForeColor = Color.Yellow
             EPLabel2.BackColor = Color.Black
             EPButton.BackColor = Color.Black
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 EPChests.Text = 5
                 EPReward = 0
                 EPButton.Image = My.Resources.crystal
@@ -2405,7 +2997,7 @@
             DPLabel2.BackColor = Color.Black
             DPButton.BackColor = Color.Black
             DPButton.Image = Nothing
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 DPChests.Text = 0
                 DPReward = 0
                 DPButton.Image = My.Resources.crystal
@@ -2426,7 +3018,7 @@
             TOHLabel2.BackColor = Color.Black
             TOHButton.BackColor = Color.Black
             TOHButton.Image = Nothing
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 TOHChests.Text = 0
                 TOHReward = 0
                 TOHButton.Image = My.Resources.crystal
@@ -2454,7 +3046,7 @@
             PODLabel2.BackColor = Color.Black
             PODButton.BackColor = Color.Black
             PODButton.Image = Nothing
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 PODChests.Text = 0
                 PODReward = 0
                 PODButton.Image = My.Resources.crystal
@@ -2476,7 +3068,7 @@
             SPChests.ForeColor = Color.White
             SPLabel2.BackColor = Color.Black
             SPButton.BackColor = Color.Black
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 SPChests.Text = 0
                 SPReward = 0
                 SPButton.Image = My.Resources.crystal
@@ -2498,7 +3090,7 @@
             SWChests.ForeColor = Color.White
             SWLabel2.BackColor = Color.Black
             SWButton.BackColor = Color.Black
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 SWChests.Text = 0
                 SWReward = 0
                 SWButton.Image = My.Resources.crystal
@@ -2521,7 +3113,7 @@
             TTLabel2.BackColor = Color.Black
             TTButton.BackColor = Color.Black
             TTButton.Image = Nothing
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 TTChests.Text = 0
                 TTReward = 0
                 TTButton.Image = My.Resources.crystal
@@ -2544,7 +3136,7 @@
             IPLabel2.BackColor = Color.Black
             IPButton.BackColor = Color.Black
             IPButton.Image = Nothing
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 IPChests.Text = 0
                 IPReward = 0
                 IPButton.Image = My.Resources.crystal
@@ -2567,7 +3159,7 @@
             MMLabel2.BackColor = Color.Black
             MMButton.BackColor = Color.Black
             MMButton.Image = Nothing
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 MMChests.Text = 0
                 MMReward = 0
                 MMButton.Image = My.Resources.crystal
@@ -2592,7 +3184,7 @@
             TRLabel2.BackColor = Color.Black
             TRButton.BackColor = Color.Black
             TRButton.Image = Nothing
-            If RadioButton1.Checked = True Then
+            If ComboBox1.SelectedIndex = 0 Then
                 TRChests.Text = 0
                 TRReward = 0
                 TRButton.Image = My.Resources.crystal
@@ -2629,8 +3221,6 @@
             Button1.Image = My.Resources.chestmaybesmall
             Library = 0
             Button2.Image = My.Resources.chestmaybesmall
-            MazeRace = 0
-            Button3.Image = My.Resources.chestmaybesmall
             SpecRock = 0
             Button4.Image = My.Resources.chestmaybesmall
             EtherTab = 0
@@ -2673,8 +3263,298 @@
         If DW15Boots.Checked = True Then DW15Boots.BackColor = Color.FromArgb(64, 64, 64) Else DW15Boots.BackColor = Color.WhiteSmoke
     End Sub
 
+    Private Sub MagicButton_Click(sender As Object, e As MouseEventArgs) Handles MagicButton.MouseDown
+
+    End Sub
+
+    Private Sub AGPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles AGPrizes.MouseDown
+
+    End Sub
+
+    Private Sub TurtleBEQ_Click(sender As Object, e As MouseEventArgs) Handles TurtleBEQ.MouseDown
+
+    End Sub
+
+    Private Sub MireBEQ_Click(sender As Object, e As MouseEventArgs) Handles MireBEQ.MouseDown
+
+    End Sub
+
+    Private Sub GTChests_MouseDown(sender As Object, e As MouseEventArgs) Handles GTChests.MouseDown
+
+    End Sub
+
+    Private Sub TRChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TRChests.MouseDown
+
+    End Sub
+
+    Private Sub MMChests_MouseDown(sender As Object, e As MouseEventArgs) Handles MMChests.MouseDown
+
+    End Sub
+
+    Private Sub IPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles IPChests.MouseDown
+
+    End Sub
+
+    Private Sub TTChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TTChests.MouseDown
+
+    End Sub
+
+    Private Sub SWChests_MouseDown(sender As Object, e As MouseEventArgs) Handles SWChests.MouseDown
+
+    End Sub
+
+    Private Sub SPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles SPChests.MouseDown
+
+    End Sub
+
+    Private Sub PODChests_MouseDown(sender As Object, e As MouseEventArgs) Handles PODChests.MouseDown
+
+    End Sub
+
+    Private Sub TOHChests_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHChests.MouseDown
+
+    End Sub
+
+    Private Sub DPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles DPChests.MouseDown
+
+    End Sub
+
+    Private Sub EPChests_MouseDown(sender As Object, e As MouseEventArgs) Handles EPChests.MouseDown
+
+    End Sub
+
+    Private Sub HCChests_MouseDown(sender As Object, e As MouseEventArgs) Handles HCChests.MouseDown
+
+    End Sub
+
+    Private Sub CrystalClick(sender As Object, e As MouseEventArgs) Handles TTButton.MouseDown, TRButton.MouseDown, TOHButton.MouseDown, SWButton.MouseDown, SPButton.MouseDown, PODButton.MouseDown, MMButton.MouseDown, IPButton.MouseDown, EPButton.MouseDown, DPButton.MouseDown
+
+    End Sub
+
+    Private Sub ShovelButton_Click(sender As Object, e As MouseEventArgs) Handles ShovelButton.MouseDown
+
+    End Sub
+
+    Private Sub MushButton_Click(sender As Object, e As MouseEventArgs) Handles MushButton.MouseDown
+
+    End Sub
+
+    Private Sub PearlButton_Click(sender As Object, e As MouseEventArgs) Handles PearlButton.MouseDown
+
+    End Sub
+
+    Private Sub FlipperButton_Click(sender As Object, e As MouseEventArgs) Handles FlipperButton.MouseDown
+
+    End Sub
+
+    Private Sub GloveButton_Click(sender As Object, e As MouseEventArgs) Handles GloveButton.MouseDown
+
+    End Sub
+
+    Private Sub BootButton_Click(sender As Object, e As MouseEventArgs) Handles BootButton.MouseDown
+
+    End Sub
+
     Private Sub AgaButton_Click(sender As Object, e As MouseEventArgs) Handles AgaButton.MouseDown
 
+    End Sub
+
+    Private Sub MirrorButton_Click(sender As Object, e As MouseEventArgs) Handles MirrorButton.MouseDown
+
+    End Sub
+
+    Private Sub CapeButton_Click(sender As Object, e As MouseEventArgs) Handles CapeButton.MouseDown
+
+    End Sub
+
+    Private Sub ByrnaButton_Click(sender As Object, e As MouseEventArgs) Handles ByrnaButton.MouseDown
+
+    End Sub
+
+    Private Sub SomariaButton_Click(sender As Object, e As MouseEventArgs) Handles SomariaButton.MouseDown
+
+    End Sub
+
+    Private Sub BottleButton_Click(sender As Object, e As MouseEventArgs) Handles BottleNumber.MouseDown, BottleButton.MouseDown
+
+    End Sub
+
+    Private Sub ShieldButton_Click(sender As Object, e As MouseEventArgs) Handles ShieldButton.MouseDown
+
+    End Sub
+
+    Private Sub BookButton_Click(sender As Object, e As MouseEventArgs) Handles BookButton.MouseDown
+
+    End Sub
+
+    Private Sub NetButton_Click(sender As Object, e As MouseEventArgs) Handles NetButton.MouseDown
+
+    End Sub
+
+    Private Sub FluteButton_Click(sender As Object, e As MouseEventArgs) Handles FluteButton.MouseDown
+
+    End Sub
+
+    Private Sub HammerButton_Click(sender As Object, e As MouseEventArgs) Handles HammerButton.MouseDown
+
+    End Sub
+
+    Private Sub LampButton_Click(sender As Object, e As MouseEventArgs) Handles LampButton.MouseDown
+
+    End Sub
+
+    Private Sub ArmorButton_Click(sender As Object, e As MouseEventArgs) Handles ArmorButton.MouseDown
+
+    End Sub
+
+    Private Sub QuakeButton_Click(sender As Object, e As MouseEventArgs) Handles QuakeButton.MouseDown
+
+    End Sub
+
+    Private Sub EtherButton_Click(sender As Object, e As MouseEventArgs) Handles EtherButton.MouseDown
+
+    End Sub
+
+    Private Sub BombosButton_Click(sender As Object, e As MouseEventArgs) Handles BombosButton.MouseDown
+
+    End Sub
+
+    Private Sub IceButton_Click(sender As Object, e As MouseEventArgs) Handles IceButton.MouseDown
+
+    End Sub
+
+    Private Sub FireButton_Click(sender As Object, e As MouseEventArgs) Handles FireButton.MouseDown
+
+    End Sub
+
+    Private Sub SwordButton_Click(sender As Object, e As MouseEventArgs) Handles SwordButton.MouseDown
+
+    End Sub
+
+    Private Sub PowderButton_Click(sender As Object, e As MouseEventArgs) Handles PowderButton.MouseDown
+
+    End Sub
+
+    Private Sub BombButton_Click(sender As Object, e As MouseEventArgs) Handles BombButton.MouseDown
+
+    End Sub
+
+    Private Sub HookButton_Click(sender As Object, e As MouseEventArgs) Handles HookButton.MouseDown
+
+    End Sub
+
+    Private Sub BoomButton_Click(sender As Object, e As MouseEventArgs) Handles BoomButton.MouseDown
+
+    End Sub
+
+    Private Sub BowButton_Click(sender As Object, e As MouseEventArgs) Handles BowButton.MouseDown
+
+    End Sub
+
+    Private Sub MMPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles MMPrizes.MouseDown
+
+    End Sub
+
+    Private Sub IPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles IPPrizes.MouseDown
+
+    End Sub
+
+    Private Sub TTPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TTPrizes.MouseDown
+
+    End Sub
+
+    Private Sub SWPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles SWPrizes.MouseDown
+
+    End Sub
+
+    Private Sub TRPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TRPrizes.MouseDown
+
+    End Sub
+
+    Private Sub SPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles SPPrizes.MouseDown
+
+    End Sub
+
+    Private Sub PODPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles PODPrizes.MouseDown
+
+    End Sub
+
+    Private Sub TOHPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHPrizes.MouseDown
+
+    End Sub
+
+    Private Sub DPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles DPPrizes.MouseDown
+
+    End Sub
+
+    Private Sub EPPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles EPPrizes.MouseDown
+
+    End Sub
+
+    Private Sub HCPrizes_MouseDown(sender As Object, e As MouseEventArgs) Handles HCPrizes.MouseDown
+
+    End Sub
+
+    Private Sub MMKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles MMKeys.MouseDown
+
+    End Sub
+
+    Private Sub IPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles IPKeys.MouseDown
+
+    End Sub
+
+    Private Sub TTKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TTKeys.MouseDown
+
+    End Sub
+
+    Private Sub SWKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles SWKeys.MouseDown
+
+    End Sub
+
+    Private Sub TRKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TRKeys.MouseDown
+
+    End Sub
+
+    Private Sub AGKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles AGKeys.MouseDown
+
+    End Sub
+
+    Private Sub GTKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles GTKeys.MouseDown
+
+    End Sub
+
+    Private Sub SPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles SPKeys.MouseDown
+
+    End Sub
+
+    Private Sub PODKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles PODKeys.MouseDown
+
+    End Sub
+
+    Private Sub HeraKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles TOHKeys.MouseDown
+
+    End Sub
+
+    Private Sub DPKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles DPKeys.MouseDown
+
+    End Sub
+
+    Private Sub HCKeys_MouseDown(sender As Object, e As MouseEventArgs) Handles HCKeys.MouseDown
+
+    End Sub
+
+    Private Sub MagicButton_Click(sender As Object, e As EventArgs) Handles MagicButton.MouseDown
+        If MouseButtons = MouseButtons.Left Then Magic = (Magic + 1) Mod 3 Else Magic = (Magic + 2) Mod 3
+        Select Case Magic
+            Case 0
+                MagicButton.Image = My.Resources.magicbottle
+            Case 1
+                MagicButton.Image = My.Resources.halfmagic
+            Case 2
+                MagicButton.Image = My.Resources.quartermagic
+        End Select
+        TRCheck()
+        DWCheck()
     End Sub
 
     Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged
@@ -2708,19 +3588,23 @@
     End Sub
 
     Private Sub TTPrizes_MouseDown(sender As Object, e As EventArgs) Handles TTPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If TTPrizes.Text > 0 Then TTPrizes.Text = TTPrizes.Text - 1
                 If TTPrizes.Text = 0 Then TTLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If TTPrizes.Text < 4 Then TTPrizes.Text = TTPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If TTPrizes.Text < 4 Then TTPrizes.Text = TTPrizes.Text + 1
+                Else
+                    If TTPrizes.Text < 5 Then TTPrizes.Text = TTPrizes.Text + 1
+                End If
                 TTLabel2.BackColor = Color.Black
             End If
         End If
     End Sub
     Private Sub TTChests_MouseDown(sender As Object, e As EventArgs) Handles TTChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If TTChests.Text > 0 Then TTChests.Text = TTChests.Text - 1
                 If TTChests.Text = 0 Then TTLabel2.BackColor = Color.Green
@@ -2739,7 +3623,7 @@
     End Sub
 
     Public Sub TTCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
                 TTLabel.BackColor = Color.Green
                 TTLabel.ForeColor = Color.White
@@ -2798,20 +3682,24 @@
         CrystalCheck()
     End Sub
     Private Sub IPPrizes_MouseDown(sender As Object, e As EventArgs) Handles IPPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If IPPrizes.Text > 0 Then IPPrizes.Text = IPPrizes.Text - 1
                 If IPPrizes.Text = 0 Then IPLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If IPPrizes.Text < 3 Then IPPrizes.Text = IPPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If IPPrizes.Text < 3 Then IPPrizes.Text = IPPrizes.Text + 1
+                Else
+                    If IPPrizes.Text < 5 Then IPPrizes.Text = IPPrizes.Text + 1
+                End If
                 IPLabel2.BackColor = Color.Black
             End If
         End If
     End Sub
 
     Private Sub IPChests_MouseDown(sender As Object, e As EventArgs) Handles IPChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If IPChests.Text > 0 Then IPChests.Text = IPChests.Text - 1
                 If IPChests.Text = 0 Then IPLabel2.BackColor = Color.Green
@@ -2834,8 +3722,8 @@
     End Sub
 
     Public Sub IPCheck()
-        If RadioButton1.Checked = True Then
-            If Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) And Hammer = True And Hookshot = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
+            If Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True And Hookshot = True Then
                 IPLabel.ForeColor = Color.White
                 IPChests.Text = 8
                 IPBoss.Enabled = True
@@ -2847,7 +3735,7 @@
                     IPChests.ForeColor = Color.Orange
                 End If
                 IPBorder.BackColor = Color.White
-            ElseIf Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) And Hammer = True Then
+            ElseIf Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True Then
                 IPLabel.BackColor = Color.Yellow
                 IPLabel.ForeColor = Color.Black
                 IPChests.Text = 8
@@ -2855,7 +3743,7 @@
                 If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
                 IPBoss.Enabled = True
                 IPBorder.BackColor = Color.Black
-            ElseIf Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) Then
+            ElseIf Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) Then
                 IPLabel.BackColor = Color.Yellow
                 IPLabel.ForeColor = Color.Black
                 IPChests.Text = 7
@@ -2872,12 +3760,12 @@
                 IPBorder.BackColor = Color.Black
             End If
         Else
-            If Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) And Hammer = True Then
+            If Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True Then
                 If Flippers = True And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria = True)) Then IPLabel.BackColor = Color.Green Else IPLabel.BackColor = Color.Orange
                 IPLabel.ForeColor = Color.White
                 IPBoss.Enabled = True
                 IPBorder.BackColor = Color.White
-            ElseIf Pearl = True And Glove = 2 And Flippers = True And (FireRod = True Or Bombos = True) Then
+            ElseIf Pearl = True And Glove = 2 And Flippers = True And (FireRod = True Or (Bombos = True And Sword > 0)) Then
                 IPLabel.BackColor = Color.Yellow
                 IPLabel.ForeColor = Color.Black
                 IPBoss.Enabled = False
@@ -2920,19 +3808,23 @@
         CrystalCheck()
     End Sub
     Private Sub MMPrizes_MouseDown(sender As Object, e As EventArgs) Handles MMPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If MMPrizes.Text > 0 Then MMPrizes.Text = MMPrizes.Text - 1
                 If MMPrizes.Text = 0 Then MMLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If MMPrizes.Text < 2 Then MMPrizes.Text = MMPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If MMPrizes.Text < 2 Then MMPrizes.Text = MMPrizes.Text + 1
+                Else
+                    If MMPrizes.Text < 5 Then MMPrizes.Text = MMPrizes.Text + 1
+                End If
                 MMLabel2.BackColor = Color.Black
             End If
         End If
     End Sub
     Private Sub MMChests_MouseDown(sender As Object, e As EventArgs) Handles MMChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If MMChests.Text > 0 Then MMChests.Text = MMChests.Text - 1
                 If MMChests.Text = 0 Then MMLabel2.BackColor = Color.Green
@@ -2952,7 +3844,7 @@
         End If
     End Sub
     Public Sub MMCheck()
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Then
             If Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True Then
                 MMBoss.Enabled = True
                 MMChests.Text = 8
@@ -2992,7 +3884,48 @@
                 MMBoss.Enabled = False
                 MMBorder.BackColor = Color.Black
             End If
-        Else
+        ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
+            If Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True Then
+                MMBoss.Enabled = True
+                MMChests.Text = 8
+                MMLabel.ForeColor = Color.White
+                MMBorder.BackColor = Color.White
+                If Lamp = True Then
+                    MMLabel.BackColor = Color.Green
+                    MMChests.ForeColor = Color.White
+                Else
+                    MMLabel.BackColor = Color.Orange
+                    MMChests.ForeColor = Color.Orange
+                End If
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
+                MMLabel.ForeColor = Color.Black
+                MMLabel.BackColor = Color.Yellow
+                MMBorder.BackColor = Color.Black
+                If Somaria = True Then
+                    MMBoss.Enabled = True
+                    MMChests.Text = 8
+                    MMChests.ForeColor = Color.Yellow
+                Else
+                    MMBoss.Enabled = False
+                    MMChests.Text = 7
+                    MMChests.ForeColor = Color.Yellow
+                End If
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+                MMLabel.BackColor = Color.Yellow
+                MMLabel.ForeColor = Color.Black
+                MMChests.Text = 7
+                MMChests.ForeColor = Color.White
+                MMBoss.Enabled = False
+                MMBorder.BackColor = Color.Black
+            Else
+                MMLabel.BackColor = Color.Red
+                MMLabel.ForeColor = Color.Black
+                MMChests.Text = 0
+                MMChests.ForeColor = Color.White
+                MMBoss.Enabled = False
+                MMBorder.BackColor = Color.Black
+            End If
+        ElseIf ComboBox1.SelectedIndex = 1 Then
             If Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
                 If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
                 MMLabel.ForeColor = Color.White
@@ -3004,6 +3937,28 @@
                 If Somaria = True Then MMBoss.Enabled = True Else MMBoss.Enabled = False
                 MMBorder.BackColor = Color.Black
             ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+                MMLabel.BackColor = Color.Yellow
+                MMLabel.ForeColor = Color.Black
+                MMBoss.Enabled = False
+                MMBorder.BackColor = Color.Black
+            Else
+                MMLabel.BackColor = Color.Red
+                MMLabel.ForeColor = Color.Black
+                MMBoss.Enabled = False
+                MMBorder.BackColor = Color.Black
+            End If
+        Else
+            If Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
+                If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
+                MMLabel.ForeColor = Color.White
+                MMBoss.Enabled = True
+                MMBorder.BackColor = Color.White
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
+                MMLabel.BackColor = Color.Yellow
+                MMLabel.ForeColor = Color.Black
+                If Somaria = True Then MMBoss.Enabled = True Else MMBoss.Enabled = False
+                MMBorder.BackColor = Color.Black
+            ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
                 MMLabel.BackColor = Color.Yellow
                 MMLabel.ForeColor = Color.Black
                 MMBoss.Enabled = False
@@ -3061,19 +4016,23 @@
         CrystalCheck()
     End Sub
     Private Sub TRPrizes_MouseDown(sender As Object, e As EventArgs) Handles TRPrizes.MouseDown
-        If RadioButton1.Checked = True Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
             If MouseButtons = MouseButtons.Left Then
                 If TRPrizes.Text > 0 Then TRPrizes.Text = TRPrizes.Text - 1
                 If TRPrizes.Text = 0 Then TRLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right = True Then
-                If TRPrizes.Text < 5 Then TRPrizes.Text = TRPrizes.Text + 1
+                If ComboBox1.SelectedIndex = 0 Then
+                    If TRPrizes.Text < 5 Then TRPrizes.Text = TRPrizes.Text + 1
+                Else
+                    If TRPrizes.Text < 9 Then TRPrizes.Text = TRPrizes.Text + 1
+                End If
                 TRLabel2.BackColor = Color.Black
             End If
         End If
     End Sub
     Private Sub TRChests_MouseDown(sender As Object, e As EventArgs) Handles TRChests.MouseDown
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then
                 If TRChests.Text > 0 Then TRChests.Text = TRChests.Text - 1
                 If TRChests.Text = 0 Then TRLabel2.BackColor = Color.Green
@@ -3094,11 +4053,11 @@
         TRCheck()
     End Sub
     Public Sub TRCheck()
-        If RadioButton1.Checked = True Then
-            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
+            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
                 TRAccess = True
                 TRChests.Text = 12
-                If Lamp = True And Sword > 1 Then
+                If Lamp = True And (Sword >= 2 Or (Sword = 1 And (Magic = 1 Or Bottle >= 1)) Or (Magic = 2 Or Bottle >= 2 Or (Magic = 1 And Bottle >= 1))) Then
                     TRLabel.BackColor = Color.Green
                     TRChests.ForeColor = Color.White
                 Else
@@ -3189,16 +4148,19 @@
         Else
             If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True And TRKeys.Text >= 3 Then
                 TRAccess = True
-                If Lamp = True And Sword > 1 And TRKeys.Text = 4 Then
+                If Lamp = True And TRKeys.Text = 4 And (Sword >= 2 Or (Sword = 1 And (Magic = 1 Or Bottle >= 1)) Or (Magic = 2 Or Bottle >= 2 Or (Magic = 1 And Bottle >= 1))) Then
                     TRLabel.BackColor = Color.Green
                     TRLabel.ForeColor = Color.White
-                Else
+                ElseIf TRKeys.Text = 4 Then
                     TRLabel.BackColor = Color.Orange
                     TRLabel.ForeColor = Color.White
+                ElseIf TRKeys.Text = 3 Then
+                    TRLabel.BackColor = Color.Yellow
+                    TRLabel.ForeColor = Color.Black
                 End If
                 TRBoss.Enabled = True
                 TRBorder.BackColor = Color.White
-                If TRKeys.Text >= 2 And Mirror = True Then
+                If Mirror = True Then
                     LW45.Enabled = True
                     LW45.BackColor = Color.WhiteSmoke
                 Else
@@ -3295,7 +4257,7 @@
     End Sub
 
     Public Sub GTCheck()
-        If RadioButton2.Checked = True Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If CrystalCount = 7 And GTBigKey.Checked = True Then
                 GTLabel.BackColor = Color.Green
                 GTLabel.ForeColor = Color.White
@@ -4045,6 +5007,7 @@
         SWCheck()
         TTCheck()
         IPCheck()
+        MMCheck()
         TRCheck()
         LWCheck()
         DWCheck()
@@ -4142,13 +5105,18 @@
         LWCheck()
     End Sub
 
-    Private Sub BottleButton_Click(sender As Object, e As EventArgs) Handles BottleButton.MouseDown
-        If Bottle = False Then Bottle = True Else Bottle = False
-        If Bottle = True Then
+    Private Sub BottleButton_Click(sender As Object, e As EventArgs) Handles BottleButton.MouseDown, BottleNumber.MouseDown
+        If MouseButtons = MouseButtons.Left Then
             BottleButton.Image = My.Resources.bottle
             BottleButton.BackColor = Color.WhiteSmoke
+            Bottle = True
+            BottleNumber.BackColor = Color.FromArgb(64, 64, 64)
+            If BottleNumber.Text < 4 Then BottleNumber.Text = BottleNumber.Text + 1
         Else
-            Dim grayscale As New Imaging.ColorMatrix(New Single()() _
+            If BottleNumber.Text > 0 Then BottleNumber.Text = BottleNumber.Text - 1
+            If BottleNumber.Text = 0 Then
+                Bottle = False
+                Dim grayscale As New Imaging.ColorMatrix(New Single()() _
         {
             New Single() {0.299, 0.299, 0.299, 0, 0},
             New Single() {0.587, 0.587, 0.587, 0, 0},
@@ -4157,18 +5125,21 @@
             New Single() {0, 0, 0, 0, 1}
         })
 
-            Dim nobottle As New Bitmap(My.Resources.bottle)
-            Dim imgattr As New Imaging.ImageAttributes()
-            imgattr.SetColorMatrix(grayscale)
-            Using g As Graphics = Graphics.FromImage(nobottle)
-                g.DrawImage(nobottle, New Rectangle(0, 0, nobottle.Width, nobottle.Height),
+                Dim nobottle As New Bitmap(My.Resources.bottle)
+                Dim imgattr As New Imaging.ImageAttributes()
+                imgattr.SetColorMatrix(grayscale)
+                Using g As Graphics = Graphics.FromImage(nobottle)
+                    g.DrawImage(nobottle, New Rectangle(0, 0, nobottle.Width, nobottle.Height),
                     0, 0, nobottle.Width, nobottle.Height,
                     GraphicsUnit.Pixel, imgattr)
-            End Using
-            BottleButton.Image = nobottle
-            BottleButton.BackColor = Color.Black
+                End Using
+                BottleButton.Image = nobottle
+                BottleButton.BackColor = Color.Black
+            End If
         End If
         LWCheck()
+        DWCheck()
+        TRCheck()
     End Sub
 
     Private Sub SomariaButton_Click(sender As Object, e As EventArgs) Handles SomariaButton.MouseDown

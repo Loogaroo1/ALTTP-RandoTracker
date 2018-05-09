@@ -293,6 +293,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Agsonly.png" />
+    <None Include="Resources\quartermagic.png" />
+    <None Include="Resources\magicbottle.png" />
+    <None Include="Resources\halfmagic.png" />
     <None Include="Resources\mapsmall.png" />
     <None Include="Resources\redchestsmall.png" />
     <None Include="Resources\greenchestsmall.png" />
@@ -302,6 +305,8 @@
     <None Include="Resources\bigkeysmall.png" />
     <None Include="Resources\bossdeadsmall.png" />
     <None Include="Resources\bootssmall.png" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\arrowsilver.png" />
     <Content Include="Resources\bothboom.png" />
     <None Include="Resources\nomapsmall.png" />
     <None Include="Resources\rupeesmall.png" />
