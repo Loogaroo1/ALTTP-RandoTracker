@@ -253,53 +253,53 @@
             Case "!"
                 EPBoss.Checked = True
                 EPBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then EPPrizes.Text = 0 Else EPChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then EPPrizes.Text = 0 Else EPChests.Text = 0
                 EPLabel2.BackColor = Color.Green
 
             Case "@"
                 DPBoss.Checked = True
                 DPBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then DPPrizes.Text = 0 Else DPChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then DPPrizes.Text = 0 Else DPChests.Text = 0
                 DPLabel2.BackColor = Color.Green
             Case "#"
                 HeraBoss.Checked = True
                 HeraBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then TOHPrizes.Text = 0 Else TOHChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then TOHPrizes.Text = 0 Else TOHChests.Text = 0
                 TOHLabel2.BackColor = Color.Green
             Case "$"
                 PODBoss.Checked = True
                 PODBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then PODPrizes.Text = 0 Else PODChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then PODPrizes.Text = 0 Else PODChests.Text = 0
                 PODLabel2.BackColor = Color.Green
             Case "%"
                 SPBoss.Checked = True
                 SPBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then SPPrizes.Text = 0 Else SPChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then SPPrizes.Text = 0 Else SPChests.Text = 0
                 SPLabel2.BackColor = Color.Green
             Case "^"
                 SWBoss.Checked = True
                 SWBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then SWPrizes.Text = 0 Else SWChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then SWPrizes.Text = 0 Else SWChests.Text = 0
                 SWLabel2.BackColor = Color.Green
             Case "&"
                 TTBoss.Checked = True
                 TTBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then TTPrizes.Text = 0 Else TTChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then TTPrizes.Text = 0 Else TTChests.Text = 0
                 TTLabel2.BackColor = Color.Green
             Case "*"
                 IPBoss.Checked = True
                 IPBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then IPPrizes.Text = 0 Else IPChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then IPPrizes.Text = 0 Else IPChests.Text = 0
                 IPLabel2.BackColor = Color.Green
             Case "("
                 MMBoss.Checked = True
                 MMBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then MMPrizes.Text = 0 Else MMChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then MMPrizes.Text = 0 Else MMChests.Text = 0
                 MMLabel2.BackColor = Color.Green
             Case ")"
                 TRBoss.Checked = True
                 TRBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex = 0 Then TRPrizes.Text = 0 Else TRChests.Text = 0
+                If ComboBox1.SelectedIndex Mod 3 <> 1 Then TRPrizes.Text = 0 Else TRChests.Text = 0
                 TRLabel2.BackColor = Color.Green
         End Select
         CrystalCheck()
@@ -2968,7 +2968,7 @@
             EPLabel.ForeColor = Color.Black
             EPLabel.BackColor = Color.Yellow
             EPBorder.BackColor = Color.Black
-            EPKeys.Text = 0
+            EPKeys.Text = "-"
             EPPrizes.Text = 3
             EPMap.Checked = False
             EPBigKey.Checked = False

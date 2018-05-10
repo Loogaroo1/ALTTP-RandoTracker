@@ -332,7 +332,7 @@ Partial Class Form1
         Me.GTLabel.BackColor = System.Drawing.Color.Red
         Me.GTLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GTLabel.ForeColor = System.Drawing.Color.Black
-        Me.GTLabel.Location = New System.Drawing.Point(4, 328)
+        Me.GTLabel.Location = New System.Drawing.Point(3, 328)
         Me.GTLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.GTLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.GTLabel.Name = "GTLabel"
@@ -348,7 +348,7 @@ Partial Class Form1
         Me.AGLabel.BackColor = System.Drawing.Color.Red
         Me.AGLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGLabel.ForeColor = System.Drawing.Color.Black
-        Me.AGLabel.Location = New System.Drawing.Point(206, 184)
+        Me.AGLabel.Location = New System.Drawing.Point(205, 186)
         Me.AGLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.AGLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.AGLabel.Name = "AGLabel"
@@ -364,7 +364,7 @@ Partial Class Form1
         Me.HCLabel.BackColor = System.Drawing.Color.Yellow
         Me.HCLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCLabel.ForeColor = System.Drawing.Color.Black
-        Me.HCLabel.Location = New System.Drawing.Point(4, 184)
+        Me.HCLabel.Location = New System.Drawing.Point(3, 184)
         Me.HCLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.HCLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.HCLabel.Name = "HCLabel"
@@ -1735,7 +1735,7 @@ Partial Class Form1
         Me.TRLabel.BackColor = System.Drawing.Color.Red
         Me.TRLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRLabel.ForeColor = System.Drawing.Color.Black
-        Me.TRLabel.Location = New System.Drawing.Point(206, 304)
+        Me.TRLabel.Location = New System.Drawing.Point(205, 306)
         Me.TRLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.TRLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.TRLabel.Name = "TRLabel"
@@ -1750,7 +1750,7 @@ Partial Class Form1
         Me.MMLabel.BackColor = System.Drawing.Color.Red
         Me.MMLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMLabel.ForeColor = System.Drawing.Color.Black
-        Me.MMLabel.Location = New System.Drawing.Point(206, 280)
+        Me.MMLabel.Location = New System.Drawing.Point(205, 282)
         Me.MMLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.MMLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.MMLabel.Name = "MMLabel"
@@ -1765,7 +1765,7 @@ Partial Class Form1
         Me.IPLabel.BackColor = System.Drawing.Color.Red
         Me.IPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPLabel.ForeColor = System.Drawing.Color.Black
-        Me.IPLabel.Location = New System.Drawing.Point(206, 256)
+        Me.IPLabel.Location = New System.Drawing.Point(205, 258)
         Me.IPLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.IPLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.IPLabel.Name = "IPLabel"
@@ -1780,7 +1780,7 @@ Partial Class Form1
         Me.TTLabel.BackColor = System.Drawing.Color.Red
         Me.TTLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTLabel.ForeColor = System.Drawing.Color.Black
-        Me.TTLabel.Location = New System.Drawing.Point(206, 232)
+        Me.TTLabel.Location = New System.Drawing.Point(205, 234)
         Me.TTLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.TTLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.TTLabel.Name = "TTLabel"
@@ -1795,7 +1795,7 @@ Partial Class Form1
         Me.SWLabel.BackColor = System.Drawing.Color.Red
         Me.SWLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWLabel.ForeColor = System.Drawing.Color.Black
-        Me.SWLabel.Location = New System.Drawing.Point(206, 208)
+        Me.SWLabel.Location = New System.Drawing.Point(205, 210)
         Me.SWLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.SWLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.SWLabel.Name = "SWLabel"
@@ -1810,7 +1810,7 @@ Partial Class Form1
         Me.SPLabel.BackColor = System.Drawing.Color.Red
         Me.SPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPLabel.ForeColor = System.Drawing.Color.Black
-        Me.SPLabel.Location = New System.Drawing.Point(4, 304)
+        Me.SPLabel.Location = New System.Drawing.Point(3, 304)
         Me.SPLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.SPLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.SPLabel.Name = "SPLabel"
@@ -1825,7 +1825,7 @@ Partial Class Form1
         Me.PODLabel.BackColor = System.Drawing.Color.Red
         Me.PODLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODLabel.ForeColor = System.Drawing.Color.Black
-        Me.PODLabel.Location = New System.Drawing.Point(4, 280)
+        Me.PODLabel.Location = New System.Drawing.Point(3, 280)
         Me.PODLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.PODLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.PODLabel.Name = "PODLabel"
@@ -1840,7 +1840,7 @@ Partial Class Form1
         Me.TOHLabel.BackColor = System.Drawing.Color.Red
         Me.TOHLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHLabel.ForeColor = System.Drawing.Color.Black
-        Me.TOHLabel.Location = New System.Drawing.Point(4, 256)
+        Me.TOHLabel.Location = New System.Drawing.Point(3, 256)
         Me.TOHLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.TOHLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.TOHLabel.Name = "TOHLabel"
@@ -1855,7 +1855,7 @@ Partial Class Form1
         Me.DPLabel.BackColor = System.Drawing.Color.Red
         Me.DPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPLabel.ForeColor = System.Drawing.Color.Black
-        Me.DPLabel.Location = New System.Drawing.Point(4, 232)
+        Me.DPLabel.Location = New System.Drawing.Point(3, 232)
         Me.DPLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.DPLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.DPLabel.Name = "DPLabel"
@@ -1870,7 +1870,7 @@ Partial Class Form1
         Me.EPLabel.BackColor = System.Drawing.Color.Yellow
         Me.EPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPLabel.ForeColor = System.Drawing.Color.Black
-        Me.EPLabel.Location = New System.Drawing.Point(4, 208)
+        Me.EPLabel.Location = New System.Drawing.Point(3, 208)
         Me.EPLabel.Margin = New System.Windows.Forms.Padding(0)
         Me.EPLabel.MinimumSize = New System.Drawing.Size(34, 22)
         Me.EPLabel.Name = "EPLabel"
@@ -3451,7 +3451,7 @@ Partial Class Form1
         'TRBorder
         '
         Me.TRBorder.BackColor = System.Drawing.Color.Black
-        Me.TRBorder.Location = New System.Drawing.Point(205, 303)
+        Me.TRBorder.Location = New System.Drawing.Point(204, 305)
         Me.TRBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRBorder.Name = "TRBorder"
         Me.TRBorder.Size = New System.Drawing.Size(36, 24)
@@ -3461,7 +3461,7 @@ Partial Class Form1
         'MMBorder
         '
         Me.MMBorder.BackColor = System.Drawing.Color.Black
-        Me.MMBorder.Location = New System.Drawing.Point(205, 279)
+        Me.MMBorder.Location = New System.Drawing.Point(204, 281)
         Me.MMBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMBorder.Name = "MMBorder"
         Me.MMBorder.Size = New System.Drawing.Size(36, 24)
@@ -3471,7 +3471,7 @@ Partial Class Form1
         'IPBorder
         '
         Me.IPBorder.BackColor = System.Drawing.Color.Black
-        Me.IPBorder.Location = New System.Drawing.Point(205, 255)
+        Me.IPBorder.Location = New System.Drawing.Point(204, 257)
         Me.IPBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPBorder.Name = "IPBorder"
         Me.IPBorder.Size = New System.Drawing.Size(36, 24)
@@ -3481,7 +3481,7 @@ Partial Class Form1
         'TTBorder
         '
         Me.TTBorder.BackColor = System.Drawing.Color.Black
-        Me.TTBorder.Location = New System.Drawing.Point(205, 231)
+        Me.TTBorder.Location = New System.Drawing.Point(204, 233)
         Me.TTBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTBorder.Name = "TTBorder"
         Me.TTBorder.Size = New System.Drawing.Size(36, 24)
@@ -3491,7 +3491,7 @@ Partial Class Form1
         'SWBorder
         '
         Me.SWBorder.BackColor = System.Drawing.Color.Black
-        Me.SWBorder.Location = New System.Drawing.Point(205, 207)
+        Me.SWBorder.Location = New System.Drawing.Point(204, 209)
         Me.SWBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWBorder.Name = "SWBorder"
         Me.SWBorder.Size = New System.Drawing.Size(36, 24)
@@ -3561,7 +3561,7 @@ Partial Class Form1
         'AGBorder
         '
         Me.AGBorder.BackColor = System.Drawing.Color.Black
-        Me.AGBorder.Location = New System.Drawing.Point(205, 183)
+        Me.AGBorder.Location = New System.Drawing.Point(204, 185)
         Me.AGBorder.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.AGBorder.Name = "AGBorder"
         Me.AGBorder.Size = New System.Drawing.Size(36, 24)
@@ -3906,6 +3906,26 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(779, 490)
+        Me.Controls.Add(Me.SPLabel)
+        Me.Controls.Add(Me.PODLabel)
+        Me.Controls.Add(Me.TOHLabel)
+        Me.Controls.Add(Me.DPLabel)
+        Me.Controls.Add(Me.EPLabel)
+        Me.Controls.Add(Me.HCLabel)
+        Me.Controls.Add(Me.GTLabel)
+        Me.Controls.Add(Me.SPBorder)
+        Me.Controls.Add(Me.PODBorder)
+        Me.Controls.Add(Me.TOHBorder)
+        Me.Controls.Add(Me.DPBorder)
+        Me.Controls.Add(Me.EPBorder)
+        Me.Controls.Add(Me.HCBorder)
+        Me.Controls.Add(Me.GTBorder)
+        Me.Controls.Add(Me.AGLabel)
+        Me.Controls.Add(Me.TRLabel)
+        Me.Controls.Add(Me.MMLabel)
+        Me.Controls.Add(Me.IPLabel)
+        Me.Controls.Add(Me.TTLabel)
+        Me.Controls.Add(Me.SWLabel)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -3917,8 +3937,6 @@ Partial Class Form1
         Me.Controls.Add(Me.BottleNumber)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.GTLabel)
-        Me.Controls.Add(Me.AGLabel)
         Me.Controls.Add(Me.DW15Boots)
         Me.Controls.Add(Me.ResetButton)
         Me.Controls.Add(Me.TurtleBEQ)
@@ -4069,16 +4087,6 @@ Partial Class Form1
         Me.Controls.Add(Me.LW6)
         Me.Controls.Add(Me.LW2)
         Me.Controls.Add(Me.LW1)
-        Me.Controls.Add(Me.TRLabel)
-        Me.Controls.Add(Me.MMLabel)
-        Me.Controls.Add(Me.IPLabel)
-        Me.Controls.Add(Me.TTLabel)
-        Me.Controls.Add(Me.SWLabel)
-        Me.Controls.Add(Me.SPLabel)
-        Me.Controls.Add(Me.PODLabel)
-        Me.Controls.Add(Me.TOHLabel)
-        Me.Controls.Add(Me.DPLabel)
-        Me.Controls.Add(Me.EPLabel)
         Me.Controls.Add(Me.TRBoss)
         Me.Controls.Add(Me.MMBoss)
         Me.Controls.Add(Me.IPBoss)
@@ -4099,20 +4107,12 @@ Partial Class Form1
         Me.Controls.Add(Me.IPMap)
         Me.Controls.Add(Me.TTMap)
         Me.Controls.Add(Me.SWMap)
-        Me.Controls.Add(Me.HCLabel)
         Me.Controls.Add(Me.TRBorder)
         Me.Controls.Add(Me.MMBorder)
         Me.Controls.Add(Me.IPBorder)
         Me.Controls.Add(Me.TTBorder)
         Me.Controls.Add(Me.SWBorder)
-        Me.Controls.Add(Me.SPBorder)
-        Me.Controls.Add(Me.PODBorder)
-        Me.Controls.Add(Me.TOHBorder)
-        Me.Controls.Add(Me.DPBorder)
-        Me.Controls.Add(Me.EPBorder)
-        Me.Controls.Add(Me.HCBorder)
         Me.Controls.Add(Me.AGBorder)
-        Me.Controls.Add(Me.GTBorder)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MMKeys)
         Me.Controls.Add(Me.IPKeys)
