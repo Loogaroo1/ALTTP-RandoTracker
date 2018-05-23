@@ -1091,10 +1091,13 @@
             LW25.BackColor = Color.Red
         End If
 
-        '' Powder Bat - Powder, Hammer or Mirror+Pearl+Mitt
+        '' Powder Bat - Powder or Fake-Powder, Hammer or Mirror+Pearl+Mitt
         If Powder = True And (Hammer = True Or (Mirror = True And Pearl = True And Glove = 2)) Then
             LW26.Enabled = True
             LW26.BackColor = Color.WhiteSmoke
+        ElseIf Mushroom = True And Somaria = True And (LW34.Checked = False Or LW26.Checked = True) And (Hammer = True Or (Mirror = True And Pearl = True And Glove = 2)) Then
+            LW26.Enabled = True
+            LW26.BackColor = Color.Orange
         Else
             LW26.Checked = False
             LW26.Enabled = False
@@ -1127,7 +1130,7 @@
         End If
 
         '' King's Tomb - Boots, Mitt or Access via Dark World
-        If Boots = True And (Glove = 2 Or (Mirror = True And (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Hammer = True Or Flippers = True Or Glove > 0)))) Then
+        If Boots = True And (Glove = 2 Or (Mirror = True And ((Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Hammer = True Or Flippers = True Or Glove > 0))))) Then
             LW31.Enabled = True
             LW31.BackColor = Color.WhiteSmoke
         Else
@@ -1136,7 +1139,7 @@
             LW31.BackColor = Color.Red
         End If
 
-        '' Hobo, Zora's Ledge, Waterfall - Flippers (Hobo can be faked)
+        '' Hobo, Zora's Ledge, Waterfall - Flippers (Hobo can be faked, Waterfall with waterwalk, Ledge with stored waterwalk)
         If Flippers = True Then
             LW32.Enabled = True
             LW32.BackColor = Color.WhiteSmoke
@@ -1147,7 +1150,7 @@
         Else
             LW32.Enabled = True
             LW32.BackColor = Color.Orange
-            If Pearl = True Then
+            If Pearl = True Or Boots = True Then
                 LW35.Enabled = True
                 LW35.BackColor = Color.Orange
             Else
@@ -1155,9 +1158,14 @@
                 LW35.Enabled = False
                 LW35.BackColor = Color.Red
             End If
-            LW37.Checked = False
-            LW37.Enabled = False
-            LW37.BackColor = Color.Red
+            If Pearl = True And Boots = True Then
+                LW37.Enabled = True
+                LW37.BackColor = Color.Orange
+            Else
+                LW37.Checked = False
+                LW37.Enabled = False
+                LW37.BackColor = Color.Red
+            End If
         End If
 
         '' Hylia Island - Flippers, Mirror, Pearl, access via Dark World
@@ -1381,7 +1389,7 @@
             DW1.BackColor = Color.Red
         End If
 
-        '' Chest Game, C House, Sealed Hut, Bumper Cave - Mitt, Glove/Hammer, or Aganhim/Hookshot/Access (Cape also required for Bumper Cave)
+        '' Chest Game, C House, Sealed Hut, Bumper Cave - Mitt, Glove/Hammer, or Aganhim/Hookshot/Access (Cape and Glove also required for Bumper Cave)
         If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
             DW2.Enabled = True
             DW2.BackColor = Color.WhiteSmoke
@@ -1389,7 +1397,7 @@
             DW3.BackColor = Color.WhiteSmoke
             DW4.Enabled = True
             DW4.BackColor = Color.WhiteSmoke
-            If Cape = True Then
+            If Cape = True And Glove > 0 Then
                 DW7.Enabled = True
                 DW7.BackColor = Color.WhiteSmoke
             Else
@@ -2926,6 +2934,8 @@
             ArmorButton.Image = My.Resources.greenmail
             ShieldButton.Image = noshield
             ShieldButton.BackColor = Color.Black
+            MagicButton.Image = My.Resources.magicbottle
+            Magic = 0
             Bow = 0
             Boomerang = 0
             Hookshot = False
@@ -3176,7 +3186,7 @@
             TRLabel.BackColor = Color.Red
             TRBorder.BackColor = Color.Black
             TRKeys.Text = 0
-            TRPrizes.Text = 2
+            TRPrizes.Text = 5
             TRMap.Checked = False
             TRBigKey.Checked = False
             TRBoss.Checked = False
@@ -3859,6 +3869,7 @@
                 End If
             ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
                 MMLabel.BackColor = Color.Yellow
+                MMLabel.ForeColor = Color.Black
                 MMBorder.BackColor = Color.Black
                 If Somaria = True Then
                     MMBoss.Enabled = True
@@ -4071,7 +4082,7 @@
                     LW45.Enabled = True
                     LW45.BackColor = Color.WhiteSmoke
                 Else
-                    LW45.Enabled = True
+                    LW45.Enabled = False
                     LW45.Checked = False
                     LW45.BackColor = Color.Red
                 End If
@@ -4097,7 +4108,7 @@
                     LW45.Enabled = True
                     LW45.BackColor = Color.Yellow
                 Else
-                    LW45.Enabled = True
+                    LW45.Enabled = False
                     LW45.Checked = False
                     LW45.BackColor = Color.Red
                 End If
@@ -4113,7 +4124,7 @@
                     LW45.Enabled = True
                     LW45.BackColor = Color.WhiteSmoke
                 Else
-                    LW45.Enabled = True
+                    LW45.Enabled = False
                     LW45.Checked = False
                     LW45.BackColor = Color.Red
                 End If
@@ -4129,7 +4140,7 @@
                     LW45.Enabled = True
                     LW45.BackColor = Color.Yellow
                 Else
-                    LW45.Enabled = True
+                    LW45.Enabled = False
                     LW45.Checked = False
                     LW45.BackColor = Color.Red
                 End If
@@ -4141,7 +4152,7 @@
                 TRChests.ForeColor = Color.White
                 TRBoss.Enabled = False
                 TRBorder.BackColor = Color.Black
-                LW45.Enabled = True
+                LW45.Enabled = False
                 LW45.Checked = False
                 LW45.BackColor = Color.Red
             End If
