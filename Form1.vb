@@ -1130,7 +1130,7 @@
         End If
 
         '' King's Tomb - Boots, Mitt or Access via Dark World
-        If Boots = True And (Glove = 2 Or (Mirror = True And ((Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Hammer = True Or Flippers = True Or Glove > 0))))) Then
+        If Boots = True And (Glove = 2 Or (Mirror = True And Pearl = True And ((Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Hammer = True Or Flippers = True Or Glove > 0))))) Then
             LW31.Enabled = True
             LW31.BackColor = Color.WhiteSmoke
         Else
