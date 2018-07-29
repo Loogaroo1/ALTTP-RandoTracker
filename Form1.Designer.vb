@@ -4140,6 +4140,7 @@ Partial Class Form1
         Me.Controls.Add(Me.EPPrizes)
         Me.Controls.Add(Me.HCPrizes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MaximizeBox = False

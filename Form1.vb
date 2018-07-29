@@ -221,6 +221,7 @@
 
     Private Sub Form1_KeyDown() Handles Me.KeyDown
         If My.Computer.Keyboard.ShiftKeyDown Then
+            HCLabel.Text = "H"
             EPLabel.Text = "1"
             DPLabel.Text = "2"
             TOHLabel.Text = "3"
@@ -235,6 +236,7 @@
     End Sub
 
     Private Sub Form1_KeyUp() Handles Me.KeyUp
+        HCLabel.Text = "HC"
         EPLabel.Text = "EP"
         DPLabel.Text = "DP"
         TOHLabel.Text = "TOH"
@@ -250,12 +252,15 @@
 
     Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
         Select Case (e.KeyChar)
+            Case "H", "h"
+                If My.Computer.Keyboard.ShiftKeyDown Then
+                    If ComboBox1.SelectedIndex Mod 3 <> 1 Then HCPrizes.Text = 0 Else HCChests.Text = 0
+                End If
             Case "!"
                 EPBoss.Checked = True
                 EPBoss.Image = My.Resources.bossdeadsmall
                 If ComboBox1.SelectedIndex Mod 3 <> 1 Then EPPrizes.Text = 0 Else EPChests.Text = 0
                 EPLabel2.BackColor = Color.Green
-
             Case "@"
                 DPBoss.Checked = True
                 DPBoss.Image = My.Resources.bossdeadsmall
@@ -1389,7 +1394,7 @@
             DW3.BackColor = Color.WhiteSmoke
             DW4.Enabled = True
             DW4.BackColor = Color.WhiteSmoke
-            If Cape = True Then
+            If Cape = True And Glove > 0 Then
                 DW7.Enabled = True
                 DW7.BackColor = Color.WhiteSmoke
             Else
