@@ -2488,14 +2488,14 @@
                 SPChests.ForeColor = Color.White
                 SPBoss.Enabled = True
                 SPBorder.BackColor = Color.White
-            ElseIf Pearl = True And Flippers = True And Mirror = True And Hammer = True And (Glove = 2 Or (Hammer = True And (Glove > 0 Or Aganhim = True))) Then
+            ElseIf Pearl = True And Flippers = True And Mirror = True And Hammer = True And (Glove > 0 Or Aganhim = True) Then
                 SPLabel.BackColor = Color.Yellow
                 SPLabel.ForeColor = Color.Black
                 SPChests.Text = 6
                 SPChests.ForeColor = Color.Yellow
                 SPBoss.Enabled = False
                 SPBorder.BackColor = Color.Black
-            ElseIf Pearl = True And Flippers = True And Mirror = True And (Glove = 2 Or (Hammer = True And (Glove > 0 Or Aganhim = True))) Then
+            ElseIf Pearl = True And Flippers = True And Mirror = True And (Glove = 2 Or Aganhim = True) Then
                 SPLabel.BackColor = Color.Yellow
                 SPLabel.ForeColor = Color.Black
                 SPChests.Text = 2
