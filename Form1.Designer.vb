@@ -1894,7 +1894,7 @@ Partial Class Form1
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.ItemHeight = 13
-        Me.ComboBox1.Items.AddRange(New Object() {"Standard/Open", "Keysanity w/ Swords", "Retro w/ Swords", "Swordless", "Keysanity Swordless", "Retro Swordless"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Standard/Open", "Keysanity w/ Swords", "Retro w/ Swords", "Swordless", "Keysanity Swordless", "Retro Swordless", "Checklist (all open)"})
         Me.ComboBox1.Location = New System.Drawing.Point(74, 462)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.ComboBox1.Name = "ComboBox1"

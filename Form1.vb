@@ -941,6 +941,114 @@
                 IPPrizes.Text = 5
                 MMPrizes.Text = 5
                 TRPrizes.Text = 9
+            Case 6
+                SwordButton.Visible = True
+                HCKeys.Visible = False
+                EPKeys.Visible = False
+                EPMap.Visible = False
+                EPBigKey.Visible = False
+                DPKeys.Visible = False
+                DPMap.Visible = False
+                DPBigKey.Visible = False
+                TOHKeys.Visible = False
+                HeraMap.Visible = False
+                HeraBigKey.Visible = False
+                PODKeys.Visible = False
+                PODMap.Visible = False
+                PODBigKey.Visible = False
+                SPKeys.Visible = False
+                SPMap.Visible = False
+                SPBigKey.Visible = False
+                SWKeys.Visible = False
+                SWMap.Visible = False
+                SWBigKey.Visible = False
+                TTKeys.Visible = False
+                TTMap.Visible = False
+                TTBigKey.Visible = False
+                IPKeys.Visible = False
+                IPMap.Visible = False
+                IPBigKey.Visible = False
+                MMKeys.Visible = False
+                MMMap.Visible = False
+                MMBigKey.Visible = False
+                TRKeys.Visible = False
+                TRMap.Visible = False
+                TRBigKey.Visible = False
+                AGBorder.Visible = False
+                AGLabel.Visible = False
+                AGChests.Visible = False
+                AGKeys.Visible = False
+                AGPrizes.Visible = False
+                GTBorder.Visible = False
+                GTLabel.Visible = False
+                GTChests.Visible = False
+                GTKeys.Visible = False
+                GTBigKey.Visible = False
+                HCPrizes.Visible = True
+                EPPrizes.Visible = True
+                DPPrizes.Visible = True
+                TOHPrizes.Visible = True
+                PODPrizes.Visible = True
+                SPPrizes.Visible = True
+                SWPrizes.Visible = True
+                TTPrizes.Visible = True
+                IPPrizes.Visible = True
+                MMPrizes.Visible = True
+                TRPrizes.Visible = True
+                EPBoss.Left = 115
+                DPBoss.Left = 115
+                HeraBoss.Left = 115
+                PODBoss.Left = 115
+                SPBoss.Left = 115
+                SWBoss.Left = 317
+                TTBoss.Left = 317
+                IPBoss.Left = 317
+                MMBoss.Left = 317
+                TRBoss.Left = 317
+                EPReward = 0
+                DPReward = 0
+                TOHReward = 0
+                PODReward = 0
+                SPReward = 0
+                SWReward = 0
+                TTReward = 0
+                IPReward = 0
+                MMReward = 0
+                TRReward = 0
+                EPButton.Image = My.Resources.crystal
+                DPButton.Image = My.Resources.crystal
+                TOHButton.Image = My.Resources.crystal
+                PODButton.Image = My.Resources.crystal
+                SPButton.Image = My.Resources.crystal
+                SWButton.Image = My.Resources.crystal
+                TTButton.Image = My.Resources.crystal
+                IPButton.Image = My.Resources.crystal
+                MMButton.Image = My.Resources.crystal
+                TRButton.Image = My.Resources.crystal
+                HCChests.Text = 0
+                AGChests.Text = 0
+                EPChests.Text = 0
+                DPChests.Text = 0
+                TOHChests.Text = 0
+                PODChests.Text = 0
+                SPChests.Text = 0
+                SWChests.Text = 0
+                TTChests.Text = 0
+                IPChests.Text = 0
+                MMChests.Text = 0
+                TRChests.Text = 0
+                GTChests.Text = 0
+                HCPrizes.Text = 6
+                EPPrizes.Text = 3
+                DPPrizes.Text = 2
+                TOHPrizes.Text = 2
+                PODPrizes.Text = 5
+                SPPrizes.Text = 6
+                SWPrizes.Text = 2
+                TTPrizes.Text = 4
+                IPPrizes.Text = 3
+                MMPrizes.Text = 2
+                TRPrizes.Text = 5
         End Select
         HCCheck()
         EPCheck()
@@ -960,279 +1068,414 @@
     End Sub
 
     Public Sub LWCheck()
-        '' Lumberjack Tree - Aganhim and Boots
-        If Aganhim = True And Boots = True Then
+        If ComboBox1.SelectedIndex = 6 Then
+            LW1.Enabled = True
+            LW1.BackColor = Color.WhiteSmoke
+            LW2.Enabled = True
+            LW2.BackColor = Color.WhiteSmoke
             LW6.Enabled = True
             LW6.BackColor = Color.WhiteSmoke
-        Else
-            LW6.Checked = False
-            LW6.Enabled = False
-            LW6.BackColor = Color.Red
-        End If
-
-        '' Blind Hut, Kakariko Well, Chicken House, Mini-moldorm Cave, Aginah, Ice Cave - Bomb
-        If Bombs = True Then
+            LW7.Enabled = True
+            LW7.BackColor = Color.WhiteSmoke
+            LW8.Enabled = True
+            LW8.BackColor = Color.WhiteSmoke
             LW9.Enabled = True
             LW9.BackColor = Color.WhiteSmoke
             LW10.Enabled = True
             LW10.BackColor = Color.WhiteSmoke
             LW12.Enabled = True
             LW12.BackColor = Color.WhiteSmoke
+            LW15.Enabled = True
+            LW15.BackColor = Color.WhiteSmoke
+            LW16.Enabled = True
+            LW16.BackColor = Color.WhiteSmoke
             LW18.Enabled = True
             LW18.BackColor = Color.WhiteSmoke
             LW19.Enabled = True
             LW19.BackColor = Color.WhiteSmoke
             LW20.Enabled = True
             LW20.BackColor = Color.WhiteSmoke
-        Else
-            LW9.Enabled = True
-            LW9.BackColor = Color.Yellow
-            LW10.Enabled = True
-            LW10.BackColor = Color.Yellow
-            LW12.Checked = False
-            LW12.Enabled = False
-            LW12.BackColor = Color.Red
-            LW18.Checked = False
-            LW18.Enabled = False
-            LW18.BackColor = Color.Red
-            LW19.Checked = False
-            LW19.Enabled = False
-            LW19.BackColor = Color.Red
-            LW20.Enabled = False
-            LW20.Checked = False
-            LW20.BackColor = Color.Red
+            LW21.Enabled = True
+            LW21.BackColor = Color.WhiteSmoke
+            LW22.Enabled = True
+            LW22.BackColor = Color.WhiteSmoke
+            LW23.Enabled = True
+            LW23.BackColor = Color.WhiteSmoke
+            LW24.Enabled = True
+            LW24.BackColor = Color.WhiteSmoke
+            LW25.Enabled = True
+            LW25.BackColor = Color.WhiteSmoke
+            LW26.Enabled = True
+            LW26.BackColor = Color.WhiteSmoke
+            LW27.Enabled = True
+            LW27.BackColor = Color.WhiteSmoke
+            LW28.Enabled = True
+            LW28.BackColor = Color.WhiteSmoke
+            LW29.Enabled = True
+            LW29.BackColor = Color.WhiteSmoke
+            LW30.Enabled = True
+            LW30.BackColor = Color.WhiteSmoke
+            LW31.Enabled = True
+            LW31.BackColor = Color.WhiteSmoke
+            LW32.Enabled = True
+            LW32.BackColor = Color.WhiteSmoke
+            LW33.Enabled = True
+            LW33.BackColor = Color.WhiteSmoke
+            LW34.Enabled = True
+            LW34.BackColor = Color.WhiteSmoke
+            LW35.Enabled = True
+            LW35.BackColor = Color.WhiteSmoke
+            LW36.Enabled = True
+            LW36.BackColor = Color.WhiteSmoke
+            LW37.Enabled = True
+            LW37.BackColor = Color.WhiteSmoke
+            LW38.Enabled = True
+            LW38.BackColor = Color.WhiteSmoke
+            LW39.Enabled = True
+            LW39.BackColor = Color.WhiteSmoke
+            LW40.Enabled = True
+            LW40.BackColor = Color.WhiteSmoke
+            LW41.Enabled = True
+            LW41.BackColor = Color.WhiteSmoke
+            LW42.Enabled = True
+            LW42.BackColor = Color.WhiteSmoke
+            LW43.Enabled = True
+            LW43.BackColor = Color.WhiteSmoke
+            LW44.Enabled = True
+            LW44.BackColor = Color.WhiteSmoke
+            LW45.Enabled = True
+            LW45.BackColor = Color.WhiteSmoke
+            LW46.Enabled = True
+            LW46.BackColor = Color.WhiteSmoke
+            LW47.Enabled = True
+            LW47.BackColor = Color.WhiteSmoke
+        End If
+
+        '' Lumberjack Tree (Normal) - Aganhim and Boots
+        '' Lumberjack Tree (Inverted) - Add Pearl and LW Access
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Aganhim = True And Boots = True Then
+                LW6.Enabled = True
+                LW6.BackColor = Color.WhiteSmoke
+            Else
+                LW6.Checked = False
+                LW6.Enabled = False
+                LW6.BackColor = Color.Red
+            End If
+        End If
+
+        '' Blind Hut, Kakariko Well, Chicken House, Mini-moldorm Cave, Aginah, Ice Cave (Normal) - Bomb
+        '' Blind Hut, Kakariko Well, Chicken House, Mini-moldorm Cave, Aginah, Ice Cave (Normal) - Add LW Access
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Bombs = True Then
+                LW9.Enabled = True
+                LW9.BackColor = Color.WhiteSmoke
+                LW10.Enabled = True
+                LW10.BackColor = Color.WhiteSmoke
+                LW12.Enabled = True
+                LW12.BackColor = Color.WhiteSmoke
+                LW18.Enabled = True
+                LW18.BackColor = Color.WhiteSmoke
+                LW19.Enabled = True
+                LW19.BackColor = Color.WhiteSmoke
+                LW20.Enabled = True
+                LW20.BackColor = Color.WhiteSmoke
+            Else
+                LW9.Enabled = True
+                LW9.BackColor = Color.Yellow
+                LW10.Enabled = True
+                LW10.BackColor = Color.Yellow
+                LW12.Checked = False
+                LW12.Enabled = False
+                LW12.BackColor = Color.Red
+                LW18.Checked = False
+                LW18.Enabled = False
+                LW18.BackColor = Color.Red
+                LW19.Checked = False
+                LW19.Enabled = False
+                LW19.BackColor = Color.Red
+                LW20.Enabled = False
+                LW20.Checked = False
+                LW20.BackColor = Color.Red
+            End If
         End If
 
         '' Sick Kid - Bottle
-        If Bottle = True Then
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Bottle = True Then
+                LW14.Enabled = True
+                LW14.BackColor = Color.WhiteSmoke
+            Else
+                LW14.Checked = False
+                LW14.Enabled = False
+                LW14.BackColor = Color.Red
+            End If
+        Else
             LW14.Enabled = True
             LW14.BackColor = Color.WhiteSmoke
-        Else
-            LW14.Checked = False
-            LW14.Enabled = False
-            LW14.BackColor = Color.Red
         End If
 
         '' Library, Bonk Rocks - Boots
-        If Boots = True Then
-            LW15.Enabled = True
-            LW15.BackColor = Color.WhiteSmoke
-            LW29.Enabled = True
-            LW29.BackColor = Color.WhiteSmoke
-        Else
-            LW15.Checked = False
-            LW15.Enabled = False
-            LW15.BackColor = Color.Red
-            LW29.Checked = False
-            LW29.Enabled = False
-            LW29.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Boots = True Then
+                LW15.Enabled = True
+                LW15.BackColor = Color.WhiteSmoke
+                LW29.Enabled = True
+                LW29.BackColor = Color.WhiteSmoke
+            Else
+                LW15.Checked = False
+                LW15.Enabled = False
+                LW15.BackColor = Color.Red
+                LW29.Checked = False
+                LW29.Enabled = False
+                LW29.BackColor = Color.Red
+            End If
         End If
 
         '' Maze Race, Sahasrahla's Back Room - Boots or Bomb
-        If Boots = True Or Bombs = True Then
-            LW16.Enabled = True
-            LW16.BackColor = Color.WhiteSmoke
-            LW21.Enabled = True
-            LW21.BackColor = Color.WhiteSmoke
-        Else
-            LW16.Checked = False
-            LW16.Enabled = False
-            LW16.BackColor = Color.Red
-            LW21.Checked = False
-            LW21.Enabled = True
-            LW21.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Boots = True Or Bombs = True Then
+                LW16.Enabled = True
+                LW16.BackColor = Color.WhiteSmoke
+                LW21.Enabled = True
+                LW21.BackColor = Color.WhiteSmoke
+            Else
+                LW16.Checked = False
+                LW16.Enabled = False
+                LW16.BackColor = Color.Red
+                LW21.Checked = False
+                LW21.Enabled = True
+                LW21.BackColor = Color.Red
+            End If
         End If
 
         '' Desert Ledge - Desert Palace access (Book or Flute/Mitt/Mirror)
-        If Book = True Or (Flute = True And Glove = 2 And Mirror = True) Then
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Book = True Or (Flute = True And Glove = 2 And Mirror = True) Then
+                LW22.Enabled = True
+                LW22.BackColor = Color.WhiteSmoke
+            Else
+                LW22.Checked = False
+                LW22.Enabled = False
+                LW22.BackColor = Color.Red
+            End If
+        Else
             LW22.Enabled = True
             LW22.BackColor = Color.WhiteSmoke
-        Else
-            LW22.Checked = False
-            LW22.Enabled = False
-            LW22.BackColor = Color.Red
         End If
 
         '' Bombos Tablet (Swords) - Master Sword, Book, Access via Dark World
         '' Bombos Tablet (Swordless) - Hammer, Book, Access via Dark World
-        If ComboBox1.SelectedIndex < 3 Then
-            If Pearl = True And Mirror = True And Book = True And Sword >= 2 And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or Aganhim = True And Hookshot = True And (Hammer = True Or Glove > 0 Or Flippers = True)) Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 1, 2
+                If Pearl = True And Mirror = True And Book = True And Sword >= 2 And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or Aganhim = True And Hookshot = True And (Hammer = True Or Glove > 0 Or Flippers = True)) Then
+                    LW23.Enabled = True
+                    LW23.BackColor = Color.WhiteSmoke
+                Else
+                    LW23.Checked = False
+                    LW23.Enabled = False
+                    LW23.BackColor = Color.Red
+                End If
+            Case 3, 4, 5
+                If Pearl = True And Mirror = True And Book = True And Hammer = True And (Glove > 0 Or Aganhim = True) Then
+                    LW23.Enabled = True
+                    LW23.BackColor = Color.WhiteSmoke
+                Else
+                    LW23.Checked = False
+                    LW23.Enabled = False
+                    LW23.BackColor = Color.Red
+                End If
+            Case Else
                 LW23.Enabled = True
                 LW23.BackColor = Color.WhiteSmoke
-            Else
-                LW23.Checked = False
-                LW23.Enabled = False
-                LW23.BackColor = Color.Red
-            End If
-        Else
-            If Pearl = True And Mirror = True And Book = True And Hammer = True And (Glove > 0 Or Aganhim = True) Then
-                LW23.Enabled = True
-                LW23.BackColor = Color.WhiteSmoke
-            Else
-                LW23.Checked = False
-                LW23.Enabled = False
-                LW23.BackColor = Color.Red
-            End If
-        End If
-
+        End Select
 
         '' Checkerboard - Flute, Mitt, Mirror (no Pearl required)
-        If Flute = True And Glove = 2 And Mirror = True Then
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Flute = True And Glove = 2 And Mirror = True Then
+                LW24.Enabled = True
+                LW24.BackColor = Color.WhiteSmoke
+            Else
+                LW24.Checked = False
+                LW24.Enabled = False
+                LW24.BackColor = Color.Red
+            End If
+        Else
             LW24.Enabled = True
             LW24.BackColor = Color.WhiteSmoke
-        Else
-            LW24.Checked = False
-            LW24.Enabled = False
-            LW24.BackColor = Color.Red
         End If
 
         '' Dwarves - Pearl, Mitt (no Mirror required)
-        If Pearl = True And Glove = 2 Then
-            LW25.Enabled = True
-            LW25.BackColor = Color.WhiteSmoke
-        Else
-            LW25.Checked = False
-            LW25.Enabled = False
-            LW25.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And Glove = 2 Then
+                LW25.Enabled = True
+                LW25.BackColor = Color.WhiteSmoke
+            Else
+                LW25.Checked = False
+                LW25.Enabled = False
+                LW25.BackColor = Color.Red
+            End If
         End If
 
         '' Powder Bat - Powder, Hammer or Mirror+Pearl+Mitt
-        If Powder = True And (Hammer = True Or (Mirror = True And Pearl = True And Glove = 2)) Then
-            LW26.Enabled = True
-            LW26.BackColor = Color.WhiteSmoke
-        Else
-            LW26.Checked = False
-            LW26.Enabled = False
-            LW26.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Powder = True And (Hammer = True Or (Mirror = True And Pearl = True And Glove = 2)) Then
+                LW26.Enabled = True
+                LW26.BackColor = Color.WhiteSmoke
+            Else
+                LW26.Checked = False
+                LW26.Enabled = False
+                LW26.BackColor = Color.Red
+            End If
         End If
 
         '' Dig Spot - Shovel
-        If Shovel = True Then
-            LW27.Enabled = True
-            LW27.BackColor = Color.WhiteSmoke
-        Else
-            LW27.Checked = False
-            LW27.Enabled = False
-            LW27.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Shovel = True Then
+                LW27.Enabled = True
+                LW27.BackColor = Color.WhiteSmoke
+            Else
+                LW27.Checked = False
+                LW27.Enabled = False
+                LW27.BackColor = Color.Red
+            End If
         End If
 
         '' Cave south of Grove, Graveyard Cave - Mirror, Access via Dark World
-        If Mirror = True And Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Flippers = True))) Then
-            LW28.Enabled = True
-            LW28.BackColor = Color.WhiteSmoke
-            LW30.Enabled = True
-            LW30.BackColor = Color.WhiteSmoke
-        Else
-            LW28.Checked = False
-            LW28.Enabled = False
-            LW28.BackColor = Color.Red
-            LW30.Checked = False
-            LW30.Enabled = False
-            LW30.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Mirror = True And Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Flippers = True))) Then
+                LW28.Enabled = True
+                LW28.BackColor = Color.WhiteSmoke
+                LW30.Enabled = True
+                LW30.BackColor = Color.WhiteSmoke
+            Else
+                LW28.Checked = False
+                LW28.Enabled = False
+                LW28.BackColor = Color.Red
+                LW30.Checked = False
+                LW30.Enabled = False
+                LW30.BackColor = Color.Red
+            End If
         End If
 
         '' King's Tomb - Boots, Mitt or Access via Dark World
-        If Boots = True And (Glove = 2 Or (Mirror = True And (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Hammer = True Or Flippers = True Or Glove > 0)))) Then
-            LW31.Enabled = True
-            LW31.BackColor = Color.WhiteSmoke
-        Else
-            LW31.Enabled = False
-            LW31.Checked = False
-            LW31.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Boots = True And (Glove = 2 Or (Mirror = True And (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Hammer = True Or Flippers = True Or Glove > 0)))) Then
+                LW31.Enabled = True
+                LW31.BackColor = Color.WhiteSmoke
+            Else
+                LW31.Enabled = False
+                LW31.Checked = False
+                LW31.BackColor = Color.Red
+            End If
         End If
 
         '' Hobo, Zora's Ledge, Waterfall - Flippers (Hobo can be faked)
-        If Flippers = True Then
-            LW32.Enabled = True
-            LW32.BackColor = Color.WhiteSmoke
-            LW35.Enabled = True
-            LW35.BackColor = Color.WhiteSmoke
-            LW37.Enabled = True
-            LW37.BackColor = Color.WhiteSmoke
-        Else
-            LW32.Enabled = True
-            LW32.BackColor = Color.Orange
-            If Pearl = True Then
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Flippers = True Then
+                LW32.Enabled = True
+                LW32.BackColor = Color.WhiteSmoke
                 LW35.Enabled = True
-                LW35.BackColor = Color.Orange
+                LW35.BackColor = Color.WhiteSmoke
+                LW37.Enabled = True
+                LW37.BackColor = Color.WhiteSmoke
             Else
-                LW35.Checked = False
-                LW35.Enabled = False
-                LW35.BackColor = Color.Red
+                LW32.Enabled = True
+                LW32.BackColor = Color.Orange
+                If Pearl = True Then
+                    LW35.Enabled = True
+                    LW35.BackColor = Color.Orange
+                Else
+                    LW35.Checked = False
+                    LW35.Enabled = False
+                    LW35.BackColor = Color.Red
+                End If
+                LW37.Checked = False
+                LW37.Enabled = False
+                LW37.BackColor = Color.Red
             End If
-            LW37.Checked = False
-            LW37.Enabled = False
-            LW37.BackColor = Color.Red
         End If
 
         '' Hylia Island - Flippers, Mirror, Pearl, access via Dark World
-        If Pearl = True And Flippers = True And Mirror = True And (Aganhim = True Or (Glove > 0 And Hammer = True) Or Glove = 2) Then
-            LW33.Enabled = True
-            LW33.BackColor = Color.WhiteSmoke
-        Else
-            LW33.Checked = False
-            LW33.Enabled = False
-            LW33.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And Flippers = True And Mirror = True And (Aganhim = True Or (Glove > 0 And Hammer = True) Or Glove = 2) Then
+                LW33.Enabled = True
+                LW33.BackColor = Color.WhiteSmoke
+            Else
+                LW33.Checked = False
+                LW33.Enabled = False
+                LW33.BackColor = Color.Red
+            End If
         End If
 
         '' Witch - Mushroom
-        If Mushroom = True Then
-            LW34.Enabled = True
-            LW34.BackColor = Color.WhiteSmoke
-        Else
-            LW34.Checked = False
-            LW34.Enabled = False
-            LW34.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Mushroom = True Then
+                LW34.Enabled = True
+                LW34.BackColor = Color.WhiteSmoke
+            Else
+                LW34.Checked = False
+                LW34.Enabled = False
+                LW34.BackColor = Color.Red
+            End If
         End If
 
         '' Zora - Glove or Flippers (can be faked)
-        If Flippers = True Or Glove > 0 Then
-            LW36.Enabled = True
-            LW36.BackColor = Color.WhiteSmoke
-        Else
-            LW36.Enabled = True
-            LW36.BackColor = Color.Orange
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Flippers = True Or Glove > 0 Then
+                LW36.Enabled = True
+                LW36.BackColor = Color.WhiteSmoke
+            Else
+                LW36.Enabled = True
+                LW36.BackColor = Color.Orange
+            End If
         End If
 
         '' Old Man - Death Mountain access and Lamp (can be dark-navved)
-        If Flute = True Or Glove > 0 Then
-            If Lamp = True Then
-                LW38.Enabled = True
-                LW38.BackColor = Color.WhiteSmoke
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Flute = True Or Glove > 0 Then
+                If Lamp = True Then
+                    LW38.Enabled = True
+                    LW38.BackColor = Color.WhiteSmoke
+                Else
+                    LW38.Enabled = True
+                    LW38.BackColor = Color.Orange
+                End If
             Else
-                LW38.Enabled = True
-                LW38.BackColor = Color.Orange
+                LW38.Checked = False
+                LW38.Enabled = False
+                LW38.BackColor = Color.Red
             End If
-        Else
-            LW38.Checked = False
-            LW38.Enabled = False
-            LW38.BackColor = Color.Red
         End If
 
         '' Spectacle Cave - Death Mountain access (Lamp prevents sequence break if Glove is used)
-        If Flute = True Or (Glove > 0 And Lamp = True) Then
-            LW39.Enabled = True
-            LW39.BackColor = Color.WhiteSmoke
-        ElseIf Glove > 0 Then
-            LW39.Enabled = True
-            LW39.BackColor = Color.Orange
-        Else
-            LW39.Checked = False
-            LW39.Enabled = False
-            LW39.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Flute = True Or (Glove > 0 And Lamp = True) Then
+                LW39.Enabled = True
+                LW39.BackColor = Color.WhiteSmoke
+            ElseIf Glove > 0 Then
+                LW39.Enabled = True
+                LW39.BackColor = Color.Orange
+            Else
+                LW39.Checked = False
+                LW39.Enabled = False
+                LW39.BackColor = Color.Red
+            End If
         End If
 
         '' Spectacle Rock - Death Mountain access (Lamp prevents sequence break if Glove is used) and Mirror
-        If Mirror = True And (Flute = True Or (Glove > 0 And Lamp = True)) Then
-            LW40.Enabled = True
-            LW40.BackColor = Color.WhiteSmoke
-        ElseIf Mirror = True And Glove > 0 Then
-            LW40.Enabled = True
-            LW40.BackColor = Color.Orange
-        Else
-            LW40.Checked = False
-            LW40.Enabled = False
-            LW40.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Mirror = True And (Flute = True Or (Glove > 0 And Lamp = True)) Then
+                LW40.Enabled = True
+                LW40.BackColor = Color.WhiteSmoke
+            ElseIf Mirror = True And Glove > 0 Then
+                LW40.Enabled = True
+                LW40.BackColor = Color.Orange
+            Else
+                LW40.Checked = False
+                LW40.Enabled = False
+                LW40.BackColor = Color.Red
+            End If
         End If
 
         '' Ether Tablet (Swords) - Death Mountain access (Lamp prevents sequence break if Glove is used), Mirror or Hookshot+Hammer, Master Sword, Book
@@ -1249,7 +1492,7 @@
                 LW41.Enabled = False
                 LW41.BackColor = Color.Red
             End If
-        Else
+        ElseIf ComboBox1.SelectedIndex < 6 Then
             If Book = True And Hammer = True And (Flute = True Or (Glove > 0 And Lamp = True)) And (Mirror = True Or Hookshot = True) Then
                 LW41.Enabled = True
                 LW41.BackColor = Color.WhiteSmoke
@@ -1264,68 +1507,76 @@
         End If
 
         '' East Death Mountain, Spiral Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Hookshot or Mirror+Hammer
-        If (Flute = True Or (Glove > 0 And Lamp = True)) And (Hookshot = True Or (Hammer = True And Mirror = True)) Then
-            If Bombs = True Then
-                LW42.Enabled = True
-                LW42.BackColor = Color.WhiteSmoke
+        If ComboBox1.SelectedIndex <> 6 Then
+            If (Flute = True Or (Glove > 0 And Lamp = True)) And (Hookshot = True Or (Hammer = True And Mirror = True)) Then
+                If Bombs = True Then
+                    LW42.Enabled = True
+                    LW42.BackColor = Color.WhiteSmoke
+                Else
+                    LW42.Enabled = True
+                    LW42.BackColor = Color.Yellow
+                End If
+                LW43.Enabled = True
+                LW43.BackColor = Color.WhiteSmoke
+            ElseIf Glove > 0 And (Hookshot = True Or (Hammer = True And Mirror = True)) Then
+                If Bombs = True Then
+                    LW42.Enabled = True
+                    LW42.BackColor = Color.Orange
+                Else
+                    LW42.Enabled = True
+                    LW42.BackColor = Color.Yellow
+                End If
+                LW43.Enabled = True
+                LW43.BackColor = Color.Orange
             Else
-                LW42.Enabled = True
-                LW42.BackColor = Color.Yellow
+                LW42.Checked = False
+                LW42.Enabled = False
+                LW42.BackColor = Color.Red
+                LW43.Checked = False
+                LW43.Enabled = False
+                LW43.BackColor = Color.Red
             End If
-            LW43.Enabled = True
-            LW43.BackColor = Color.WhiteSmoke
-        ElseIf Glove > 0 And (Hookshot = True Or (Hammer = True And Mirror = True)) Then
-            If Bombs = True Then
-                LW42.Enabled = True
-                LW42.BackColor = Color.Orange
-            Else
-                LW42.Enabled = True
-                LW42.BackColor = Color.Yellow
-            End If
-            LW43.Enabled = True
-            LW43.BackColor = Color.Orange
-        Else
-            LW42.Checked = False
-            LW42.Enabled = False
-            LW42.BackColor = Color.Red
-            LW43.Checked = False
-            LW43.Enabled = False
-            LW43.BackColor = Color.Red
         End If
 
         '' Floating Island - Death Mountain access (Lamp prevents sequence break if Glove is used), Mitt, Pearl, Mirror
-        If Pearl = True And Glove = 2 And Mirror = True And (Hookshot = True Or Hammer = True) Then
-            If Flute = True Or Lamp = True Then
-                LW44.Enabled = True
-                LW44.BackColor = Color.WhiteSmoke
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And Glove = 2 And Mirror = True And (Hookshot = True Or Hammer = True) Then
+                If Flute = True Or Lamp = True Then
+                    LW44.Enabled = True
+                    LW44.BackColor = Color.WhiteSmoke
+                Else
+                    LW44.Enabled = True
+                    LW44.BackColor = Color.Orange
+                End If
             Else
-                LW44.Enabled = True
-                LW44.BackColor = Color.Orange
+                LW44.Checked = False
+                LW44.Enabled = False
+                LW44.BackColor = Color.Red
             End If
-        Else
-            LW44.Checked = False
-            LW44.Enabled = False
-            LW44.BackColor = Color.Red
         End If
 
         '' Sahasrahla's Green Pendant
-        If GreenPendant = True Then
-            LW46.Enabled = True
-            LW46.BackColor = Color.WhiteSmoke
-        Else
-            LW46.Checked = False
-            LW46.Enabled = False
-            LW46.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If GreenPendant = True Then
+                LW46.Enabled = True
+                LW46.BackColor = Color.WhiteSmoke
+            Else
+                LW46.Checked = False
+                LW46.Enabled = False
+                LW46.BackColor = Color.Red
+            End If
         End If
 
         '' Pedestal
-        If PendantCount = 3 Then
-            LW47.Enabled = True
-            LW47.BackColor = Color.WhiteSmoke
-        Else
-            LW47.Checked = False
-            LW47.Enabled = False
-            LW47.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If PendantCount = 3 Then
+                LW47.Enabled = True
+                LW47.BackColor = Color.WhiteSmoke
+            Else
+                LW47.Checked = False
+                LW47.Enabled = False
+                LW47.BackColor = Color.Red
+            End If
         End If
 
         If LW1.Checked = True Then LW1.BackColor = Color.FromArgb(64, 64, 64)
@@ -1377,178 +1628,235 @@
 
     Public Sub DWCheck()
         '' Pyramid - Aganhim or Access from warp
-        If Aganhim = True Or (Pearl = True And ((Glove > 0 And Hammer = True) Or (Glove = 2 And Flippers = True))) Then
+        If ComboBox1.SelectedIndex = 6 Then
             DW1.Enabled = True
             DW1.BackColor = Color.WhiteSmoke
-        Else
-            DW1.Checked = False
-            DW1.Enabled = False
-            DW1.BackColor = Color.Red
-        End If
-
-        '' Chest Game, C House, Sealed Hut, Bumper Cave - Mitt, Glove/Hammer, or Aganhim/Hookshot/Access (Cape also required for Bumper Cave)
-        If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
             DW2.Enabled = True
             DW2.BackColor = Color.WhiteSmoke
             DW3.Enabled = True
             DW3.BackColor = Color.WhiteSmoke
             DW4.Enabled = True
             DW4.BackColor = Color.WhiteSmoke
-            If Cape = True And Glove > 0 Then
-                DW7.Enabled = True
-                DW7.BackColor = Color.WhiteSmoke
+            DW5.Enabled = True
+            DW5.BackColor = Color.WhiteSmoke
+            DW6.Enabled = True
+            DW6.BackColor = Color.WhiteSmoke
+            DW7.Enabled = True
+            DW7.BackColor = Color.WhiteSmoke
+            DW8.Enabled = True
+            DW8.BackColor = Color.WhiteSmoke
+            DW9.Enabled = True
+            DW9.BackColor = Color.WhiteSmoke
+            DW10.Enabled = True
+            DW10.BackColor = Color.WhiteSmoke
+            DW11.Enabled = True
+            DW11.BackColor = Color.WhiteSmoke
+            DW12.Enabled = True
+            DW12.BackColor = Color.WhiteSmoke
+            DW13.Enabled = True
+            DW13.BackColor = Color.WhiteSmoke
+            DW14.Enabled = True
+            DW14.BackColor = Color.WhiteSmoke
+            DW15.Enabled = True
+            DW15.BackColor = Color.WhiteSmoke
+            DW16.Enabled = True
+            DW16.BackColor = Color.WhiteSmoke
+        End If
+
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Aganhim = True Or (Pearl = True And ((Glove > 0 And Hammer = True) Or (Glove = 2 And Flippers = True))) Then
+                DW1.Enabled = True
+                DW1.BackColor = Color.WhiteSmoke
             Else
+                DW1.Checked = False
+                DW1.Enabled = False
+                DW1.BackColor = Color.Red
+            End If
+        End If
+
+        '' Chest Game, C House, Sealed Hut, Bumper Cave - Mitt, Glove/Hammer, or Aganhim/Hookshot/Access (Cape also required for Bumper Cave)
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                DW2.Enabled = True
+                DW2.BackColor = Color.WhiteSmoke
+                DW3.Enabled = True
+                DW3.BackColor = Color.WhiteSmoke
+                DW4.Enabled = True
+                DW4.BackColor = Color.WhiteSmoke
+                If Cape = True And Glove > 0 Then
+                    DW7.Enabled = True
+                    DW7.BackColor = Color.WhiteSmoke
+                Else
+                    DW7.Checked = False
+                    DW7.Enabled = False
+                    DW7.BackColor = Color.Red
+                End If
+            Else
+                DW2.Checked = False
+                DW2.Enabled = False
+                DW2.BackColor = Color.Red
+                DW3.Checked = False
+                DW3.Enabled = False
+                DW3.BackColor = Color.Red
+                DW4.Checked = False
+                DW4.Enabled = False
+                DW4.BackColor = Color.Red
                 DW7.Checked = False
                 DW7.Enabled = False
                 DW7.BackColor = Color.Red
             End If
-        Else
-            DW2.Checked = False
-            DW2.Enabled = False
-            DW2.BackColor = Color.Red
-            DW3.Checked = False
-            DW3.Enabled = False
-            DW3.BackColor = Color.Red
-            DW4.Checked = False
-            DW4.Enabled = False
-            DW4.BackColor = Color.Red
-            DW7.Checked = False
-            DW7.Enabled = False
-            DW7.BackColor = Color.Red
         End If
 
         '' Digging Game, Tree Kid, Swamp Hype - Mitt, Glove/Hammer, Aganhim/Hammer, or Aganhim/Hookshot/Glove or Flippers
-        If Pearl = True And (Glove = 2 Or (Hammer = True And Glove > 0) Or (Hammer = True And Aganhim = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Flippers = True))) Then
-            DW5.Enabled = True
-            DW5.BackColor = Color.WhiteSmoke
-            DW10.Enabled = True
-            DW10.BackColor = Color.WhiteSmoke
-            If Bombs = True Then
-                DW11.Enabled = True
-                DW11.BackColor = Color.WhiteSmoke
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And (Glove = 2 Or (Hammer = True And Glove > 0) Or (Hammer = True And Aganhim = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Flippers = True))) Then
+                DW5.Enabled = True
+                DW5.BackColor = Color.WhiteSmoke
+                DW10.Enabled = True
+                DW10.BackColor = Color.WhiteSmoke
+                If Bombs = True Then
+                    DW11.Enabled = True
+                    DW11.BackColor = Color.WhiteSmoke
+                Else
+                    DW11.Checked = False
+                    DW11.Enabled = False
+                    DW11.BackColor = Color.Red
+                End If
             Else
+                DW5.Checked = False
+                DW5.Enabled = False
+                DW5.BackColor = Color.Red
+                DW10.Checked = False
+                DW10.Enabled = False
+                DW10.BackColor = Color.Red
                 DW11.Checked = False
                 DW11.Enabled = False
                 DW11.BackColor = Color.Red
             End If
-        Else
-            DW5.Checked = False
-            DW5.Enabled = False
-            DW5.BackColor = Color.Red
-            DW10.Checked = False
-            DW10.Enabled = False
-            DW10.BackColor = Color.Red
-            DW11.Checked = False
-            DW11.Enabled = False
-            DW11.BackColor = Color.Red
         End If
 
         '' Mire Cave - Flute, Mitt, Pearl
-        If Flute = True And Glove = 2 And Pearl = True Then
-            DW6.Enabled = True
-            DW6.BackColor = Color.WhiteSmoke
-        Else
-            DW6.Checked = False
-            DW6.Enabled = False
-            DW6.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Flute = True And Glove = 2 And Pearl = True Then
+                DW6.Enabled = True
+                DW6.BackColor = Color.WhiteSmoke
+            Else
+                DW6.Checked = False
+                DW6.Enabled = False
+                DW6.BackColor = Color.Red
+            End If
         End If
 
         '' Purple Chest - Dwarves complete (no further items required)
-        If LW25.Checked = True Then
-            DW8.Enabled = True
-            DW8.BackColor = Color.WhiteSmoke
-        Else
-            DW8.Checked = False
-            DW8.Enabled = False
-            DW8.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If LW25.Checked = True Then
+                DW8.Enabled = True
+                DW8.BackColor = Color.WhiteSmoke
+            Else
+                DW8.Checked = False
+                DW8.Enabled = False
+                DW8.BackColor = Color.Red
+            End If
         End If
 
         '' Hammer Pegs - Pearl, Mitt, Hammer
-        If Pearl = True And Glove = 2 And Hammer = True Then
-            DW9.Enabled = True
-            DW9.BackColor = Color.WhiteSmoke
-        Else
-            DW9.Checked = False
-            DW9.Enabled = False
-            DW9.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And Glove = 2 And Hammer = True Then
+                DW9.Enabled = True
+                DW9.BackColor = Color.WhiteSmoke
+            Else
+                DW9.Checked = False
+                DW9.Enabled = False
+                DW9.BackColor = Color.Red
+            End If
         End If
 
         '' Catfish - Pearl, Glove, Aganhim/Hammer/Mitt+Flippers
-        If Pearl = True And Glove > 0 And ((Glove = 2 And Flippers = True) Or Hammer = True Or Aganhim = True) Then
-            DW12.Enabled = True
-            DW12.BackColor = Color.WhiteSmoke
-        Else
-            DW12.Checked = False
-            DW12.Enabled = False
-            DW12.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And Glove > 0 And ((Glove = 2 And Flippers = True) Or Hammer = True Or Aganhim = True) Then
+                DW12.Enabled = True
+                DW12.BackColor = Color.WhiteSmoke
+            Else
+                DW12.Checked = False
+                DW12.Enabled = False
+                DW12.BackColor = Color.Red
+            End If
         End If
 
         '' Spike Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Pearl, Hammer, Glove; Safety item (Byrna or Cape) and either 1/2 magic or bottle to avoid sequence break
-        If Pearl = True And Hammer = True And (Flute = True Or (Glove > 0 And Lamp = True)) Then
-            If (Byrna = True Or Cape = True And Glove > 0) And (Magic > 0 Or BottleNumber.Text > 0) Then
-                DW13.Enabled = True
-                DW13.BackColor = Color.WhiteSmoke
-            Else
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And Hammer = True And (Flute = True Or (Glove > 0 And Lamp = True)) Then
+                If (Byrna = True Or Cape = True And Glove > 0) And (Magic > 0 Or BottleNumber.Text > 0) Then
+                    DW13.Enabled = True
+                    DW13.BackColor = Color.WhiteSmoke
+                Else
+                    DW13.Enabled = True
+                    DW13.BackColor = Color.Orange
+                End If
+            ElseIf Pearl = True And Hammer = True And Glove > 0 Then
                 DW13.Enabled = True
                 DW13.BackColor = Color.Orange
+            Else
+                DW13.Checked = False
+                DW13.Enabled = False
+                DW13.BackColor = Color.Red
             End If
-        ElseIf Pearl = True And Hammer = True And Glove > 0 Then
-            DW13.Enabled = True
-            DW13.BackColor = Color.Orange
-        Else
-            DW13.Checked = False
-            DW13.Enabled = False
-            DW13.BackColor = Color.Red
         End If
 
         '' Superbunny Cave - Death Mountain access (Lamp prevents sequence break if Glove is used, Pearl prevents sequence break), Mitt, Hookshot or Hammer+Mirror
-        If Glove = 2 And (Hookshot = True Or (Hammer = True And Mirror = True)) Then
-            If (Flute = True Or Lamp = True) And Pearl = True Then
-                DW14.Enabled = True
-                DW14.BackColor = Color.WhiteSmoke
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Glove = 2 And (Hookshot = True Or (Hammer = True And Mirror = True)) Then
+                If (Flute = True Or Lamp = True) And Pearl = True Then
+                    DW14.Enabled = True
+                    DW14.BackColor = Color.WhiteSmoke
+                Else
+                    DW14.Enabled = True
+                    DW14.BackColor = Color.Orange
+                End If
             Else
-                DW14.Enabled = True
-                DW14.BackColor = Color.Orange
+                DW14.Checked = False
+                DW14.Enabled = False
+                DW14.BackColor = Color.Red
             End If
-        Else
-            DW14.Checked = False
-            DW14.Enabled = False
-            DW14.BackColor = Color.Red
         End If
 
         '' Hookshot Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Pearl, Mitt, Hookshot or Hammer+Mirror+Boots (Partially blocked without Hookshot)
-        If Pearl = True And Glove = 2 And Hookshot = True Then
-            If Flute = True Or Lamp = True Then
-                DW15.Enabled = True
-                DW15.BackColor = Color.WhiteSmoke
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And Glove = 2 And Hookshot = True Then
+                If Flute = True Or Lamp = True Then
+                    DW15.Enabled = True
+                    DW15.BackColor = Color.WhiteSmoke
+                Else
+                    DW15.Enabled = True
+                    DW15.BackColor = Color.Orange
+                End If
+                DW15.TextAlign = ContentAlignment.MiddleCenter
+                DW15Boots.Visible = False
+            ElseIf Pearl = True And Glove = 2 And Hammer = True And Mirror = True And Boots = True Then
+                DW15.Checked = False
+                DW15.Enabled = False
+                DW15.BackColor = Color.Red
+                DW15.TextAlign = ContentAlignment.MiddleLeft
+                DW15Boots.Visible = True
             Else
-                DW15.Enabled = True
-                DW15.BackColor = Color.Orange
+                DW15.Checked = False
+                DW15.Enabled = False
+                DW15.BackColor = Color.Red
+                DW15.TextAlign = ContentAlignment.MiddleCenter
+                DW15Boots.Visible = False
             End If
-            DW15.TextAlign = ContentAlignment.MiddleCenter
-            DW15Boots.Visible = False
-        ElseIf Pearl = True And Glove = 2 And Hammer = True And Mirror = True And Boots = True Then
-            DW15.Checked = False
-            DW15.Enabled = False
-            DW15.BackColor = Color.Red
-            DW15.TextAlign = ContentAlignment.MiddleLeft
-            DW15Boots.Visible = True
-        Else
-            DW15.Checked = False
-            DW15.Enabled = False
-            DW15.BackColor = Color.Red
-            DW15.TextAlign = ContentAlignment.MiddleCenter
-            DW15Boots.Visible = False
         End If
 
         '' Fat Fairy - Crystals 5 & 6, Pearl, Hammer, Glove or Aganhim
-        If Pearl = True And FairyCrystal = 2 And ((Glove > 0 And Hammer = True) Or (Aganhim = True And Mirror = True) Or (Aganhim = True And Hammer = True)) Then
-            DW16.Enabled = True
-            DW16.BackColor = Color.WhiteSmoke
-        Else
-            DW16.Checked = False
-            DW16.Enabled = False
-            DW16.BackColor = Color.Red
+        If ComboBox1.SelectedIndex <> 6 Then
+            If Pearl = True And FairyCrystal = 2 And ((Glove > 0 And Hammer = True) Or (Aganhim = True And Mirror = True) Or (Aganhim = True And Hammer = True)) Then
+                DW16.Enabled = True
+                DW16.BackColor = Color.WhiteSmoke
+            Else
+                DW16.Checked = False
+                DW16.Enabled = False
+                DW16.BackColor = Color.Red
+            End If
         End If
 
         If DW1.Checked = True Then DW1.BackColor = Color.FromArgb(64, 64, 64)
@@ -1712,50 +2020,57 @@
     End Sub
 
     Public Sub HCCheck()
-        If ComboBox1.SelectedIndex = 0 Then
-            If Glove > 0 And Lamp = True And (Bombs = True Or Boots = True) Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2, 3, 5
+                If Glove > 0 And Lamp = True And (Bombs = True Or Boots = True) Then
+                    HCLabel.BackColor = Color.Green
+                    HCLabel.ForeColor = Color.White
+                    HCChests.Text = 8
+                    HCChests.ForeColor = Color.White
+                    HCBorder.BackColor = Color.White
+                ElseIf Lamp = True And (Bombs = True Or Boots = True) Then
+                    HCLabel.BackColor = Color.Yellow
+                    HCLabel.ForeColor = Color.Black
+                    HCChests.Text = 8
+                    HCChests.ForeColor = Color.Yellow
+                    HCBorder.BackColor = Color.Black
+                ElseIf Glove > 0 And (Bombs = True Or Boots = True) Then
+                    HCLabel.BackColor = Color.Yellow
+                    HCLabel.ForeColor = Color.Black
+                    HCChests.Text = 8
+                    HCChests.ForeColor = Color.Orange
+                    HCBorder.BackColor = Color.Black
+                ElseIf Lamp = True Then
+                    HCLabel.BackColor = Color.Yellow
+                    HCLabel.ForeColor = Color.Black
+                    HCChests.Text = 5
+                    HCChests.ForeColor = Color.White
+                    HCBorder.BackColor = Color.Black
+                Else
+                    HCLabel.BackColor = Color.Yellow
+                    HCLabel.ForeColor = Color.Black
+                    HCChests.Text = 5
+                    HCChests.ForeColor = Color.Yellow
+                    HCBorder.BackColor = Color.Black
+                End If
+            Case 1, 4
+                If (Glove > 0 Or HCKeys.Text = 1) And (Bombs = True Or Boots = True) Then
+                    If Lamp = True Then HCLabel.BackColor = Color.Green Else HCLabel.BackColor = Color.Orange
+                    HCLabel.ForeColor = Color.White
+                    HCChests.ForeColor = Color.White
+                    HCBorder.BackColor = Color.White
+                Else
+                    HCLabel.BackColor = Color.Yellow
+                    HCLabel.ForeColor = Color.Black
+                    HCBorder.BackColor = Color.Black
+                End If
+            Case Else
                 HCLabel.BackColor = Color.Green
                 HCLabel.ForeColor = Color.White
                 HCChests.Text = 8
                 HCChests.ForeColor = Color.White
                 HCBorder.BackColor = Color.White
-            ElseIf Lamp = True And (Bombs = True Or Boots = True) Then
-                HCLabel.BackColor = Color.Yellow
-                HCLabel.ForeColor = Color.Black
-                HCChests.Text = 8
-                HCChests.ForeColor = Color.Yellow
-                HCBorder.BackColor = Color.Black
-            ElseIf Glove > 0 And (Bombs = True Or Boots = True) Then
-                HCLabel.BackColor = Color.Yellow
-                HCLabel.ForeColor = Color.Black
-                HCChests.Text = 8
-                HCChests.ForeColor = Color.Orange
-                HCBorder.BackColor = Color.Black
-            ElseIf Lamp = True Then
-                HCLabel.BackColor = Color.Yellow
-                HCLabel.ForeColor = Color.Black
-                HCChests.Text = 5
-                HCChests.ForeColor = Color.White
-                HCBorder.BackColor = Color.Black
-            Else
-                HCLabel.BackColor = Color.Yellow
-                HCLabel.ForeColor = Color.Black
-                HCChests.Text = 5
-                HCChests.ForeColor = Color.Yellow
-                HCBorder.BackColor = Color.Black
-            End If
-        ElseIf ComboBox1.SelectedIndex = 1 Then
-            If (Glove > 0 Or HCKeys.Text = 1) And (Bombs = True Or Boots = True) Then
-                If Lamp = True Then HCLabel.BackColor = Color.Green Else HCLabel.BackColor = Color.Orange
-                HCLabel.ForeColor = Color.White
-                HCChests.ForeColor = Color.White
-                HCBorder.BackColor = Color.White
-            Else
-                HCLabel.BackColor = Color.Yellow
-                HCLabel.ForeColor = Color.Black
-                HCBorder.BackColor = Color.Black
-            End If
-        End If
+        End Select
     End Sub
 
     Private Sub HCChests_MouseDown(sender As Object, e As EventArgs) Handles HCChests.MouseDown
@@ -1858,49 +2173,57 @@
     End Sub
 
     Public Sub EPCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Bow > 1 Then
-                EPLabel.ForeColor = Color.White
-                EPBoss.Enabled = True
-                EPChests.Text = 6
-                If Lamp = True Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2, 3, 5
+                If Bow > 1 Then
+                    EPLabel.ForeColor = Color.White
+                    EPBoss.Enabled = True
+                    EPChests.Text = 6
+                    If Lamp = True Then
+                        EPLabel.BackColor = Color.Green
+                        EPChests.ForeColor = Color.White
+                        EPBorder.BackColor = Color.White
+                    Else
+                        EPLabel.BackColor = Color.Orange
+                        EPChests.ForeColor = Color.Orange
+                        EPBorder.BackColor = Color.White
+                    End If
+                Else
+                    EPLabel.BackColor = Color.Yellow
+                    EPLabel.ForeColor = Color.Black
+                    EPBorder.BackColor = Color.Black
+                    EPBoss.Enabled = False
+                    EPChests.Text = 5
+                    If Lamp = True Then EPChests.ForeColor = Color.White Else EPChests.ForeColor = Color.Yellow
+                End If
+            Case 1, 4
+                If Bow > 1 And Lamp = True And EPBigKey.Checked = True Then
+                    EPLabel.ForeColor = Color.White
                     EPLabel.BackColor = Color.Green
+                    EPBoss.Enabled = True
+                    EPChests.ForeColor = Color.White
+                    EPBorder.BackColor = Color.White
+                ElseIf Bow > 1 And EPBigKey.Checked = True Then
+                    EPLabel.ForeColor = Color.White
+                    EPLabel.BackColor = Color.Orange
+                    EPBoss.Enabled = True
                     EPChests.ForeColor = Color.White
                     EPBorder.BackColor = Color.White
                 Else
-                    EPLabel.BackColor = Color.Orange
-                    EPChests.ForeColor = Color.Orange
-                    EPBorder.BackColor = Color.White
+                    EPLabel.ForeColor = Color.Black
+                    EPLabel.BackColor = Color.Yellow
+                    EPBoss.Enabled = False
+                    If Lamp = True Then EPChests.ForeColor = Color.White Else EPChests.ForeColor = Color.Yellow
+                    EPBorder.BackColor = Color.Black
                 End If
-            Else
-                EPLabel.BackColor = Color.Yellow
-                EPLabel.ForeColor = Color.Black
-                EPBorder.BackColor = Color.Black
-                EPBoss.Enabled = False
-                EPChests.Text = 5
-                If Lamp = True Then EPChests.ForeColor = Color.White Else EPChests.ForeColor = Color.Yellow
-            End If
-        Else
-            If Bow > 1 And Lamp = True And EPBigKey.Checked = True Then
+            Case 6
                 EPLabel.ForeColor = Color.White
+                EPBoss.Enabled = True
+                EPChests.Text = 6
                 EPLabel.BackColor = Color.Green
-                EPBoss.Enabled = True
                 EPChests.ForeColor = Color.White
                 EPBorder.BackColor = Color.White
-            ElseIf Bow > 1 And EPBigKey.Checked = True Then
-                EPLabel.ForeColor = Color.White
-                EPLabel.BackColor = Color.Orange
-                EPBoss.Enabled = True
-                EPChests.ForeColor = Color.White
-                EPBorder.BackColor = Color.White
-            Else
-                EPLabel.ForeColor = Color.Black
-                EPLabel.BackColor = Color.Yellow
-                EPBoss.Enabled = False
-                If Lamp = True Then EPChests.ForeColor = Color.White Else EPChests.ForeColor = Color.Yellow
-                EPBorder.BackColor = Color.Black
-            End If
-        End If
+        End Select
     End Sub
 
     Private Sub DPClick(sender As Object, e As EventArgs) Handles DPMap.CheckedChanged, DPBigKey.CheckedChanged, DPBoss.CheckedChanged
@@ -1968,59 +2291,67 @@
     End Sub
 
     Public Sub DPCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Boots = True And Glove > 0 Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2, 3, 5
+                If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Boots = True And Glove > 0 Then
+                    DPLabel.BackColor = Color.Green
+                    DPLabel.ForeColor = Color.White
+                    DPChests.Text = 6
+                    DPChests.ForeColor = Color.White
+                    DPBorder.BackColor = Color.White
+                    DPBoss.Enabled = True
+                ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 Then
+                    DPLabel.BackColor = Color.Yellow
+                    DPLabel.ForeColor = Color.Black
+                    DPChests.Text = 5
+                    DPChests.ForeColor = Color.Yellow
+                    DPBorder.BackColor = Color.Black
+                    DPBoss.Enabled = True
+                ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) Then
+                    DPLabel.BackColor = Color.Yellow
+                    DPLabel.ForeColor = Color.Black
+                    DPChests.Text = 4
+                    DPChests.ForeColor = Color.Yellow
+                    DPBorder.BackColor = Color.Black
+                    DPBoss.Enabled = False
+                Else
+                    DPLabel.BackColor = Color.Red
+                    DPLabel.ForeColor = Color.Black
+                    DPChests.Text = 0
+                    DPChests.ForeColor = Color.White
+                    DPBorder.BackColor = Color.Black
+                    DPBoss.Enabled = False
+                End If
+            Case 1, 4
+                If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 And DPBigKey.Checked = True Then
+                    If DPKeys.Text = 1 Then DPLabel.BackColor = Color.Green Else DPLabel.BackColor = Color.Orange
+                    DPLabel.ForeColor = Color.White
+                    DPBoss.Enabled = True
+                    DPBorder.BackColor = Color.White
+                ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 And DPBigKey.Checked = True Then
+                    DPLabel.BackColor = Color.Yellow
+                    DPLabel.ForeColor = Color.Black
+                    DPBoss.Enabled = True
+                    DPBorder.BackColor = Color.Black
+                ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) Then
+                    DPLabel.BackColor = Color.Yellow
+                    DPLabel.ForeColor = Color.Black
+                    DPBoss.Enabled = False
+                    DPBorder.BackColor = Color.Black
+                Else
+                    DPLabel.BackColor = Color.Red
+                    DPLabel.ForeColor = Color.Black
+                    DPBoss.Enabled = False
+                    DPBorder.BackColor = Color.Black
+                End If
+            Case 6
                 DPLabel.BackColor = Color.Green
                 DPLabel.ForeColor = Color.White
                 DPChests.Text = 6
                 DPChests.ForeColor = Color.White
                 DPBorder.BackColor = Color.White
                 DPBoss.Enabled = True
-            ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 Then
-                DPLabel.BackColor = Color.Yellow
-                DPLabel.ForeColor = Color.Black
-                DPChests.Text = 5
-                DPChests.ForeColor = Color.Yellow
-                DPBorder.BackColor = Color.Black
-                DPBoss.Enabled = True
-            ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) Then
-                DPLabel.BackColor = Color.Yellow
-                DPLabel.ForeColor = Color.Black
-                DPChests.Text = 4
-                DPChests.ForeColor = Color.Yellow
-                DPBorder.BackColor = Color.Black
-                DPBoss.Enabled = False
-            Else
-                DPLabel.BackColor = Color.Red
-                DPLabel.ForeColor = Color.Black
-                DPChests.Text = 0
-                DPChests.ForeColor = Color.White
-                DPBorder.BackColor = Color.Black
-                DPBoss.Enabled = False
-            End If
-        Else
-            If (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 And DPBigKey.Checked = True Then
-                If DPKeys.Text = 1 Then DPLabel.BackColor = Color.Green Else DPLabel.BackColor = Color.Orange
-                DPLabel.ForeColor = Color.White
-                DPBoss.Enabled = True
-                DPBorder.BackColor = Color.White
-            ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) And (FireRod = True Or Lamp = True) And Glove > 0 And DPBigKey.Checked = True Then
-                DPLabel.BackColor = Color.Yellow
-                DPLabel.ForeColor = Color.Black
-                DPBoss.Enabled = True
-                DPBorder.BackColor = Color.Black
-            ElseIf (Book = True Or (Glove = 2 And Flute = True And Mirror = True)) Then
-                DPLabel.BackColor = Color.Yellow
-                DPLabel.ForeColor = Color.Black
-                DPBoss.Enabled = False
-                DPBorder.BackColor = Color.Black
-            Else
-                DPLabel.BackColor = Color.Red
-                DPLabel.ForeColor = Color.Black
-                DPBoss.Enabled = False
-                DPBorder.BackColor = Color.Black
-            End If
-        End If
+        End Select
     End Sub
     Private Sub TOHClick(sender As Object, e As EventArgs) Handles HeraMap.CheckedChanged, HeraBigKey.CheckedChanged, HeraBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
@@ -2085,101 +2416,62 @@
         TOHCheck()
     End Sub
     Public Sub TOHCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And (Lamp = True Or FireRod = True) And (Sword > 0 Or Hammer = True) Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2, 3, 5
+                If (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And (Lamp = True Or FireRod = True) Then
+                    TOHLabel.ForeColor = Color.White
+                    HeraBoss.Enabled = True
+                    If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
+                    TOHChests.Text = 6
+                    TOHChests.ForeColor = Color.White
+                    TOHBorder.BackColor = Color.White
+                ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) Then
+                    TOHLabel.BackColor = Color.Yellow
+                    TOHLabel.ForeColor = Color.Black
+                    HeraBoss.Enabled = True
+                    TOHChests.Text = 5
+                    TOHChests.ForeColor = Color.Yellow
+                    TOHBorder.BackColor = Color.Black
+                ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
+                    TOHLabel.BackColor = Color.Yellow
+                    TOHLabel.ForeColor = Color.Black
+                    HeraBoss.Enabled = False
+                    TOHChests.Text = 4
+                    TOHChests.ForeColor = Color.Yellow
+                    TOHBorder.BackColor = Color.Black
+                Else
+                    TOHLabel.BackColor = Color.Red
+                    TOHLabel.ForeColor = Color.Black
+                    HeraBoss.Enabled = False
+                    TOHChests.Text = 0
+                    TOHChests.ForeColor = Color.White
+                    TOHBorder.BackColor = Color.Black
+                End If
+            Case 1, 4
+                If (Glove > 0 Or Flute = True) And Hammer = True And Hookshot = True And (Sword > 0 Or Hammer = True) And (Lamp = True Or FireRod = True) Then
+                    TOHLabel.ForeColor = Color.White
+                    HeraBoss.Enabled = True
+                    If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
+                    TOHBorder.BackColor = Color.White
+                ElseIf (Flute = True Or Glove > 0) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
+                    TOHLabel.BackColor = Color.Yellow
+                    TOHLabel.ForeColor = Color.Black
+                    HeraBoss.Enabled = False
+                    TOHBorder.BackColor = Color.Black
+                Else
+                    TOHLabel.BackColor = Color.Red
+                    TOHLabel.ForeColor = Color.Black
+                    HeraBoss.Enabled = False
+                    TOHBorder.BackColor = Color.Black
+                End If
+            Case 6
                 TOHLabel.ForeColor = Color.White
                 HeraBoss.Enabled = True
-                If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
+                TOHLabel.BackColor = Color.Green
                 TOHChests.Text = 6
                 TOHChests.ForeColor = Color.White
                 TOHBorder.BackColor = Color.White
-            ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) Then
-                TOHLabel.BackColor = Color.Yellow
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = True
-                TOHChests.Text = 5
-                TOHChests.ForeColor = Color.Yellow
-                TOHBorder.BackColor = Color.Black
-            ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
-                TOHLabel.BackColor = Color.Yellow
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = False
-                TOHChests.Text = 4
-                TOHChests.ForeColor = Color.Yellow
-                TOHBorder.BackColor = Color.Black
-            Else
-                TOHLabel.BackColor = Color.Red
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = False
-                TOHChests.Text = 0
-                TOHChests.ForeColor = Color.White
-                TOHBorder.BackColor = Color.Black
-            End If
-        ElseIf ComboBox1.SelectedIndex = 1 Then
-            If (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And (Sword > 0 Or Hammer = True) And HeraBigKey.Checked = True Then
-                TOHLabel.ForeColor = Color.White
-                HeraBoss.Enabled = True
-                If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
-                TOHBorder.BackColor = Color.White
-            ElseIf (Flute = True Or Glove > 0) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
-                TOHLabel.BackColor = Color.Yellow
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = False
-                TOHBorder.BackColor = Color.Black
-            Else
-                TOHLabel.BackColor = Color.Red
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = False
-                TOHBorder.BackColor = Color.Black
-            End If
-        ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If (Glove > 0 Or Flute = True) And (Mirror = True Or Hookshot = True) And Hammer = True And (Lamp = True Or FireRod = True) Then
-                TOHLabel.ForeColor = Color.White
-                HeraBoss.Enabled = True
-                If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
-                TOHChests.Text = 6
-                TOHChests.ForeColor = Color.White
-                TOHBorder.BackColor = Color.White
-            ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) And Hammer = True Then
-                TOHLabel.BackColor = Color.Yellow
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = True
-                TOHChests.Text = 5
-                TOHChests.ForeColor = Color.Yellow
-                TOHBorder.BackColor = Color.Black
-            ElseIf (Glove > 0 Or Flute = True) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
-                TOHLabel.BackColor = Color.Yellow
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = False
-                TOHChests.Text = 4
-                TOHChests.ForeColor = Color.Yellow
-                TOHBorder.BackColor = Color.Black
-            Else
-                TOHLabel.BackColor = Color.Red
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = False
-                TOHChests.Text = 0
-                TOHChests.ForeColor = Color.White
-                TOHBorder.BackColor = Color.Black
-            End If
-        Else
-            If (Glove > 0 Or Flute = True) And Hammer = True And (Mirror = True Or Hookshot = True) And HeraBigKey.Checked = True Then
-                TOHLabel.ForeColor = Color.White
-                HeraBoss.Enabled = True
-                If Flute = True Or Lamp = True Then TOHLabel.BackColor = Color.Green Else TOHLabel.BackColor = Color.Orange
-                TOHBorder.BackColor = Color.White
-            ElseIf (Flute = True Or Glove > 0) And (Mirror = True Or (Hammer = True And Hookshot = True)) Then
-                TOHLabel.BackColor = Color.Yellow
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = False
-                TOHBorder.BackColor = Color.Black
-            Else
-                TOHLabel.BackColor = Color.Red
-                TOHLabel.ForeColor = Color.Black
-                HeraBoss.Enabled = False
-                TOHBorder.BackColor = Color.Black
-            End If
-        End If
+        End Select
     End Sub
     Private Sub AGPrizes_MouseDown(sender As Object, e As EventArgs) Handles AGPrizes.MouseDown
         If ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 5 Then
@@ -2219,76 +2511,86 @@
                     0, 0, noaganhim.Width, noaganhim.Height,
                     GraphicsUnit.Pixel, imgattr)
         End Using
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Then
-            If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2
+                If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True Then
+                    AgaButton.Visible = True
+                    If Aganhim = False Then AgaButton.Image = noaganhim
+                    AGLabel.BackColor = Color.Green
+                    AGLabel.ForeColor = Color.White
+                    AGBorder.BackColor = Color.White
+                    AGChests.Text = 2
+                Else
+                    AgaButton.Visible = False
+                    AGLabel.BackColor = Color.Red
+                    AGLabel.ForeColor = Color.Black
+                    AGBorder.BackColor = Color.Black
+                    AGChests.Text = 0
+                End If
+            Case 4, 6
+                If Cape = True And Hammer = True And Lamp = True Then
+                    AgaButton.Visible = True
+                    If Aganhim = False Then AgaButton.Image = noaganhim
+                    AGLabel.BackColor = Color.Green
+                    AGLabel.ForeColor = Color.White
+                    AGBorder.BackColor = Color.White
+                    AGChests.Text = 2
+                ElseIf Cape = True Then
+                    AgaButton.Visible = False
+                    AGLabel.BackColor = Color.Red
+                    AGLabel.ForeColor = Color.Black
+                    AGBorder.BackColor = Color.Black
+                    AGChests.Text = 1
+                Else
+                    AgaButton.Visible = False
+                    AGLabel.BackColor = Color.Red
+                    AGLabel.ForeColor = Color.Black
+                    AGBorder.BackColor = Color.Black
+                    AGChests.Text = 0
+                End If
+            Case 1
+                If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True And AGKeys.Text = 2 Then
+                    AgaButton.Visible = True
+                    If Aganhim = False Then AgaButton.Image = noaganhim
+                    AGLabel.BackColor = Color.Green
+                    AGLabel.ForeColor = Color.White
+                    AGBorder.BackColor = Color.White
+                ElseIf Sword >= 2 Or Cape = True Then
+                    AgaButton.Visible = False
+                    AGLabel.BackColor = Color.Yellow
+                    AGLabel.ForeColor = Color.Black
+                    AGBorder.BackColor = Color.Black
+                Else
+                    AgaButton.Visible = False
+                    AGLabel.BackColor = Color.Red
+                    AGLabel.ForeColor = Color.Black
+                    AGBorder.BackColor = Color.Black
+                End If
+            Case 5
+                If Hammer = True And Cape = True And Lamp = True And AGKeys.Text = 2 Then
+                    AgaButton.Visible = True
+                    If Aganhim = False Then AgaButton.Image = noaganhim
+                    AGLabel.BackColor = Color.Green
+                    AGLabel.ForeColor = Color.White
+                    AGBorder.BackColor = Color.White
+                ElseIf Hammer = True Or Cape = True Then
+                    AgaButton.Visible = False
+                    AGLabel.BackColor = Color.Yellow
+                    AGLabel.ForeColor = Color.Black
+                    AGBorder.BackColor = Color.Black
+                Else
+                    AgaButton.Visible = False
+                    AGLabel.BackColor = Color.Red
+                    AGLabel.ForeColor = Color.Black
+                    AGBorder.BackColor = Color.Black
+                End If
+            Case 6
                 AgaButton.Visible = True
                 If Aganhim = False Then AgaButton.Image = noaganhim
                 AGLabel.BackColor = Color.Green
                 AGLabel.ForeColor = Color.White
                 AGBorder.BackColor = Color.White
-                AGChests.Text = 2
-            Else
-                AgaButton.Visible = False
-                AGLabel.BackColor = Color.Red
-                AGLabel.ForeColor = Color.Black
-                AGBorder.BackColor = Color.Black
-                AGChests.Text = 0
-            End If
-        ElseIf ComboBox1.SelectedIndex = 1 Then
-            If (Sword >= 2 Or (Cape = True And Sword > 0)) And Lamp = True And AGKeys.Text = 2 Then
-                AgaButton.Visible = True
-                If Aganhim = False Then AgaButton.Image = noaganhim
-                AGLabel.BackColor = Color.Green
-                AGLabel.ForeColor = Color.White
-                AGBorder.BackColor = Color.White
-            ElseIf Sword >= 2 Or Cape = True Then
-                AgaButton.Visible = False
-                AGLabel.BackColor = Color.Yellow
-                AGLabel.ForeColor = Color.Black
-                AGBorder.BackColor = Color.Black
-            Else
-                AgaButton.Visible = False
-                AGLabel.BackColor = Color.Red
-                AGLabel.ForeColor = Color.Black
-                AGBorder.BackColor = Color.Black
-            End If
-        ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Cape = True And Hammer = True And Lamp = True Then
-                AgaButton.Visible = True
-                If Aganhim = False Then AgaButton.Image = noaganhim
-                AGLabel.BackColor = Color.Green
-                AGLabel.ForeColor = Color.White
-                AGBorder.BackColor = Color.White
-                AGChests.Text = 2
-            Else
-                AgaButton.Visible = False
-                AGLabel.BackColor = Color.Red
-                AGLabel.ForeColor = Color.Black
-                AGBorder.BackColor = Color.Black
-                AGChests.Text = 0
-            End If
-        Else
-            If Cape = True And Hammer = True And Lamp = True And AGKeys.Text = 2 Then
-                AgaButton.Visible = True
-                If Aganhim = False Then AgaButton.Image = noaganhim
-                AGLabel.BackColor = Color.Green
-                AGLabel.ForeColor = Color.White
-                AGBorder.BackColor = Color.White
-                AGChests.Text = 2
-            ElseIf Cape = True And Hammer = True Then
-                AgaButton.Visible = False
-                AGLabel.BackColor = Color.Yellow
-                AGLabel.ForeColor = Color.Black
-                AGBorder.BackColor = Color.Black
-                AGChests.Text = 2
-            Else
-                AgaButton.Visible = False
-                AGLabel.BackColor = Color.Red
-                AGLabel.ForeColor = Color.Black
-                AGBorder.BackColor = Color.Black
-                AGChests.Text = 0
-            End If
-        End If
+        End Select
     End Sub
     Private Sub PODClick(sender As Object, e As EventArgs) Handles PODMap.CheckedChanged, PODBigKey.CheckedChanged, PODBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
@@ -2357,71 +2659,75 @@
         PODCheck()
     End Sub
     Public Sub PODCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True Then
-                PODBoss.Enabled = True
-                PODChests.Text = 14
-                PODChests.ForeColor = Color.White
-                If Lamp = True Then
-                    PODLabel.BackColor = Color.Green
-                    PODLabel.ForeColor = Color.White
-                    PODBorder.BackColor = Color.White
-                Else
-                    PODLabel.BackColor = Color.Orange
-                    PODChests.ForeColor = Color.Orange
-                    PODLabel.ForeColor = Color.White
-                    PODBorder.BackColor = Color.White
-                End If
-            ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 Then
-                PODBoss.Enabled = False
-                PODChests.Text = 13
-                PODChests.ForeColor = Color.Yellow
-                PODLabel.BackColor = Color.Yellow
-                PODLabel.ForeColor = Color.Black
-                PODBorder.BackColor = Color.Black
-            ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) Then
-                PODBoss.Enabled = False
-                PODChests.Text = 11
-                PODChests.ForeColor = Color.Yellow
-                PODLabel.BackColor = Color.Yellow
-                PODLabel.ForeColor = Color.Black
-                PODBorder.BackColor = Color.Black
-            Else
-                PODChests.Text = 0
-                PODChests.ForeColor = Color.White
-                PODLabel.BackColor = Color.Red
-                PODLabel.ForeColor = Color.Black
-                PODBoss.Enabled = False
-                PODBorder.BackColor = Color.Black
-            End If
-        Else
-            If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True And PODBigKey.Checked = True And PODKeys.Text = 1 Then
-                PODBoss.Enabled = True
-                If Lamp = True And PODKeys.Text = 6 Then
-                    PODLabel.BackColor = Color.Green
-                    PODLabel.ForeColor = Color.White
-                    PODBorder.BackColor = Color.White
-                ElseIf PODKeys.Text = 6 Then
-                    PODLabel.BackColor = Color.Orange
-                    PODLabel.ForeColor = Color.White
-                    PODBorder.BackColor = Color.White
-                Else
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2, 3, 5
+                If Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 And Hammer = True Then
+                    PODBoss.Enabled = True
+                    PODChests.Text = 14
+                    PODChests.ForeColor = Color.White
+                    If Lamp = True Then
+                        PODLabel.BackColor = Color.Green
+                        PODLabel.ForeColor = Color.White
+                        PODBorder.BackColor = Color.White
+                    Else
+                        PODLabel.BackColor = Color.Orange
+                        PODChests.ForeColor = Color.Orange
+                        PODLabel.ForeColor = Color.White
+                        PODBorder.BackColor = Color.White
+                    End If
+                ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) And Bow > 1 Then
+                    PODBoss.Enabled = False
+                    PODChests.Text = 13
+                    PODChests.ForeColor = Color.Yellow
                     PODLabel.BackColor = Color.Yellow
                     PODLabel.ForeColor = Color.Black
                     PODBorder.BackColor = Color.Black
+                ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) Then
+                    PODBoss.Enabled = False
+                    PODChests.Text = 11
+                    PODChests.ForeColor = Color.Yellow
+                    PODLabel.BackColor = Color.Yellow
+                    PODLabel.ForeColor = Color.Black
+                    PODBorder.BackColor = Color.Black
+                Else
+                    PODChests.Text = 0
+                    PODChests.ForeColor = Color.White
+                    PODLabel.BackColor = Color.Red
+                    PODLabel.ForeColor = Color.Black
+                    PODBoss.Enabled = False
+                    PODBorder.BackColor = Color.Black
                 End If
-            ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) Then
-                PODLabel.BackColor = Color.Yellow
-                PODLabel.ForeColor = Color.Black
-                PODBoss.Enabled = False
-                PODBorder.BackColor = Color.Black
-            Else
-                PODLabel.BackColor = Color.Red
-                PODLabel.ForeColor = Color.Black
-                PODBoss.Enabled = False
-                PODBorder.BackColor = Color.Black
-            End If
-        End If
+            Case 1, 4
+                If Pearl = True And Hammer = True And Bow > 1 And (Aganhim = True Or Glove = True) And PODBigKey.Checked = True And PODKeys.Text >= 1 Then
+                    PODBoss.Enabled = True
+                    If Lamp = True And PODKeys.Text = 6 Then
+                        PODLabel.BackColor = Color.Green
+                        PODLabel.ForeColor = Color.White
+                        PODBorder.BackColor = Color.White
+                    Else
+                        PODLabel.BackColor = Color.Orange
+                        PODLabel.ForeColor = Color.White
+                        PODBorder.BackColor = Color.White
+                    End If
+                ElseIf Pearl = True And (Aganhim = True Or (Hammer = True And Glove > 0) Or (Glove = 2 And Flippers = True)) Then
+                    PODLabel.BackColor = Color.Yellow
+                    PODLabel.ForeColor = Color.Black
+                    PODBoss.Enabled = False
+                    PODBorder.BackColor = Color.Black
+                Else
+                    PODLabel.BackColor = Color.Red
+                    PODLabel.ForeColor = Color.Black
+                    PODBoss.Enabled = False
+                    PODBorder.BackColor = Color.Black
+                End If
+            Case 6
+                PODBoss.Enabled = True
+                PODChests.Text = 14
+                PODChests.ForeColor = Color.White
+                PODLabel.BackColor = Color.Green
+                PODLabel.ForeColor = Color.White
+                PODBorder.BackColor = Color.White
+        End Select
     End Sub
     Private Sub SPClick(sender As Object, e As EventArgs) Handles SPMap.CheckedChanged, SPBigKey.CheckedChanged, SPBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
@@ -2480,55 +2786,62 @@
         SPCheck()
     End Sub
     Public Sub SPCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Pearl = True And Flippers = True And Mirror = True And Hammer = True And Hookshot = True And (Glove > 0 Or Aganhim = True) Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2, 3, 5
+                If Pearl = True And Flippers = True And Mirror = True And Hammer = True And Hookshot = True And (Glove > 0 Or Aganhim = True) Then
+                    SPLabel.BackColor = Color.Green
+                    SPLabel.ForeColor = Color.White
+                    SPChests.Text = 10
+                    SPChests.ForeColor = Color.White
+                    SPBoss.Enabled = True
+                    SPBorder.BackColor = Color.White
+                ElseIf Pearl = True And Flippers = True And Mirror = True And Hammer = True And (Glove > 0 Or Aganhim = True) Then
+                    SPLabel.BackColor = Color.Yellow
+                    SPLabel.ForeColor = Color.Black
+                    SPChests.Text = 6
+                    SPChests.ForeColor = Color.Yellow
+                    SPBoss.Enabled = False
+                    SPBorder.BackColor = Color.Black
+                ElseIf Pearl = True And Flippers = True And Mirror = True And (Glove = 2 Or Aganhim = True) Then
+                    SPLabel.BackColor = Color.Yellow
+                    SPLabel.ForeColor = Color.Black
+                    SPChests.Text = 2
+                    SPChests.ForeColor = Color.White
+                    SPBoss.Enabled = False
+                    SPBorder.BackColor = Color.Black
+                Else
+                    SPLabel.BackColor = Color.Red
+                    SPLabel.ForeColor = Color.Black
+                    SPChests.Text = 0
+                    SPChests.ForeColor = Color.White
+                    SPBoss.Enabled = False
+                    SPBorder.BackColor = Color.Black
+                End If
+            Case 1, 4
+                If Pearl = True And Flippers = True And Mirror = True And Hammer = True And Hookshot = True And (Glove > 0 Or Aganhim = True) And SPKeys.Text = 1 Then
+                    SPLabel.BackColor = Color.Green
+                    SPLabel.ForeColor = Color.White
+                    SPBoss.Enabled = True
+                    SPBorder.BackColor = Color.White
+                ElseIf Pearl = True And Flippers = True And Mirror = True And (Glove = 2 Or (Hammer = True And (Glove > 0 Or Aganhim = True))) Then
+                    SPLabel.BackColor = Color.Yellow
+                    SPLabel.ForeColor = Color.Black
+                    SPBoss.Enabled = False
+                    SPBorder.BackColor = Color.Black
+                Else
+                    SPLabel.BackColor = Color.Red
+                    SPLabel.ForeColor = Color.Black
+                    SPBoss.Enabled = False
+                    SPBorder.BackColor = Color.Black
+                End If
+            Case 6
                 SPLabel.BackColor = Color.Green
                 SPLabel.ForeColor = Color.White
                 SPChests.Text = 10
                 SPChests.ForeColor = Color.White
                 SPBoss.Enabled = True
                 SPBorder.BackColor = Color.White
-            ElseIf Pearl = True And Flippers = True And Mirror = True And Hammer = True And (Glove > 0 Or Aganhim = True) Then
-                SPLabel.BackColor = Color.Yellow
-                SPLabel.ForeColor = Color.Black
-                SPChests.Text = 6
-                SPChests.ForeColor = Color.Yellow
-                SPBoss.Enabled = False
-                SPBorder.BackColor = Color.Black
-            ElseIf Pearl = True And Flippers = True And Mirror = True And (Glove = 2 Or Aganhim = True) Then
-                SPLabel.BackColor = Color.Yellow
-                SPLabel.ForeColor = Color.Black
-                SPChests.Text = 2
-                SPChests.ForeColor = Color.White
-                SPBoss.Enabled = False
-                SPBorder.BackColor = Color.Black
-            Else
-                SPLabel.BackColor = Color.Red
-                SPLabel.ForeColor = Color.Black
-                SPChests.Text = 0
-                SPChests.ForeColor = Color.White
-                SPBoss.Enabled = False
-                SPBorder.BackColor = Color.Black
-            End If
-        Else
-            If Pearl = True And Flippers = True And Mirror = True And Hammer = True And Hookshot = True And (Glove > 0 Or Aganhim = True) And SPKeys.Text = 1 Then
-                SPLabel.BackColor = Color.Green
-                SPLabel.ForeColor = Color.White
-                SPBoss.Enabled = True
-                SPBorder.BackColor = Color.White
-            ElseIf Pearl = True And Flippers = True And Mirror = True And (Glove = 2 Or (Hammer = True And (Glove > 0 Or Aganhim = True))) Then
-                SPLabel.BackColor = Color.Yellow
-                SPLabel.ForeColor = Color.Black
-                SPBoss.Enabled = False
-                SPBorder.BackColor = Color.Black
-            Else
-                SPLabel.BackColor = Color.Red
-                SPLabel.ForeColor = Color.Black
-                SPBoss.Enabled = False
-                SPBorder.BackColor = Color.Black
-            End If
-        End If
-
+        End Select
     End Sub
 
     Private Sub SWClick(sender As Object, e As EventArgs) Handles SWMap.CheckedChanged, SWBigKey.CheckedChanged, SWBoss.CheckedChanged
@@ -2595,94 +2908,102 @@
 
 
     Public Sub SWCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Then
-            If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True And Sword > 0 Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2
+                If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True And Sword > 0 Then
+                    SWLabel.BackColor = Color.Green
+                    SWLabel.ForeColor = Color.White
+                    SWChests.Text = 8
+                    SWChests.ForeColor = Color.White
+                    SWBoss.Enabled = True
+                    SWBorder.BackColor = Color.White
+                ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True Then
+                    SWLabel.BackColor = Color.Yellow
+                    SWLabel.ForeColor = Color.Black
+                    SWChests.Text = 7
+                    SWChests.ForeColor = Color.White
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                    SWLabel.BackColor = Color.Yellow
+                    SWLabel.ForeColor = Color.Black
+                    SWChests.Text = 6
+                    SWChests.ForeColor = Color.White
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                Else
+                    SWLabel.BackColor = Color.Red
+                    SWLabel.ForeColor = Color.Black
+                    SWChests.Text = 0
+                    SWChests.ForeColor = Color.White
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                End If
+            Case 3, 5
+                If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True Then
+                    SWLabel.BackColor = Color.Green
+                    SWLabel.ForeColor = Color.White
+                    SWChests.Text = 8
+                    SWChests.ForeColor = Color.White
+                    SWBoss.Enabled = True
+                    SWBorder.BackColor = Color.White
+                ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                    SWLabel.BackColor = Color.Yellow
+                    SWLabel.ForeColor = Color.Black
+                    SWChests.Text = 6
+                    SWChests.ForeColor = Color.White
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                Else
+                    SWLabel.BackColor = Color.Red
+                    SWLabel.ForeColor = Color.Black
+                    SWChests.Text = 0
+                    SWChests.ForeColor = Color.White
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                End If
+            Case 1
+                If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True And Sword > 0 Then
+                    If SWKeys.Text >= 2 Then SWLabel.BackColor = Color.Green Else SWLabel.BackColor = Color.Orange
+                    SWLabel.ForeColor = Color.White
+                    SWBoss.Enabled = True
+                    SWBorder.BackColor = Color.White
+                ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                    SWLabel.BackColor = Color.Yellow
+                    SWLabel.ForeColor = Color.Black
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                Else
+                    SWLabel.BackColor = Color.Red
+                    SWLabel.ForeColor = Color.Black
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                End If
+            Case 4
+                If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True Then
+                    If SWKeys.Text >= 2 Then SWLabel.BackColor = Color.Green Else SWLabel.BackColor = Color.Orange
+                    SWLabel.ForeColor = Color.White
+                    SWBoss.Enabled = True
+                    SWBorder.BackColor = Color.White
+                ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                    SWLabel.BackColor = Color.Yellow
+                    SWLabel.ForeColor = Color.Black
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                Else
+                    SWLabel.BackColor = Color.Red
+                    SWLabel.ForeColor = Color.Black
+                    SWBoss.Enabled = False
+                    SWBorder.BackColor = Color.Black
+                End If
+            Case 6
                 SWLabel.BackColor = Color.Green
                 SWLabel.ForeColor = Color.White
                 SWChests.Text = 8
                 SWChests.ForeColor = Color.White
                 SWBoss.Enabled = True
                 SWBorder.BackColor = Color.White
-            ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True Then
-                SWLabel.BackColor = Color.Yellow
-                SWLabel.ForeColor = Color.Black
-                SWChests.Text = 7
-                SWChests.ForeColor = Color.White
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-                SWLabel.BackColor = Color.Yellow
-                SWLabel.ForeColor = Color.Black
-                SWChests.Text = 6
-                SWChests.ForeColor = Color.White
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            Else
-                SWLabel.BackColor = Color.Red
-                SWLabel.ForeColor = Color.Black
-                SWChests.Text = 0
-                SWChests.ForeColor = Color.White
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            End If
-        ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True Then
-                SWLabel.BackColor = Color.Green
-                SWLabel.ForeColor = Color.White
-                SWChests.Text = 8
-                SWChests.ForeColor = Color.White
-                SWBoss.Enabled = True
-                SWBorder.BackColor = Color.White
-            ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-                SWLabel.BackColor = Color.Yellow
-                SWLabel.ForeColor = Color.Black
-                SWChests.Text = 6
-                SWChests.ForeColor = Color.White
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            Else
-                SWLabel.BackColor = Color.Red
-                SWLabel.ForeColor = Color.Black
-                SWChests.Text = 0
-                SWChests.ForeColor = Color.White
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            End If
-        ElseIf ComboBox1.SelectedIndex = 1 Then
-            If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True And Sword > 0 Then
-                If SWKeys.Text >= 2 Then SWLabel.BackColor = Color.Green Else SWLabel.BackColor = Color.Orange
-                SWLabel.ForeColor = Color.White
-                SWBoss.Enabled = True
-                SWBorder.BackColor = Color.White
-            ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-                SWLabel.BackColor = Color.Yellow
-                SWLabel.ForeColor = Color.Black
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            Else
-                SWLabel.BackColor = Color.Red
-                SWLabel.ForeColor = Color.Black
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            End If
-        Else
-            If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) And FireRod = True Then
-                If SWKeys.Text >= 2 Then SWLabel.BackColor = Color.Green Else SWLabel.BackColor = Color.Orange
-                SWLabel.ForeColor = Color.White
-                SWBoss.Enabled = True
-                SWBorder.BackColor = Color.White
-            ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-                SWLabel.BackColor = Color.Yellow
-                SWLabel.ForeColor = Color.Black
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            Else
-                SWLabel.BackColor = Color.Red
-                SWLabel.ForeColor = Color.Black
-                SWBoss.Enabled = False
-                SWBorder.BackColor = Color.Black
-            End If
-        End If
+        End Select
     End Sub
 
     Private Sub ResetButton_Click(sender As Object, e As EventArgs) Handles ResetButton.Click
@@ -3628,40 +3949,48 @@
     End Sub
 
     Public Sub TTCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2, 3, 5
+                If Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                    TTLabel.BackColor = Color.Green
+                    TTLabel.ForeColor = Color.White
+                    If Hammer = True Then TTChests.Text = 8 Else TTChests.Text = 7
+                    TTChests.ForeColor = Color.White
+                    TTBoss.Enabled = True
+                    TTBorder.BackColor = Color.White
+                Else
+                    TTLabel.BackColor = Color.Red
+                    TTLabel.ForeColor = Color.Black
+                    TTChests.Text = 0
+                    TTChests.ForeColor = Color.White
+                    TTBoss.Enabled = False
+                    TTBorder.BackColor = Color.Black
+                End If
+            Case 1, 4
+                If Pearl = True And TTBigKey.Checked = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                    If TTKeys.Text = 1 Then TTLabel.BackColor = Color.Green Else TTLabel.BackColor = Color.Orange
+                    TTLabel.ForeColor = Color.White
+                    TTBoss.Enabled = True
+                    TTBorder.BackColor = Color.White
+                ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
+                    TTLabel.BackColor = Color.Yellow
+                    TTLabel.ForeColor = Color.Black
+                    TTBoss.Enabled = False
+                    TTBorder.BackColor = Color.Black
+                Else
+                    TTLabel.BackColor = Color.Red
+                    TTLabel.ForeColor = Color.Black
+                    TTBoss.Enabled = False
+                    TTBorder.BackColor = Color.Black
+                End If
+            Case 6
                 TTLabel.BackColor = Color.Green
                 TTLabel.ForeColor = Color.White
                 If Hammer = True Then TTChests.Text = 8 Else TTChests.Text = 7
                 TTChests.ForeColor = Color.White
                 TTBoss.Enabled = True
                 TTBorder.BackColor = Color.White
-            Else
-                TTLabel.BackColor = Color.Red
-                TTLabel.ForeColor = Color.Black
-                TTChests.Text = 0
-                TTChests.ForeColor = Color.White
-                TTBoss.Enabled = False
-                TTBorder.BackColor = Color.Black
-            End If
-        Else
-            If Pearl = True And TTBigKey.Checked = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-                If TTKeys.Text = 1 Then TTLabel.BackColor = Color.Green Else TTLabel.BackColor = Color.Orange
-                TTLabel.ForeColor = Color.White
-                TTBoss.Enabled = True
-                TTBorder.BackColor = Color.White
-            ElseIf Pearl = True And (Glove = 2 Or (Glove > 0 And Hammer = True) Or (Aganhim = True And Hookshot = True And (Glove > 0 Or Hammer = True Or Flippers = True))) Then
-                TTLabel.BackColor = Color.Yellow
-                TTLabel.ForeColor = Color.Black
-                TTBoss.Enabled = False
-                TTBorder.BackColor = Color.Black
-            Else
-                TTLabel.BackColor = Color.Red
-                TTLabel.ForeColor = Color.Black
-                TTBoss.Enabled = False
-                TTBorder.BackColor = Color.Black
-            End If
-        End If
+        End Select
     End Sub
     Private Sub IPClick(sender As Object, e As EventArgs) Handles IPMap.CheckedChanged, IPBigKey.CheckedChanged, IPBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
@@ -3727,61 +4056,133 @@
     End Sub
 
     Public Sub IPCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True And Hookshot = True Then
-                IPLabel.ForeColor = Color.White
-                IPChests.Text = 8
-                IPBoss.Enabled = True
-                If Flippers = True Then
-                    IPLabel.BackColor = Color.Green
-                    IPChests.ForeColor = Color.White
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2
+                If Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True And Hookshot = True Then
+                    IPLabel.ForeColor = Color.White
+                    IPChests.Text = 8
+                    IPBoss.Enabled = True
+                    If Flippers = True Then
+                        IPLabel.BackColor = Color.Green
+                        IPChests.ForeColor = Color.White
+                    Else
+                        IPLabel.BackColor = Color.Orange
+                        IPChests.ForeColor = Color.Orange
+                    End If
+                    IPBorder.BackColor = Color.White
+                ElseIf Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True Then
+                    IPLabel.BackColor = Color.Yellow
+                    IPLabel.ForeColor = Color.Black
+                    IPChests.Text = 8
+                    IPChests.ForeColor = Color.Yellow
+                    If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
+                    IPBoss.Enabled = True
+                    IPBorder.BackColor = Color.Black
+                ElseIf Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) Then
+                    IPLabel.BackColor = Color.Yellow
+                    IPLabel.ForeColor = Color.Black
+                    IPChests.Text = 7
+                    IPChests.ForeColor = Color.Yellow
+                    If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
+                    IPBoss.Enabled = False
+                    IPBorder.BackColor = Color.Black
                 Else
-                    IPLabel.BackColor = Color.Orange
-                    IPChests.ForeColor = Color.Orange
+                    IPLabel.BackColor = Color.Red
+                        IPLabel.ForeColor = Color.Black
+                        IPChests.Text = 0
+                        IPChests.ForeColor = Color.White
+                        IPBoss.Enabled = False
+                        IPBorder.BackColor = Color.Black
+                    End If
+            Case 3, 5
+                If Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True And Hookshot = True Then
+                    IPLabel.ForeColor = Color.White
+                    IPChests.Text = 8
+                    IPBoss.Enabled = True
+                    If Flippers = True Then
+                        IPLabel.BackColor = Color.Green
+                        IPChests.ForeColor = Color.White
+                    Else
+                        IPLabel.BackColor = Color.Orange
+                        IPChests.ForeColor = Color.Orange
+                    End If
+                    IPBorder.BackColor = Color.White
+                ElseIf Pearl = True And Glove = 2 And (FireRod = True Or Bombos = True) And Hammer = True Then
+                    IPLabel.BackColor = Color.Yellow
+                    IPLabel.ForeColor = Color.Black
+                    IPChests.Text = 8
+                    IPChests.ForeColor = Color.Yellow
+                    If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
+                    IPBoss.Enabled = True
+                    IPBorder.BackColor = Color.Black
+                ElseIf Pearl = True And Glove = 2 And FireRod = True Then
+                    IPLabel.BackColor = Color.Yellow
+                    IPLabel.ForeColor = Color.Black
+                    IPChests.Text = 7
+                    IPChests.ForeColor = Color.Yellow
+                    If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
+                    IPBoss.Enabled = False
+                    IPBorder.BackColor = Color.Black
+                Else
+                    IPLabel.BackColor = Color.Red
+                    IPLabel.ForeColor = Color.Black
+                    IPChests.Text = 0
+                    IPChests.ForeColor = Color.White
+                    IPBoss.Enabled = False
+                    IPBorder.BackColor = Color.Black
                 End If
-                IPBorder.BackColor = Color.White
-            ElseIf Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True Then
-                IPLabel.BackColor = Color.Yellow
-                IPLabel.ForeColor = Color.Black
-                IPChests.Text = 8
-                IPChests.ForeColor = Color.Yellow
-                If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
-                IPBoss.Enabled = True
-                IPBorder.BackColor = Color.Black
-            ElseIf Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) Then
-                IPLabel.BackColor = Color.Yellow
-                IPLabel.ForeColor = Color.Black
-                IPChests.Text = 7
-                IPChests.ForeColor = Color.Yellow
-                If Flippers = True Then IPChests.ForeColor = Color.White Else IPChests.ForeColor = Color.Orange
-                IPBoss.Enabled = False
-                IPBorder.BackColor = Color.Black
-            Else
-                IPLabel.BackColor = Color.Red
-                IPLabel.ForeColor = Color.Black
-                IPChests.Text = 0
-                IPChests.ForeColor = Color.White
-                IPBoss.Enabled = False
-                IPBorder.BackColor = Color.Black
-            End If
-        Else
-            If Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True Then
-                If Flippers = True And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria = True)) Then IPLabel.BackColor = Color.Green Else IPLabel.BackColor = Color.Orange
+            Case 1
+                If Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True Then
+                    If Flippers = True And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria = True)) Then IPLabel.BackColor = Color.Green Else IPLabel.BackColor = Color.Orange
+                    IPLabel.ForeColor = Color.White
+                    IPBoss.Enabled = True
+                    IPBorder.BackColor = Color.White
+                ElseIf Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) And Hammer = True Then
+                    IPLabel.BackColor = Color.Yellow
+                    IPLabel.ForeColor = Color.Black
+                    IPBoss.Enabled = True
+                    IPBorder.BackColor = Color.Black
+                ElseIf Pearl = True And Glove = 2 And (FireRod = True Or (Bombos = True And Sword > 0)) Then
+                    IPLabel.BackColor = Color.Yellow
+                    IPLabel.ForeColor = Color.Black
+                    IPBoss.Enabled = False
+                    IPBorder.BackColor = Color.Black
+                Else
+                    IPLabel.BackColor = Color.Red
+                    IPLabel.ForeColor = Color.Black
+                    IPBoss.Enabled = False
+                    IPBorder.BackColor = Color.Black
+                End If
+            Case 4
+                If Pearl = True And Glove = 2 And (FireRod = True And Bombos = True) And Hammer = True And Hookshot = True Then
+                    If Flippers = True And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria = True)) Then IPLabel.BackColor = Color.Green Else IPLabel.BackColor = Color.Orange
+                    IPLabel.ForeColor = Color.White
+                    IPBoss.Enabled = True
+                    IPBorder.BackColor = Color.White
+                ElseIf Pearl = True And Glove = 2 And (FireRod = True And Bombos = True) And Hammer = True Then
+                    IPLabel.BackColor = Color.Yellow
+                    IPLabel.ForeColor = Color.Black
+                    IPBoss.Enabled = True
+                    IPBorder.BackColor = Color.Black
+                ElseIf Pearl = True And Glove = 2 And FireRod = True Then
+                    IPLabel.BackColor = Color.Yellow
+                    IPLabel.ForeColor = Color.Black
+                    IPBoss.Enabled = False
+                    IPBorder.BackColor = Color.Black
+                Else
+                    IPLabel.BackColor = Color.Red
+                    IPLabel.ForeColor = Color.Black
+                    IPBoss.Enabled = False
+                    IPBorder.BackColor = Color.Black
+                End If
+            Case 6
                 IPLabel.ForeColor = Color.White
+                IPChests.Text = 8
                 IPBoss.Enabled = True
+                IPLabel.BackColor = Color.Green
+                IPChests.ForeColor = Color.White
                 IPBorder.BackColor = Color.White
-            ElseIf Pearl = True And Glove = 2 And Flippers = True And (FireRod = True Or (Bombos = True And Sword > 0)) Then
-                IPLabel.BackColor = Color.Yellow
-                IPLabel.ForeColor = Color.Black
-                IPBoss.Enabled = False
-                IPBorder.BackColor = Color.Black
-            Else
-                IPLabel.BackColor = Color.Red
-                IPLabel.ForeColor = Color.Black
-                IPBoss.Enabled = False
-                IPBorder.BackColor = Color.Black
-            End If
-        End If
+        End Select
     End Sub
     Private Sub MMClick(sender As Object, e As EventArgs) Handles MMMap.CheckedChanged, MMBigKey.CheckedChanged, MMBoss.CheckedChanged
         Select Case DirectCast(sender, CheckBox).Name
@@ -3849,132 +4250,140 @@
         End If
     End Sub
     Public Sub MMCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Then
-            If Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2
+                If Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True Then
+                    MMBoss.Enabled = True
+                    MMChests.Text = 8
+                    MMLabel.ForeColor = Color.White
+                    MMBorder.BackColor = Color.White
+                    If Lamp = True Then
+                        MMLabel.BackColor = Color.Green
+                        MMChests.ForeColor = Color.White
+                    Else
+                        MMLabel.BackColor = Color.Orange
+                        MMChests.ForeColor = Color.Orange
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
+                    MMLabel.BackColor = Color.Yellow
+                    MMBorder.BackColor = Color.Black
+                    If Somaria = True Then
+                        MMBoss.Enabled = True
+                        MMChests.Text = 8
+                        MMChests.ForeColor = Color.Yellow
+                    Else
+                        MMBoss.Enabled = False
+                        MMChests.Text = 7
+                        MMChests.ForeColor = Color.Yellow
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+                    MMLabel.BackColor = Color.Yellow
+                    MMLabel.ForeColor = Color.Black
+                    MMChests.Text = 7
+                    MMChests.ForeColor = Color.White
+                    MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                Else
+                    MMLabel.BackColor = Color.Red
+                    MMLabel.ForeColor = Color.Black
+                    MMChests.Text = 0
+                    MMChests.ForeColor = Color.White
+                    MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                End If
+            Case 3, 5
+                If Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True Then
+                    MMBoss.Enabled = True
+                    MMChests.Text = 8
+                    MMLabel.ForeColor = Color.White
+                    MMBorder.BackColor = Color.White
+                    If Lamp = True Then
+                        MMLabel.BackColor = Color.Green
+                        MMChests.ForeColor = Color.White
+                    Else
+                        MMLabel.BackColor = Color.Orange
+                        MMChests.ForeColor = Color.Orange
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
+                    MMLabel.ForeColor = Color.Black
+                    MMLabel.BackColor = Color.Yellow
+                    MMBorder.BackColor = Color.Black
+                    If Somaria = True Then
+                        MMBoss.Enabled = True
+                        MMChests.Text = 8
+                        MMChests.ForeColor = Color.Yellow
+                    Else
+                        MMBoss.Enabled = False
+                        MMChests.Text = 7
+                        MMChests.ForeColor = Color.Yellow
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+                    MMLabel.BackColor = Color.Yellow
+                    MMLabel.ForeColor = Color.Black
+                    MMChests.Text = 7
+                    MMChests.ForeColor = Color.White
+                    MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                Else
+                    MMLabel.BackColor = Color.Red
+                    MMLabel.ForeColor = Color.Black
+                    MMChests.Text = 0
+                    MMChests.ForeColor = Color.White
+                    MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                End If
+            Case 1
+                If Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
+                    If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
+                    MMLabel.ForeColor = Color.White
+                    MMBoss.Enabled = True
+                    MMBorder.BackColor = Color.White
+                ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
+                    MMLabel.BackColor = Color.Yellow
+                    MMLabel.ForeColor = Color.Black
+                    If Somaria = True Then MMBoss.Enabled = True Else MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+                    MMLabel.BackColor = Color.Yellow
+                    MMLabel.ForeColor = Color.Black
+                    MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                Else
+                    MMLabel.BackColor = Color.Red
+                    MMLabel.ForeColor = Color.Black
+                    MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                End If
+            Case 4
+                If Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
+                    If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
+                    MMLabel.ForeColor = Color.White
+                    MMBoss.Enabled = True
+                    MMBorder.BackColor = Color.White
+                ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
+                    MMLabel.BackColor = Color.Yellow
+                    MMLabel.ForeColor = Color.Black
+                    If Somaria = True Then MMBoss.Enabled = True Else MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
+                    MMLabel.BackColor = Color.Yellow
+                    MMLabel.ForeColor = Color.Black
+                    MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                Else
+                    MMLabel.BackColor = Color.Red
+                    MMLabel.ForeColor = Color.Black
+                    MMBoss.Enabled = False
+                    MMBorder.BackColor = Color.Black
+                End If
+            Case 6
                 MMBoss.Enabled = True
                 MMChests.Text = 8
                 MMLabel.ForeColor = Color.White
                 MMBorder.BackColor = Color.White
-                If Lamp = True Then
-                    MMLabel.BackColor = Color.Green
-                    MMChests.ForeColor = Color.White
-                Else
-                    MMLabel.BackColor = Color.Orange
-                    MMChests.ForeColor = Color.Orange
-                End If
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
-                MMLabel.BackColor = Color.Yellow
-                MMBorder.BackColor = Color.Black
-                If Somaria = True Then
-                    MMBoss.Enabled = True
-                    MMChests.Text = 8
-                    MMChests.ForeColor = Color.Yellow
-                Else
-                    MMBoss.Enabled = False
-                    MMChests.Text = 7
-                    MMChests.ForeColor = Color.Yellow
-                End If
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
-                MMLabel.BackColor = Color.Yellow
-                MMLabel.ForeColor = Color.Black
-                MMChests.Text = 7
+                MMLabel.BackColor = Color.Green
                 MMChests.ForeColor = Color.White
-                MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            Else
-                MMLabel.BackColor = Color.Red
-                MMLabel.ForeColor = Color.Black
-                MMChests.Text = 0
-                MMChests.ForeColor = Color.White
-                MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            End If
-        ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True Then
-                MMBoss.Enabled = True
-                MMChests.Text = 8
-                MMLabel.ForeColor = Color.White
-                MMBorder.BackColor = Color.White
-                If Lamp = True Then
-                    MMLabel.BackColor = Color.Green
-                    MMChests.ForeColor = Color.White
-                Else
-                    MMLabel.BackColor = Color.Orange
-                    MMChests.ForeColor = Color.Orange
-                End If
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
-                MMLabel.ForeColor = Color.Black
-                MMLabel.BackColor = Color.Yellow
-                MMBorder.BackColor = Color.Black
-                If Somaria = True Then
-                    MMBoss.Enabled = True
-                    MMChests.Text = 8
-                    MMChests.ForeColor = Color.Yellow
-                Else
-                    MMBoss.Enabled = False
-                    MMChests.Text = 7
-                    MMChests.ForeColor = Color.Yellow
-                End If
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
-                MMLabel.BackColor = Color.Yellow
-                MMLabel.ForeColor = Color.Black
-                MMChests.Text = 7
-                MMChests.ForeColor = Color.White
-                MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            Else
-                MMLabel.BackColor = Color.Red
-                MMLabel.ForeColor = Color.Black
-                MMChests.Text = 0
-                MMChests.ForeColor = Color.White
-                MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            End If
-        ElseIf ComboBox1.SelectedIndex = 1 Then
-            If Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
-                If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
-                MMLabel.ForeColor = Color.White
-                MMBoss.Enabled = True
-                MMBorder.BackColor = Color.White
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
-                MMLabel.BackColor = Color.Yellow
-                MMLabel.ForeColor = Color.Black
-                If Somaria = True Then MMBoss.Enabled = True Else MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Sword > 0 And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
-                MMLabel.BackColor = Color.Yellow
-                MMLabel.ForeColor = Color.Black
-                MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            Else
-                MMLabel.BackColor = Color.Red
-                MMLabel.ForeColor = Color.Black
-                MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            End If
-        Else
-            If Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) And Somaria = True And MMBigKey.Checked = True Then
-                If Lamp = True Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
-                MMLabel.ForeColor = Color.White
-                MMBoss.Enabled = True
-                MMBorder.BackColor = Color.White
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And MedallionCount > 0 And MireMedallion = 0 Then
-                MMLabel.BackColor = Color.Yellow
-                MMLabel.ForeColor = Color.Black
-                If Somaria = True Then MMBoss.Enabled = True Else MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            ElseIf Pearl = True And Glove = 2 And Flute = True And Hammer = True And (Hookshot = True Or Boots = True) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos = True) Or (MireMedallion = 2 And Ether = True) Or (MireMedallion = 3 And Quake = True)) Then
-                MMLabel.BackColor = Color.Yellow
-                MMLabel.ForeColor = Color.Black
-                MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            Else
-                MMLabel.BackColor = Color.Red
-                MMLabel.ForeColor = Color.Black
-                MMBoss.Enabled = False
-                MMBorder.BackColor = Color.Black
-            End If
-        End If
+        End Select
     End Sub
 
     Private Sub MireBEQ_Click(sender As Object, e As EventArgs) Handles MireBEQ.MouseDown
@@ -4058,160 +4467,169 @@
         TRCheck()
     End Sub
     Public Sub TRCheck()
-        If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Then
-            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+        Select Case ComboBox1.SelectedIndex
+            Case 0, 2, 3, 5
+                If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+                    TRAccess = True
+                    TRChests.Text = 12
+                    If Lamp = True And (Shield = 3 Or Byrna = True Or Cape = True) Then
+                        TRLabel.BackColor = Color.Green
+                        TRChests.ForeColor = Color.White
+                    Else
+                        TRLabel.BackColor = Color.Orange
+                        TRChests.ForeColor = Color.Orange
+                    End If
+                    TRLabel.ForeColor = Color.White
+                    TRBorder.BackColor = Color.White
+                    TRBoss.Enabled = True
+                    If Mirror = True Then
+                        LW45.Enabled = True
+                        LW45.BackColor = Color.WhiteSmoke
+                    Else
+                        LW45.Enabled = True
+                        LW45.Checked = False
+                        LW45.BackColor = Color.Red
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And MedallionCount > 0 And TurtleMedallion = 0 Then
+                    TRAccess = True
+                    TRLabel.BackColor = Color.Yellow
+                    TRLabel.ForeColor = Color.Black
+                    TRBorder.BackColor = Color.Black
+                    If FireRod = True And IceRod = True Then
+                        TRChests.Text = 12
+                        TRChests.ForeColor = Color.Yellow
+                        TRBoss.Enabled = True
+                    ElseIf FireRod = True Then
+                        TRChests.Text = 11
+                        TRChests.ForeColor = Color.Yellow
+                        TRBoss.Enabled = False
+                    Else
+                        TRChests.Text = 9
+                        TRChests.ForeColor = Color.Yellow
+                        TRBoss.Enabled = False
+                    End If
+                    If Mirror = True Then
+                        LW45.Enabled = True
+                        LW45.BackColor = Color.Yellow
+                    Else
+                        LW45.Enabled = True
+                        LW45.Checked = False
+                        LW45.BackColor = Color.Red
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And FireRod = True Then
+                    TRAccess = True
+                    TRChests.Text = 11
+                    If Lamp = True Then TRChests.ForeColor = Color.White Else TRChests.ForeColor = Color.Yellow
+                    TRLabel.BackColor = Color.Yellow
+                    TRLabel.ForeColor = Color.Black
+                    TRBoss.Enabled = False
+                    TRBorder.BackColor = Color.Black
+                    If Mirror = True Then
+                        LW45.Enabled = True
+                        LW45.BackColor = Color.WhiteSmoke
+                    Else
+                        LW45.Enabled = True
+                        LW45.Checked = False
+                        LW45.BackColor = Color.Red
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+                    TRAccess = True
+                    TRChests.Text = 9
+                    TRChests.ForeColor = Color.Yellow
+                    TRLabel.BackColor = Color.Yellow
+                    TRLabel.ForeColor = Color.Black
+                    TRBoss.Enabled = False
+                    TRBorder.BackColor = Color.Black
+                    If Mirror = True Then
+                        LW45.Enabled = True
+                        LW45.BackColor = Color.Yellow
+                    Else
+                        LW45.Enabled = True
+                        LW45.Checked = False
+                        LW45.BackColor = Color.Red
+                    End If
+                Else
+                    TRAccess = False
+                    TRLabel.BackColor = Color.Red
+                    TRLabel.ForeColor = Color.Black
+                    TRChests.Text = 0
+                    TRChests.ForeColor = Color.White
+                    TRBoss.Enabled = False
+                    TRBorder.BackColor = Color.Black
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
+            Case 1, 4
+                If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True And TRKeys.Text >= 3 Then
+                    TRAccess = True
+                    If Lamp = True And TRKeys.Text = 4 And (Shield = 3 Or Byrna = True Or Cape = True) Then
+                        TRLabel.BackColor = Color.Green
+                        TRLabel.ForeColor = Color.White
+                    ElseIf TRKeys.Text = 4 Then
+                        TRLabel.BackColor = Color.Orange
+                        TRLabel.ForeColor = Color.White
+                    ElseIf TRKeys.Text = 3 Then
+                        TRLabel.BackColor = Color.Yellow
+                        TRLabel.ForeColor = Color.Black
+                    End If
+                    TRBoss.Enabled = True
+                    TRBorder.BackColor = Color.White
+                    If Mirror = True Then
+                        LW45.Enabled = True
+                        LW45.BackColor = Color.WhiteSmoke
+                    Else
+                        LW45.Enabled = True
+                        LW45.Checked = False
+                        LW45.BackColor = Color.Red
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And TurtleMedallion = 0 And MedallionCount > 0 Then
+                    TRAccess = True
+                    TRLabel.BackColor = Color.Yellow
+                    TRLabel.ForeColor = Color.Black
+                    TRBorder.BackColor = Color.Black
+                    If FireRod = True And IceRod = True Then TRBoss.Enabled = True Else TRBoss.Enabled = False
+                    If TRKeys.Text >= 2 And Mirror = True Then
+                        LW45.Enabled = True
+                        LW45.BackColor = Color.Yellow
+                    Else
+                        LW45.Enabled = True
+                        LW45.Checked = False
+                        LW45.BackColor = Color.Red
+                    End If
+                ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
+                    TRAccess = True
+                    TRLabel.BackColor = Color.Yellow
+                    TRLabel.ForeColor = Color.Black
+                    TRBoss.Enabled = False
+                    TRBorder.BackColor = Color.Black
+                    If TRKeys.Text >= 2 And Mirror = True Then
+                        LW45.Enabled = True
+                        LW45.BackColor = Color.WhiteSmoke
+                    Else
+                        LW45.Enabled = True
+                        LW45.Checked = False
+                        LW45.BackColor = Color.Red
+                    End If
+                Else
+                    TRAccess = False
+                    TRLabel.BackColor = Color.Red
+                    TRLabel.ForeColor = Color.Black
+                    TRBoss.Enabled = False
+                    TRBorder.BackColor = Color.Black
+                    LW45.Enabled = True
+                    LW45.Checked = False
+                    LW45.BackColor = Color.Red
+                End If
+            Case 6
                 TRAccess = True
                 TRChests.Text = 12
-                If Lamp = True And (Sword >= 2 Or (Sword = 1 And (Magic = 1 Or Bottle >= 1)) Or (Magic = 2 Or Bottle >= 2 Or (Magic = 1 And Bottle >= 1))) Then
-                    TRLabel.BackColor = Color.Green
-                    TRChests.ForeColor = Color.White
-                Else
-                    TRLabel.BackColor = Color.Orange
-                    TRChests.ForeColor = Color.Orange
-                End If
+                TRLabel.BackColor = Color.Green
+                TRChests.ForeColor = Color.White
                 TRLabel.ForeColor = Color.White
                 TRBorder.BackColor = Color.White
                 TRBoss.Enabled = True
-                If Mirror = True Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.WhiteSmoke
-                Else
-                    LW45.Enabled = True
-                    LW45.Checked = False
-                    LW45.BackColor = Color.Red
-                End If
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And (Hookshot = True Or Mirror = True) And MedallionCount > 0 And TurtleMedallion = 0 Then
-                TRAccess = True
-                TRLabel.BackColor = Color.Yellow
-                TRLabel.ForeColor = Color.Black
-                TRBorder.BackColor = Color.Black
-                If FireRod = True And IceRod = True Then
-                    TRChests.Text = 12
-                    TRChests.ForeColor = Color.Yellow
-                    TRBoss.Enabled = True
-                ElseIf FireRod = True Then
-                    TRChests.Text = 11
-                    TRChests.ForeColor = Color.Yellow
-                    TRBoss.Enabled = False
-                Else
-                    TRChests.Text = 9
-                    TRChests.ForeColor = Color.Yellow
-                    TRBoss.Enabled = False
-                End If
-                If Mirror = True Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.Yellow
-                Else
-                    LW45.Enabled = True
-                    LW45.Checked = False
-                    LW45.BackColor = Color.Red
-                End If
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And FireRod = True Then
-                TRAccess = True
-                TRChests.Text = 11
-                If Lamp = True Then TRChests.ForeColor = Color.White Else TRChests.ForeColor = Color.Yellow
-                TRLabel.BackColor = Color.Yellow
-                TRLabel.ForeColor = Color.Black
-                TRBoss.Enabled = False
-                TRBorder.BackColor = Color.Black
-                If Mirror = True Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.WhiteSmoke
-                Else
-                    LW45.Enabled = True
-                    LW45.Checked = False
-                    LW45.BackColor = Color.Red
-                End If
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
-                TRAccess = True
-                TRChests.Text = 9
-                TRChests.ForeColor = Color.Yellow
-                TRLabel.BackColor = Color.Yellow
-                TRLabel.ForeColor = Color.Black
-                TRBoss.Enabled = False
-                TRBorder.BackColor = Color.Black
-                If Mirror = True Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.Yellow
-                Else
-                    LW45.Enabled = True
-                    LW45.Checked = False
-                    LW45.BackColor = Color.Red
-                End If
-            Else
-                TRAccess = False
-                TRLabel.BackColor = Color.Red
-                TRLabel.ForeColor = Color.Black
-                TRChests.Text = 0
-                TRChests.ForeColor = Color.White
-                TRBoss.Enabled = False
-                TRBorder.BackColor = Color.Black
-                LW45.Enabled = True
-                LW45.Checked = False
-                LW45.BackColor = Color.Red
-            End If
-        Else
-            If Pearl = True And Glove = 2 And Hammer = True And Somaria = True And FireRod = True And IceRod = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) And TRBigKey.Checked = True And TRKeys.Text >= 3 Then
-                TRAccess = True
-                If Lamp = True And TRKeys.Text = 4 And (Sword >= 2 Or (Sword = 1 And (Magic = 1 Or Bottle >= 1)) Or (Magic = 2 Or Bottle >= 2 Or (Magic = 1 And Bottle >= 1))) Then
-                    TRLabel.BackColor = Color.Green
-                    TRLabel.ForeColor = Color.White
-                ElseIf TRKeys.Text = 4 Then
-                    TRLabel.BackColor = Color.Orange
-                    TRLabel.ForeColor = Color.White
-                ElseIf TRKeys.Text = 3 Then
-                    TRLabel.BackColor = Color.Yellow
-                    TRLabel.ForeColor = Color.Black
-                End If
-                TRBoss.Enabled = True
-                TRBorder.BackColor = Color.White
-                If Mirror = True Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.WhiteSmoke
-                Else
-                    LW45.Enabled = True
-                    LW45.Checked = False
-                    LW45.BackColor = Color.Red
-                End If
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And TurtleMedallion = 0 And MedallionCount > 0 Then
-                TRAccess = True
-                TRLabel.BackColor = Color.Yellow
-                TRLabel.ForeColor = Color.Black
-                TRBorder.BackColor = Color.Black
-                If FireRod = True And IceRod = True Then TRBoss.Enabled = True Else TRBoss.Enabled = False
-                If TRKeys.Text >= 2 And Mirror = True Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.Yellow
-                Else
-                    LW45.Enabled = True
-                    LW45.Checked = False
-                    LW45.BackColor = Color.Red
-                End If
-            ElseIf Pearl = True And Glove = 2 And Hammer = True And Somaria = True And Sword > 0 And (Hookshot = True Or Mirror = True) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True)) Then
-                TRAccess = True
-                TRLabel.BackColor = Color.Yellow
-                TRLabel.ForeColor = Color.Black
-                TRBoss.Enabled = False
-                TRBorder.BackColor = Color.Black
-                If TRKeys.Text >= 2 And Mirror = True Then
-                    LW45.Enabled = True
-                    LW45.BackColor = Color.WhiteSmoke
-                Else
-                    LW45.Enabled = True
-                    LW45.Checked = False
-                    LW45.BackColor = Color.Red
-                End If
-            Else
-                TRAccess = False
-                TRLabel.BackColor = Color.Red
-                TRLabel.ForeColor = Color.Black
-                TRBoss.Enabled = False
-                TRBorder.BackColor = Color.Black
-                LW45.Enabled = True
-                LW45.Checked = False
-                LW45.BackColor = Color.Red
-            End If
-        End If
+        End Select
         If LW45.Checked = True Then LW45.BackColor = Color.FromArgb(64, 64, 64)
     End Sub
 
