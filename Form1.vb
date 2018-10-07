@@ -2698,7 +2698,7 @@
                     PODBorder.BackColor = Color.Black
                 End If
             Case 1, 4
-                If Pearl = True And Hammer = True And Bow > 1 And (Aganhim = True Or Glove = True) And PODBigKey.Checked = True And PODKeys.Text >= 1 Then
+                If Pearl = True And Hammer = True And Bow > 1 And (Aganhim = True Or Glove > 1) And PODBigKey.Checked = True And PODKeys.Text >= 1 Then
                     PODBoss.Enabled = True
                     If Lamp = True And PODKeys.Text = 6 Then
                         PODLabel.BackColor = Color.Green
