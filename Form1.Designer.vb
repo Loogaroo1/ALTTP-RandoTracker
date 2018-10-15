@@ -256,6 +256,7 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Inverted = New System.Windows.Forms.CheckBox()
         CType(Me.MagicButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -3899,6 +3900,17 @@ Partial Class Form1
         Me.Label8.TabIndex = 745
         Me.Label8.Text = "Macguffins"
         '
+        'Inverted
+        '
+        Me.Inverted.AutoSize = True
+        Me.Inverted.ForeColor = System.Drawing.Color.White
+        Me.Inverted.Location = New System.Drawing.Point(208, 464)
+        Me.Inverted.Name = "Inverted"
+        Me.Inverted.Size = New System.Drawing.Size(95, 17)
+        Me.Inverted.TabIndex = 746
+        Me.Inverted.Text = "Inverted Mode"
+        Me.Inverted.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AllowDrop = True
@@ -3906,6 +3918,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(779, 490)
+        Me.Controls.Add(Me.Inverted)
         Me.Controls.Add(Me.SPLabel)
         Me.Controls.Add(Me.PODLabel)
         Me.Controls.Add(Me.TOHLabel)
@@ -4443,4 +4456,5 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents Inverted As CheckBox
 End Class
