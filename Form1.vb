@@ -3050,7 +3050,7 @@
                     End If
                 ElseIf Pearl = True And (Aganhim = True Or Glove = 2 Or (Glove = 1 And Hammer = True)) Then
                     EPLabel.ForeColor = Color.White
-                    EPBoss.Enabled = True
+                    EPBoss.Enabled = False
                     EPChests.Text = 5
                     EPLabel.BackColor = Color.Yellow
                     EPLabel.ForeColor = Color.Black
