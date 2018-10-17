@@ -2555,9 +2555,9 @@
             DW8.BackColor = Color.Red
         End If
 
-        '' Hammer Pegs - Mitt, Hammer
+        '' Hammer Pegs - Hammer, Mitt or Mirror
         If ComboBox1.SelectedIndex <> 6 Then
-            If Glove = 2 And Hammer = True Then
+            If (Glove = 2 Or ((Aganhim = True Or (Glove = 1 And Pearl = True)) And Mirror = True)) And Hammer = True Then
                 DW9.Enabled = True
                 DW9.BackColor = Color.WhiteSmoke
             Else
@@ -2845,7 +2845,7 @@
 
     Public Sub InvHCCheck()
         Select Case ComboBox1.SelectedIndex
-            Case 0 To 5
+            Case 0, 2, 3, 5
                 If Pearl = True And (Aganhim = True Or Glove = 2 Or (Glove = 1 And Hammer = True)) And (Bombs = True Or Boots = True) Then
                     If Lamp = True Then HCLabel.BackColor = Color.Green Else HCLabel.BackColor = Color.Orange
                     HCLabel.ForeColor = Color.White
@@ -2865,7 +2865,21 @@
                     HCChests.ForeColor = Color.White
                     HCBorder.BackColor = Color.Black
                 End If
-            Case Else
+            Case 1, 4
+                If Pearl = True And (Aganhim = True Or Glove = 2 Or (Glove = 1 And Hammer = True)) And (Bombs = True Or Boots = True) Then
+                    If Lamp = True And HCKeys.Text = 1 Then HCLabel.BackColor = Color.Green Else HCLabel.BackColor = Color.Orange
+                    HCLabel.ForeColor = Color.White
+                    HCBorder.BackColor = Color.White
+                ElseIf Pearl = True And (Aganhim = True Or Glove = 2 Or (Glove = 1 And Hammer = True)) Then
+                    HCLabel.BackColor = Color.Yellow
+                    HCLabel.ForeColor = Color.Black
+                    HCBorder.BackColor = Color.Black
+                Else
+                    HCLabel.BackColor = Color.Red
+                    HCLabel.ForeColor = Color.Black
+                    HCBorder.BackColor = Color.Black
+                End If
+            Case 6
                 HCLabel.BackColor = Color.Green
                 HCLabel.ForeColor = Color.White
                 HCChests.Text = 8
@@ -3065,7 +3079,7 @@
                     EPChests.ForeColor = Color.White
                 End If
             Case 1, 4
-                If Pearl = True And (Aganhim = True Or Glove = 2 Or (Glove = 1 And Hammer = True)) And Bow > 1 And EPBigKey.Checked = True Then
+                If Pearl = True And (Aganhim = True Or Glove = 2 Or (Glove = 1 And Hammer = 1)) And Bow > 1 And EPBigKey.Checked = True Then
                     If Lamp = True Then
                         EPLabel.BackColor = Color.Green
                         EPChests.ForeColor = Color.White
@@ -3076,7 +3090,8 @@
                         EPBorder.BackColor = Color.White
                     End If
                     EPBoss.Enabled = True
-                ElseIf Pearl = True And (Aganhim = True Or (Glove = 1 And Hammer = True) Or (Glove = 2 And Flippers = True)) Then
+                    EPLabel.ForeColor = Color.White
+                ElseIf Pearl = True And (Aganhim = True Or (Glove > 0 And Hammer = True) Or (Glove = 2 And Flippers = True)) Then
                     EPLabel.ForeColor = Color.Black
                     EPLabel.BackColor = Color.Yellow
                     EPBoss.Enabled = False
@@ -3640,13 +3655,13 @@
                     AGChests.Text = 0
                 End If
             Case 1
-                If (Glove > 0 Or Flute = True) And (Sword > 0 Or Net = True) And Lamp = True And AGKeys.Text = 2 Then
+                If (Glove > 0 Or Flute = True) And Sword > 0 And Lamp = True And AGKeys.Text = 2 Then
                     AgaButton.Visible = True
                     If Aganhim = False Then AgaButton.Image = noaganhim
                     AGLabel.BackColor = Color.Green
                     AGLabel.ForeColor = Color.White
                     AGBorder.BackColor = Color.White
-                ElseIf Sword >= 2 Or Cape = True Then
+                ElseIf Glove > 0 Or Flute = True Then
                     AgaButton.Visible = False
                     AGLabel.BackColor = Color.Yellow
                     AGLabel.ForeColor = Color.Black
@@ -5373,7 +5388,7 @@
                     TTBorder.BackColor = Color.Black
                 End If
             Case 1
-                If Sword > 0 Or Hammer = True Or Somaria = True Or Byrna = True And TTBigKey.Checked = True Then
+                If (Sword > 0 Or Hammer = True Or Somaria = True Or Byrna = True) And TTBigKey.Checked = True Then
                     If TTKeys.Text = 1 Then TTLabel.BackColor = Color.Green Else TTLabel.BackColor = Color.Orange
                     TTLabel.ForeColor = Color.White
                     TTBoss.Enabled = True
@@ -5385,7 +5400,7 @@
                     TTBorder.BackColor = Color.Black
                 End If
             Case 4
-                If Hammer = True Or Somaria = True Or Byrna = True And TTBigKey.Checked = True Then
+                If (Hammer = True Or Somaria = True Or Byrna = True) And TTBigKey.Checked = True Then
                     If TTKeys.Text = 1 Then TTLabel.BackColor = Color.Green Else TTLabel.BackColor = Color.Orange
                     TTLabel.ForeColor = Color.White
                     TTBoss.Enabled = True
@@ -6333,21 +6348,21 @@
                         If Lamp = True And (Shield = 3 Or Byrna = True Or Cape = True) Then TRChests.ForeColor = Color.White Else TRChests.ForeColor = Color.Yellow
                         TRLabel.ForeColor = Color.Black
                         TRBorder.BackColor = Color.Black
-                        TRBoss.Enabled = True
+                        TRBoss.Enabled = False
                     ElseIf Somaria = True Then
                         TRChests.Text = 9
                         TRLabel.BackColor = Color.Yellow
                         If Lamp = True And (Shield = 3 Or Byrna = True Or Cape = True) Then TRChests.ForeColor = Color.White Else TRChests.ForeColor = Color.Yellow
                         TRLabel.ForeColor = Color.Black
                         TRBorder.BackColor = Color.Black
-                        TRBoss.Enabled = True
+                        TRBoss.Enabled = False
                     Else
                         TRChests.Text = 8
                         TRLabel.BackColor = Color.Yellow
                         TRChests.ForeColor = Color.Yellow
                         TRLabel.ForeColor = Color.Black
                         TRBorder.BackColor = Color.Black
-                        TRBoss.Enabled = True
+                        TRBoss.Enabled = False
                     End If
                 Else
                     TRLabel.BackColor = Color.Red
@@ -6361,7 +6376,6 @@
                 If ((Glove > 0 Or Flute = True) And (Hammer = True And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos = True) Or (TurtleMedallion = 2 And Ether = True) Or (TurtleMedallion = 3 And Quake = True))) Or (Pearl = True And (Hookshot = True Or Hammer = True) And Mirror = True)) Then TRAccess = True Else TRAccess = False
                 If TRAccess = True Then
                     If Somaria = True And FireRod = True And IceRod = True And Hammer = True And TRBigKey.Checked = True Then
-                        TRChests.Text = 12
                         If Lamp = True And (Shield = 3 Or Byrna = True Or Cape = True) And TRKeys.Text = 4 Then
                             TRLabel.BackColor = Color.Green
                             TRChests.ForeColor = Color.White
@@ -6372,32 +6386,16 @@
                         TRLabel.ForeColor = Color.White
                         TRBorder.BackColor = Color.White
                         TRBoss.Enabled = True
-                    ElseIf Somaria = True And FireRod = True Then
-                        TRChests.Text = 11
-                        TRLabel.BackColor = Color.Yellow
-                        If Lamp = True And (Shield = 3 Or Byrna = True Or Cape = True) Then TRChests.ForeColor = Color.White Else TRChests.ForeColor = Color.Yellow
-                        TRLabel.ForeColor = Color.Black
-                        TRBorder.BackColor = Color.Black
-                        TRBoss.Enabled = True
-                    ElseIf Somaria = True Then
-                        TRChests.Text = 9
-                        TRLabel.BackColor = Color.Yellow
-                        If Lamp = True And (Shield = 3 Or Byrna = True Or Cape = True) Then TRChests.ForeColor = Color.White Else TRChests.ForeColor = Color.Yellow
-                        TRLabel.ForeColor = Color.Black
-                        TRBorder.BackColor = Color.Black
-                        TRBoss.Enabled = True
                     Else
-                        TRChests.Text = 1
                         TRLabel.BackColor = Color.Yellow
                         TRChests.ForeColor = Color.Yellow
                         TRLabel.ForeColor = Color.Black
                         TRBorder.BackColor = Color.Black
-                        TRBoss.Enabled = True
+                        TRBoss.Enabled = False
                     End If
                 Else
                     TRLabel.BackColor = Color.Red
                     TRLabel.ForeColor = Color.Black
-                    TRChests.Text = 0
                     TRChests.ForeColor = Color.White
                     TRBoss.Enabled = False
                     TRBorder.BackColor = Color.Black
