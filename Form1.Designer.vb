@@ -4160,7 +4160,7 @@ Partial Class Form1
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(40, 39)
         Me.Name = "Form1"
-        Me.Text = "ALTTP RandoTracker (Logic v8.29)"
+        Me.Text = "ALTTP RandoTracker (Logic v8.30)"
         CType(Me.MagicButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).EndInit()

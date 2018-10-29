@@ -7,6 +7,7 @@
             HCCheck()
             EPCheck()
             DPCheck()
+            TOHCheck()
             AgaCheck()
             PODCheck()
             SPCheck()
@@ -3459,12 +3460,12 @@
                 ElseIf Pearl = True And (Glove > 0 Or Flute = True) And Hammer = True And HeraBigKey.Checked = True Then
                     TOHLabel.BackColor = Color.Yellow
                     TOHLabel.ForeColor = Color.Black
-                    HeraBoss.Enabled = True
+                    HeraBoss.Enabled = False
                     TOHBorder.BackColor = Color.Black
                 ElseIf Pearl = True And (Glove > 0 Or Flute = True) And Hammer = True Then
                     TOHLabel.BackColor = Color.Yellow
                     TOHLabel.ForeColor = Color.Black
-                    HeraBoss.Enabled = True
+                    HeraBoss.Enabled = False
                     TOHBorder.BackColor = Color.Black
                 Else
                     TOHLabel.BackColor = Color.Red
