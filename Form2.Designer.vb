@@ -33,16 +33,15 @@ Partial Class Form2
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -114,18 +113,18 @@ Partial Class Form2
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(12, 89)
+        Me.Label6.Location = New System.Drawing.Point(12, 103)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(340, 13)
+        Me.Label6.Size = New System.Drawing.Size(356, 13)
         Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Green background on dungeon label means all prizes/chests collected"
+        Me.Label6.Text = "Green background on prize/chest count means all prizes/chests collected"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(12, 102)
+        Me.Label7.Location = New System.Drawing.Point(12, 90)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(363, 13)
         Me.Label7.TabIndex = 7
@@ -136,51 +135,40 @@ Partial Class Form2
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(12, 267)
+        Me.Label20.Location = New System.Drawing.Point(12, 275)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(265, 13)
+        Me.Label20.Size = New System.Drawing.Size(266, 13)
         Me.Label20.TabIndex = 25
-        Me.Label20.Text = "White buttons are open, Orange are sequence breaks,"
+        Me.Label20.Text = "Green buttons are open, Orange are sequence breaks,"
         '
         'Label24
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.White
-        Me.Label24.Location = New System.Drawing.Point(12, 281)
+        Me.Label24.Location = New System.Drawing.Point(12, 289)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(259, 13)
+        Me.Label24.Size = New System.Drawing.Size(293, 13)
         Me.Label24.TabIndex = 21
-        Me.Label24.Text = "Yellow buttons are partial/uncertain, Red are blocked"
+        Me.Label24.Text = "Yellow buttons are partial/uncertain/visible, Red are blocked"
         '
         'Label25
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.White
-        Me.Label25.Location = New System.Drawing.Point(12, 253)
+        Me.Label25.Location = New System.Drawing.Point(12, 261)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(123, 13)
         Me.Label25.TabIndex = 20
         Me.Label25.Text = "Overworld Locations"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.White
-        Me.Label21.Location = New System.Drawing.Point(12, 295)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(351, 13)
-        Me.Label21.TabIndex = 26
-        Me.Label21.Text = "Visible/learnable locations have a '?' button for tracking whether to return"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(12, 171)
+        Me.Label14.Location = New System.Drawing.Point(12, 159)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(310, 13)
         Me.Label14.TabIndex = 34
@@ -191,7 +179,7 @@ Partial Class Form2
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(63, 185)
+        Me.Label18.Location = New System.Drawing.Point(63, 173)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(262, 13)
         Me.Label18.TabIndex = 33
@@ -204,53 +192,42 @@ Partial Class Form2
         Me.Label13.ForeColor = System.Drawing.Color.White
         Me.Label13.Location = New System.Drawing.Point(12, 143)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(367, 13)
+        Me.Label13.Size = New System.Drawing.Size(339, 13)
         Me.Label13.TabIndex = 32
-        Me.Label13.Text = "Standard/Open: Number next to chests indicates number of chests available"
+        Me.Label13.Text = "Standard/Open/Retro: L/R click rupee symbol to track items collected"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(11, 224)
+        Me.Label12.Location = New System.Drawing.Point(11, 220)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(322, 13)
+        Me.Label12.Size = New System.Drawing.Size(240, 13)
         Me.Label12.TabIndex = 31
-        Me.Label12.Text = "Type Shift+1-9/0 to fully clear dungeon (boss and all prizes/chests)"
+        Me.Label12.Text = "Double-click dungeon label to fully clear dungeon"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(12, 211)
+        Me.Label11.Location = New System.Drawing.Point(12, 203)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(258, 13)
+        Me.Label11.Size = New System.Drawing.Size(263, 13)
         Me.Label11.TabIndex = 30
-        Me.Label11.Text = "Yellow means partial or uncertain, red means blocked"
+        Me.Label11.Text = "Yellow means partial or uncertain, Red means blocked"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(11, 198)
+        Me.Label10.Location = New System.Drawing.Point(11, 190)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(325, 13)
         Me.Label10.TabIndex = 29
         Me.Label10.Text = "Green dungeon label means open, Orange means sequence break,"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(92, 157)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(291, 13)
-        Me.Label9.TabIndex = 28
-        Me.Label9.Text = "L/R click rupee symbol to track number of prizes in dungeon"
         '
         'Label8
         '
@@ -274,6 +251,17 @@ Partial Class Form2
         Me.Label15.TabIndex = 35
         Me.Label15.Text = "(Right-click reward to clear it out in case of error)"
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(11, 234)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(253, 13)
+        Me.Label9.TabIndex = 36
+        Me.Label9.Text = "(Boss && all prizes/chests, not available for AG or GT)"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -281,6 +269,7 @@ Partial Class Form2
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(397, 349)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label18)
@@ -288,20 +277,18 @@ Partial Class Form2
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label6)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -325,14 +312,13 @@ Partial Class Form2
     Friend WithEvents Label20 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
-    Friend WithEvents Label21 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label15 As Label
+    Friend WithEvents Label9 As Label
 End Class
