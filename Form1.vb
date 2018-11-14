@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, Magic, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper, Hours, Minutes, Seconds, Tenths As Integer
+    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, Magic, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available As Integer
     Dim Hookshot, Bombs, Powder, FireRod, IceRod, Bombos, Ether, Quake, Lamp, Hammer, Flute, Net, Book, Bottle, Somaria, Byrna, Cape, Mirror, Boots, Flippers, Pearl, Mushroom, Shovel, Aganhim, GreenPendant, TRAccess As Boolean
 
     Public Sub LogicCheck()
@@ -252,123 +252,6 @@
         ShovelButton.Image = noshovel
         SwordButton.Image = nosword
         ShieldButton.Image = noshield
-    End Sub
-
-
-    Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
-        Select Case (e.KeyChar)
-            Case "H", "h"
-                If My.Computer.Keyboard.ShiftKeyDown Then
-                    If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                        HCPrizes.Text = 0
-                        HCPrizes.BackColor = Color.Green
-                    Else
-                        HCChests.Text = 0
-                        HCChests.BackColor = Color.Green
-                    End If
-                End If
-            Case "!"
-                EPBoss.Checked = True
-                EPBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    EPPrizes.Text = 0
-                    EPPrizes.BackColor = Color.Green
-                Else
-                    EPChests.Text = 0
-                    EPChests.BackColor = Color.Green
-                End If
-            Case "@"
-                DPBoss.Checked = True
-                DPBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    DPPrizes.Text = 0
-                    DPPrizes.BackColor = Color.Green
-                Else
-                    DPChests.Text = 0
-                    DPChests.BackColor = Color.Green
-                End If
-            Case "#"
-                HeraBoss.Checked = True
-                HeraBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    TOHPrizes.Text = 0
-                    TOHPrizes.BackColor = Color.Green
-                Else
-                    TOHChests.Text = 0
-                    TOHChests.BackColor = Color.Green
-                End If
-            Case "$"
-                PODBoss.Checked = True
-                PODBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    PODPrizes.Text = 0
-                    PODPrizes.BackColor = Color.Green
-                Else
-                    PODChests.Text = 0
-                    PODChests.BackColor = Color.Green
-                End If
-            Case "%"
-                SPBoss.Checked = True
-                SPBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    SPPrizes.Text = 0
-                    SPPrizes.BackColor = Color.Green
-                Else
-                    SPChests.Text = 0
-                    SPChests.BackColor = Color.Green
-                End If
-            Case "^"
-                SWBoss.Checked = True
-                SWBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    SWPrizes.Text = 0
-                    SWPrizes.BackColor = Color.Green
-                Else
-                    SWChests.Text = 0
-                    SWChests.BackColor = Color.Green
-                End If
-            Case "&"
-                TTBoss.Checked = True
-                TTBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    TTPrizes.Text = 0
-                    TTPrizes.BackColor = Color.Green
-                Else
-                    TTChests.Text = 0
-                    TTChests.BackColor = Color.Green
-                End If
-            Case "*"
-                IPBoss.Checked = True
-                IPBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    IPPrizes.Text = 0
-                    IPPrizes.BackColor = Color.Green
-                Else
-                    IPChests.Text = 0
-                    IPChests.BackColor = Color.Green
-                End If
-            Case "("
-                MMBoss.Checked = True
-                MMBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    MMPrizes.Text = 0
-                    MMPrizes.BackColor = Color.Green
-                Else
-                    MMChests.Text = 0
-                    MMChests.BackColor = Color.Green
-                End If
-            Case ")"
-                TRBoss.Checked = True
-                TRBoss.Image = My.Resources.bossdeadsmall
-                If ComboBox1.SelectedIndex Mod 3 <> 1 Then
-                    TRPrizes.Text = 0
-                    TRPrizes.BackColor = Color.Green
-                Else
-                    TRChests.Text = 0
-                    TRChests.BackColor = Color.Green
-                End If
-        End Select
-        CrystalCheck()
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -3338,6 +3221,40 @@ Line1:
             Shield = 0
             MedallionCount = 0
 
+            ' Resetting dungeon rewards/macguffin counts, clearing notes
+            MireMedallion = 0
+            MireBEQ.Image = My.Resources.whatmedallion
+            TurtleMedallion = 0
+            TurtleBEQ.Image = My.Resources.whatmedallion
+            If ComboBox1.SelectedIndex Mod 3 = 1 Then
+                EPReward = -1 : EPButton.Image = Nothing
+                DPReward = -1 : DPButton.Image = Nothing
+                TOHReward = -1 : TOHButton.Image = Nothing
+                PODReward = -1 : PODButton.Image = Nothing
+                SPReward = -1 : SPButton.Image = Nothing
+                SWReward = -1 : SWButton.Image = Nothing
+                TTReward = -1 : TTButton.Image = Nothing
+                IPReward = -1 : IPButton.Image = Nothing
+                MMReward = -1 : MMButton.Image = Nothing
+                TRReward = -1 : TRButton.Image = Nothing
+            Else
+                EPReward = 0 : EPButton.Image = My.Resources.crystal
+                DPReward = 0 : DPButton.Image = My.Resources.crystal
+                TOHReward = 0 : TOHButton.Image = My.Resources.crystal
+                PODReward = 0 : PODButton.Image = My.Resources.crystal
+                SPReward = 0 : SPButton.Image = My.Resources.crystal
+                SWReward = 0 : SWButton.Image = My.Resources.crystal
+                TTReward = 0 : TTButton.Image = My.Resources.crystal
+                IPReward = 0 : IPButton.Image = My.Resources.crystal
+                MMReward = 0 : MMButton.Image = My.Resources.crystal
+                TRReward = 0 : TRButton.Image = My.Resources.crystal
+            End If
+            CrystalCount = 0
+            FairyCrystal = 0
+            PendantCount = 0
+            GreenPendant = False
+            TextBox1.Text = Nothing
+
             ' Resetting all dungeons
             If ComboBox1.SelectedIndex Mod 3 <> 2 Then HCPrizes.Text = 6 Else HCPrizes.Text = 7
             HCPrizes.BackColor = Color.Black
@@ -4063,6 +3980,16 @@ Line1:
         TRPrizes.Text = 0 : TRPrizes.BackColor = Color.Green
         TRChests.Text = 0 : TRChests.BackColor = Color.Green
 Line1:
+    End Sub
+
+    Private Sub NoteButton_Click(sender As Object, e As EventArgs) Handles NoteButton.Click
+        If Me.Height = 526 Then
+            Me.Height = 626
+            NoteButton.Text = "Close Notes"
+        Else
+            Me.Height = 526
+            NoteButton.Text = "Open Notes"
+        End If
     End Sub
 
     Private Sub TTClick(sender As Object, e As EventArgs) Handles TTMap.CheckedChanged, TTBigKey.CheckedChanged, TTBoss.CheckedChanged

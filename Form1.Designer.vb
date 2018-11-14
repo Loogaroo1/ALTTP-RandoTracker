@@ -274,6 +274,8 @@ Partial Class Form1
         Me.Label58 = New System.Windows.Forms.Label()
         Me.Label59 = New System.Windows.Forms.Label()
         Me.Label60 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.NoteButton = New System.Windows.Forms.Button()
         CType(Me.GTLabel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AGLabel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TRLabel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -3834,6 +3836,24 @@ Partial Class Form1
         Me.Label60.Text = "Start"
         Me.Label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(6, 494)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TextBox1.Size = New System.Drawing.Size(431, 88)
+        Me.TextBox1.TabIndex = 941
+        '
+        'NoteButton
+        '
+        Me.NoteButton.Location = New System.Drawing.Point(260, 459)
+        Me.NoteButton.Name = "NoteButton"
+        Me.NoteButton.Size = New System.Drawing.Size(75, 23)
+        Me.NoteButton.TabIndex = 942
+        Me.NoteButton.Text = "Open Notes"
+        Me.NoteButton.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AllowDrop = True
@@ -3841,6 +3861,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(51, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(441, 487)
+        Me.Controls.Add(Me.NoteButton)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.AGPrizes)
         Me.Controls.Add(Me.HCPrizes)
         Me.Controls.Add(Me.TRBoss)
@@ -4415,4 +4437,6 @@ Partial Class Form1
     Friend WithEvents Label55 As Label
     Friend WithEvents Label54 As Label
     Friend WithEvents Label53 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents NoteButton As Button
 End Class
