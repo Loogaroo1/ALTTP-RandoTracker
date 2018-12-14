@@ -3261,9 +3261,9 @@ Line1:
             HCChests.Text = 8
             HCChests.BackColor = Color.Black
             HCKeys.Text = 0
-            EPPrizes.Text = 6
+            EPPrizes.Text = 3
             EPPrizes.BackColor = Color.Black
-            EPChests.Text = 3
+            EPChests.Text = 6
             EPChests.BackColor = Color.Black
             EPKeys.Text = "-"
             EPMap.Checked = False
