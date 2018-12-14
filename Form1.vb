@@ -3263,7 +3263,7 @@ Line1:
             HCKeys.Text = 0
             EPPrizes.Text = 6
             EPPrizes.BackColor = Color.Black
-            EPChests.Text = 6
+            EPChests.Text = 3
             EPChests.BackColor = Color.Black
             EPKeys.Text = "-"
             EPMap.Checked = False
