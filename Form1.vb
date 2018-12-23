@@ -1458,9 +1458,9 @@ Line1:
         '' Spectacle Rock - Flute or Glove (+ Lamp to avoid sequence break), Pearl, Hookshot or Mitt, Hammer
         If (Flute = True Or Glove > 0) And Pearl = True And (Hookshot = True Or Glove = 2) And Hammer = True Then
             LW34.Visible = True
-            If (Flute = True Or Lamp = True) Then LW40.Image = My.Resources.lightgreen Else LW40.Image = My.Resources.lightorange
+            If (Flute = True Or Lamp = True) Then LW34.Image = My.Resources.lightgreen Else LW34.Image = My.Resources.lightorange
         ElseIf (Flute = True Or Glove > 0) And Pearl = True Then
-            LW34.Visible = True : LW40.Image = My.Resources.lightyellow
+            LW34.Visible = True : LW34.Image = My.Resources.lightyellow
         Else
             LW34.Visible = False
         End If
