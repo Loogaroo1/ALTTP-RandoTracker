@@ -102,6 +102,19 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module2.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -124,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -297,6 +316,34 @@
   <ItemGroup>
     <Content Include="ALttP - VT_no-glitches-29_normal-standard-ganon_xRv2onwNyl000.ico" />
     <Content Include="alttp___vt_no_glitches_29_normal_standard_ganon_xrv2onwnyl000_xEK_icon.ico" />
+    <None Include="Resources\LANgreen.png" />
+    <None Include="Resources\MOLgreen.png" />
+    <None Include="Resources\HLMgreen.png" />
+    <None Include="Resources\MTHgreen.png" />
+    <None Include="Resources\KLDgreen.png" />
+    <None Include="Resources\VITgreen.png" />
+    <None Include="Resources\TRIgreen.png" />
+    <None Include="Resources\LANorange.png" />
+    <None Include="Resources\MOLorange.png" />
+    <None Include="Resources\HLMorange.png" />
+    <None Include="Resources\MTHorange.png" />
+    <None Include="Resources\KLDorange.png" />
+    <None Include="Resources\VITorange.png" />
+    <None Include="Resources\TRIorange.png" />
+    <None Include="Resources\LANyellow.png" />
+    <None Include="Resources\MOLyellow.png" />
+    <None Include="Resources\HLMyellow.png" />
+    <None Include="Resources\MTHyellow.png" />
+    <None Include="Resources\KLDyellow.png" />
+    <None Include="Resources\VITyellow.png" />
+    <None Include="Resources\TRIyellow.png" />
+    <None Include="Resources\LANred.png" />
+    <None Include="Resources\MOLred.png" />
+    <None Include="Resources\HLMred.png" />
+    <None Include="Resources\MTHred.png" />
+    <None Include="Resources\KLDred.png" />
+    <None Include="Resources\VITred.png" />
+    <None Include="Resources\TRIred.png" />
     <None Include="Resources\lightred.png" />
     <None Include="Resources\lightorange.png" />
     <None Include="Resources\lightgreen.png" />
@@ -369,6 +416,18 @@
     <None Include="Resources\arrow.png" />
     <None Include="Resources\arrowsilver.png" />
     <None Include="Resources\AGyellow.png" />
+    <None Include="Resources\ARMgreen.png" />
+    <None Include="Resources\BLIred.png" />
+    <None Include="Resources\ARGred.png" />
+    <None Include="Resources\ARMred.png" />
+    <None Include="Resources\BLIyellow.png" />
+    <None Include="Resources\ARGyellow.png" />
+    <None Include="Resources\ARMyellow.png" />
+    <None Include="Resources\BLIorange.png" />
+    <None Include="Resources\ARGorange.png" />
+    <None Include="Resources\ARMorange.png" />
+    <None Include="Resources\BLIgreen.png" />
+    <None Include="Resources\ARGgreen.png" />
     <Content Include="Resources\bothboom.png" />
     <None Include="Resources\nomapsmall.png" />
     <None Include="Resources\rupeesmall.png" />

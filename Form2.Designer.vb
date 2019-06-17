@@ -42,11 +42,14 @@ Partial Class Form2
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(165, 321)
+        Me.Button1.Location = New System.Drawing.Point(165, 383)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -135,7 +138,7 @@ Partial Class Form2
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(12, 275)
+        Me.Label20.Location = New System.Drawing.Point(12, 338)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(266, 13)
         Me.Label20.TabIndex = 25
@@ -146,7 +149,7 @@ Partial Class Form2
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.White
-        Me.Label24.Location = New System.Drawing.Point(12, 289)
+        Me.Label24.Location = New System.Drawing.Point(12, 352)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(293, 13)
         Me.Label24.TabIndex = 21
@@ -157,7 +160,7 @@ Partial Class Form2
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.White
-        Me.Label25.Location = New System.Drawing.Point(12, 261)
+        Me.Label25.Location = New System.Drawing.Point(12, 324)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(123, 13)
         Me.Label25.TabIndex = 20
@@ -262,13 +265,49 @@ Partial Class Form2
         Me.Label9.TabIndex = 36
         Me.Label9.Text = "(Boss && all prizes/chests, not available for AG or GT)"
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(12, 296)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(190, 13)
+        Me.Label16.TabIndex = 40
+        Me.Label16.Text = "Right-click dungeon label to clear boss"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.White
+        Me.Label19.Location = New System.Drawing.Point(12, 280)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(316, 13)
+        Me.Label19.TabIndex = 38
+        Me.Label19.Text = "Left-click dungeon label to set boss - logic will automatically adapt"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.White
+        Me.Label21.Location = New System.Drawing.Point(12, 266)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(58, 13)
+        Me.Label21.TabIndex = 37
+        Me.Label21.Text = "Enemizer"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(397, 349)
+        Me.ClientSize = New System.Drawing.Size(397, 411)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
@@ -321,4 +360,7 @@ Partial Class Form2
     Friend WithEvents Label8 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label9 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label21 As Label
 End Class

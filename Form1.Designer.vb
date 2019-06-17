@@ -22,12 +22,11 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.HlpButton = New System.Windows.Forms.Button()
         Me.ResetButton = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.BottleNumber = New System.Windows.Forms.Label()
-        Me.Inverted = New System.Windows.Forms.CheckBox()
         Me.LW44 = New System.Windows.Forms.Label()
         Me.LW43 = New System.Windows.Forms.Label()
         Me.DW16 = New System.Windows.Forms.Label()
@@ -276,6 +275,9 @@ Partial Class Form1
         Me.Label60 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.NoteButton = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.GameLabel = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.GTLabel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AGLabel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TRLabel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -356,19 +358,6 @@ Partial Class Form1
         Me.ResetButton.Text = "RESET"
         Me.ResetButton.UseVisualStyleBackColor = True
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.ItemHeight = 13
-        Me.ComboBox1.Items.AddRange(New Object() {"Standard/Open", "Keysanity w/ Swords", "Retro w/ Swords", "Swordless", "Keysanity Swordless", "Retro Swordless", "Checklist (all open)"})
-        Me.ComboBox1.Location = New System.Drawing.Point(5, 460)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(114, 21)
-        Me.ComboBox1.TabIndex = 734
-        Me.ComboBox1.TabStop = False
-        '
         'BottleNumber
         '
         Me.BottleNumber.AutoSize = True
@@ -382,17 +371,6 @@ Partial Class Form1
         Me.BottleNumber.TabIndex = 737
         Me.BottleNumber.Text = "0"
         Me.BottleNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Inverted
-        '
-        Me.Inverted.AutoSize = True
-        Me.Inverted.ForeColor = System.Drawing.Color.White
-        Me.Inverted.Location = New System.Drawing.Point(124, 462)
-        Me.Inverted.Name = "Inverted"
-        Me.Inverted.Size = New System.Drawing.Size(53, 17)
-        Me.Inverted.TabIndex = 746
-        Me.Inverted.Text = "Invert"
-        Me.Inverted.UseVisualStyleBackColor = True
         '
         'LW44
         '
@@ -1275,7 +1253,7 @@ Partial Class Form1
         Me.TRBoss.AutoSize = True
         Me.TRBoss.Enabled = False
         Me.TRBoss.Image = CType(resources.GetObject("TRBoss.Image"), System.Drawing.Image)
-        Me.TRBoss.Location = New System.Drawing.Point(351, 221)
+        Me.TRBoss.Location = New System.Drawing.Point(352, 221)
         Me.TRBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.TRBoss.Name = "TRBoss"
@@ -1289,7 +1267,7 @@ Partial Class Form1
         Me.MMBoss.AutoSize = True
         Me.MMBoss.Enabled = False
         Me.MMBoss.Image = CType(resources.GetObject("MMBoss.Image"), System.Drawing.Image)
-        Me.MMBoss.Location = New System.Drawing.Point(351, 197)
+        Me.MMBoss.Location = New System.Drawing.Point(352, 197)
         Me.MMBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.MMBoss.Name = "MMBoss"
@@ -1303,7 +1281,7 @@ Partial Class Form1
         Me.IPBoss.AutoSize = True
         Me.IPBoss.Enabled = False
         Me.IPBoss.Image = CType(resources.GetObject("IPBoss.Image"), System.Drawing.Image)
-        Me.IPBoss.Location = New System.Drawing.Point(351, 173)
+        Me.IPBoss.Location = New System.Drawing.Point(352, 173)
         Me.IPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.IPBoss.Name = "IPBoss"
@@ -1317,7 +1295,7 @@ Partial Class Form1
         Me.TTBoss.AutoSize = True
         Me.TTBoss.Enabled = False
         Me.TTBoss.Image = CType(resources.GetObject("TTBoss.Image"), System.Drawing.Image)
-        Me.TTBoss.Location = New System.Drawing.Point(351, 149)
+        Me.TTBoss.Location = New System.Drawing.Point(352, 149)
         Me.TTBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.TTBoss.Name = "TTBoss"
@@ -1331,7 +1309,7 @@ Partial Class Form1
         Me.SWBoss.AutoSize = True
         Me.SWBoss.Enabled = False
         Me.SWBoss.Image = CType(resources.GetObject("SWBoss.Image"), System.Drawing.Image)
-        Me.SWBoss.Location = New System.Drawing.Point(351, 125)
+        Me.SWBoss.Location = New System.Drawing.Point(352, 125)
         Me.SWBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.SWBoss.Name = "SWBoss"
@@ -1345,7 +1323,7 @@ Partial Class Form1
         Me.SPBoss.AutoSize = True
         Me.SPBoss.Enabled = False
         Me.SPBoss.Image = CType(resources.GetObject("SPBoss.Image"), System.Drawing.Image)
-        Me.SPBoss.Location = New System.Drawing.Point(351, 101)
+        Me.SPBoss.Location = New System.Drawing.Point(352, 101)
         Me.SPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.SPBoss.Name = "SPBoss"
@@ -1359,7 +1337,7 @@ Partial Class Form1
         Me.PODBoss.AutoSize = True
         Me.PODBoss.Enabled = False
         Me.PODBoss.Image = CType(resources.GetObject("PODBoss.Image"), System.Drawing.Image)
-        Me.PODBoss.Location = New System.Drawing.Point(351, 77)
+        Me.PODBoss.Location = New System.Drawing.Point(352, 77)
         Me.PODBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PODBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.PODBoss.Name = "PODBoss"
@@ -1373,7 +1351,7 @@ Partial Class Form1
         Me.HeraBoss.AutoSize = True
         Me.HeraBoss.Enabled = False
         Me.HeraBoss.Image = CType(resources.GetObject("HeraBoss.Image"), System.Drawing.Image)
-        Me.HeraBoss.Location = New System.Drawing.Point(351, 53)
+        Me.HeraBoss.Location = New System.Drawing.Point(352, 53)
         Me.HeraBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HeraBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.HeraBoss.Name = "HeraBoss"
@@ -1387,7 +1365,7 @@ Partial Class Form1
         Me.DPBoss.AutoSize = True
         Me.DPBoss.Enabled = False
         Me.DPBoss.Image = CType(resources.GetObject("DPBoss.Image"), System.Drawing.Image)
-        Me.DPBoss.Location = New System.Drawing.Point(351, 29)
+        Me.DPBoss.Location = New System.Drawing.Point(352, 29)
         Me.DPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.DPBoss.Name = "DPBoss"
@@ -1401,7 +1379,7 @@ Partial Class Form1
         Me.EPBoss.AutoSize = True
         Me.EPBoss.Enabled = False
         Me.EPBoss.Image = CType(resources.GetObject("EPBoss.Image"), System.Drawing.Image)
-        Me.EPBoss.Location = New System.Drawing.Point(351, 5)
+        Me.EPBoss.Location = New System.Drawing.Point(352, 5)
         Me.EPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EPBoss.MinimumSize = New System.Drawing.Size(24, 24)
         Me.EPBoss.Name = "EPBoss"
@@ -1418,6 +1396,7 @@ Partial Class Form1
         Me.GTLabel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.GTLabel.TabIndex = 759
         Me.GTLabel.TabStop = False
+        Me.GTLabel.Visible = False
         '
         'AGLabel
         '
@@ -1428,6 +1407,7 @@ Partial Class Form1
         Me.AGLabel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.AGLabel.TabIndex = 758
         Me.AGLabel.TabStop = False
+        Me.AGLabel.Visible = False
         '
         'TRLabel
         '
@@ -1788,6 +1768,7 @@ Partial Class Form1
         Me.HCChests.TabIndex = 643
         Me.HCChests.Text = "5"
         Me.HCChests.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.HCChests.Visible = False
         '
         'ShovelButton
         '
@@ -2163,6 +2144,7 @@ Partial Class Form1
         Me.EPMap.Size = New System.Drawing.Size(24, 24)
         Me.EPMap.TabIndex = 682
         Me.EPMap.UseVisualStyleBackColor = True
+        Me.EPMap.Visible = False
         '
         'DPMap
         '
@@ -2176,6 +2158,7 @@ Partial Class Form1
         Me.DPMap.Size = New System.Drawing.Size(24, 24)
         Me.DPMap.TabIndex = 683
         Me.DPMap.UseVisualStyleBackColor = True
+        Me.DPMap.Visible = False
         '
         'SPMap
         '
@@ -2189,6 +2172,7 @@ Partial Class Form1
         Me.SPMap.Size = New System.Drawing.Size(24, 24)
         Me.SPMap.TabIndex = 686
         Me.SPMap.UseVisualStyleBackColor = True
+        Me.SPMap.Visible = False
         '
         'PODMap
         '
@@ -2202,6 +2186,7 @@ Partial Class Form1
         Me.PODMap.Size = New System.Drawing.Size(24, 24)
         Me.PODMap.TabIndex = 685
         Me.PODMap.UseVisualStyleBackColor = True
+        Me.PODMap.Visible = False
         '
         'HeraMap
         '
@@ -2215,6 +2200,7 @@ Partial Class Form1
         Me.HeraMap.Size = New System.Drawing.Size(24, 24)
         Me.HeraMap.TabIndex = 684
         Me.HeraMap.UseVisualStyleBackColor = True
+        Me.HeraMap.Visible = False
         '
         'TRMap
         '
@@ -2228,6 +2214,7 @@ Partial Class Form1
         Me.TRMap.Size = New System.Drawing.Size(24, 24)
         Me.TRMap.TabIndex = 692
         Me.TRMap.UseVisualStyleBackColor = True
+        Me.TRMap.Visible = False
         '
         'MMMap
         '
@@ -2241,6 +2228,7 @@ Partial Class Form1
         Me.MMMap.Size = New System.Drawing.Size(24, 24)
         Me.MMMap.TabIndex = 691
         Me.MMMap.UseVisualStyleBackColor = True
+        Me.MMMap.Visible = False
         '
         'IPMap
         '
@@ -2254,6 +2242,7 @@ Partial Class Form1
         Me.IPMap.Size = New System.Drawing.Size(24, 24)
         Me.IPMap.TabIndex = 690
         Me.IPMap.UseVisualStyleBackColor = True
+        Me.IPMap.Visible = False
         '
         'TTMap
         '
@@ -2267,6 +2256,7 @@ Partial Class Form1
         Me.TTMap.Size = New System.Drawing.Size(24, 24)
         Me.TTMap.TabIndex = 689
         Me.TTMap.UseVisualStyleBackColor = True
+        Me.TTMap.Visible = False
         '
         'SWMap
         '
@@ -2280,6 +2270,7 @@ Partial Class Form1
         Me.SWMap.Size = New System.Drawing.Size(24, 24)
         Me.SWMap.TabIndex = 688
         Me.SWMap.UseVisualStyleBackColor = True
+        Me.SWMap.Visible = False
         '
         'PictureBox1
         '
@@ -2309,6 +2300,7 @@ Partial Class Form1
         Me.MMKeys.TabIndex = 667
         Me.MMKeys.Text = "0"
         Me.MMKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.MMKeys.Visible = False
         '
         'IPKeys
         '
@@ -2326,6 +2318,7 @@ Partial Class Form1
         Me.IPKeys.TabIndex = 666
         Me.IPKeys.Text = "0"
         Me.IPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.IPKeys.Visible = False
         '
         'TTKeys
         '
@@ -2343,6 +2336,7 @@ Partial Class Form1
         Me.TTKeys.TabIndex = 665
         Me.TTKeys.Text = "0"
         Me.TTKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TTKeys.Visible = False
         '
         'SWKeys
         '
@@ -2360,6 +2354,7 @@ Partial Class Form1
         Me.SWKeys.TabIndex = 664
         Me.SWKeys.Text = "0"
         Me.SWKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.SWKeys.Visible = False
         '
         'TRKeys
         '
@@ -2377,6 +2372,7 @@ Partial Class Form1
         Me.TRKeys.TabIndex = 668
         Me.TRKeys.Text = "0"
         Me.TRKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TRKeys.Visible = False
         '
         'SPKeys
         '
@@ -2394,6 +2390,7 @@ Partial Class Form1
         Me.SPKeys.TabIndex = 661
         Me.SPKeys.Text = "0"
         Me.SPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.SPKeys.Visible = False
         '
         'PODKeys
         '
@@ -2411,6 +2408,7 @@ Partial Class Form1
         Me.PODKeys.TabIndex = 660
         Me.PODKeys.Text = "0"
         Me.PODKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PODKeys.Visible = False
         '
         'TOHKeys
         '
@@ -2428,6 +2426,7 @@ Partial Class Form1
         Me.TOHKeys.TabIndex = 659
         Me.TOHKeys.Text = "0"
         Me.TOHKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TOHKeys.Visible = False
         '
         'DPKeys
         '
@@ -2445,6 +2444,7 @@ Partial Class Form1
         Me.DPKeys.TabIndex = 658
         Me.DPKeys.Text = "0"
         Me.DPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.DPKeys.Visible = False
         '
         'EPKeys
         '
@@ -2462,6 +2462,7 @@ Partial Class Form1
         Me.EPKeys.TabIndex = 657
         Me.EPKeys.Text = "-"
         Me.EPKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.EPKeys.Visible = False
         '
         'MMPrizes
         '
@@ -2855,6 +2856,7 @@ Partial Class Form1
         Me.HCKeys.TabIndex = 656
         Me.HCKeys.Text = "0"
         Me.HCKeys.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.HCKeys.Visible = False
         '
         'TRButton
         '
@@ -3854,16 +3856,43 @@ Partial Class Form1
         Me.NoteButton.Text = "Open Notes"
         Me.NoteButton.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(179, 459)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(82, 23)
+        Me.Button1.TabIndex = 943
+        Me.Button1.Text = "Change Mode"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'GameLabel
+        '
+        Me.GameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GameLabel.ForeColor = System.Drawing.Color.White
+        Me.GameLabel.Location = New System.Drawing.Point(8, 456)
+        Me.GameLabel.Name = "GameLabel"
+        Me.GameLabel.Size = New System.Drawing.Size(165, 26)
+        Me.GameLabel.TabIndex = 944
+        Me.GameLabel.Text = "Standard/Open"
+        Me.GameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ShowAlways = True
+        '
         'Form1
         '
         Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(441, 487)
+        Me.ClientSize = New System.Drawing.Size(440, 487)
+        Me.Controls.Add(Me.AGPrizes)
+        Me.Controls.Add(Me.EPPrizes)
+        Me.Controls.Add(Me.GameLabel)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.NoteButton)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.AGPrizes)
         Me.Controls.Add(Me.HCPrizes)
         Me.Controls.Add(Me.TRBoss)
         Me.Controls.Add(Me.MMBoss)
@@ -3888,10 +3917,8 @@ Partial Class Form1
         Me.Controls.Add(Me.DPLabel)
         Me.Controls.Add(Me.EPLabel)
         Me.Controls.Add(Me.HCLabel)
-        Me.Controls.Add(Me.Inverted)
         Me.Controls.Add(Me.MagicButton)
         Me.Controls.Add(Me.BottleNumber)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ResetButton)
         Me.Controls.Add(Me.TurtleBEQ)
         Me.Controls.Add(Me.MireBEQ)
@@ -3970,7 +3997,6 @@ Partial Class Form1
         Me.Controls.Add(Me.PODPrizes)
         Me.Controls.Add(Me.TOHPrizes)
         Me.Controls.Add(Me.DPPrizes)
-        Me.Controls.Add(Me.EPPrizes)
         Me.Controls.Add(Me.TRChests)
         Me.Controls.Add(Me.MMChests)
         Me.Controls.Add(Me.IPChests)
@@ -4299,11 +4325,9 @@ Partial Class Form1
     Friend WithEvents TurtleBEQ As PictureBox
     Friend WithEvents ResetButton As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents AGPrizes As Label
     Friend WithEvents BottleNumber As Label
     Friend WithEvents MagicButton As PictureBox
-    Friend WithEvents Inverted As CheckBox
     Friend WithEvents HCLabel As PictureBox
     Friend WithEvents EPLabel As PictureBox
     Friend WithEvents DPLabel As PictureBox
@@ -4439,4 +4463,7 @@ Partial Class Form1
     Friend WithEvents Label53 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents NoteButton As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents GameLabel As Label
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
