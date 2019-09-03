@@ -740,7 +740,7 @@
                 End If
 
                 '' Blacksmith - Mitt + Pearl
-                If Glove = 2 And Pearl = True Then
+                If Pearl = True And (Glove = 2 Or ((Glove = 1 And Hammer = True) Or Aganhim = True) And Mirror = True) Then
                     LW42.Visible = True : LW42.Image = My.Resources.lightgreen
                 Else
                     LW42.Visible = False
