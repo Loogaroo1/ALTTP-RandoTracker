@@ -2215,7 +2215,7 @@ Line1:
         Dim Open As Boolean
         Dim Boss As Boolean
 
-        If Pearl = True And (Aganhim = True Or (Glove = 1 And Hammer = True) Or (Glove = 2 And Flippers = True)) Then
+        If Pearl = True And (Aganhim = True Or (Glove > 0 And Hammer = True) Or (Glove = 2 And Flippers = True)) Then
             Open = True
         Else
             Open = False
